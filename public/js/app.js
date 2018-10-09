@@ -184,6 +184,7 @@ async function appstart() {
     $("#loginButtonContainer").show();
     $("#loginFormContainer").hide();
     $("#loggedOut").show();
+    translateIndexContent();
   }
 }
 
