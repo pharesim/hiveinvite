@@ -1,4 +1,3 @@
-var client = new dsteem.Client('https://api.steemit.com')
 steem.api.setOptions({ url: 'https://api.steemit.com' });
 
 var username  = null;
@@ -163,21 +162,21 @@ async function appstart() {
   //  localStorage.removeItem("username");
   if (localStorage.username) {
     username = localStorage.username;
-    [account] = await client.database.getAccounts([username]);
-    steem.api.callAsync('rc_api.find_rc_accounts', {accounts: [username]}).then(async function(result) {
-      max_rc = result.rc_accounts[0].max_rc;
-      last_mana = result.rc_accounts[0].rc_manabar.current_mana;
-      elapsed = current_timestamp - result.rc_accounts[0].rc_manabar.last_update_time;
-      current_mana = parseFloat(result.rc_accounts[0].rc_manabar.current_mana) + elapsed * max_rc / 432000;
-      if(current_mana > max_rc) {
-        current_mana = max_rc;
-      }
-      $("#loggedOut").hide();
-      
-      getInvites();
+    steem.api.getAccounts([username], function(err, response){
+      account = response[0];
+      steem.api.callAsync('rc_api.find_rc_accounts', {accounts: [username]}).then(async function(result) {
+        max_rc = result.rc_accounts[0].max_rc;
+        last_mana = result.rc_accounts[0].rc_manabar.current_mana;
+        elapsed = current_timestamp - result.rc_accounts[0].rc_manabar.last_update_time;
+        current_mana = parseFloat(result.rc_accounts[0].rc_manabar.current_mana) + elapsed * max_rc / 432000;
+        if(current_mana > max_rc) {
+          current_mana = max_rc;
+        }
+        $("#loggedOut").hide();
+        
+        getInvites();
+      });
     });
-
-    
   } else {
     translateIndexContent();
     hideById('loggedIn');
