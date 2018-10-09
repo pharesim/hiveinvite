@@ -2,7 +2,7 @@ i18next
   .use(i18nextXHRBackend)
   .use(i18nextBrowserLanguageDetector)
   .init({
-    fallbackLng: 'en',
+    fallbackLng: 'en-US',
     debug: true,
     backend: {
       loadPath: 'locales/{{lng}}.json'
