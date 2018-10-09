@@ -1,5 +1,5 @@
 function validateFreeClaimModalForm() {
-  let value = document.getElementById('freeClaimActiveKey').value;
+  let value = getValueById('freeClaimActiveKey');
   if(steem.auth.isWif(value)) {
     document.getElementById('singleFreeClaim').disabled = false;
     document.getElementById('botFreeClaim').disabled = false;
@@ -16,11 +16,11 @@ document.getElementById('freeClaimActiveKey').oninput = function() {
   validateFreeClaimModalForm();
 }
 document.getElementById('singleFreeClaim').onclick = function() {
-  document.getElementById('gearsSingleFreeClaim').style.display = 'block';
-  document.getElementById('botFreeClaim').style.display = 'none';
-  document.getElementById('singleFreeClaim').style.display = 'none';
+  showById('gearsSingleFreeClaim');
+  hideById('botFreeClaim');
+  hideById('singleFreeClaim');
 
-  wif = document.getElementById('freeClaimActiveKey').value;
+  wif = getValueById('freeClaimActiveKey');
   setStoreWIF(document.getElementById('storeWIFfree').checked); 
   let callback = function(err, result) {
     if(err !== null) {
@@ -28,11 +28,13 @@ document.getElementById('singleFreeClaim').onclick = function() {
     } else {
       setProperties();
       alert('Account claimed');
+
+      // @todo modal is part of bootstrap
       $("#freeCLaimModal").modal('hide');
     }
-    document.getElementById('gearsSingleFreeClaim').style.display = 'none';
-    document.getElementById('botFreeClaim').style.display = 'block';
-    document.getElementById('singleFreeClaim').style.display = 'block';
+    hideById('gearsSingleFreeClaim');
+    hideById('botFreeClaim');
+    hideById('singleFreeClaim');
   }
   claim_account(wif,callback);
   getStoreWIF();
