@@ -1,0 +1,25 @@
+CREATE TABLE invites (
+  inviteid TEXT PRIMARY KEY,
+  label TEXT NOT NULL,
+  email BOOLEAN,
+  address TEXT,
+  mailtext TEXT,
+  steempower NUMERIC NOT NULL,
+  validity INTEGER NOT NULL,
+  username TEXT NOT NULL,
+  usermail TEXT NOT NULL,
+  created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+  accepted TIMESTAMP,
+  account TEXT,
+  owner TEXT,
+  active TEXT,
+  posting TEXT,
+  memo TEXT
+);
+
+CREATE TABLE recoveries (
+  recoveryid TEXT PRIMARY KEY,
+  user TEXT NOT NULL,
+  created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
