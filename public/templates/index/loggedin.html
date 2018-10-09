@@ -1,0 +1,66 @@
+<div id="loggedIn" class="hidden">
+  <div class="container col-lg-12 spacer">
+    <div class="row">
+      <div class="col-3 block">
+        <span id="lastupdate"></span> @<span id="lastupdated"></span><br />
+        <a href="/" id="refreshLink"></a>
+      </div>
+      <div class="col-9 block">
+        <div class="float-right">
+            <select id="languageSelector">
+              <option value="" id="languageSwitcher"></option>
+              <option value="en" id="languageEN"></option>
+              <option value="de" id="languageDE"></option>
+            </select>
+          <button type="button" id="logoutButton" class="btn btn-primary"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <h2 id="greeting"></h2>
+
+  <p id="tokenexplain"></p>
+
+  <p id="tokencost" class="borderBox"></p>
+
+  <p>
+    <span id="abletoclaim"></span>
+    <div id="claimfreebutton" class="hidden">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#freeClaimModal" id="freeClaimModalButton"></button>
+    </div>
+  </p>
+
+  <p id="claimwithsteem">
+    <span id="abletobuy"></span>
+    <div id="claimsteembutton" class="hidden">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paidClaimModal" id="paidClaimModalButton"></button>
+    </div>
+  </p>
+
+  <p class="borderBox" id="pendingclaimsandinvites"></p>
+
+  <button type="button" class="btn btn-primary hidden" data-toggle="modal" data-target="#inviteModal" id="inviteModalButton"></button>
+  
+  <hr />
+
+  <fieldset id="openInvites" class="hidden">
+    <legend>My open invites</legend>
+
+    <table class="table table-sm table-hover table-responsive">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Label</th>
+          <th>E-Mail/Link</th>
+          <th>SP</th>
+          <th>Created</th>
+          <th>Valid until</th>
+          <th>Accepted</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="pendingInvites"></tbody>
+    </table>
+  </fieldset>
+</div>

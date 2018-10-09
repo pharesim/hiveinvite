@@ -1,0 +1,25 @@
+<div class="modal fade" id="botClaimModal" tabindex="-1" role="dialog" aria-labelledby="botClaimModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="botClaimModalLabel"></h5>
+      </div>
+      
+      <div class="modal-body">
+        <p id="botClaimExplainer"></p>
+        <p id="botClaimStatus" class="hidden borderBox">
+          <span id="botIsWorking">At work! Claimed <span id="botClaimStatusClaimed">0</span> accounts so far.</span>
+          <span id="botStoppedWithError" class="hidden">Stopped after claiming <span id="botClaimHasClaimed">0</span> accounts.<br />
+            Error message:
+            <span id="botClaimError"></span>
+          </span>
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" id="botClaimStart"></button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="botClaimClose"></button>
+      </div>
+    </div>
+  </div>
+</div>

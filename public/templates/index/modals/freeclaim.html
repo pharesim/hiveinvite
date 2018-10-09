@@ -1,0 +1,44 @@
+<div class="modal fade" id="freeClaimModal" tabindex="-1" role="dialog" aria-labelledby="freeClaimModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="freeClaimModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <p id="freeClaimExplainer"></p>
+
+        <p class="freeclaims_multiple" id="freeClaimMoreExplain"></p>
+
+        <p>
+          <span id="freeClaimKey"></span>
+          <form>          
+            <div class="form-group row">
+              <label for="freeClaimActiveKey" class="col-2 col-form-label" id="freeClaimActiveLabel"></label>
+              <div class="col-10">
+                <input class="form-control activeKeyInput" type="password" id="freeClaimActiveKey">
+              </div>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" id="storeWIFfree">
+              <span id="storeWIFfreeLabel"></span>
+              </label>
+            </div>
+          </form>
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" id="singleFreeClaim"></button>
+        <img src="gears.gif" id="gearsSingleFreeClaim" class="hidden" />
+        <button type="submit" class="btn btn-primary freeclaims_multiple" id="botFreeClaim" data-dismiss="modal" data-toggle="modal" data-target="#botClaimModal"></button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="freeClaimClose"></button>
+      </div>
+    </div>
+  </div>
+</div>

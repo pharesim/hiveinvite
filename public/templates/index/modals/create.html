@@ -1,0 +1,50 @@
+<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="SteemInviteCreateModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="SteemInviteCreateModalLabel">Create Steem account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form>
+        <div class="modal-body">
+          
+          <div class="form-group row">
+            <label for="inviteLabel" class="col-2 col-form-label">Username</label>
+            <div class="col-10">
+              <input class="form-control" type="text" id="createAccountName" readonly>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="example-text-input" class="col-8 col-form-label">Amount of Steem Power to delegate</label>
+            <div class="col-4">
+              <input class="form-control" type="text" id="createSP" autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inviteLabel" class="col-2 col-form-label">Active key</label>
+            <div class="col-10">
+              <input class="form-control" type="password" id="createActiveKey">
+            </div>
+          </div>
+
+          <input type="hidden" id="createCreator" />
+          <input type="hidden" id="createOwner" />
+          <input type="hidden" id="createActive" />
+          <input type="hidden" id="createPosting" />
+          <input type="hidden" id="createMemo" />
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" id="createAccountNow">Create account</button>
+          <img src="gears.gif" id="gearsCreate" class="hidden" />
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
