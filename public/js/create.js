@@ -38,7 +38,7 @@ document.getElementById('createAccountNow').onclick = function() {
       reenableCreate();
     }
   });
-});
+}
 
 function createClaimedAccount(w, newAccountName, owner, active, posting, memoKey, delegation) {
   let tx = {
