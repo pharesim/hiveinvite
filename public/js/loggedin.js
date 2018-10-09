@@ -6,6 +6,16 @@ function setUpdated() {
   document.getElementById('lastupdated').innerHTML = h+':'+m+':'+s;
 }
 
+let elem = document.getElementById('languageSelector');
+elem.onchange = function() {
+  if(elem.value != '') {
+    document.getElementById('loggedIn').style.display = 'none';
+    i18next.changeLanguage(elem.value);    
+    translateIndexContent();
+    setProperties();
+  }
+}
+
 $("#logoutButton").click(function(e){
   e.preventDefault();
   localStorage.removeItem("username");

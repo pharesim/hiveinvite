@@ -122,11 +122,11 @@ function formatRC(rc) {
   return mana+'M';
 }
 
-async function calculateClaimRC() {
+function calculateClaimRC() {
   let rc_regen = Math.round(properties.global.total_vesting_shares.slice(0,-6) / ((60*60*24*5)/3)) * 1000000;
   let total_cost = 0;
   let resource_count = {};
-  await steem.api.callAsync('rc_api.get_resource_params', {}).then(result => {
+  steem.api.callAsync('rc_api.get_resource_params', {}).then(result => {
     steem.api.callAsync('rc_api.get_resource_pool', {}).then(result2 => {
       resource_count.resource_history_bytes = 300;
       resource_count.resource_state_bytes = 174 * 35;
@@ -145,6 +145,8 @@ async function calculateClaimRC() {
         total_cost = total_cost + num_denom;    
       });
       claim_cost_mana = total_cost;
+
+      appstart();
     });
   });
 }
@@ -170,6 +172,7 @@ async function appstart() {
       }
       $("#loggedOut").hide();
       
+      translateIndexContent();
       getInvites();
     });
 
@@ -182,7 +185,7 @@ async function appstart() {
   }
 }
 
-async function setProperties() {
+function setProperties() {
   steem.api.getDynamicGlobalProperties(async function(err, result) {
     let head_block = result.head_block_number;
     steem.api.getBlockHeader(head_block, function(err, result) {
@@ -190,19 +193,8 @@ async function setProperties() {
       current_timestamp = Math.round(new Date(result.timestamp).getTime()/1000)-(60*offset);
     });
     properties.global = result;
-    await calculateClaimRC();
+    calculateClaimRC();
     setUpdated();
-    let elem = document.getElementById('languageSelector');
-    elem.onchange = function() {
-      if(elem.value != '') {
-        document.getElementById('loggedIn').style.display = 'none';
-        i18next.changeLanguage(elem.value);    
-        translateIndexContent();
-        setProperties();
-      }
-    }
-    appstart();
-    translateIndexContent();
   });
   
   steem.api.getChainProperties(function(err, result) {
