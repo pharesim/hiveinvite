@@ -7,17 +7,16 @@ function botOff() {
 }
 
 document.getElementById('botClaimStart').onclick = function() {
-  document.getElementById('botClaimStart').style.display = 'none';
-  document.getElementById('botClaimStatus').style.display = 'block';
-  document.getElementById('botIsWorking').style.display = 'block';
+  hideById('botClaimStart');
+  showById('botClaimStatus');
+  showById('botIsWorking');
   bot_running = 1;
-  wif = document.getElementById('freeClaimActiveKey').value;
+  wif = getValueById('freeClaimActiveKey');
   setStoreWIF(document.getElementById('storeWIFfree').checked); 
   let callback = function(err, success) {
     if(err !== null) {
-      document.getElementById('botStoppedWithError').style.display = 'block';
-      document.getElementById('botIsWorking').style.display        = 'none';
-      let elem = document.getElementById('botClaimStatus');
+      showById('botStoppedWithError');
+      hideById('botIsWorking');
       document.getElementById('botClaimError').innerHTML = err;
       botOff();
     } else {
@@ -38,14 +37,15 @@ async function botclaims(callback) {
 
 function botClose() {
   botOff();
-  document.getElementById('botClaimStart').style.display = 'block';
-  document.getElementById('botClaimStatus').style.display = 'none';
+  showById('botClaimStart');
+  hideById('botClaimStatus');
   document.getElementById('botClaimError').innerHTML = '';
   document.getElementById('botClaimStatusClaimed').innerHTML = 0;
   document.getElementById('botClaimHasClaimed').innerHTML = 0;
-  document.getElementById('botStoppedWithError').style.display = 'none';
+  hideById('botStoppedWithError');
 }
 
+// @todo modals are part of bootstrap, so this uses jquery. remember to adapt when migrating away
 $('#botClaimModal').on('hidden.bs.modal', function () {
   botClose();
 });
