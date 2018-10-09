@@ -1,0 +1,90 @@
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
+import sys
+sys.path.append('si')
+
+import mailer
+import db
+import api
+import errorHandler
+
+import cgi
+import uuid
+import time
+import datetime
+
+# output variable
+invites = []
+
+# get and set variables
+inviteid   = uuid.uuid4().hex
+form       = cgi.FieldStorage()
+label      = form.getvalue('label')
+email      = form.getvalue('email')
+address    = form.getvalue('address')
+mailtext   = form.getvalue('mailtext')
+steempower = form.getvalue('sp')
+validity   = form.getvalue('validity')
+username   = form.getvalue('username')
+usermail   = form.getvalue('usermail')
+nowts      = time.time()
+
+# routinely delete old entries
+results = db.select('invites',['inviteid','created','validity'],'accepted is null','created DESC')
+for result in results:
+  createdts = time.mktime(datetime.datetime.strptime(result['created'], "%Y-%m-%d %H:%M:%S").timetuple())
+  validtill = createdts + (result['validity'] * 60 * 60 * 24)
+  if validtill < nowts:
+    db.delete('invites',{'inviteid':result['inviteid']})
+
+# save a new entry
+if username and usermail:
+
+  # check if email address has a valid invite already
+  if email == 'true':
+    results = db.select('invites',['inviteid'],{'address':address},'address')
+    if len(results) > 0:
+      errorHandler.throwError("E-Mail address already invited")
+
+  # check if label is unique
+  results = db.select('invites',['label'],{'username':username,'label':label},'label')
+  if len(results) > 0:
+    errorHandler.throwError("You are using this label already")
+
+  # write
+  if email != 'true':
+    mailtext = ''
+  db.insert('invites',{'inviteid':inviteid,'label':label,'email':email,'address':address,'mailtext':mailtext,'steempower':steempower,'validity':validity,'username':username,'usermail':usermail})
+
+  # send invitation mail
+  if email == 'true':
+    try:
+      mailer.sendmail(address,'You have been invited to join the Steem blockchain',mailtext+"\n\nhttps://steeminvite.com/accept.html?inviteid="+inviteid)
+    except Exception as e:
+      db.delete('invites',{'inviteid':inviteid})
+      errorHandler.throwError("Failed sending E-Mail. If this keeps happening, create the invitation without, and send the resulting link yourself. Also notice @pharesim."+str(e))
+
+# get invites
+if username != None:
+  qfields = ['inviteid', 'label', 'address', 'steempower', 'validity', 'created', 'accepted', 'account', 'username', 'owner', 'active', 'posting', 'memo']
+  results = db.select('invites',qfields,{'username':username},'created DESC')
+  for result in results:
+    validtill = time.mktime(datetime.datetime.strptime(result['created'], "%Y-%m-%d %H:%M:%S").timetuple()) + (result['validity'] * 60 * 60 * 24)
+    invites.append({
+      'inviteid':result['inviteid'],
+      'label':result['label'],
+      'address':result['address'],
+      'steempower':result['steempower'],
+      'validity': datetime.datetime.fromtimestamp(validtill).strftime('%Y-%m-%d %H:%M:%S'),
+      'created':result['created'],
+      'accepted':result['accepted'],
+      'account':result['account'],
+      'username':result['username'],
+      'owner':result['owner'],
+      'active':result['active'],
+      'posting':result['posting'],
+      'memo':result['memo']
+    })
+
+api.output(invites)

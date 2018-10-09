@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
+import sys
+sys.path.append('si')
+
+import db
+import api
+
+import cgi
+
+params = cgi.FieldStorage()
+
+account = params.getvalue('account')
+
+if len(account) > 2:
+  db.delete('invites',{'account':account})
+  
+data = {}
+api.output(data)

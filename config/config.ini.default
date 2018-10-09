@@ -1,0 +1,8 @@
+[db]
+file = ../../invites.sqlite3
+
+[smtp]
+server = smtp.mailgun.org
+user = user@smtp.host
+password = smtppassword
+sender = noreply@steeminvite.com

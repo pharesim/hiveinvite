@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
+import sys
+sys.path.append('si')
+
+import db
+import api
+
+import cgi
+import time
+import datetime
+
+params = cgi.FieldStorage()
+inviteid = params.getvalue('id')
+
+validinvite = False
+nowts = time.time()
+
+results = db.select('invites',['created','validity'],{'inviteid':inviteid},'created DESC')
+for result in results:
+  createdts = time.mktime(datetime.datetime.strptime(result['created'], "%Y-%m-%d %H:%M:%S").timetuple())
+  validtill = createdts + (result['validity'] * 60 * 60 * 24)
+  if validtill < nowts:
+    db.delete('invites',{'inviteid':result['inviteid']})
+  else:
+    validinvite = True
+
+data = {'id':inviteid,'valid':validinvite}
+api.output(data)
