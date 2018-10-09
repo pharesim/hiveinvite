@@ -172,7 +172,7 @@ async function appstart() {
         if(current_mana > max_rc) {
           current_mana = max_rc;
         }
-        $("#loggedOut").hide();
+        hideById('loggedOut');
         
         getInvites();
       });
