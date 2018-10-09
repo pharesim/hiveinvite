@@ -135,13 +135,15 @@ function calculateClaimRC() {
 
       Object.keys(resource_count).forEach(key => {
         let denom = 0;
-        let num = bigInt(result.resource_params[key].price_curve_params.coeff_a);
-        num = num.multiply(rc_regen);
-        num = num.shiftRight(result.resource_params[key].price_curve_params.shift);
-        num = num.add(1);
-        num = num.multiply(result.resource_params[key].resource_dynamics_params.resource_unit);
+        let num = result.resource_params[key].price_curve_params.coeff_a;
+        num = num * rc_regen;
+        for(let i = 0; i < result.resource_params[key].price_curve_params.shift; i++) {
+          num = num / 2;
+        }
+        num = num + 1;
+        num = num * result.resource_params[key].resource_dynamics_params.resource_unit;
         denom = result.resource_params[key].price_curve_params.coeff_b + result2.resource_pool[key].pool;
-        num_denom = Math.round(num.toJSNumber() / denom);
+        num_denom = Math.round(num / denom);
         total_cost = total_cost + num_denom;    
       });
       claim_cost_mana = total_cost;
