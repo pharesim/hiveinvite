@@ -164,7 +164,7 @@ async function appstart() {
   if (localStorage.username) {
     username = localStorage.username;
     [account] = await client.database.getAccounts([username]);
-    steem.api.callAsync('rc_api.find_rc_accounts', {accounts: ['pharesim']}).then(async function(result) {
+    steem.api.callAsync('rc_api.find_rc_accounts', {accounts: [username]}).then(async function(result) {
       max_rc = result.rc_accounts[0].max_rc;
       last_mana = result.rc_accounts[0].rc_manabar.current_mana;
       elapsed = current_timestamp - result.rc_accounts[0].rc_manabar.last_update_time;
