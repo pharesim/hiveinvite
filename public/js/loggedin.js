@@ -36,6 +36,7 @@ function getInvites() {
       alert(data['error']);
     } else {
       insertIntoTable(data);
+      translateIndexContent();
       fillLoggedIn();
     }
   });
@@ -47,8 +48,6 @@ function fillLoggedIn() {
   balance            = account.balance.slice(0,-6);
 
   let pct = current_mana * 100 / max_rc;
-
-  translateIndexContent();
 
   let emailText = document.getElementById('emailText').innerHTML;
 

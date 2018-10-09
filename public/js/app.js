@@ -174,17 +174,16 @@ async function appstart() {
       }
       $("#loggedOut").hide();
       
-      translateIndexContent();
       getInvites();
     });
 
     
   } else {
-    $("#loggedIn").hide();
-    $("#loginButtonContainer").show();
-    $("#loginFormContainer").hide();
-    $("#loggedOut").show();
     translateIndexContent();
+    hideById('loggedIn');
+    showById('loginButtonContainer');
+    hideById('loginFormContainer');
+    showById('loggedOut');
   }
 }
 
