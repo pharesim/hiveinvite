@@ -19,20 +19,6 @@ var current_timestamp = 0;
 
 //*** js helper functions ***/
 
-function setContentByClass(classname,content) {
-  let elems = document.getElementsByClassName(classname);
-  for (let i = 0; i < elems.length; i++) {
-    elems[i].innerHTML = content;
-  } 
-}
-
-function setValuesByClass(classname,value) {
-  let elems = document.getElementsByClassName(classname);
-  for (let i = 0; i < elems.length; i++) {
-    elems[i].value = value;
-  }
-}
-
 function hideById(id) {
   document.getElementById(id).style.display = 'none';
 }
@@ -41,13 +27,30 @@ function showById(id) {
   document.getElementById(id).style.display = 'block';
 }
 
+function getValueById(id) {
+  return document.getElementById(id).value;
+}
+
 function setContentById(id,content) {
-  // console.log(id);
   document.getElementById(id).innerHTML = content;
 }
 
-function getValueById(id) {
-  return document.getElementById(id).value;
+function setContentByClass(classname,content) {
+  let elems = document.getElementsByClassName(classname);
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].innerHTML = content;
+  } 
+}
+
+function setValueById(id,value) {
+  document.getElementById(id).value = value;
+}
+
+function setValuesByClass(classname,value) {
+  let elems = document.getElementsByClassName(classname);
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].value = value;
+  }
 }
 
 function sleep(ms) {

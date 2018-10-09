@@ -9,19 +9,19 @@ function setUpdated() {
 let elem = document.getElementById('languageSelector');
 elem.onchange = function() {
   if(elem.value != '') {
-    document.getElementById('loggedIn').style.display = 'none';
+    hideById('loggedIn');
     i18next.changeLanguage(elem.value);    
     translateIndexContent();
     setProperties();
   }
 }
 
-$("#logoutButton").click(function(e){
-  e.preventDefault();
+document.getElementById('logoutButton').onclick = function() {
   localStorage.removeItem("username");
   window.location.href = "/";
-});
+}
 
+// @todo migrate from jquery to vanilla
 function getInvites() {
   $.ajax({
     url: "api/invite",
@@ -44,8 +44,8 @@ function getInvites() {
 
 // fill in data
 function fillLoggedIn() {
-  claim_cost_steem   = properties.chain.account_creation_fee.slice(0,-6);
-  balance            = account.balance.slice(0,-6);
+  claim_cost_steem = properties.chain.account_creation_fee.slice(0,-6);
+  balance          = account.balance.slice(0,-6);
 
   let pct = current_mana * 100 / max_rc;
 
@@ -56,10 +56,10 @@ function fillLoggedIn() {
   if(maxclaims > 0) {
     setContentById('canclaimever',i18next.t('index.canclaim',{'count': maxclaims}));
     setContentById('maxclaims',maxclaims);
-    document.getElementById('canclaimnow').style.display = 'block';
+    showById('canclaimnow');
   } else {
     setContentById('canclaimever',i18next.t('index.cannotclaim'));
-    document.getElementById('canclaimnow').style.display = 'none';
+    hideById('canclaimnow');
   }
 
   setContentById('freeExplainAmount',i18next.t('freeclaimmodal.explainamount',{'count': possibleclaims}));
@@ -112,28 +112,29 @@ function fillLoggedIn() {
   setContentByClass('steemcost',properties.chain.account_creation_fee);
   setContentByClass('rccost',formatRC(claim_cost_mana));
 
-  let showButton = 'hide';
   if(remaining_invites > 0) {
-    showButton   = 'block';
+    showById('inviteModalButton');
+  } else {
+    hideById('inviteModalButton')
   }
-  document.getElementById('inviteModalButton').style.display = showButton;
   
   if(steem_accounts > 0) {
-    document.getElementById('claimsteembutton').style.display = 'block';
+    showById('claimsteembutton');
   } else {
-    document.getElementById('claimsteembutton').style.display = 'none';
+    hideById('claimsteembutton');
   }
 
   if(possibleclaims > 0) {
-    document.getElementById('claimfreebutton').style.display = 'block';
+    showById('claimfreebutton');
   } else {
-    document.getElementById('claimfreebutton').style.display = 'none';
+    hideById('claimfreebutton');
   }
 
-  document.getElementById('loggedIn').style.display = 'block';
+  showById('loggedIn');
 }
 
 function insertIntoTable(data) {
+  // @todo refactor in own function to get rid of jquery
   $("#pendingInvites").empty();
   pending_invites = 0
   for(var i = 0, len = data.length; i < len; i++) {
@@ -171,19 +172,20 @@ function insertIntoTable(data) {
 
     append = append+'</td></tr>';
 
-    $("#pendingInvites").append(append);
+    let elem = document.getElementById('pendingInvites');
+    elem.innerHTML = elem.innerHTML + append;
 
     if(data[i]['account'] != null) {
       let tmp = data[i];
-      $("#createModalButton"+data[i]['account']).click(function(e){
-        $("#createAccountName").val(tmp['account']);
-        $("#createSP").val(tmp['steempower']);
-        $("#createCreator").val(tmp['username']);
-        $("#createOwner").val(tmp['owner']);
-        $("#createActive").val(tmp['active']);
-        $("#createPosting").val(tmp['posting']);
-        $("#createMemo").val(tmp['memo']);
-      });
+      document.getElementById('createModalButton'+data[i]['account']).onclick = function() {
+        setValueById('createAccountName',tmp['account']);
+        setValueById('createSP',tmp['steempower']);
+        setValueById('createCreator',tmp['username']);
+        setValueById('createOwner',tmp['owner']);
+        setValueById('createActive',tmp['active']);
+        setValueById('createPosting',tmp['posting']);
+        setValueById('createMemo',tmp['memo']);
+      }
     }
 
   }
