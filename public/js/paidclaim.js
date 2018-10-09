@@ -1,5 +1,5 @@
 function validatePaidClaimModalForm() {
-  let value = document.getElementById('paidClaimActiveKey').value;
+  let value = getValueById('paidClaimActiveKey');
   if(steem.auth.isWif(value)) {
     document.getElementById('paidClaimSubmit').disabled = false;
      return true;
@@ -15,10 +15,10 @@ document.getElementById('paidClaimActiveKey').oninput = function() {
 }
 
 document.getElementById('paidClaimSubmit').onclick = function() {
-  document.getElementById('gearsPaidClaim').style.display = 'block';
-  document.getElementById('paidClaimSubmit').style.display = 'none';
+  showById('gearsPaidClaim');
+  hideById('paidClaimSubmit');
 
-  wif = document.getElementById('paidClaimActiveKey').value;
+  wif = getValueById('paidClaimActiveKey');
   setStoreWIF(document.getElementById('storeWIFpaid').checked); 
   let callback = function(err, result) {
     if(err !== null) {
@@ -26,11 +26,13 @@ document.getElementById('paidClaimSubmit').onclick = function() {
     } else {
       setProperties();
       alert('Account claimed');
+
+      // @todo modal is part of bootstrap
       $("#paidClaimModal").modal('hide');
     }
 
-    document.getElementById('gearsPaidClaim').style.display = 'none';
-    document.getElementById('paidClaimSubmit').style.display = 'block';
+    hideById('gearsPaidClaim');
+    showById('paidClaimSubmit');
   }
   claim_account(wif,callback,'3');
   getStoreWIF();
