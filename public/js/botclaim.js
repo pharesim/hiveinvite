@@ -2,8 +2,7 @@ var bot_running = 0;
 
 function botOff() {
   bot_running = 0;
-  getStoreWIF(); 
-  setProperties();
+  getStoreWIF();
 }
 
 document.getElementById('botClaimStart').onclick = function() {
@@ -43,6 +42,7 @@ function botClose() {
   document.getElementById('botClaimStatusClaimed').innerHTML = 0;
   document.getElementById('botClaimHasClaimed').innerHTML = 0;
   hideById('botStoppedWithError');
+  setProperties();
 }
 
 // @todo modals are part of bootstrap, so this uses jquery. remember to adapt when migrating away
