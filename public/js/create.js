@@ -1,14 +1,13 @@
 function reenableCreate() {
-  $("#createAccountNow").show();
-  $("#gearsCreate").hide();
+  showById('createAccountNow');
+  hideById('gearsCreate');
 }
 
-$("#createAccountNow").click(function(e){
-  e.preventDefault();
-  $(this).hide();
-  $("#gearsCreate").show();
+document.getElementById('createAccountNow').onclick = function() {
+  hideById('createAccountNow');
+  showById('gearsCreate');
   let loggedIn = false;
-  let pass = $("#createActiveKey").val();
+  let pass = getValueById('createActiveKey');
   if(steem.auth.isWif(pass)) {
     key = pass;
   } else {
@@ -24,12 +23,12 @@ $("#createAccountNow").click(function(e){
         loggedIn = true;
         let wif = key;
         let steempervest = properties.global.total_vesting_fund_steem.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
-        let delegation = (Math.floor($("#createSP").val() / steempervest * 1000000) / 1000000) +' VESTS';
-        let newAccountName = $("#createAccountName").val();
-        let owner = {'key_auths':[[$("#createOwner").val(),1]],'account_auths':[],'weight_threshold':1};
-        let active = {'key_auths':[[$("#createActive").val(),1]],'account_auths':[],'weight_threshold':1};
-        let posting = {'key_auths':[[$("#createPosting").val(),1]],'account_auths':[],'weight_threshold':1};
-        let memoKey = $("#createMemo").val();
+        let delegation = (Math.floor(getValueById('createSP') / steempervest * 1000000) / 1000000) +' VESTS';
+        let newAccountName = getValueById('createAccountName');
+        let owner = {'key_auths':[[getValueById('createOwner'),1]],'account_auths':[],'weight_threshold':1};
+        let active = {'key_auths':[[getValueById('createActive'),1]],'account_auths':[],'weight_threshold':1};
+        let posting = {'key_auths':[[getValueById('createPosting'),1]],'account_auths':[],'weight_threshold':1};
+        let memoKey = getValueById('createMemo');
         createClaimedAccount(wif,newAccountName,owner,active,posting,memoKey,delegation);
       }
     }
@@ -86,6 +85,7 @@ function createClaimedAccount(w, newAccountName, owner, active, posting, memoKey
               });
             }
             $(".row"+newAccountName).remove();
+            // @todo modal is part of bootstrap, kept json above out of convenience too
             $('#createModal').modal('toggle');
             setProperties();
           }
