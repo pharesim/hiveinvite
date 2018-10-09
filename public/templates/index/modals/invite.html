@@ -1,8 +1,8 @@
-<div class="modal fade" id="inviteModal" tabindex="-1" role="dialog" aria-labelledby="SteemInviteModalLabel" aria-hidden="true">
+<div class="modal fade" id="inviteModal" tabindex="-1" role="dialog" aria-labelledby="inviteModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="SteemInviteModalLabel">Invite to Steem!</h5>
+            <h5 class="modal-title" id="inviteModalLabel"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -12,7 +12,7 @@
             <div class="modal-body">
             
             <div class="form-group row">
-                <label for="inviteLabel" class="col-2 col-form-label">Label*</label>
+                <label for="inviteLabel" class="col-2 col-form-label"><span id="inviteLabelLabel"></span>*</label>
                 <div class="col-10">
                 <input class="form-control required" type="text" value="" id="inviteLabel" autocomplete="off">
                 </div>
@@ -21,39 +21,28 @@
             <div class="form-check">
                 <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" id="inviteByEmail" checked="checked">
-                Uncheck this to get a link directly instead of sending it by mail
+                <span id="inviteByEmailExplainer"></span>
                 </label>
             </div>
     
             <div class="form-group row sendEmail">
-                <label for="inviteEmail" class="col-2 col-form-label">Address*</label>
+                <label for="inviteEmail" class="col-2 col-form-label"><span id="inviteEmailLabel"></span>*</label>
                 <div class="col-10">
                 <input class="form-control" type="text" value="" id="inviteEmail" autocomplete="off">
                 </div>
             </div>
     
             <div class="form-group sendEmail">
-                <label for="emailText">E-Mail text</label>
-                <textarea class="form-control" id="emailText" rows="5">
-Hello,
-
-you have been invited by {} to join the Steem blockchain.
-
-What is that?
-Steem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.
-
-Accept the invitation by clicking on the following link:
-                </textarea>
+                <label for="emailText" id="inviteMailTextLabel"></label>
+                <textarea class="form-control" id="emailText" rows="5"></textarea>
             </div>
     
             <hr />
 
-            <div class="form-text">
-                A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.
-            </div>
+            <div class="form-text" id="inviteDelegateExplainer"></div>
 
             <div class="form-group row">
-                <label for="example-text-input" class="col-8 col-form-label">Amount of Steem Power to delegate*</label>
+                <label for="example-text-input" class="col-8 col-form-label"><span id="inviteDelegateAmount"></span>*</label>
                 <div class="col-4">
                 <input class="form-control required" type="text" value="0" id="inviteSP" autocomplete="off">
                 </div>
@@ -61,12 +50,10 @@ Accept the invitation by clicking on the following link:
 
             <hr />
 
-            <div class="form-text">
-                How many days should the invite be valid before being automatically deleted?
-            </div>
+            <div class="form-text" id="inviteValidityExplainer"></div>
     
             <div class="form-group row">
-                <label for="example-text-input" class="col-8 col-form-label">Validity in days*</label>
+                <label for="example-text-input" class="col-8 col-form-label"><span id="inviteValidityLabel"></span>*</label>
                 <div class="col-4">
                 <input class="form-control required" type="text" value="7" id="inviteValidity" autocomplete="off">
                 </div>
@@ -75,16 +62,16 @@ Accept the invitation by clicking on the following link:
             <hr />
     
             <div class="form-group">
-                <label for="inviteEmail">E-Mail address for status updates*</label>
+                <label for="inviteUsermail"><span id="inviteUsermailLabel"></span>*</label>
                 <input class="form-conrtol" type="text" value="" id="inviteUsermail">
             </div>
     
             </div>
     
             <div class="modal-footer">
-            <button type="submit" class="btn btn-primary" id="createInvite" disabled>Create invitation</button>
+            <button type="submit" class="btn btn-primary" id="createInvite" disabled></button>
             <img src="gears.gif" id="gearsInvite" class="hidden" />
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelInvite"></button>
             </div>
         </form>
         </div>

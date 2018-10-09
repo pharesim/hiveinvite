@@ -63,4 +63,19 @@ function translateIndexContent() {
   setContentById('storeWIFpaidLabel',i18next.t('keys.storeKey'));
   setContentById('paidClaimSubmit',i18next.t('button.submit'));
   setContentById('paidClaimClose',i18next.t('button.close'));
+
+  // invite modal
+  setContentById('inviteModalLabel',i18next.t('invitemodal.title'));
+  setContentById('inviteLabelLabel',i18next.t('invitemodal.label'));
+  setContentById('inviteByEmailExplainer',i18next.t('invitemodal.by_email'));
+  setContentById('inviteEmailLabel',i18next.t('invitemodal.email'));
+  setContentById('inviteMailTextLabel',i18next.t('invitemodal.mailtext_label'));
+  setContentById('emailText',i18next.t('invitemodal.mailtext'));
+  setContentById('inviteDelegateExplainer',i18next.t('invitemodal.delegate'));
+  setContentById('inviteDelegateAmount',i18next.t('invitemodal.delegate_amount'));
+  setContentById('inviteValidityExplainer',i18next.t('invitemodal.validity'));
+  setContentById('inviteValidityLabel',i18next.t('invitemodal.validity_label'));
+  setContentById('inviteUsermailLabel',i18next.t('invitemodal.usermail'));
+  setContentById('createInvite',i18next.t('invitemodal.create'));
+  setContentById('cancelInvite',i18next.t('button.close'));
 }
