@@ -17,7 +17,7 @@ apt install git \
             apache2
 ```
 
-### Installing/Deplyment
+### Installing/Deployment
 
 First, clone this repository into the webroot folder
 
