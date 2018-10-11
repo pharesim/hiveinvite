@@ -35,8 +35,6 @@ function getValueById(id) {
 }
 
 function setContentById(id,content) {
-  console.log(id);
-  console.log(content);
   document.getElementById(id).innerHTML = content;
 }
 
