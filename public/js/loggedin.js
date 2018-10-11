@@ -106,7 +106,7 @@ function updateBalanceState() {
 function fillLoggedIn() { 
   let emailText = document.getElementById('emailText').innerHTML;
 
-  remaining_invites = account.pending_claimed_accounts - pending_invites;
+  let remaining_invites = account.pending_claimed_accounts - pending_invites;
   if(account.pending_claimed_accounts > 0) {
     setContentById('pendingclaimsandinvites',i18next.t('index.pendingclaims',{'count': account.pending_claimed_accounts}));
     setContentById('pendingclaims',account.pending_claimed_accounts);

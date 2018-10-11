@@ -7,10 +7,7 @@ var account   = null;
 
 var properties        = {'global':null,'chain':null};
 
-var remaining_invites = 0;
 var pending_invites   = 0;
-var steem_accounts    = 0;
-var current_timestamp = 0;
 
 var state = {
   'claim_cost_mana': 0,
@@ -180,14 +177,18 @@ function calculateUserRC(username) {
   steem.api.callAsync('rc_api.find_rc_accounts', {accounts: [username]}).then(async function(result) {
     let max_rc = result.rc_accounts[0].max_rc;
     let last_mana = result.rc_accounts[0].rc_manabar.current_mana;
-    let elapsed = current_timestamp - result.rc_accounts[0].rc_manabar.last_update_time;
-    let current_mana = parseFloat(last_mana) + elapsed * max_rc / 432000;
-    if(current_mana > max_rc) {
-      current_mana = max_rc;
-    }
+    steem.api.getBlockHeader(head_block, function(err, result) {
+      var offset = new Date().getTimezoneOffset();
+      let current_timestamp = Math.round(new Date(result.timestamp).getTime()/1000)-(60*offset);
+      let elapsed = current_timestamp - result.rc_accounts[0].rc_manabar.last_update_time;
+      let current_mana = parseFloat(last_mana) + elapsed * max_rc / 432000;
+      if(current_mana > max_rc) {
+        current_mana = max_rc;
+      }
 
-    setState('max_rc',max_rc);
-    setState('current_mana',current_mana);
+      setState('max_rc',max_rc);
+      setState('current_mana',current_mana);
+    });    
   });
 }
 
@@ -220,10 +221,6 @@ async function appstart() {
 function setProperties() {
   steem.api.getDynamicGlobalProperties(async function(err, result) {
     let head_block = result.head_block_number;
-    steem.api.getBlockHeader(head_block, function(err, result) {
-      var offset = new Date().getTimezoneOffset();
-      current_timestamp = Math.round(new Date(result.timestamp).getTime()/1000)-(60*offset);
-    });
     properties.global = result;
     translateIndexContent();
     calculateClaimRC();
