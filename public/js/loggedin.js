@@ -84,21 +84,23 @@ function updateRCState() {
 }
 
 function updateBalanceState() {
-  let claim_cost_steem = properties.chain.account_creation_fee.slice(0,-6);
-  let balance = getState('balance');
-  let steem_accounts = Math.floor(balance / claim_cost_steem);
+  steem.api.getChainProperties(function(err, result) {
+    let claim_cost_steem = result.account_creation_fee.slice(0,-6);
+    let balance = getState('balance');
+    let steem_accounts = Math.floor(balance / claim_cost_steem);
 
-  if(steem_accounts > 0) {
-    setContentById('abletopayforclaim',i18next.t('index.canbuy',{'count': steem_accounts}));
-    setContentById('possiblebuys',steem_accounts);
-    showById('claimsteembutton');
-  } else {
-    setContentById('abletopayforclaim',i18next.t('index.cannotbuy'));
-    hideById('claimsteembutton');
-  }
+    if(steem_accounts > 0) {
+      setContentById('abletopayforclaim',i18next.t('index.canbuy',{'count': steem_accounts}));
+      setContentById('possiblebuys',steem_accounts);
+      showById('claimsteembutton');
+    } else {
+      setContentById('abletopayforclaim',i18next.t('index.cannotbuy'));
+      hideById('claimsteembutton');
+    }
 
-  setContentByClass('steemcost',claim_cost_steem);
-  setContentById('steembalance',balance);
+    setContentByClass('steemcost',claim_cost_steem);
+    setContentById('steembalance',balance);
+  });
 }
 
 // fill in data

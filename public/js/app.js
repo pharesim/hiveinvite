@@ -5,7 +5,7 @@ var store_wif = 0;
 var wif       = '';
 var account   = null;
 
-var properties        = {'global':null,'chain':null};
+var properties        = {'global':null};
 
 var pending_invites   = 0;
 
@@ -231,10 +231,6 @@ function setProperties() {
     translateIndexContent();
     appstart();
     setUpdated();
-  });
-  
-  steem.api.getChainProperties(function(err, result) {
-    properties.chain = result;
   });
 }
 
