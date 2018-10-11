@@ -36,23 +36,20 @@ function getInvites() {
       alert(data['error']);
     } else {
       insertIntoTable(data);
-      translateIndexContent();
       fillLoggedIn();
     }
   });
 }
 
-// fill in data
-function fillLoggedIn() {
-  claim_cost_steem = properties.chain.account_creation_fee.slice(0,-6);
-  balance          = account.balance.slice(0,-6);
+function updateRCState() {
+  let max_rc = getState('max_rc');
+  let claim_cost_mana = getState('claim_cost_mana');
+  let current_mana = getState('current_mana');
 
   let pct = current_mana * 100 / max_rc;
-
-  let emailText = document.getElementById('emailText').innerHTML;
-
   let maxclaims = Math.floor(max_rc / claim_cost_mana);
   let possibleclaims = Math.floor(current_mana / claim_cost_mana);
+
   if(maxclaims > 0) {
     setContentById('canclaimever',i18next.t('index.canclaim',{'count': maxclaims}));
     setContentById('maxclaims',maxclaims);
@@ -62,7 +59,6 @@ function fillLoggedIn() {
     hideById('canclaimnow');
   }
 
-  setContentById('freeExplainAmount',i18next.t('freeclaimmodal.explainamount',{'count': possibleclaims}));
   if(possibleclaims > 0) {
     setContentById('canclaimnowamount',i18next.t('index.canclaimnow',{'count': possibleclaims}));
     setContentByClass('possibleclaims',possibleclaims);
@@ -74,17 +70,41 @@ function fillLoggedIn() {
         elems[i].style.display = 'block';
       }
     }
+
+    showById('claimfreebutton');
   } else {
     setContentById('canclaimnowamount',i18next.t('index.cannotclaimnow'));
+    hideById('claimfreebutton');
   }
 
-  steem_accounts = Math.floor(balance / claim_cost_steem);
+  setContentById('freeExplainAmount',i18next.t('freeclaimmodal.explainamount',{'count': possibleclaims}));
+  setContentById('currentrc',formatRC(current_mana));
+  setContentById('rcpct',Math.round(pct * 100) / 100);
+  setContentByClass('rccost',formatRC(claim_cost_mana));
+  setContentById('maxrc',formatRC(max_rc));
+}
+
+function updateBalanceState() {
+  let claim_cost_steem = properties.chain.account_creation_fee.slice(0,-6);
+  let balance = getState('balance');
+  let steem_accounts = Math.floor(balance / claim_cost_steem);
+
   if(steem_accounts > 0) {
     setContentById('abletopayforclaim',i18next.t('index.canbuy',{'count': steem_accounts}));
     setContentById('possiblebuys',steem_accounts);
+    showById('claimsteembutton');
   } else {
     setContentById('abletopayforclaim',i18next.t('index.cannotbuy'));
+    hideById('claimsteembutton');
   }
+
+  setContentById('steembalance',balance);
+  setContentByClass('steemcost',properties.chain.account_creation_fee);
+}
+
+// fill in data
+function fillLoggedIn() { 
+  let emailText = document.getElementById('emailText').innerHTML;
 
   remaining_invites = account.pending_claimed_accounts - pending_invites;
   if(account.pending_claimed_accounts > 0) {
@@ -102,32 +122,14 @@ function fillLoggedIn() {
     setContentById('pendingclaimsandinvites',i18next.t('index.nopendingclaims'));
   }
 
-  setContentById('maxrc',formatRC(max_rc));
-  setContentById('rcpct',Math.round(pct * 100) / 100);
   setContentById('loggedInUser',username);
-  setContentById('steembalance',account.balance);
+  
   setContentById('emailText',emailText.replace("{}",username));
-  setContentById('currentrc',formatRC(current_mana));
-
-  setContentByClass('steemcost',properties.chain.account_creation_fee);
-  setContentByClass('rccost',formatRC(claim_cost_mana));
 
   if(remaining_invites > 0) {
     showById('inviteModalButton');
   } else {
     hideById('inviteModalButton')
-  }
-  
-  if(steem_accounts > 0) {
-    showById('claimsteembutton');
-  } else {
-    hideById('claimsteembutton');
-  }
-
-  if(possibleclaims > 0) {
-    showById('claimfreebutton');
-  } else {
-    hideById('claimfreebutton');
   }
 
   showById('loggedIn');

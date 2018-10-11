@@ -64,6 +64,7 @@ $("#createInvite").click(function(e){
         alert(data['error']);
       } else {
         insertIntoTable(data);
+        calculateRC();
         fillLoggedIn();
         $("#inviteModal").modal('hide');
         $("#inviteEmail, #inviteLabel").val("");

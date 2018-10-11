@@ -4,18 +4,21 @@ var username  = null;
 var store_wif = 0;
 var wif       = '';
 var account   = null;
-var balance   = 0;
-var max_rc    = 0;
 
 var properties        = {'global':null,'chain':null};
 var claim_cost_steem  = 0;
-var claim_cost_mana   = 0;
 
 var remaining_invites = 0;
 var pending_invites   = 0;
 var steem_accounts    = 0;
-var current_mana      = 0;
 var current_timestamp = 0;
+
+var state = {
+  'claim_cost_mana': 0,
+  'max_rc': 0,
+  'current_mana': 0,
+  'balance': 0
+}
 
 //*** js helper functions ***/
 
@@ -32,6 +35,8 @@ function getValueById(id) {
 }
 
 function setContentById(id,content) {
+  console.log(id);
+  console.log(content);
   document.getElementById(id).innerHTML = content;
 }
 
@@ -60,6 +65,21 @@ function sleep(ms) {
 function increment(elem) {
   elem.innerHTML = parseInt(elem.innerHTML) + 1;
   return true;
+}
+
+//*** state handling functions */
+
+function getState(id) {
+  return state[id];
+}
+
+function setState(id,value) {
+  state[id] = value;
+  if(id == 'claim_cost_mana' || id == 'max_rc' || id == 'current_mana') {
+    updateRCState();
+  } else if(id == 'balance') {
+    updateBalanceState();
+  }
 }
 
 //*** WIF storage handling ***/
@@ -124,6 +144,11 @@ function formatRC(rc) {
   return mana+'M';
 }
 
+function calculateRC() {
+  calculateUserRC();
+  calculateClaimRC();
+}
+
 function calculateClaimRC() {
   let rc_regen = Math.round(properties.global.total_vesting_shares.slice(0,-6) / ((60*60*24*5)/3)) * 1000000;
   let total_cost = 0;
@@ -145,13 +170,27 @@ function calculateClaimRC() {
         num = num + 1;
         num = num * result.resource_params[key].resource_dynamics_params.resource_unit;
         denom = result.resource_params[key].price_curve_params.coeff_b + result2.resource_pool[key].pool;
-        num_denom = Math.round(num / denom);
+        let num_denom = Math.round(num / denom);
         total_cost = total_cost + num_denom;    
       });
-      claim_cost_mana = total_cost;
-
-      appstart();
+      
+      setState('claim_cost_mana',total_cost);
     });
+  });
+}
+
+function calculateUserRC(username) {
+  steem.api.callAsync('rc_api.find_rc_accounts', {accounts: [username]}).then(async function(result) {
+    let max_rc = result.rc_accounts[0].max_rc;
+    let last_mana = result.rc_accounts[0].rc_manabar.current_mana;
+    let elapsed = current_timestamp - result.rc_accounts[0].rc_manabar.last_update_time;
+    let current_mana = parseFloat(last_mana) + elapsed * max_rc / 432000;
+    if(current_mana > max_rc) {
+      current_mana = max_rc;
+    }
+
+    setState('max_rc',max_rc);
+    setState('current_mana',current_mana);
   });
 }
 
@@ -167,18 +206,10 @@ async function appstart() {
     username = localStorage.username;
     steem.api.getAccounts([username], function(err, response){
       account = response[0];
-      steem.api.callAsync('rc_api.find_rc_accounts', {accounts: [username]}).then(async function(result) {
-        max_rc = result.rc_accounts[0].max_rc;
-        last_mana = result.rc_accounts[0].rc_manabar.current_mana;
-        elapsed = current_timestamp - result.rc_accounts[0].rc_manabar.last_update_time;
-        current_mana = parseFloat(result.rc_accounts[0].rc_manabar.current_mana) + elapsed * max_rc / 432000;
-        if(current_mana > max_rc) {
-          current_mana = max_rc;
-        }
-        hideById('loggedOut');
-        
-        getInvites();
-      });
+      setState('balance',account.balance.slice(0,-6));
+      calculateUserRC(username);
+      getInvites();
+      hideById('loggedOut');
     });
   } else {
     translateIndexContent();
@@ -197,7 +228,9 @@ function setProperties() {
       current_timestamp = Math.round(new Date(result.timestamp).getTime()/1000)-(60*offset);
     });
     properties.global = result;
+    translateIndexContent();
     calculateClaimRC();
+    appstart();
     setUpdated();
   });
   
