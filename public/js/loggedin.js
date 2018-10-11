@@ -120,8 +120,6 @@ function fillLoggedIn() {
   } else {
     setContentById('pendingclaimsandinvites',i18next.t('index.nopendingclaims'));
   }
-
-  setContentById('loggedInUser',username);
   
   setContentById('emailText',emailText.replace("{}",username));
 

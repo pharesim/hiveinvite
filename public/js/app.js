@@ -206,6 +206,7 @@ async function appstart() {
   if (localStorage.username) {
     hideById('loggedOut');
     username = localStorage.username;
+    setContentById('loggedInUser',username);
     steem.api.getAccounts([username], async function(err, response){
       account = response[0];
       setState('balance',account.balance.slice(0,-6));
