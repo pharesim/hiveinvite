@@ -130,8 +130,6 @@ function fillLoggedIn() {
   } else {
     hideById('inviteModalButton')
   }
-
-  showById('loggedIn');
 }
 
 function insertIntoTable(data) {

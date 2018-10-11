@@ -213,6 +213,7 @@ async function appstart() {
       getInvites();
       await sleep(1000);
       fillLoggedIn();
+      showById('loggedIn');
     });
   } else {
     translateIndexContent();
