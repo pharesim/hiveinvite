@@ -6,7 +6,6 @@ var wif       = '';
 var account   = null;
 
 var properties        = {'global':null,'chain':null};
-var claim_cost_steem  = 0;
 
 var remaining_invites = 0;
 var pending_invites   = 0;

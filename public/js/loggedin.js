@@ -98,8 +98,8 @@ function updateBalanceState() {
     hideById('claimsteembutton');
   }
 
+  setContentByClass('steemcost',claim_cost_steem);
   setContentById('steembalance',balance);
-  setContentByClass('steemcost',properties.chain.account_creation_fee);
 }
 
 // fill in data

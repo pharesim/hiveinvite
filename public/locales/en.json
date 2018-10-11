@@ -11,7 +11,7 @@
         "greeting": "Hello <span id='loggedInUser'>username</span>!",
 
         "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
-        "tokencost": "The current cost for a claim is <span class='steemcost'>0 STEEM</span> or <span class='rccost'>0</span> RC mana",
+        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
  
         "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "You have claimed <span id='pendingclaims'>0</span> accounts. <span id='invitespending'></span>",
@@ -60,7 +60,7 @@
     },
     "paidclaimmodal": {
         "title": "Pay to claim a steem account",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0 STEEM</span><br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
     },
     "invitemodal": {
         "title": "Invite to Steem!",
