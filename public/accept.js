@@ -84,6 +84,8 @@ $("#finish_step1").click(
 
 $("#newusername").keyup(
   function(){
+    $("#finish_step2").prop('disabled',true);
+
     newname = $(this).val().replace(/[^a-z0-9!\-]+/g, "");
     if(newname.lenth > 15) {
       newname = newname.substr(0,15);
@@ -93,13 +95,11 @@ $("#newusername").keyup(
     if(newname.length >= 3) {
       steem.api.getAccounts([newname], function(err, result){     
         if(typeof result[0] !== "undefined") {
-          $("#finish_step2").prop('disabled',true);
           $("#fillusername").text("");
           $("#usernameerror").text("Username exists");
         } else {
           let isValidUsername = steem.utils.validateAccountName(newname);
           if (isValidUsername != null) {
-            $("#finish_step2").prop('disabled',true);
             $("#fillusername").text("");
             $("#usernameerror").text(isValidUsername);
           } else {
@@ -109,8 +109,7 @@ $("#newusername").keyup(
           }
         }
       });
-    } else {
-      $("#finish_step2").prop('disabled',true);
+    } else {      
       $("#fillusername").text("");
     }
   }
