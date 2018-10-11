@@ -139,8 +139,8 @@ function formatRC(rc) {
 }
 
 function calculateRC() {
-  calculateUserRC();
   calculateClaimRC();
+  calculateUserRC();
 }
 
 function calculateClaimRC() {
@@ -204,13 +204,15 @@ function isEmail(email) {
 async function appstart() {
   //  localStorage.removeItem("username");
   if (localStorage.username) {
+    hideById('loggedOut');
     username = localStorage.username;
-    steem.api.getAccounts([username], function(err, response){
+    steem.api.getAccounts([username], async function(err, response){
       account = response[0];
       setState('balance',account.balance.slice(0,-6));
-      calculateUserRC();
+      calculateRC();
       getInvites();
-      hideById('loggedOut');
+      await sleep(1000);
+      fillLoggedIn();
     });
   } else {
     translateIndexContent();
@@ -225,7 +227,6 @@ function setProperties() {
   steem.api.getDynamicGlobalProperties(async function(err, result) {
     properties.global = result;
     translateIndexContent();
-    calculateClaimRC();
     appstart();
     setUpdated();
   });

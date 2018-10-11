@@ -36,7 +36,6 @@ function getInvites() {
       alert(data['error']);
     } else {
       insertIntoTable(data);
-      fillLoggedIn();
     }
   });
 }
