@@ -132,6 +132,7 @@ function fillLoggedIn() {
   }
 }
 
+inviteData = {}
 function insertIntoTable(data) {
   // @todo refactor in own function to get rid of jquery
   $("#pendingInvites").empty();
@@ -164,7 +165,7 @@ function insertIntoTable(data) {
     if(data[i]['account'] != null) {
       steempervest = properties.global.total_vesting_fund_steem.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
       vests = Math.ceil(data[i]['steempower'] / steempervest);
-      link = '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal" id="createModalButton'+data[i]['account']+'">';
+      link = '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal" id="createModalButton'+data[i]['account']+'" data-username="'+data[i]['account']+'">';
       link = link+'Create account @'+data[i]['account']+'</button>';      
       append = append+link;
     }
@@ -173,20 +174,23 @@ function insertIntoTable(data) {
 
     let elem = document.getElementById('pendingInvites');
     elem.innerHTML = elem.innerHTML + append;
+  }
 
+  // add onclick handlers after appending everything, as a new append will destroy them
+  for(var i = 0, len = data.length; i < len; i++) {
     if(data[i]['account'] != null) {
-      let tmp = data[i];
+      inviteData[data[i]['account']] = data[i];
       document.getElementById('createModalButton'+data[i]['account']).onclick = function() {
-        setValueById('createAccountName',tmp['account']);
-        setValueById('createSP',tmp['steempower']);
-        setValueById('createCreator',tmp['username']);
-        setValueById('createOwner',tmp['owner']);
-        setValueById('createActive',tmp['active']);
-        setValueById('createPosting',tmp['posting']);
-        setValueById('createMemo',tmp['memo']);
-      }
+        account = this.dataset.username;
+        setValueById('createAccountName',inviteData[account]['account']);
+        setValueById('createSP',inviteData[account]['steempower']);
+        setValueById('createCreator',inviteData[account]['username']);
+        setValueById('createOwner',inviteData[account]['owner']);
+        setValueById('createActive',inviteData[account]['active']);
+        setValueById('createPosting',inviteData[account]['posting']);
+        setValueById('createMemo',inviteData[account]['memo']);
+      };
     }
-
   }
 
   if(pending_invites > 0) {
