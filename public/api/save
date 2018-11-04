@@ -46,7 +46,7 @@ if validinvite != True:
 if remaining > 1:
   db.update('invites',{'remaining':remaining - 1},{'inviteid':inviteid})
   newinviteid = uuid.uuid4().hex
-  db.insert('invites',{'inviteid':newinviteid,'label':label+'.'+newinviteid,'steempower':steempower,'validity':validity,'username':username,'usermail':usermail,'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP','remaining':1})
+  db.insert('invites',{'inviteid':newinviteid,'label':label+'.'+newinviteid[:4],'steempower':steempower,'validity':validity,'username':username,'usermail':usermail,'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP','remaining':1})
 else:
   db.update('invites',{'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP'},{'inviteid':inviteid})
 savedinvite = True
