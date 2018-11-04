@@ -71,6 +71,7 @@ function translateIndexContent() {
   setContentById('inviteEmailLabel',i18next.t('invitemodal.email'));
   setContentById('inviteMailTextLabel',i18next.t('invitemodal.mailtext_label'));
   setContentById('emailText',i18next.t('invitemodal.mailtext'));
+  setContentById('linksAmountLabel',i18next.t('invitemodal.linkamount'));
   setContentById('inviteDelegateExplainer',i18next.t('invitemodal.delegate'));
   setContentById('inviteDelegateAmount',i18next.t('invitemodal.delegate_amount'));
   setContentById('inviteValidityExplainer',i18next.t('invitemodal.validity'));

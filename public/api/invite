@@ -14,6 +14,9 @@ import uuid
 import time
 import datetime
 
+def insert_invite(inviteid, label, email, address, mailtext, steempower, validity, username, usermail):
+  db.insert('invites',{'inviteid':inviteid,'label':label,'email':email,'address':address,'mailtext':mailtext,'steempower':steempower,'validity':validity,'username':username,'usermail':usermail})
+
 # output variable
 invites = []
 
@@ -24,6 +27,7 @@ label      = form.getvalue('label')
 email      = form.getvalue('email')
 address    = form.getvalue('address')
 mailtext   = form.getvalue('mailtext')
+amount     = form.getvalue('amount')
 steempower = form.getvalue('sp')
 validity   = form.getvalue('validity')
 username   = form.getvalue('username')
@@ -55,8 +59,14 @@ if username and usermail:
   # write
   if email != 'true':
     mailtext = ''
-  db.insert('invites',{'inviteid':inviteid,'label':label,'email':email,'address':address,'mailtext':mailtext,'steempower':steempower,'validity':validity,'username':username,'usermail':usermail})
-
+  if int(amount) > 1:
+    for x in range(int(amount)):
+      inviteid = uuid.uuid4().hex
+      batchlabel = label+'.'+str(x+1)
+      insert_invite(inviteid, batchlabel, email, address, mailtext, steempower, validity, username, usermail)
+  else:
+    insert_invite(inviteid, label, email, address, mailtext, steempower, validity, username, usermail)
+  
   # send invitation mail
   if email == 'true':
     try:

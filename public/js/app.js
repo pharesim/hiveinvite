@@ -5,9 +5,10 @@ var store_wif = 0;
 var wif       = '';
 var account   = null;
 
-var properties        = {'global':null};
+var properties = {'global':null};
 
 var pending_invites   = 0;
+var remaining_invites = 0
 
 var state = {
   'claim_cost_mana': 0,
@@ -22,8 +23,22 @@ function hideById(id) {
   document.getElementById(id).style.display = 'none';
 }
 
+function hideByClass(classname) {
+  let elems = document.getElementsByClassName(classname);
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].style.display = 'none';
+  }
+}
+
 function showById(id) {
   document.getElementById(id).style.display = 'block';
+}
+
+function showByClass(classname) {
+  let elems = document.getElementsByClassName(classname);
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].style.display = 'block';
+  }
 }
 
 function getValueById(id) {
@@ -38,7 +53,7 @@ function setContentByClass(classname,content) {
   let elems = document.getElementsByClassName(classname);
   for (let i = 0; i < elems.length; i++) {
     elems[i].innerHTML = content;
-  } 
+  }
 }
 
 function setValueById(id,value) {

@@ -28,13 +28,25 @@ function reenableInvite() {
   $("#gearsInvite").hide();
 }
 
+hideByClass("noEmail");
 $("#inviteByEmail").click(function(){
   if($(this).is(':checked')){
     $(".sendEmail").show();
+    hideByClass("noEmail");
   } else {
     $(".sendEmail").hide();
+    showByClass("noEmail");
   }
 });
+
+document.getElementById("linksAmount").oninput = function() {
+  if(this.value > remaining_invites) {
+    this.value = remaining_invites;
+    alert("You can't create more than "+remaining_invites+" links");
+  } else if(this.value < 1) {
+    this.value = 1;
+  }
+}
 
 $(".required, #inviteByEmail, #inviteEmail, #inviteUsermail").change(function(){validateModalForm();});
 
@@ -50,6 +62,7 @@ $("#createInvite").click(function(e){
         email: $("#inviteByEmail").is(":checked"),
         address: $("#inviteEmail").val(),
         mailtext: $("#emailText").val(),
+        amount: document.getElementById("linksAmount").value,
         sp: $("#inviteSP").val(),
         validity: $("#inviteValidity").val(),
         usermail: $("#inviteUsermail").val(),
@@ -68,6 +81,7 @@ $("#createInvite").click(function(e){
         fillLoggedIn();
         $("#inviteModal").modal('hide');
         $("#inviteEmail, #inviteLabel").val("");
+        document.getElementById("linksAmount").value = 1;
       }
 
       reenableInvite();
