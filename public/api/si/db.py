@@ -45,8 +45,11 @@ def insert(table,values):
   valuesquery = ') VALUES ('
   for key,value in values.items():
     query = query+key
-    valuesquery = valuesquery+'?'
-    t = t + (value,)
+    if value == 'CURRENT_TIMESTAMP':
+      valuesquery = valuesquery+value
+    else:
+      valuesquery = valuesquery+'?'
+      t = t + (value,)
     count = count + 1
     if count < length:
       query = query+', '

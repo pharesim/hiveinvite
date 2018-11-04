@@ -9,6 +9,7 @@ CREATE TABLE invites (
   username TEXT NOT NULL,
   usermail TEXT NOT NULL,
   created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+  remaining NUMERIC,
   accepted TIMESTAMP,
   account TEXT,
   owner TEXT,

@@ -145,7 +145,7 @@ function insertIntoTable(data) {
     append = append+'</td><td>';
 
     if(data[i]['address'] == null) {
-      data[i]['address'] = '<a href="https://steeminvite.com/accept.html?inviteid='+data[i]['inviteid']+'">Link</a>';
+      data[i]['address'] = '<a href="/accept.html?inviteid='+data[i]['inviteid']+'">Link</a>';
     }
     append = append+data[i]['address']
     append = append+'</td><td>';
@@ -157,6 +157,9 @@ function insertIntoTable(data) {
     append = append+'</td><td>';
 
     append = append+data[i]['validity']
+    append = append+'</td><td>';
+
+    append = append+data[i]['remaining']
     append = append+'</td><td>';
 
     append = append+data[i]['accepted']

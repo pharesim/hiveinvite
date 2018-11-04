@@ -10,6 +10,7 @@ import api
 import errorHandler
 
 import cgi
+import uuid
 import time
 import datetime
 
@@ -25,7 +26,7 @@ validinvite = False
 savedinvite = False
 nowts = time.time()
 
-results = db.select('invites',['created','validity','usermail'],{'inviteid':inviteid,'accepted': 'is null'},'created DESC')
+results = db.select('invites',['label','steempower','created','validity','username','usermail','remaining'],{'inviteid':inviteid,'accepted': 'is null'},'created DESC')
 for result in results:
   createdts = time.mktime(datetime.datetime.strptime(result['created'], "%Y-%m-%d %H:%M:%S").timetuple())
   validtill = createdts + (result['validity'] * 60 * 60 * 24)
@@ -33,12 +34,21 @@ for result in results:
     db.delete('invites',{'inviteid':result['inviteid']})
   else:
     validinvite = True
-    usermail = result['usermail']
-
+    username   = result['username']
+    usermail   = result['usermail']
+    remaining  = result['remaining']
+    label      = result['label']
+    steempower = result['steempower']
+    validity   = result['validity']
 if validinvite != True:
   errorHandler.throwError('No valid invite found')
 
-db.update('invites',{'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP'},{'inviteid':inviteid})
+if remaining > 1:
+  db.update('invites',{'remaining':remaining - 1},{'inviteid':inviteid})
+  newinviteid = uuid.uuid4().hex
+  db.insert('invites',{'inviteid':newinviteid,'label':label+'.'+newinviteid,'steempower':steempower,'validity':validity,'username':username,'usermail':usermail,'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP','remaining':1})
+else:
+  db.update('invites',{'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP'},{'inviteid':inviteid})
 savedinvite = True
   
 mailer.sendmail(usermail,'One of your steem invitations was accepted',"Visit https://steeminvite.com/ to finish account creation.")

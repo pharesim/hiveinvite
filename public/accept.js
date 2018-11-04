@@ -161,6 +161,8 @@ $("#finish_step3").click(
 );
 
 $("#finish").click(function(){
+  $(this).hide();
+  $("#gearsAccept").show();
   $.ajax({
     url: "api/save",
     type: "POST",

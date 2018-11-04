@@ -33,9 +33,26 @@ $("#inviteByEmail").click(function(){
   if($(this).is(':checked')){
     $(".sendEmail").show();
     hideByClass("noEmail");
+    hideByClass("multiInvites");
+    document.getElementById("linksAmount").value = 1;
+    document.getElementById("multiInviteAmount").value = 1;
+    document.getElementById("multiInvite").checked = false;
   } else {
     $(".sendEmail").hide();
     showByClass("noEmail");
+  }
+});
+
+hideByClass("multiInvites");
+$("#multiInvite").click(function(){
+  if($(this).is(':checked')){
+    showByClass("multiInvites");
+    hideById("linksAmountDiv");
+    document.getElementById("linksAmount").value = 1;
+  } else {
+    hideByClass("multiInvites");
+    showById("linksAmountDiv");
+    document.getElementById("multiInviteAmount").value = 1;
   }
 });
 
@@ -63,6 +80,7 @@ $("#createInvite").click(function(e){
         address: $("#inviteEmail").val(),
         mailtext: $("#emailText").val(),
         amount: document.getElementById("linksAmount").value,
+        multi: document.getElementById("multiInviteAmount").value,
         sp: $("#inviteSP").val(),
         validity: $("#inviteValidity").val(),
         usermail: $("#inviteUsermail").val(),
@@ -82,6 +100,7 @@ $("#createInvite").click(function(e){
         $("#inviteModal").modal('hide');
         $("#inviteEmail, #inviteLabel").val("");
         document.getElementById("linksAmount").value = 1;
+        document.getElementById("multiInviteAmount").value = 1;
       }
 
       reenableInvite();
