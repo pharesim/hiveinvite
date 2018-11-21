@@ -3,7 +3,9 @@
         "greeting": "Make a Steemian!",
         "explainer": "Steeminvite is a service that allows you to invite your friends to steem.",
         "buttontext": "to get started.",
-        "login_error": "Login error"
+        "login_error": "Login error",
+        "usernamePlaceholder": "Your steem username",
+        "postingkeyPlaceholder": "Your privat Posting-Key"
     },
     "index": {
         "lastupdate": "Last update",
