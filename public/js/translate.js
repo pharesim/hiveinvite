@@ -35,6 +35,8 @@ function translateIndexContent() {
   setContentById('abletobuy',i18next.t('index.abletobuy'));
   setContentById('paidClaimModalButton',i18next.t('index.claimsteemmodal'));
   setContentById('inviteModalButton',i18next.t('index.invitemodal'));
+  document.getElementById('loginUsername').placeholder=i18next.t('loggedout.usernamePlaceholder');
+  document.getElementById('loginPostingKey').placeholder=i18next.t('loggedout.postingkeyPlaceholder');
 
   // free claim modal
   setContentById('freeClaimModalLabel',i18next.t('freeclaimmodal.title'));
