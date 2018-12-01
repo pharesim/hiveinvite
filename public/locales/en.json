@@ -5,7 +5,7 @@
         "buttontext": "to get started.",
         "login_error": "Login error",
         "usernamePlaceholder": "Your steem username",
-        "postingkeyPlaceholder": "Your private Posting-Key"
+        "postingkeyPlaceholder": "Your private posting key"
     },
     "index": {
         "lastupdate": "Last update",
