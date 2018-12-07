@@ -87,7 +87,7 @@ Please submit pull requests for any contributions
 
 ## Authors
 
-* **Pharesim** - *idea and initial work* - [pharesim.me](https://pharesim.me)
+* **Pharesim** - *idea and initial work* - [pharesim.me](http://pharesim.me)
 
 ## License
 
