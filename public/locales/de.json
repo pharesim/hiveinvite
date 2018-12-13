@@ -51,7 +51,7 @@
         "working": "Beschäftigt! <span id='botClaimStatusClaimed'>0</span> Accounts bisher erstellt.",
         "stopped": "Gestoppt nach <span id='botClaimHasClaimed'>0</span> erstellten Accounts.<br />Fehlermeldung: <span id='botClaimError'></span>",
         "start": "Start",
-        "close": "Stop/Close"
+        "close": "Stop/Schließen"
     },
     "paidclaimmodal": {
         "title": "Bezahle um einen Steem Acount zu erstellen",
@@ -81,15 +81,15 @@
         "login_now": "Jetzt einloggen",
         "logout": "Logout",
         "close": "Schließen",
-        "proceed": "Proceed"
+        "proceed": "Fortfahren"
     },
     "keys": {
         "wrong_key": "Ungültiger Key",
         "active_required": "Diese Aktion benötigt deinen Private Active-Key.",
-        "active": "Active key",
-        "posting": "Posting key",
-        "owner": "Owner key",
-        "memo": "Memo key",
+        "active": "Active Key",
+        "posting": "Posting Key",
+        "owner": "Owner Key",
+        "memo": "Memo Key",
         "storeKey": "Key für diese Sitzung merken"
     },
     "language": {
@@ -98,7 +98,7 @@
         "de": "Deutsch"
     },
     "step1": {
-        "lead": "Hi! You are only a few steps away from getting your own Steem account!",
+        "lead": "Hi! Du bist nur ein paar Schritte von deinem eigenen Steem-Account entfernt!",
         "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
         "submit": "I have written down the password and will never ever lose it"
     },
