@@ -99,8 +99,8 @@
     },
     "step1": {
         "lead": "Hi! Du bist nur ein paar Schritte von deinem eigenen Steem-Account entfernt!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "text": "Dein Konto enthält deine persönliche Wallet, daher ist Sicherheit extrem wichtig.<br />Wir haben ein Master-Passwort für dein Konto generiert, das du an einem sicheren Ort aufbewahren musst. Schreibe es irgendwo auf!",
+        "submit": "Ich habe das Passwort aufgeschrieben und werde es nie wieder verlieren."
     },
     "step2": {
         "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
