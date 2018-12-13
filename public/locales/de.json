@@ -8,7 +8,7 @@
         "postingkeyPlaceholder": "Dein Privat Posting-Key"
     },
     "index": {
-        "lastupdate": "Letztes Update",
+        "lastupdate": "Letzte Aktualisierung",
         "refresh": "Jetzt aktualisieren",
         "greeting": "Hey <span id='loggedInUser'>username</span>!",
         "tokenexplain": "Um ein Steem-Konto zu erstellen, musst du zuerst einen Token beanspruchen. Diesen Token kannst du erhalten, indem du eine bestimmte Menge an STEEM verbrennst oder eine große Menge an RC-Mana ausgibst. Im Gegenzug erhält das neue Konto eine minimale Menge an RC-Mana, die benötigt wird um minimale Aktionen auf der Blockchain durchführen zu können ohne eigene SteemPower zu besitzen.",
