@@ -1,8 +1,8 @@
 {
     "loggedout": {
-        "greeting": "Make a Steemian!",
-        "explainer": "Steeminvite is a service that allows you to invite your friends to steem.",
-        "buttontext": "to get started.",
+        "greeting": "¡Crea un Steemian!",
+        "explainer": "Steeminvite es un servicio que te permite invitar a tus amigos a steem.",
+        "buttontext": "para empezar.",
         "login_error": "Login error",
         "usernamePlaceholder": "Your steem username",
         "postingkeyPlaceholder": "Your private posting key"
