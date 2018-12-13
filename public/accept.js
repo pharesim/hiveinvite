@@ -1,3 +1,15 @@
+
+i18next
+.use(i18nextXHRBackend)
+.use(i18nextBrowserLanguageDetector)
+.init({
+  fallbackLng: 'en',
+  debug: false,
+  backend: {
+    loadPath: 'locales/{{lng}}.json'
+  }
+});
+
 newname    = "";
 passPhrase = "";
 wordCount  = 1626;
@@ -72,6 +84,7 @@ $.ajax({
     } else {
       $("#invalid").show();
     }
+    translateContent();
   }
 });
 
@@ -106,7 +119,7 @@ $("#newusername").keyup(
             $("#usernameerror").text(isValidUsername);
           } else {
             $("#finish_step2").removeAttr("disabled");
-            $("#fillusername").text("as @"+newname);
+            $("#fillusername").text(i18next.t('step2.as')+" @"+newname);
             $("#usernameerror").text("");
           }
         }
@@ -184,3 +197,28 @@ $("#finish").click(function(){
     }
   });
 });
+
+function translateContent() {
+  // languages
+  setContentById('step1Lead',i18next.t('step1.lead'));
+  setContentById('step1Text',i18next.t('step1.text'));
+  setContentById('finish_step1',i18next.t('step1.submit'));
+
+  setContentById('step2Lead',i18next.t('step2.lead'));
+  setContentById('step2Text',i18next.t('step2.text'));
+  setContentById('step2Username',i18next.t('step2.username'));
+  setContentById('step2Proceed',i18next.t('button.proceed'));
+
+  setContentById('step3Text',i18next.t('step3.text'));
+  setContentById('finish_step3',i18next.t('button.proceed'));
+
+  setContentById('step4Text',i18next.t('step4.text'));
+  setContentById('step4Posting',i18next.t('keys.posting'));
+  setContentById('step4Active',i18next.t('keys.active'));
+  setContentById('step4Memo',i18next.t('keys.memo'));
+  setContentById('step4Owner',i18next.t('keys.owner'));
+  setContentById('step4Warning',i18next.t('step4.warning'));
+  setContentById('step4Confirm',i18next.t('step4.confirm'));
+  setContentById('finish',i18next.t('step4.finish'));
+  setContentById('invalid',i18next.t('accept.invalid'));
+}

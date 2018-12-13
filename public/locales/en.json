@@ -87,17 +87,45 @@
         "login": "Login",
         "login_now": "Login now",
         "logout": "Logout",
-        "close": "Close"      
+        "close": "Close",
+        "proceed": "Proceed"
     },
     "keys": {
         "wrong_key": "Invalid key",
         "active_required": "This action requires your active key.",     
         "active": "Active key",
+        "posting": "Posting key",
+        "owner": "Owner key",
+        "memo": "Memo key",
         "storeKey": "Remember key for this session"
     },
     "language": {
         "switch": "Switch language...",
         "en": "english",
         "de": "german"
+    },
+
+    "step1": {
+        "lead": "Hi! You are only a few steps away from getting your own Steem account!",
+        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
+        "submit": "I have written down the password and will never ever lose it"
+    },
+    "step2": {
+        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
+        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
+        "username": "Your username",
+        "as": "as"
+    },
+    "step3": {
+        "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
+    },
+    "step4": {
+        "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
+        "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
+        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
+        "finish": "Finish account request and leave this site"
+    },
+    "accept": {
+        "invalid": "Invalid invitation ID, sorry!"
     }
 }
