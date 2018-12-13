@@ -5,14 +5,14 @@
         "buttontext": "para empezar.",
         "login_error": "Error de inicio de sesión",
         "usernamePlaceholder": "Tu nombre de usuario de steem",
-        "postingkeyPlaceholder": "Your private posting key"
+        "postingkeyPlaceholder": "Tu clave privada de publicación"
     },
     "index": {
-        "lastupdate": "Last update",
-        "refresh": "Refresh now",
-        "greeting": "Hello <span id='loggedInUser'>username</span>!",
-        "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
-        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
+        "lastupdate": "Última actualización",
+        "refresh": "Actualizar ahora",
+        "greeting": "¡Hola <span id='loggedInUser'>username</span>!",
+        "tokenexplain": "Para crear una cuenta de steem, primero necesitará solicitar un token. Éstos pueden obtenerse por quemar una cierta cantidad de STEEM, o gastar una gran cantidad de mana RC. A cambio, la nueva cuenta recibe una cantidad mínima de RC mana para tramitar en el blockchain sin poseer Steem Power.",
+        "tokencost": "El costo actual de una reclamación es <span class='steemcost'>0</span> STEEM o <span class='rccost'>0</span> RC mana",
         "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "You have claimed <span id='pendingclaims'>0</span> accounts. <span id='invitespending'></span>",
         "nopendingclaims": "You have not claimed any accounts yet.",
