@@ -11,21 +11,16 @@
         "lastupdate": "Letztes Update",
         "refresh": "Jetzt aktualisieren",
         "greeting": "Hey <span id='loggedInUser'>username</span>!",
-
         "tokenexplain": "Um ein Steem-Konto zu erstellen, musst du zuerst einen Token beanspruchen. Diesen Token kannst du erhalten, indem du eine bestimmte Menge an STEEM verbrennst oder eine große Menge an RC-Mana ausgibst. Im Gegenzug erhält das neue Konto eine minimale Menge an RC-Mana, die benötigt wird um minimale Aktionen auf der Blockchain durchführen zu können ohne eigene SteemPower zu besitzen.",
         "tokencost": "Die aktuellen Kosten für eine Account-Beanspruchung betragen momentan <span class='steemcost'>0</span> STEEM oder <span class='rccost'>0</span> RC-Mana",
-
         "pendingclaims": "Du hast einen Account erstellt. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Du hast <span id='pendingclaims'>0</span> Accounts beansprucht. <span id='invitespending'></span>",
         "nopendingclaims": "Du hast noch keine Accounts erstellt.",
-
         "invitespending": "Eine Einladung ist noch ausstehend, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
         "invitespending_plural": "<span id='pendinginvites'>0</span> Einladungen sind ausstehend, <span id='invitemore'></span>",
         "noinvitespending": "Es sind keine Einladungen ausstehend, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
-
         "invitemore": "so dass du jetzt einen Freund einladen kannst!<span id='remaininginvites' class='hidden'></span>",
         "invitemore_plural": "so dass du <span id='remaininginvites'>0</span> weitere Freunde einladen kannst.",
-
         "abletoclaim": "Deine maximale RC-Mana beträgt <span id='maxrc'>0</span>. <span id='canclaimever'></span><br /><span id='canclaimnow'>Du verfügst momentan über <span id='rcpct'>0</span>% RC-Mana, <span id='canclaimnowamount'></span></span>",
         "canclaim": "Somit kannst du bei 100% ein Konto erstellen. <span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "was dir erlaubt <span id='maxclaims'>0</span> Accounts bei 100%RC zu erstellen.",
@@ -33,12 +28,10 @@
         "canclaimnow": "somit kannst du einen Account erstellen.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "somit kannst du <span class='possibleclaims'>0</span> Accounts sofort erstellen.",
         "cannotclaimnow": "somit musst du noch ein wenig warten, bis du ein Konto erstellen kannst.",
-
         "abletobuy": "Mit deinem Kontostand von <span id='steembalance'>0 STEEM</span> STEEM kannst du <span id='abletopayforclaim'></span>",
         "canbuy": "theoretisch ein weiteres Konto beanspruchen. <span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "theoretisch weitere <span id='possiblebuys'>0</span> Konten beanspruchen.",
         "cannotbuy": "keine weiteren Konten mehr beanspruchen. Hol dir noch mehr STEEM!",
-
         "claimfreemodal": "Kostenfreier Account (RC-Mana)",
         "claimsteemmodal": "Bezahlter Account (STEEM)",
         "invitemodal": "Jetzt eine Person einladen"
