@@ -3,7 +3,7 @@
         "greeting": "Erstelle einen Steemian!",
         "explainer": "Steeminvite ist ein Service, mit dem du deine Freunde zum Steem einladen kannst.",
         "buttontext": "um direkt los zu legen.",
-        "login_error": "Login Fehler.",
+        "login_error": "Login Fehler",
         "usernamePlaceholder": "Dein Steem Username (ohne @)",
         "postingkeyPlaceholder": "Dein Privat Posting-Key"
     },
