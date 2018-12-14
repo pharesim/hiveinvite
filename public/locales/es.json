@@ -118,6 +118,6 @@
         "finish": "Finalizar solicitud de cuenta y abandonar este sitio"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "ID de invitación no válida ¡lo siento!"
     }
 }
