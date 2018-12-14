@@ -32,17 +32,17 @@
         "canbuy": "en teoría reclamar una cuenta más.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "en teoría reclamar otras <span id='possiblebuys'>0</span> cuentas.",
         "cannotbuy": "no reclamar más cuentas. ¡Consigue un poco más de STEEM!",
-        "claimfreemodal": "Free claim",
-        "claimsteemmodal": "Paid claim",
-        "invitemodal": "Invite someone now"
+        "claimfreemodal": "Reclamación gratis",
+        "claimsteemmodal": "Reclamación pagada",
+        "invitemodal": "Invita a alguien ahora"
     },
     "freeclaimmodal": {
-        "title": "Claim discounted steem accounts",
-        "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
-        "single": "Claim one account",
+        "title": "Reclamar cuentas con descuento de steem",
+        "explainer": "El último coste para reclamar una cuenta con descuento fue <span class='rccost'>0</span> RC<br />Ten en cuenta que esto cambia todo el tiempo. Cuando se reclaman varias cuentas en un corto período de tiempo, el precio aumenta.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Con <span id='currentrc'>0</span> RC puedes reclamar una cuenta.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Con <span id='currentrc'>0</span> RC puedes reclamar <span class='possibleclaims'>0</span> cuentas.",
+        "moreexplain": "Puedes reclamar una sola cuenta o usar el bot de reclamos hasta que te quedes sin RC o lo detengas.",
+        "single": "Reclama una cuenta",
         "bot": "Claim bot"
     },
     "botclaimmodal": {
