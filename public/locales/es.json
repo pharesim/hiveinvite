@@ -11,7 +11,7 @@
         "lastupdate": "Última actualización",
         "refresh": "Actualizar ahora",
         "greeting": "¡Hola <span id='loggedInUser'>username</span>!",
-        "tokenexplain": "Para crear una cuenta de steem, primero necesitas reclamar un token. Éstos pueden obtenerse por quemar una cierta cantidad de STEEM, o gastar una gran cantidad de mana RC. A cambio, la nueva cuenta recibe una cantidad mínima de RC mana para tramitar en el blockchain sin poseer Steem Power.",
+        "tokenexplain": "Para crear una cuenta de steem, primero necesitas reclamar un token. Éstos pueden obtenerse por quemar una cierta cantidad de STEEM, o gastar una gran cantidad de RC maná. A cambio, la nueva cuenta recibe una cantidad mínima de RC maná para tramitar en el blockchain sin poseer Steem Power.",
         "tokencost": "El costo actual de una reclamación es <span class='steemcost'>0</span> STEEM o <span class='rccost'>0</span> RC mana",
         "pendingclaims": "Has reclamado una cuenta. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Has reclamado una cuenta. <span id='pendingclaims'></span><span id='invitespending'></span>",
@@ -55,11 +55,11 @@
     },
     "paidclaimmodal": {
         "title": "Paga para reclamar una cuenta de steem",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+        "explainer": "El coste para reclamar una cuenta es <span class='steemcost'>0</span> STEEM<br />Este precio está fijado por los testigos.<br />Una nueva cuenta recibirá una cantidad básica de RC como si tuviera la misma cantidad de Steem Power."
     },
     "invitemodal": {
-        "title": "Invite to Steem!",
-        "label": "Label",
+        "title": "Invita a Steem!",
+        "label": "Etiqueta",
         "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
         "email": "Address",
         "mailtext_label": "E-Mail text",
