@@ -43,11 +43,11 @@
         "explainamount_plural": "Con <span id='currentrc'>0</span> RC puedes reclamar <span class='possibleclaims'>0</span> cuentas.",
         "moreexplain": "Puedes reclamar una sola cuenta o usar el bot de reclamos hasta que te quedes sin RC o lo detengas.",
         "single": "Reclama una cuenta",
-        "bot": "Claim bot"
+        "bot": "Robot para reclamar"
     },
     "botclaimmodal": {
-        "title": "Automated claiming of discounted steem accounts",
-        "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
+        "title": "Reclamación automatizada de cuentas con descuento de steem",
+        "explainer": "¡Hola! Soy tu amistoso robot de reclamo de cuenta. Haz clic en el botón de abajo para que empiece a trabajar. Seguiré reclamando hasta que te quedes sin RC, o me dime que me detenga con el otro botón.",
         "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
         "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
         "start": "Start",
