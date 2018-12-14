@@ -1,0 +1,123 @@
+{
+    "loggedout": {
+        "greeting": "Make a Steemian!",
+        "explainer": "Steeminvite is a service that allows you to invite your friends to steem.",
+        "buttontext": "to get started.",
+        "login_error": "Login error",
+        "usernamePlaceholder": "Your steem username",
+        "postingkeyPlaceholder": "Your private posting key"
+    },
+    "index": {
+        "lastupdate": "Last update",
+        "refresh": "Refresh now",
+        "greeting": "Hello <span id='loggedInUser'>username</span>!",
+        "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
+        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
+        "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "You have claimed <span id='pendingclaims'>0</span> accounts. <span id='invitespending'></span>",
+        "nopendingclaims": "You have not claimed any accounts yet.",
+        "invitespending": "One invitation is pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_plural": "<span id='pendinginvites'>0</span> invitations are pending, <span id='invitemore'></span>",
+        "noinvitespending": "No invitations are pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore": "so you can invite a friend now!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_plural": "so you can invite <span id='remaininginvites'>0</span> more friends.",
+        "abletoclaim": "Your maximum RC mana is <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>You are currently at <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
+        "canclaim": "which allows you to claim one account at 100%<span id='maxclaims' class='hidden'></span>",
+        "canclaim_plural": "which allows you to claim <span id='maxclaims'>0</span> accounts at 100%",
+        "cannotclaim": "which does not let you claim any accounts. Power up some STEEM!",
+        "canclaimnow": "so you can claim one account right now.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "so you can claim <span class='possibleclaims'>0</span> accounts right now.",
+        "cannotclaimnow": "so you have to wait a bit until you can claim a discounted account.",
+        "abletobuy": "With your balance of <span id='steembalance'>0 STEEM</span> you can <span id='abletopayforclaim'></span>",
+        "canbuy": "theoretically claim one more account.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "theoretically claim another <span id='possiblebuys'>0</span> accounts.",
+        "cannotbuy": "not claim any more accounts. Get some more STEEM!",
+        "claimfreemodal": "Free claim",
+        "claimsteemmodal": "Paid claim",
+        "invitemodal": "Invite someone now"
+    },
+    "freeclaimmodal": {
+        "title": "Claim discounted steem accounts",
+        "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
+        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
+        "single": "Claim one account",
+        "bot": "Claim bot"
+    },
+    "botclaimmodal": {
+        "title": "Automated claiming of discounted steem accounts",
+        "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
+        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
+        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
+        "start": "Start",
+        "close": "Stop/Close"
+    },
+    "paidclaimmodal": {
+        "title": "Pay to claim a steem account",
+        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+    },
+    "invitemodal": {
+        "title": "Invite to Steem!",
+        "label": "Label",
+        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
+        "email": "Address",
+        "mailtext_label": "E-Mail text",
+        "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
+        "linkamount": "Number of links to create",
+        "or": "OR",
+        "multi": "Create a link that is valid for multiple account creations",
+        "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
+        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
+        "delegate_amount": "Amount of Steem Power to delegate",
+        "validity": "How many days should the invite be valid before being automatically deleted?",
+        "validity_label": "Validity in days",
+        "usermail": "E-Mail address for status updates",
+        "create": "Create invitation"
+    },
+    "button": {
+        "submit": "Submit",
+        "login": "Login",
+        "login_now": "Login now",
+        "logout": "Logout",
+        "close": "Close",
+        "proceed": "Proceed"
+    },
+    "keys": {
+        "wrong_key": "Invalid key",
+        "active_required": "This action requires your active key.",
+        "active": "Active key",
+        "posting": "Posting key",
+        "owner": "Owner key",
+        "memo": "Memo key",
+        "storeKey": "Remember key for this session"
+    },
+    "language": {
+        "switch": "Switch language...",
+        "en": "english",
+        "de": "german"
+    },
+    "step1": {
+        "lead": "Hi! You are only a few steps away from getting your own Steem account!",
+        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
+        "submit": "I have written down the password and will never ever lose it"
+    },
+    "step2": {
+        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
+        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
+        "username": "Your username",
+        "as": "as"
+    },
+    "step3": {
+        "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
+    },
+    "step4": {
+        "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
+        "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
+        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
+        "finish": "Finish account request and leave this site"
+    },
+    "accept": {
+        "invalid": "Invalid invitation ID, sorry!"
+    }
+}
