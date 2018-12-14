@@ -48,7 +48,7 @@
     "botclaimmodal": {
         "title": "Reclamación automatizada de cuentas con descuento de steem",
         "explainer": "¡Hola! Soy tu amistoso robot de reclamo de cuenta. Haz clic en el botón de abajo para que empiece a trabajar. Seguiré reclamando hasta que te quedes sin RC, o me dime que me detenga con el otro botón.",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
+        "working": "¡Trabajando! Reclamadas <span id='botClaimStatusClaimed'>0</span> hasta ahora.",
         "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
         "start": "Start",
         "close": "Stop/Close"
