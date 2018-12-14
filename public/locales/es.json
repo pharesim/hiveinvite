@@ -104,12 +104,12 @@
     },
     "step2": {
         "lead": "Bien. ¡Asegúrate de no perder la contraseña! ¡No hay manera de recuperarla!",
-        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
-        "username": "Your username",
-        "as": "as"
+        "text": "Tu nombre de usuario de Steem tiene que tener al menos tres caracteres y no puede contener otros caracteres que letras minúsculas, números y un guión. Tiene que ser único y no puede ser cambiado. Elígelo con cuidado.",
+        "username": "Tu nombre de usuario",
+        "as": "como"
     },
     "step3": {
-        "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
+        "text": "Lo que dijimos antes sobre su contraseña no era una broma.<br />Para verificar que no has cometido un error al anotar su contraseña, ingrésela aquí.<br />Si no puedes continuar, vuelve a cargar la página en tu navegador y comienza de nuevo."
     },
     "step4": {
         "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
