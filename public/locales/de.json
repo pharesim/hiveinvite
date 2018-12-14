@@ -103,7 +103,7 @@
         "submit": "Ich habe das Passwort aufgeschrieben und werde es nie wieder verlieren."
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
+        "lead": "Okay. Achte darauf, dass du das Passwort nicht verlierst! Es gibt keine Möglichkeit, es wiederherzustellen!",
         "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
         "username": "Your username",
         "as": "as"
