@@ -49,12 +49,12 @@
         "title": "Reclamación automatizada de cuentas con descuento de steem",
         "explainer": "¡Hola! Soy tu amistoso robot de reclamo de cuenta. Haz clic en el botón de abajo para que empiece a trabajar. Seguiré reclamando hasta que te quedes sin RC, o me dime que me detenga con el otro botón.",
         "working": "¡Trabajando! Reclamadas <span id='botClaimStatusClaimed'>0</span> hasta ahora.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
-        "start": "Start",
-        "close": "Stop/Close"
+        "stopped": "Se detuvo después de reclamar <span id='botClaimHasClaimed'>0</span> cuentas.<br />Mensaje de error: <span id='botClaimError'></span>",
+        "start": "Comenzar",
+        "close": "Detener/Cerrar"
     },
     "paidclaimmodal": {
-        "title": "Pay to claim a steem account",
+        "title": "Paga para reclamar una cuenta de steem",
         "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
     },
     "invitemodal": {
