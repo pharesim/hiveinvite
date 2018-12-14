@@ -68,42 +68,42 @@
         "or": "O",
         "multi": "Crea un enlace que sea válido para múltiples creaciones de cuentas",
         "multi_label": "La cantidad de cuentas para este enlace es válida (¡tenga cuidado, puede quedarse sin reclamos con esta opción!)",
-        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
-        "delegate_amount": "Amount of Steem Power to delegate",
-        "validity": "How many days should the invite be valid before being automatically deleted?",
-        "validity_label": "Validity in days",
-        "usermail": "E-Mail address for status updates",
-        "create": "Create invitation"
+        "delegate": "Una nueva cuenta solo tiene una cantidad básica de RC para realizar transacciones en la cadena de bloques. Si desea que el nuevo usuario pueda hacer más, delega algo de Steem Power. También puedes hacer eso más tarde, por supuesto.",
+        "delegate_amount": "Cantidad de Steem Power para delegar",
+        "validity": "¿Cuántos días debe ser válida la invitación antes de que se elimine automáticamente?",
+        "validity_label": "Validez en días",
+        "usermail": "Dirección de correo electrónico para actualizaciones de estado",
+        "create": "Crear invitación"
     },
     "button": {
-        "submit": "Submit",
-        "login": "Login",
-        "login_now": "Login now",
-        "logout": "Logout",
-        "close": "Close",
-        "proceed": "Proceed"
+        "submit": "Enviar",
+        "login": "Iniciar sesión",
+        "login_now": "Iniciar sesión ahora",
+        "logout": "Cerrar sesión",
+        "close": "Cerrar",
+        "proceed": "Continuar"
     },
     "keys": {
-        "wrong_key": "Invalid key",
-        "active_required": "This action requires your active key.",
-        "active": "Active key",
-        "posting": "Posting key",
-        "owner": "Owner key",
-        "memo": "Memo key",
-        "storeKey": "Remember key for this session"
+        "wrong_key": "Clave no válida",
+        "active_required": "Esta acción requiere su clave activa.",
+        "active": "Clave activa",
+        "posting": "Clave de publicación",
+        "owner": "Clave de propietario",
+        "memo": "Clave memo",
+        "storeKey": "Recordar clave para esta sesión"
     },
     "language": {
-        "switch": "Switch language...",
-        "en": "english",
-        "de": "german"
+        "switch": "Cambiar idioma...",
+        "en": "inglés",
+        "de": "alemán"
     },
     "step1": {
-        "lead": "Hi! You are only a few steps away from getting your own Steem account!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "lead": "¡Hola! ¡Estás a sólo unos pasos de obtener tu propia cuenta de Steem!",
+        "text": "Tu cuenta incluirá tu billetera personal, por lo que la seguridad es extremadamente importante.<br />Hemos generado una contraseña maestra para tu cuenta, que debes mantener en un lugar seguro. ¡Anótala en alguna parte!",
+        "submit": "He escrito la contraseña y nunca la perderé"
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
+        "lead": "Bien. ¡Asegúrate de no perder la contraseña! ¡No hay manera de recuperarla!",
         "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
         "username": "Your username",
         "as": "as"
