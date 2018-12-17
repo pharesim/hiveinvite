@@ -54,7 +54,7 @@
         "close": "Stop/Schließen"
     },
     "paidclaimmodal": {
-        "title": "Bezahle um einen Steem Acount zu erstellen",
+        "title": "Bezahle um einen Steem Account zu erstellen",
         "explainer": "Die Kosten um einen Account zu erstellen betragen <span class='steemcost'>0</span> STEEM<br />Diese Kosten werden von den Witness festgelegt.<br />Ein neuer Account erhält einen Grundbetrag an RC, als ob er den gleichen Betrag an Steem Power hätte."
     },
     "invitemodal": {
