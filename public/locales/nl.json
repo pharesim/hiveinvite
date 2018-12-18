@@ -109,15 +109,15 @@
         "as": "als"
     },
     "step3": {
-        "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
+        "text": "Wat we eerder over je wachtwoord hebben gezegd was geen grapje.<br />Om te controleren of je geen fout hebt gemaakt bij het noteren van je wachtwoord, vul het alsjeblieft hier in.<br />Als je niet verder kunt gaan, laad de pagina opnieuw in je browser en begin opnieuw."
     },
     "step4": {
-        "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
-        "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
-        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
-        "finish": "Finish account request and leave this site"
+        "text": "Er zijn verschillende toegangsniveaus voor een Steem-account.<br />De posting key wordt gebruikt voor alledaagse social-media-activiteiten, je kunt er bijvoorbeeld mee posten en stemmen.<br />Om toegang te krijgen tot je portemonnee en STEEM te verplaatsen, heb je de active key nodig.<br />De owner key kan worden gebruikt om deze twee te wijzigen en mag nooit voor andere doeleinden worden gebruikt. Het is het best deze te bewaren samen met het hoofdwachtwoord, gebruik hem niet online.<br />Laatste en minste is er de memo key, die nog geen functie heeft maar in de toekomst gebruikt kan worden om je privé-gegevens te ontsleutelen, zoals privé-berichten.",
+        "warning": "Deze sleutels worden gegenereerd vanuit je wachtwoord. Ze kunnen in plaats daarvan gebruikt worden, maar alleen voor hun specifieke doel.<br />Het is veiliger om de posting key te gebruiken als je een apparaat wilt gebruiken om alleen te posten en te stemmen, of de active key als je andere acties wilt uitvoeren.<br />HET WACHTWOORD EN DE OWNER KEY WORDEN HET BEST OFFLINE GEHOUDEN!",
+        "confirm": "Door op de volgende knop te klikken, wordt de gebruiker die je uitnodiging heeft gemaakt op de hoogte gebracht en hopelijk maak je binnenkort je account aan.",
+        "finish": "Account-aanvraag voltooien en verlaat deze site"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "Ongeldige uitnodigings-ID, sorry!"
     }
 }
