@@ -38,12 +38,12 @@
     },
     "freeclaimmodal": {
         "title": "Claim Steem-accounts met korting",
-        "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
-        "single": "Claim one account",
-        "bot": "Claim bot"
+        "explainer": "De laatste prijs om een account met korting aan te vragen was <span class='rccost'>0</span> RC<br />Houd er rekening mee dat dit voortdurend verandert. Wanneer meerdere accounts in een korte periode worden geclaimd, stijgt de prijs.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Met <span id='currentrc'>0</span> RC kun je één account claimen.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Met <span id='currentrc'>0</span> RC kun je <span class='possibleclaims'>0</span> accounts claimen.",
+        "moreexplain": "Je kunt één enkel account claimen, of de claim-bot gebruiken totdat je geen RC meer hebt of hem stopzet.",
+        "single": "Claim één account",
+        "bot": "Claim-bot"
     },
     "botclaimmodal": {
         "title": "Automated claiming of discounted steem accounts",
