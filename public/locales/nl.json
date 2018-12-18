@@ -23,7 +23,7 @@
         "invitemore_plural": "zodat je <span id='remaininginvites'>0</span> meer vrienden uit kunt nodigen.",
         "abletoclaim": "Je maximale RC mana is <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Je zit momenteel op <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
         "canclaim": "waarmee je één account op 100% kunt claimen<span id='maxclaims' class='hidden'></span>",
-        "canclaim_plural": "which allows you to claim <span id='maxclaims'>0</span> accounts at 100%",
+        "canclaim_plural": "waarmee je <span id='maxclaims'>0</span> accounts op 100% kunt claimen",
         "cannotclaim": "which does not let you claim any accounts. Power up some STEEM!",
         "canclaimnow": "so you can claim one account right now.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "so you can claim <span class='possibleclaims'>0</span> accounts right now.",
