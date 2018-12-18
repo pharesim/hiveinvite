@@ -27,7 +27,7 @@
         "cannotclaim": "waarmee je geen accounts kunt claimen. Power Up een beetje STEEM!",
         "canclaimnow": "dus je kunt op dit moment één account claimen.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "dus je kunt nu al <span class='possibleclaims'>0</span> accounts claimen.",
-        "cannotclaimnow": "dus je moet een tijdje wachten tot je een account met korting kunt claimen.",
+        "cannotclaimnow": "dus je moet een tijdje wachten tot je een afgeprijsd account kunt claimen.",
         "abletobuy": "Met je saldo van <span id='steembalance'>0 STEEM</span> kun je <span id='abletopayforclaim'></span>",
         "canbuy": "in theorie nog één account claimen.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "theoretisch aanspraak maken op nog <span id='possiblebuys'>0</span> accounts.",
@@ -37,8 +37,8 @@
         "invitemodal": "Nu iemand uitnodigen"
     },
     "freeclaimmodal": {
-        "title": "Claim Steem-accounts met korting",
-        "explainer": "De laatste prijs om een account met korting aan te vragen was <span class='rccost'>0</span> RC<br />Houd er rekening mee dat dit voortdurend verandert. Wanneer meerdere accounts in een korte periode worden geclaimd, stijgt de prijs.<br /><span id='freeExplainAmount'></span>",
+        "title": "Claim afgeprijsde Steem-accounts",
+        "explainer": "De laatste prijs om een afgeprijsd account aan te vragen was <span class='rccost'>0</span> RC<br />Houd er rekening mee dat dit voortdurend verandert. Wanneer meerdere accounts in een korte periode worden geclaimd, stijgt de prijs.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Met <span id='currentrc'>0</span> RC kun je één account claimen.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Met <span id='currentrc'>0</span> RC kun je <span class='possibleclaims'>0</span> accounts claimen.",
         "moreexplain": "Je kunt één enkel account claimen, of de claim-bot gebruiken totdat je geen RC meer hebt of hem stopzet.",
@@ -46,7 +46,7 @@
         "bot": "Claim-bot"
     },
     "botclaimmodal": {
-        "title": "Automated claiming of discounted steem accounts",
+        "title": "Geautomatiseerd claimen van afgeprijsde Steem-accounts",
         "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
         "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
         "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
