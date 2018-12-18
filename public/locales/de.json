@@ -14,7 +14,7 @@
         "tokenexplain": "Um ein Steem-Konto zu erstellen, musst du zuerst einen Token beanspruchen. Diesen Token kannst du erhalten, indem du eine bestimmte Menge an STEEM verbrennst oder eine große Menge an RC-Mana ausgibst. Im Gegenzug erhält das neue Konto eine minimale Menge an RC-Mana, die benötigt wird um minimale Aktionen auf der Blockchain durchführen zu können ohne eigene SteemPower zu besitzen.",
         "tokencost": "Die aktuellen Kosten für eine Konto-Beanspruchung betragen momentan <span class='steemcost'>0</span> STEEM oder <span class='rccost'>0</span> RC-Mana",
         "pendingclaims": "Du hast ein Konto erstellt. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
-        "pendingclaims_plural": "Du hast <span id='pendingclaims'>0</span> Accounts beansprucht. <span id='invitespending'></span>",
+        "pendingclaims_plural": "Du hast <span id='pendingclaims'>0</span> Konten beansprucht. <span id='invitespending'></span>",
         "nopendingclaims": "Du hast noch keine Konten erstellt.",
         "invitespending": "Eine Einladung ist noch ausstehend, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
         "invitespending_plural": "<span id='pendinginvites'>0</span> Einladungen sind ausstehend, <span id='invitemore'></span>",
@@ -25,15 +25,15 @@
         "canclaim": "Somit kannst du bei 100% ein Konto erstellen. <span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "was dir erlaubt <span id='maxclaims'>0</span> Konten bei 100%RC zu erstellen",
         "cannotclaim": "was es dir nicht erlaubt, Konten zu erstellen. Lade mehr STEEM auf!",
-        "canclaimnow": "somit kannst du einen Account erstellen.<span class='possibleclaims hidden'></span>",
-        "canclaimnow_plural": "somit kannst du <span class='possibleclaims'>0</span> Accounts sofort erstellen.",
+        "canclaimnow": "somit kannst du ein Konto erstellen.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "somit kannst du <span class='possibleclaims'>0</span> Konten sofort erstellen.",
         "cannotclaimnow": "somit musst du noch ein wenig warten, bis du ein Konto erstellen kannst.",
         "abletobuy": "Mit deinem Kontostand von <span id='steembalance'>0 STEEM</span> STEEM kannst du <span id='abletopayforclaim'></span>",
         "canbuy": "theoretisch ein weiteres Konto beanspruchen. <span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "theoretisch weitere <span id='possiblebuys'>0</span> Konten beanspruchen.",
         "cannotbuy": "keine weiteren Konten mehr beanspruchen. Hol dir noch mehr STEEM!",
         "claimfreemodal": "Kostenfreies Konto (RC-Mana)",
-        "claimsteemmodal": "Bezahltes Konto (StEEM)",
+        "claimsteemmodal": "Bezahltes Konto (STEEM)",
         "invitemodal": "Jetzt eine Person einladen"
     },
     "freeclaimmodal": {
@@ -98,7 +98,7 @@
         "de": "Deutsch"
     },
     "step1": {
-        "lead": "Hi! Du bist nur ein paar Schritte von deinem eigenen Steem-Account entfernt!",
+        "lead": "Hi! Du bist nur ein paar Schritte von dein eigenes Steem-Konto entfernt!",
         "text": "Dein Konto enthält deine persönliche Wallet, daher ist Sicherheit extrem wichtig.<br />Wir haben ein Master-Passwort für dein Konto generiert, das du an einem sicheren Ort aufbewahren musst. Schreibe es irgendwo auf!",
         "submit": "Ich habe das Passwort aufgeschrieben und werde es nie wieder verlieren."
     },
