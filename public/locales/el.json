@@ -1,15 +1,15 @@
 {
     "loggedout": {
-        "greeting": "Make a Steemian!",
-        "explainer": "Steeminvite is a service that allows you to invite your friends to steem.",
-        "buttontext": "to get started.",
-        "login_error": "Login error",
-        "usernamePlaceholder": "Your steem username",
-        "postingkeyPlaceholder": "Your private posting key"
+        "greeting": "Δημιουργήστε έναν Steemian!",
+        "explainer": "Το Steeminvite είναι μια υπηρεσία που σας επιτρέπει να προσκαλέσετε τους φίλους σας στο steem.",
+        "buttontext": "για να ξεκινήσετε.",
+        "login_error": "Σφάλμα σύνδεσης",
+        "usernamePlaceholder": "Το steem όνομα χρήστη σας",
+        "postingkeyPlaceholder": "Το ιδιωτικό κλειδί ανάρτησής σας"
     },
     "index": {
-        "lastupdate": "Last update",
-        "refresh": "Refresh now",
+        "lastupdate": "Τελευταία ενημέρωση",
+        "refresh": "Ανανέωση τώρα",
         "greeting": "Hello <span id='loggedInUser'>username</span>!",
         "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
         "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
