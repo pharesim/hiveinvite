@@ -47,22 +47,22 @@
     },
     "botclaimmodal": {
         "title": "Geautomatiseerd claimen van afgeprijsde Steem-accounts",
-        "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
+        "explainer": "Hallo! Ik ben je vriendelijke account-claim-robot. Klik op onderstaande knop om me aan het werk te zetten. Ik zal blijven claimen totdat je geen RC meer hebt, of je me vertelt dat ik moet stoppen met de andere knop.",
+        "working": "Aan het werk! Tot nu toe <span id='botClaimStatusClaimed'>0</span> accounts geclaimed.",
+        "stopped": "Gestopt na het claimen van <span id='botClaimHasClaimed'>0</span> accounts.<br />Foutbericht: <span id='botClaimError'></span>",
         "start": "Start",
-        "close": "Stop/Close"
+        "close": "Stop/Sluit"
     },
     "paidclaimmodal": {
-        "title": "Pay to claim a steem account",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+        "title": "Betaal om een Steem-account te claimen",
+        "explainer": "De kosten voor het claimen van een account is <span class='steemcost'>0</span> STEEM<br />Deze kosten worden ingesteld door de getuigen.<br />Een nieuwe account ontvangt een basishoeveelheid aan RC alsof hij dezelfde hoeveelheid aan Steem Power heeft."
     },
     "invitemodal": {
-        "title": "Invite to Steem!",
-        "label": "Label",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
-        "email": "Address",
-        "mailtext_label": "E-Mail text",
+        "title": "Uitnodigen op Steem!",
+        "label": "Titel",
+        "by_email": "Vink dit uit om één of meerdere links direct te krijgen in plaats van een e-mail te versturen",
+        "email": "Adres",
+        "mailtext_label": "E-mail tekst",
         "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
         "linkamount": "Number of links to create",
         "or": "OR",
