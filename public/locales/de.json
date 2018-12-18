@@ -38,7 +38,7 @@
     },
     "freeclaimmodal": {
         "title": "Kostenfreie Steem Accounts erstellen",
-        "explainer": "Die Kosten für einen gratis Account betrugen <span class='rccost'>0</span> RC<br />Beachte, dass sich dies ständig ändert. Wenn mehrere Konten in kurzer Zeit beansprucht werden, steigen die Kosten.<br /><span id='freeExplainAmount'></span>",
+        "explainer": "Die Kosten für ein freies Konto betrugen zuletzt <span class='rccost'>0</span> RC<br />Beachte, dass sich dies ständig ändert. Wenn mehrere Konten in kurzer Zeit beansprucht werden, steigen die Kosten.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Mit <span id='currentrc'>0</span> RC kannst du einen Account erstellen.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Mit <span id='currentrc'>0</span> RC kannst du <span class='possibleclaims'>0</span> Accounts erstellen.",
         "moreexplain": "Du kannst entweder ein einzelnes Konto erstellen oder den Claim-Bot verwenden, bis dir die RC ausgeht oder Du ihn stoppst.",
