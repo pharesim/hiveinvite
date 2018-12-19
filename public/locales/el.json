@@ -70,9 +70,9 @@
         "multi_label": "Αριθμός λογαριασμών για τους οποίους είναι έγκυρος αυτός ο σύνδεσμος (προσοχή, ίσως εξαντληθούν οι αξιώσεις σας χρησιμοποιώντας αυτήν την επιλογή!)",
         "delegate": "Ένας νέος λογαριασμός διαθέτει μόνο μια βασική ποσότητα RC για την εκτέλεση συναλλαγών στο blockchain. Αν επιθυμείτε να μπορεί να εκτελέσει περισσότερες ενέργειες ο νέος χρήστης, πραγματοποιήστε ανάθεση ενός ποσού Steem Power. Αυτό είναι κάτι που μπορείτε να κάνετε και αργότερα, φυσικά.",
         "delegate_amount": "Ποσότητα Steem Power προς ανάθεση",
-        "validity": "How many days should the invite be valid before being automatically deleted?",
-        "validity_label": "Validity in days",
-        "usermail": "E-Mail address for status updates",
+        "validity": "Για πόσες ημέρες θα πρέπει να είναι έγκυρη η πρόσκληση μέχρις ότου διαγραφεί αυτόματα;",
+        "validity_label": "Εγκυρότητα σε ημέρες",
+        "usermail": "Διεύθυνση ηλεκτρονικού ταχυδρομείου για ενημερώσεις κατάστασης",
         "create": "Δημιουργία πρόσκλησης"
     },
     "button": {
@@ -81,7 +81,7 @@
         "login_now": "Σύνδεση τώρα",
         "logout": "Αποσύνδεση",
         "close": "Κλείσιμο",
-        "proceed": "Proceed"
+        "proceed": "Συνέχεια"
     },
     "keys": {
         "wrong_key": "Μη έγκυρο κλειδί",
@@ -114,10 +114,10 @@
     "step4": {
         "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
         "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
-        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
-        "finish": "Finish account request and leave this site"
+        "confirm": "Κάνοντας κλικ στο ακόλουθο πλήκτρο θα ενημερωθεί ο χρήστης που δημιούργησε την πρόσκλησή σας, και καλώς εχόντων των πραγμάτων θα δημιουργήσει τον λογαριασμό σας σύντομα.",
+        "finish": "Τέλος αίτησης λογαριασμού και απομάκρυνση από αυτήν την σελίδα"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "Μη έγκυρο ID πρόσκλησης, λυπούμαστε!"
     }
 }
