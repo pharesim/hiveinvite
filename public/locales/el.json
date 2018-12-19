@@ -60,53 +60,53 @@
     "invitemodal": {
         "title": "Προσκαλέστε στο Steem!",
         "label": "Ετικέτα",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
+        "by_email": "Αναίρεση της επιλογής αυτού προκειμένου να λάβετε έναν ή περισσότερους συνδέσμους κατευθείαν, αντί να στείλετε ένα μήνυμα ηλεκτρονικού ταχυδρομείου",
         "email": "Διεύθυνση",
         "mailtext_label": "Κείμενο ηλεκτρονικού ταχυδρομείου",
         "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
-        "linkamount": "Number of links to create",
-        "or": "OR",
+        "linkamount": "Αριθμός συνδέσμων προς δημιουργία",
+        "or": "ΕΙΤΕ",
         "multi": "Create a link that is valid for multiple account creations",
-        "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
-        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
-        "delegate_amount": "Amount of Steem Power to delegate",
+        "multi_label": "Αριθμός λογαριασμών για τους οποίους είναι έγκυρος αυτός ο σύνδεσμος (προσοχή, ίσως εξαντληθούν οι αξιώσεις σας χρησιμοποιώντας αυτήν την επιλογή!)",
+        "delegate": "Ένας νέος λογαριασμός διαθέτει μόνο μια βασική ποσότητα RC για την εκτέλεση συναλλαγών στο blockchain. Αν επιθυμείτε να μπορεί να εκτελέσει περισσότερες ενέργειες ο νέος χρήστης, πραγματοποιήστε ανάθεση ενός ποσού Steem Power. Αυτό είναι κάτι που μπορείτε να κάνετε και αργότερα, φυσικά.",
+        "delegate_amount": "Ποσότητα Steem Power προς ανάθεση",
         "validity": "How many days should the invite be valid before being automatically deleted?",
         "validity_label": "Validity in days",
         "usermail": "E-Mail address for status updates",
-        "create": "Create invitation"
+        "create": "Δημιουργία πρόσκλησης"
     },
     "button": {
-        "submit": "Submit",
-        "login": "Login",
-        "login_now": "Login now",
-        "logout": "Logout",
-        "close": "Close",
+        "submit": "Υποβολή",
+        "login": "Σύνδεση",
+        "login_now": "Σύνδεση τώρα",
+        "logout": "Αποσύνδεση",
+        "close": "Κλείσιμο",
         "proceed": "Proceed"
     },
     "keys": {
-        "wrong_key": "Invalid key",
-        "active_required": "This action requires your active key.",
+        "wrong_key": "Μη έγκυρο κλειδί",
+        "active_required": "Αυτή η ενέργεια απαιτεί το ενεργό κλειδί σας.",
         "active": "Active key",
         "posting": "Posting key",
         "owner": "Owner key",
         "memo": "Memo key",
-        "storeKey": "Remember key for this session"
+        "storeKey": "Απομνημόνευση του κλειδιού για αυτήν την συνεδρία"
     },
     "language": {
-        "switch": "Switch language...",
-        "en": "english",
-        "de": "german"
+        "switch": "Αλλαγή γλώσσας...",
+        "en": "αγγλικά",
+        "de": "γερμανικά"
     },
     "step1": {
-        "lead": "Hi! You are only a few steps away from getting your own Steem account!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "lead": "Χαίρετε! Είστε μόνο λίγα βήματα μακριά από την απόκτηση του δικού σας λογαριασμού Steem!",
+        "text": "Ο λογαριασμός σας θα περιλαμβάνει το προσωπικό σας πορτοφόλι, οπότε η ασφάλεια είναι ιδιαίτερα σημαντική.<br />Έχουμε δημιουργήσει έναν κύριο κωδικό πρόσβασης για τον λογαριασμό σας, τον οποίο θα πρέπει να φυλάξετε σε ασφαλές μέρος. Καταγράψτε τον κάπου!",
+        "submit": "Έχω καταγράψει τον κωδικό και δεν πρόκειται ποτέ να τον χάσω"
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
-        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
-        "username": "Your username",
-        "as": "as"
+        "lead": "Εντάξει. Βεβαιωθείτε ότι δεν θα χάσετε τον κωδικό! Δεν υπάρχει τρόπος ανάκτησης!",
+        "text": "Το steem όνομα χρήστη σας θα πρέπει να αποτελείται από τουλάχιστον τρεις χαρακτήρες, και δεν δύναται να περιέχει άλλους χαρακτήρες εκτός από μικρά γράμματα, αριθμούς και μια παύλα. Θα πρέπει να είναι μοναδικό και δεν δύναται ποτέ να αλλαχθεί. Διαλέξτε το προσεκτικά.",
+        "username": "Το όνομα χρήστη σας",
+        "as": "ως"
     },
     "step3": {
         "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
