@@ -39,27 +39,27 @@
     "freeclaimmodal": {
         "title": "Αξιώστε λογαριασμούς steem σε έκπτωση",
         "explainer": "Το τελευταίο κόστος για την αξίωση λογαριασμού σε έκπτωση ήταν <span class='rccost'>0</span> RC <br />Έχετε υπόψη πως αυτό αλλάζει συνεχώς. Όταν γίνεται αξίωση πολλών λογαριασμών σε μικρό χρονικό διάστημα, η τιμή ανεβαίνει.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
-        "single": "Claim one account",
-        "bot": "Claim bot"
+        "explainamount": "Με <span id='currentrc'>0</span> RC μπορείτε να αξιώσετε έναν λογαριασμό.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Με <span id='currentrc'>0</span> RC μπορείτε να αξιώσετε <span class='possibleclaims'>0</span> λογαριασμούς.",
+        "moreexplain": "Μπορείτε είτε να αξιώσετε έναν λογαριασμό, ή να χρησιμοποιήσετε το bot αξίωσης μέχρι να εξαντληθεί το RC σας ή μέχρι να το σταματήσετε.",
+        "single": "Αξιώστε έναν λογαριασμό",
+        "bot": "Bot αξίωσης"
     },
     "botclaimmodal": {
-        "title": "Automated claiming of discounted steem accounts",
+        "title": "Αυτοματοποιημένη αξίωση λογαριασμών steem σε έκπτωση",
         "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
         "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
         "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
-        "start": "Start",
-        "close": "Stop/Close"
+        "start": "Έναρξη",
+        "close": "Διακοπή/Κλείσιμο"
     },
     "paidclaimmodal": {
-        "title": "Pay to claim a steem account",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+        "title": "Πληρώστε για να αξιώσετε έναν λογαριασμό steem",
+        "explainer": "Το κόστος για την αξίωση ενός λογαριασμού είναι <span class='steemcost'>0</span> STEEM<br /> Αυτή η χρέωση ορίζεται από τους witnesses.<br />Ένας νέος λογαριασμός θα λαμβάνει μια βασική ποσότητα RC, σαν να διέθετε την ίδια ποσότητα Steem Power."
     },
     "invitemodal": {
-        "title": "Invite to Steem!",
-        "label": "Label",
+        "title": "Προσκαλέστε στο Steem!",
+        "label": "Ετικέτα",
         "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
         "email": "Address",
         "mailtext_label": "E-Mail text",
