@@ -12,7 +12,7 @@
         "refresh": "Ανανέωση τώρα",
         "greeting": "Χαίρετε <span id='loggedInUser'>όνομα χρήστη</span>!",
         "tokenexplain": "Για να δημιουργήσετε έναν λογαριασμό steem, θα πρέπει πρώτα να αξιώσετε ένα token. Αυτά μπορούν να αποκτηθούν δαπανώντας ένα συγκεκριμένο ποσό STEEM, ή ξοδεύοντας μια μεγάλη ποσότητα RC mana. Ως αντάλλαγμα, ο νέος λογαριασμός λαμβάνει μια ελάχιστη ποσότητα RC mana για να δύναται να εκτελεί συναλλαγές στο blockchain ενώ δεν του ανήκει καθόλου Steem Power.",
-        "tokencost": "Το τρέχον κόστος για μια αξίωση είναι <span class='steemcost'>0</span> STEEM ή <span class='rccost'>0</span> RC mana",
+        "tokencost": "Η τρέχουσα χρέωση για μια αξίωση είναι <span class='steemcost'>0</span> STEEM ή <span class='rccost'>0</span> RC mana",
         "pendingclaims": "Έχετε αξιώσει έναν λογαριασμό. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Έχετε αξιώσει <span id='pendingclaims'>0</span> λογαριασμούς. <span id='invitespending'></span>",
         "nopendingclaims": "Δεν έχετε αξιώσει κανέναν λογαριασμό ακόμα.",
@@ -38,7 +38,7 @@
     },
     "freeclaimmodal": {
         "title": "Αξιώστε λογαριασμούς steem σε έκπτωση",
-        "explainer": "Το τελευταίο κόστος για την αξίωση λογαριασμού σε έκπτωση ήταν <span class='rccost'>0</span> RC <br />Έχετε υπόψη πως αυτό αλλάζει συνεχώς. Όταν γίνεται αξίωση πολλών λογαριασμών σε μικρό χρονικό διάστημα, η τιμή ανεβαίνει.<br /><span id='freeExplainAmount'></span>",
+        "explainer": "Η τελευταία χρέωση για την αξίωση λογαριασμού σε έκπτωση ήταν <span class='rccost'>0</span> RC <br />Έχετε υπόψη πως αυτό αλλάζει συνεχώς. Όταν γίνεται αξίωση πολλών λογαριασμών σε μικρό χρονικό διάστημα, η τιμή ανεβαίνει.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Με <span id='currentrc'>0</span> RC μπορείτε να αξιώσετε έναν λογαριασμό.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Με <span id='currentrc'>0</span> RC μπορείτε να αξιώσετε <span class='possibleclaims'>0</span> λογαριασμούς.",
         "moreexplain": "Μπορείτε είτε να αξιώσετε έναν λογαριασμό, ή να χρησιμοποιήσετε το bot αξίωσης μέχρι να εξαντληθεί το RC σας ή μέχρι να το σταματήσετε.",
@@ -47,15 +47,15 @@
     },
     "botclaimmodal": {
         "title": "Αυτοματοποιημένη αξίωση λογαριασμών steem σε έκπτωση",
-        "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
+        "explainer": "Χαίρετε! Είμαι το φιλικό ρομπότ αξίωσης λογαριασμών. Πιέστε το παρακάτω πλήκτρο ώστε να αρχίσω να λειτουργώ. Θα εξακολουθήσω να αξιώνω λογαριασμούς μέχρι να εξαντληθεί το RC σας, ή μέχρι να μου δώσετε την εντολή να σταματήσω πιέζοντας το άλλο πλήκτρο.",
+        "working": "Σε λειτουργία! Αξιώθηκαν <span id='botClaimStatusClaimed'>0</span> λογαριασμοί μέχρι στιγμής.",
+        "stopped": "Διεκόπη αφού αξίωσε <span id='botClaimHasClaimed'>0</span> λογαριασμούς.<br />Μήνυμα σφάλματος: <span id='botClaimError'></span>",
         "start": "Έναρξη",
         "close": "Διακοπή/Κλείσιμο"
     },
     "paidclaimmodal": {
         "title": "Πληρώστε για να αξιώσετε έναν λογαριασμό steem",
-        "explainer": "Το κόστος για την αξίωση ενός λογαριασμού είναι <span class='steemcost'>0</span> STEEM<br /> Αυτή η χρέωση ορίζεται από τους witnesses.<br />Ένας νέος λογαριασμός θα λαμβάνει μια βασική ποσότητα RC, σαν να διέθετε την ίδια ποσότητα Steem Power."
+        "explainer": "Η χρέωση για την αξίωση ενός λογαριασμού είναι <span class='steemcost'>0</span> STEEM<br />Αυτή η χρέωση ορίζεται από τους witnesses.<br />Ένας νέος λογαριασμός θα λαμβάνει μια βασική ποσότητα RC, σαν να διέθετε την ίδια ποσότητα Steem Power."
     },
     "invitemodal": {
         "title": "Προσκαλέστε στο Steem!",
