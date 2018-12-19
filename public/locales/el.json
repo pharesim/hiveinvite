@@ -47,7 +47,7 @@
     },
     "botclaimmodal": {
         "title": "Αυτοματοποιημένη αξίωση λογαριασμών steem σε έκπτωση",
-        "explainer": "Χαίρετε! Είμαι το φιλικό ρομπότ αξίωσης λογαριασμών. Πιέστε το παρακάτω πλήκτρο ώστε να αρχίσω να λειτουργώ. Θα εξακολουθήσω να αξιώνω λογαριασμούς μέχρι να εξαντληθεί το RC σας, ή μέχρι να μου δώσετε την εντολή να σταματήσω πιέζοντας το άλλο πλήκτρο.",
+        "explainer": "Χαίρετε! Είμαι το φιλικό ρομπότ αξίωσης λογαριασμών. Κάντε κλικ στο παρακάτω πλήκτρο ώστε να αρχίσω να λειτουργώ. Θα εξακολουθήσω να αξιώνω λογαριασμούς μέχρι να εξαντληθεί το RC σας, ή μέχρι να μου δώσετε την εντολή να σταματήσω πιέζοντας το άλλο πλήκτρο.",
         "working": "Σε λειτουργία! Αξιώθηκαν <span id='botClaimStatusClaimed'>0</span> λογαριασμοί μέχρι στιγμής.",
         "stopped": "Διεκόπη αφού αξίωσε <span id='botClaimHasClaimed'>0</span> λογαριασμούς.<br />Μήνυμα σφάλματος: <span id='botClaimError'></span>",
         "start": "Έναρξη",
@@ -66,7 +66,7 @@
         "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
         "linkamount": "Αριθμός συνδέσμων προς δημιουργία",
         "or": "ΕΙΤΕ",
-        "multi": "Create a link that is valid for multiple account creations",
+        "multi": "Δημιουργία ενός συνδέσμου που είναι έγκυρος για την δημιουργία πολλών λογαριασμών",
         "multi_label": "Αριθμός λογαριασμών για τους οποίους είναι έγκυρος αυτός ο σύνδεσμος (προσοχή, ίσως εξαντληθούν οι αξιώσεις σας χρησιμοποιώντας αυτήν την επιλογή!)",
         "delegate": "Ένας νέος λογαριασμός διαθέτει μόνο μια βασική ποσότητα RC για την εκτέλεση συναλλαγών στο blockchain. Αν επιθυμείτε να μπορεί να εκτελέσει περισσότερες ενέργειες ο νέος χρήστης, πραγματοποιήστε ανάθεση ενός ποσού Steem Power. Αυτό είναι κάτι που μπορείτε να κάνετε και αργότερα, φυσικά.",
         "delegate_amount": "Ποσότητα Steem Power προς ανάθεση",
