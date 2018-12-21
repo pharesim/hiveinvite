@@ -63,7 +63,7 @@
         "by_email": "Αναίρεση της επιλογής αυτού προκειμένου να λάβετε έναν ή περισσότερους συνδέσμους κατευθείαν, αντί να στείλετε ένα μήνυμα ηλεκτρονικού ταχυδρομείου",
         "email": "Διεύθυνση",
         "mailtext_label": "Κείμενο ηλεκτρονικού ταχυδρομείου",
-        "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
+        "mailtext": "Χαίρετε,\n\nέχετε προσκληθεί από τον χρήστη {} για να γίνετε μέλος του Steem blockchain.\n\nΤι είναι αυτό;\nΤο Steem είναι η βάση που χρησιμοποιείται από σελίδες κοινωνικής δικτύωσης νέου τύπου, όπως το steemit.com και το busy.org. Με τη χρήση τεχνολογίας blockchain, το σύστημα προσφέρει νέες δυνατότητες πληρώνοντας τους χρήστες για την δραστηριότητά τους.\n\nΑποδεχτείτε την πρόσκληση κάνοντας κλικ στον ακόλουθο σύνδεσμο:",
         "linkamount": "Αριθμός συνδέσμων προς δημιουργία",
         "or": "ΕΙΤΕ",
         "multi": "Δημιουργία ενός συνδέσμου που είναι έγκυρος για την δημιουργία πολλών λογαριασμών",
@@ -86,10 +86,10 @@
     "keys": {
         "wrong_key": "Μη έγκυρο κλειδί",
         "active_required": "Αυτή η ενέργεια απαιτεί το ενεργό κλειδί σας.",
-        "active": "Active key",
-        "posting": "Posting key",
-        "owner": "Owner key",
-        "memo": "Memo key",
+        "active": "Ενεργό κλειδί",
+        "posting": "Κλειδί αναρτήσεων",
+        "owner": "Κλειδί ιδιοκτήτη",
+        "memo": "Κλειδί σημειώσεων",
         "storeKey": "Απομνημόνευση του κλειδιού για αυτήν την συνεδρία"
     },
     "language": {
