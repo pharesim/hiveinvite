@@ -49,7 +49,7 @@
         "title": "Reclamação automatizada de contas steem com desconto",
         "explainer": "Olá! Sou o teu robô amigável de reclamação de contas. Clique no botão abaixo para me fazeres começar a trabalhar. Vou continuar a reclamar até ficares sem RC, ou indicares-me para parar, com o outro botão.",
         "working": "A trabalhar! Reclamadas <span id='botClaimStatusClaimed'>0</span> contas até agora.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
+        "stopped": "Parou após reclamar <span id='botClaimHasClaimed'>0</span> contas.<br />Mensagem de erro:<span id='botClaimError'></span>",
         "start": "Começar",
         "close": "Parar/Fechar"
     },
@@ -90,7 +90,7 @@
         "posting": "Chave de publicação",
         "owner": "Chave de proprietário",
         "memo": "Chave memo",
-        "storeKey": "Remember key for this session"
+        "storeKey": "Recordar a chave para esta sessão"
     },
     "language": {
         "switch": "Mudar idioma...",
@@ -115,9 +115,9 @@
         "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
         "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
         "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
-        "finish": "Finish account request and leave this site"
+        "finish": "Acabe a solicitação de conta e saia deste site"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "ID de convite inválido, desculpe!"
     }
 }
