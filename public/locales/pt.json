@@ -3,7 +3,7 @@
         "greeting": "Cria um Steemian!",
         "explainer": "Steeminvite é um serviço que permite-te convidar os teus amigos para o steem.",
         "buttontext": "para começar.",
-        "login_error": "Erro de inicío de sessão",
+        "login_error": "Erro de Início de sessão",
         "usernamePlaceholder": "O seu nome de utilizador steem",
         "postingkeyPlaceholder": "A sua chave privada de publicação"
     },
@@ -11,7 +11,7 @@
         "lastupdate": "Ultima atualização",
         "refresh": "Atualizar agora",
         "greeting": "Olá <span id='loggedInUser'>nome de utilizador</span>!",
-        "tokenexplain": "Para criar uma conta steem, precisa primeiro de reenvidicar um token. Estes podem ser obtidos por queimar uma certa quantidade de STEEM, ou por gastar uma grande quantidade de mana RC. Em retorno, a nova conta recebe uma quantia mínima de mana RC para transicionar no blockchain sem possuir Steem Power.",
+        "tokenexplain": "Para criar uma conta steem, precisa primeiro de reenvidicar um token. Estes podem ser obtidos por queimar uma certa quantidade de STEEM, ou por gastar uma grande quantidade de mana RC. Em retorno, a nova conta recebe uma quantia mínima de mana RC para transicionar no blockchain, sem possuir Steem Power.",
         "tokencost": "O custo atual de uma reclamação é <span class='steemcost'>0</span> STEEM ou <span class='rccost'>0</span> RC mana",
         "pendingclaims": "Reclamas-te uma conta. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Reclamas-te <span id='pendingclaims'>0</span> contas. <span id='invitespending'></span>",
@@ -60,7 +60,7 @@
     "invitemodal": {
         "title": "Convidar para o Steem!",
         "label": "Etiqueta",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
+        "by_email": "Desmarque isto para obter um ou vários links diretamente, em vez de enviar um e-mail",
         "email": "Endereço",
         "mailtext_label": "Texto do e-mail",
         "mailtext": "Olá,\n\nfoi convidado por {} para se juntar ao Steem blockchain.\n\nO que é isso?\nSteem é o backend usado por novos sites de redes sociais como o steemit.com e o busy.org. Ao usar a tecnologia blockchain, ela oferece novas formas de pagamento aos utilizadores pela sua atividade.\n\nAceite o convite clicando no seguinte link:",
