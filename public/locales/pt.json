@@ -62,7 +62,7 @@
         "label": "Etiqueta",
         "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
         "email": "Endereço",
-        "mailtext_label": "E-Mail text",
+        "mailtext_label": "Texto do e-mail",
         "mailtext": "Olá,\n\nfoi convidado por {} para se juntar ao Steem blockchain.\n\nO que é isso?\nSteem é o backend usado por novos sites de redes sociais como o steemit.com e o busy.org. Ao usar a tecnologia blockchain, ela oferece novas formas de pagamento aos utilizadores pela sua atividade.\n\nAceite o convite clicando no seguinte link:",
         "linkamount": "Número de links para criar",
         "or": "OU",
@@ -112,8 +112,8 @@
         "text": "O que dissémos anteriormente acerca de sua palavra-passe não era uma brincadeira.<br /> Para verificar que não cometeu um erro ao anotar a sua palavra-passe, introduza-a aqui.<br />Se não conseguir proceder, recarregue a página no seu browser e comece novamente."
     },
     "step4": {
-        "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
-        "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
+        "text": "Existem diferentes níveis de acesso para uma conta Steem.<br />A chave de publicação é usada para atividades diárias nas redes sociais, por exemplo, deixa-te publicar e votar.<br />Para acedar à sua carteira e mover STEEM, irá precisar da chave ativa.<br />A chave de proprietário pode ser usada para mudar esses dois, e nunca deve ser usada para outros propósitos. É melhor mantida ao lado da palavra-passe mestre, não a utilizes online.<br />Por último está a chave memo, que não tem função ainda mas pode ser usada no futuro para decriptar os seus dados privados como as mensagens privadas.",
+        "warning": "Estas chaves são geradas partindo da sua palavra-passe. Elas podem ser usadas no lugar desta, mas apenas para o seu específico propósito.<br />É mais seguro usar a chave de publicação se queres usar um dispositivo para apenas publicar e votar, ou a chave ativa quando queres realizar outras ações.<br />É MELHOR MANTER A PALAVRA-PASSE E A CHAVE DE PROPRIETÁRIO OFFLINE!",
         "confirm": "Ao clicar no seguinte botão, o utilizador que criou o teu convite vai ser informado, e, seguramente, irá criar a sua conta brevemente.",
         "finish": "Acabe a solicitação de conta e saia deste site"
     },
