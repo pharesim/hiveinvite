@@ -1,9 +1,9 @@
 {
     "loggedout": {
         "greeting": "صناعة steemian (مستخدم Steemit)!",
-        "explainer": "Steeminvite is a service that allows you to invite your friends to steem.",
-        "buttontext": "to get started.",
-        "login_error": "Login error",
+        "explainer": "steeminvite هي خدمة تسمح لنا بدعوة أصدقائنا للانضمام إلى Steem.",
+        "buttontext": "البدء.",
+        "login_error": "خطأ في تسجيل الدخول",
         "usernamePlaceholder": "Your steem username",
         "postingkeyPlaceholder": "Your private posting key"
     },
