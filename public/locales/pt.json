@@ -63,7 +63,7 @@
         "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
         "email": "Endereço",
         "mailtext_label": "E-Mail text",
-        "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
+        "mailtext": "Olá,\n\nfoi convidado por {} para se juntar ao Steem blockchain.\n\nO que é isso?\nSteem é o backend usado por novos sites de redes sociais como o steemit.com e o busy.org. Ao usar a tecnologia blockchain, ela oferece novas formas de pagamento aos utilizadores pela sua atividade.\n\nAceite o convite clicando no seguinte link:",
         "linkamount": "Número de links para criar",
         "or": "OU",
         "multi": "Crie um link que seja válido para múltiplas criações de contas",
@@ -72,7 +72,7 @@
         "delegate_amount": "Quantidade de Steem Power para delegar",
         "validity": "Por quantos dias deve o convite ser válido antes de ser eliminado automaticamente?",
         "validity_label": "Validade em dias",
-        "usermail": "E-Mail address for status updates",
+        "usermail": "E-mail para atualizações de status",
         "create": "Criar convite"
     },
     "button": {
@@ -114,7 +114,7 @@
     "step4": {
         "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
         "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
-        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
+        "confirm": "Ao clicar no seguinte botão, o utilizador que criou o teu convite vai ser informado, e, seguramente, irá criar a sua conta brevemente.",
         "finish": "Acabe a solicitação de conta e saia deste site"
     },
     "accept": {
