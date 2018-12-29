@@ -71,7 +71,7 @@
         "delegate": "Uma nova conta tem apenas uma quantidade básica de RC para realizar transações na blockchain. Se desejas que o novo utilizador possa fazer algo mais, delega-o algum Steem Power. Podes também fazer isso mais tarde, claro.",
         "delegate_amount": "Quantidade de Steem Power para delegar",
         "validity": "Por quantos dias deve o convite ser válido antes de ser eliminado automaticamente?",
-        "validity_label": "Validity in days",
+        "validity_label": "Validade em dias",
         "usermail": "E-Mail address for status updates",
         "create": "Criar convite"
     },
@@ -79,7 +79,7 @@
         "submit": "Submeter",
         "login": "Iniciar Sessão",
         "login_now": "Iniciar Sessão agora",
-        "logout": "Logout",
+        "logout": "Encerrar Sessão",
         "close": "Fechar",
         "proceed": "Continuar"
     },
