@@ -4,11 +4,11 @@
         "explainer": "steeminvite هي خدمة تسمح لنا بدعوة أصدقائنا للانضمام إلى Steem.",
         "buttontext": "البدء.",
         "login_error": "خطأ في تسجيل الدخول",
-        "usernamePlaceholder": "Your steem username",
-        "postingkeyPlaceholder": "Your private posting key"
+        "usernamePlaceholder": "اسم المستخدم الخاص بك على steem",
+        "postingkeyPlaceholder": "مفتاح النشر الخاص بك"
     },
     "index": {
-        "lastupdate": "Last update",
+        "lastupdate": "آخر تحديث",
         "refresh": "Refresh now",
         "greeting": "Hello <span id='loggedInUser'>username</span>!",
         "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
