@@ -72,7 +72,7 @@
         "delegate_amount": "Quantidade de Steem Power para delegar",
         "validity": "Por quantos dias deve o convite ser válido antes de ser eliminado automaticamente?",
         "validity_label": "Validade em dias",
-        "usermail": "E-mail para atualizações de status",
+        "usermail": "Endereço de e-mail para atualizações de status",
         "create": "Criar convite"
     },
     "button": {
