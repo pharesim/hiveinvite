@@ -11,7 +11,7 @@
         "lastupdate": "آخر تحديث",
         "refresh": "التجديد حالاً",
         "greeting": "مرحباً <span id='تسجيل الدخول للمستخدم'>اسم المستخدم</span>!",
-        "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
+        "tokenexplain": "لإنشاء حساب على ستيم، تحتاج أولاً إلى توكن. ويمكن الحصول على ذلك عبر صرف مبلغ معين من STEEM، أو إنفاق مبلغ كبير من RC mana. وفي المقابل، يتلقى الحساب الجديد حدّاً أدنى من RC mana لإجراء بعمليات على بلوكتشين دون امتلاك قوة ستيم.",
         "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
         "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "You have claimed <span id='pendingclaims'>0</span> accounts. <span id='invitespending'></span>",
