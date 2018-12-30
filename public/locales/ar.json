@@ -1,10 +1,10 @@
 {
     "loggedout": {
-        "greeting": "صناعة مستخدم Steem!",
-        "explainer": "steeminvite هي خدمة تسمح لنا بدعوة أصدقائنا للانضمام إلى Steem.",
+        "greeting": "صناعة ستيميان!",
+        "explainer": "ستيمانفايت هي خدمة تسمح لنا بدعوة أصدقائنا للانضمام إلى ستيم.",
         "buttontext": "البدء.",
         "login_error": "خطأ في تسجيل الدخول",
-        "usernamePlaceholder": "اسم المستخدم الخاص بك على steem",
+        "usernamePlaceholder": "اسم المستخدم الخاص بك على ستيم",
         "postingkeyPlaceholder": "مفتاح النشر الخاص بك"
     },
     "index": {
