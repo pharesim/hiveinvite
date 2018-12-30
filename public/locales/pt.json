@@ -24,7 +24,7 @@
         "abletoclaim": "A tua mana RC máxima é <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Estás atualmente em <span id='rcpct'>0</span>%,<span id='canclaimnowamount'></span></span>",
         "canclaim": "que te permite reclamar uma conta a 100%<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "que te permite reclamar <span id='maxclaims'>0</span> contas a 100%",
-        "cannotclaim": "que não te permite reclamar alguma conta. Faça Power up de algum STEEM!",
+        "cannotclaim": "que não te permite reclamar contas. Faça Power up de algum STEEM!",
         "canclaimnow": "para que consigas reclamar uma conta agora.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "para que consigas reclamar <span class='possibleclaims'>0</span> contas agora.",
         "cannotclaimnow": "para que tenhas de esperar um pouco antes de reclamares uma conta com desconto.",
