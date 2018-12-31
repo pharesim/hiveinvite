@@ -76,17 +76,17 @@
         "create": "إنشاء دعوة"
     },
     "button": {
-        "submit": "Submit",
-        "login": "Login",
-        "login_now": "Login now",
-        "logout": "Logout",
-        "close": "Close",
-        "proceed": "Proceed"
+        "submit": "امتثال",
+        "login": "تسجيل الدخول",
+        "login_now": "تسجيل الدخول الآن",
+        "logout": "تسجيل الخروج",
+        "close": "إغلاق",
+        "proceed": "المتابعة"
     },
     "keys": {
-        "wrong_key": "Invalid key",
-        "active_required": "This action requires your active key.",
-        "active": "Active key",
+        "wrong_key": "مفتاح غير صالح",
+        "active_required": "هذا العمل يحتاج مفتاح التنشيط الخاص بك.",
+        "active": "مفتاح التنشيط",
         "posting": "Posting key",
         "owner": "Owner key",
         "memo": "Memo key",
