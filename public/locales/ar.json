@@ -38,12 +38,12 @@
     },
     "freeclaimmodal": {
         "title": "المطالبة بحجز حسابات على ستيم",
-        "explainer": "أخر كلفة للمطالبة بحجز حساب كانت <span class='rccost'>0</span> RC<br /> يجب أن تكون مدركاً أنها تتغير دائماً. عند المطالبة بحجز عدة حسابات خلال فترة قصيرة, فإن السعر يرتفع.<br /><span id='freeExplainAmount'></span>",
+        "explainer": "أخر كلفة للمطالبة بحجز حساب كانت <span class='rccost'>0</span> مصادر الإئتمان<br /> يجب أن تكون مدركاً أنها تتغير دائماً. عند المطالبة بحجز عدة حسابات خلال فترة قصيرة, فإن السعر يرتفع.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "مع <span id='currentrc'>0</span> مصدر الإئتمان يمكنك المطالبة بحساب واحد.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
-        "single": "Claim one account",
-        "bot": "Claim bot"
+        "explainamount_plural": "مع <span id='currentrc'>0</span> مصدر الإئتمان يمكنك المطالبة <span class='possibleclaims'>0</span> بحسابات.",
+        "moreexplain": "يمكنك المطالبة إمّا بحساب واحد, أو استخدام بوت المطالبة حتى تستنفذ كافة مصادر الإئتمان أو توقفه.",
+        "single": "المطالبة بحساب واحد",
+        "bot": "بوت المطالبة"
     },
     "botclaimmodal": {
         "title": "Automated claiming of discounted steem accounts",
