@@ -85,15 +85,15 @@
     },
     "keys": {
         "wrong_key": "مفتاح غير صالح",
-        "active_required": "هذا العمل يحتاج مفتاح التنشيط الخاص بك.",
-        "active": "مفتاح التنشيط",
-        "posting": "Posting key",
-        "owner": "Owner key",
-        "memo": "Memo key",
-        "storeKey": "Remember key for this session"
+        "active_required": "هذا العمل يحتاج مفتاح النشاط الخاص بك.",
+        "active": "مفتاح النشاط",
+        "posting": "مفتاح النشر",
+        "owner": "مفتاح المالك",
+        "memo": "مفتاح المذكرة",
+        "storeKey": "تذكر المفتاح لهذه الدورة"
     },
     "language": {
-        "switch": "Switch language...",
+        "switch": "تبديل اللغة...",
         "en": "الانجليزية",
         "de": "الألمانية"
     },
