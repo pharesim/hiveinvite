@@ -99,12 +99,12 @@
     },
     "step1": {
         "lead": "مرحبا! أنت على بعد خطوات للحصول على حساب ستيم الخاص بك!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
+        "text": "سيشمل حسابك على محفظتك الشخصية, لذا الحماية ضرورية جداً.<br /> لقد قمنا بإحداث كلمة مرور رئيسية لحسابك, والتي يجب أن تحفظها في مكان آمن. إكتبها في مكان ما!",
         "submit": "لقد دونت كلمة المرور و لن أفقدها أبداً"
     },
     "step2": {
         "lead": "حسنًا. تأكد من عدم فقدان كلمة المرور! ليس هناك طريقة لاستردادها!",
-        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
+        "text": "إسم المستخدم الخاص بك يجب أن يتكون غلى الأقل من ثلاثة أحرف, و لايمكن أن يتكون إلاّ من أحرف صغيرة, أرقام و فواصل. يجب أن يكون فريد و لايمكن تغيره. إختره بعناية.",
         "username": "اسم المستخدم الخاص بك",
         "as": "كما"
     },
