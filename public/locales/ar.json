@@ -38,7 +38,7 @@
     },
     "freeclaimmodal": {
         "title": "طلب حجز حسابات على ستيم",
-        "explainer": "أخر كلفة لحجز حساب كانت <span class='rccost'>0</span> آر سي <br /> يجب أن تكون مدركاً أنها دائمة التغيّر. ويرتفع السعر عند القيام بحجز حسابات عدة خلال مدة قصيرة.<br /><span id='freeExplainAmount'></span>",
+        "explainer": "أخر تكلفة لحجز حساب كانت <span class='rccost'>0</span> آر سي <br />يجب أيضا معرفة أن التكلفة في تغير دائم. كما أن التكلفة ترتفع أيضا عند حجز عدة حسابات في مدة قصيرة.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "مع <span id='currentrc'>0</span> آر سي يمكنك طلب حساب واحد.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "مع <span id='currentrc'>0</span> آر سي يمكنك طلب <span class='possibleclaims'>0</span> من الحسابات.",
         "moreexplain": "يمكنك طلب إمّا حساب واحد، أو استخدام بوت المطالبة حتى تستنفذ كافة الآر سي الخاص بك أو تقوم بإيقافه.",
