@@ -30,7 +30,7 @@
         "cannotclaimnow": "لذا عليك الإنتظار قليلاً ريثما تستطيع حجز حساب.",
         "abletobuy": "مع رصيدك المقدر بـ<span id='steembalance'>0 ستيم </span> لا يمكنك <span id='abletopayforclaim'></span>",
         "canbuy": "الطلب نظرياً لحساب آخر.<span id='possiblebuys' class='hidden'></span>",
-        "canbuy_plural": "الطلب نظرياً <span id='possiblebuys'>0</span> لحسابات أخرى.",
+        "canbuy_plural": "أطلب نظريا <span id='possiblebuys'>0</span> من الحسابات.",
         "cannotbuy": "حجز حسابات أخرى. إحصل على المزيد من ستيم!",
         "claimfreemodal": "طلب مجّاني",
         "claimsteemmodal": "طلب مدفوع",
