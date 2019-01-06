@@ -31,7 +31,7 @@
         "abletobuy": "مع رصيدك المقدر بـ<span id='steembalance'>0 ستيم </span> تستطيع <span id='abletopayforclaim'></span>",
         "canbuy": "الطلب نظرياً لحساب آخر.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "الطلب نظرياً <span id='possiblebuys'>0</span> لحسابات أخرى.",
-        "cannotbuy": "حجز حسابات أخرى. إحصل على المزيد من عملة ستيم!",
+        "cannotbuy": "حجز حسابات أخرى. إحصل على المزيد من ستيم!",
         "claimfreemodal": "طلب مجّاني",
         "claimsteemmodal": "طلب مدفوع",
         "invitemodal": "قم بدعوة أحد ما الآن"
