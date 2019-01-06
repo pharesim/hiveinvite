@@ -28,7 +28,7 @@
         "canclaimnow": "إذًا يمكنك طلب حساب واحد على الفور.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "إذاً يمكنك طلب <span class='possibleclaims'>0</span> من الحسابات على الفور.",
         "cannotclaimnow": "لذا عليك الإنتظار قليلاً ريثما تستطيع حجز حساب.",
-        "abletobuy": "مع رصيدك المقدر بـ<span id='steembalance'>0 ستيم </span> تستطيع <span id='abletopayforclaim'></span>",
+        "abletobuy": "مع رصيدك المقدر بـ<span id='steembalance'>0 ستيم </span> لا يمكنك <span id='abletopayforclaim'></span>",
         "canbuy": "الطلب نظرياً لحساب آخر.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "الطلب نظرياً <span id='possiblebuys'>0</span> لحسابات أخرى.",
         "cannotbuy": "حجز حسابات أخرى. إحصل على المزيد من ستيم!",
