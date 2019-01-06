@@ -24,7 +24,7 @@
         "abletoclaim": "الحد الأقصى للآر سي مانا خاصتك هو <span id='maxrc'>0</span>، <span id='canclaimever'></span><br /><span id='canclaimnow'> الحد الخاص بك حاليا هو <span id='rcpct'>0</span>%، <span id='canclaimnowamount'></span></span>",
         "canclaim": "ما يسمح لك بحجز حساب واحد عند نسبة 100% <span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "ما يسمح لك بحجز <span id='maxclaims'>0</span> من الحسابات عند نسبة 100%",
-        "cannotclaim": "الذي لا يتيح لك المطالبة بأية حساب. قم بشحن القوة بالبعض من عملة ستيم!",
+        "cannotclaim": "أي أنه لا يتيح لك حجز أية حسابات. إرفع قوة الستم لديك بإستعمال بعض الستيم!",
         "canclaimnow": "إذًا يمكنك طلب حساب واحد على الفور.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "إذاً يمكنك طلب <span class='possibleclaims'>0</span> من الحسابات على الفور.",
         "cannotclaimnow": "لذا عليك الإنتظار قليلاً ريثما تستطيع حجز حساب.",
