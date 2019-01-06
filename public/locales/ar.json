@@ -29,8 +29,8 @@
         "canclaimnow_plural": "إذاً يمكنك طلب <span class='possibleclaims'>0</span> من الحسابات على الفور.",
         "cannotclaimnow": "لذا عليك الإنتظار قليلاً ريثما تستطيع حجز حساب.",
         "abletobuy": "مع رصيدك المقدر بـ<span id='steembalance'>0 ستيم </span> لا يمكنك <span id='abletopayforclaim'></span>",
-        "canbuy": "الطلب نظرياً لحساب آخر.<span id='possiblebuys' class='hidden'></span>",
-        "canbuy_plural": "أطلب نظريا <span id='possiblebuys'>0</span> من الحسابات.",
+        "canbuy": "أحجز حسابا آخرا نظريََا.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "أحجز نظريا <span id='possiblebuys'>0</span> من الحسابات.",
         "cannotbuy": "حجز حسابات أخرى. إحصل على المزيد من ستيم!",
         "claimfreemodal": "طلب مجّاني",
         "claimsteemmodal": "طلب مدفوع",
@@ -48,7 +48,7 @@
     "botclaimmodal": {
         "title": "الطلب الآلي لحجز حسابات على ستيم",
         "explainer": "مرحباً! أنا صديقك الروبوت الذي يقوم بحجزالحساب لك. إضغط على الزر أدناه لتفعيلي. سأستمر في المطالبة حتى نفاذ اللآر سي، أو إيقافي عبر الضغط على الزر الآخر.",
-        "working": "في العمل! الحسابات المطلوبة <span id='botClaimStatusClaimed'>0</span> حتى الآن.",
+        "working": "في العمل! تم حجز <span id='botClaimStatusClaimed'>0</span> من الحسابات إلى حد الآن.",
         "stopped": "توقفت بعد طلب الحسابات<span id='botClaimHasClaimed'>0</span>.<br />Error message: <span id='botClaimError'></span>",
         "start": "إبدأ",
         "close": "إيقاف/إغلاق"
