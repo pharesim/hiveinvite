@@ -39,9 +39,9 @@
     "freeclaimmodal": {
         "title": "Захтевајте дисконтоване steem налоге",
         "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
+        "explainamount": "Са <span id='currentrc'>0</span> RC можете захтевати један налог.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Са<span id='currentrc'>0</span> RC можете захтевати <span class='possibleclaims'>0</span> налога.",
+        "moreexplain": "Можете захтевати један налог, или користити бота за захтевање док не потрошите RC или га зауставите.",
         "single": "Захтевајте један налог",
         "bot": "Бот за захтеве"
     },
@@ -118,6 +118,6 @@
         "finish": "Finish account request and leave this site"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "Неважећа идентификација позивнице, жао нам је!"
     }
 }
