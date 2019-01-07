@@ -2,7 +2,7 @@
     "loggedout": {
         "greeting": "Направи Стимићанина!",
         "explainer": "Steeminvite је услуга која вам омогућава да позовете своје пријатеље на steem.",
-        "buttontext": "to get started.",
+        "buttontext": "да почнете.",
         "login_error": "Грешка приликом пријављивања",
         "usernamePlaceholder": "Ваше steem корисничко име",
         "postingkeyPlaceholder": "Ваш приватни posting key"
