@@ -41,7 +41,7 @@
         "explainer": "Последња цена за захтев дисконтованог налога била је <span class='rccost'>0</span> RC<br />Имајте на уму да цена варира све време. Када се захтева више налога у кратком временском периоду, цена расте.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Са <span id='currentrc'>0</span> RC можете захтевати један налог.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Са<span id='currentrc'>0</span> RC можете захтевати <span class='possibleclaims'>0</span> налога.",
-        "moreexplain": "Можете захтевати један налог, или користити бота за захтевање док не потрошите RC или га зауставите.",
+        "moreexplain": "Можете захтевати један налог, или користите бот за захтеве док не потрошите сав RC или га прекинете.",
         "single": "Захтевајте један налог",
         "bot": "Бот за захтеве"
     },
