@@ -69,7 +69,7 @@
         "multi": "Create a link that is valid for multiple account creations",
         "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
         "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
-        "delegate_amount": "Amount of Steem Power to delegate",
+        "delegate_amount": "Количина Steem Power-а коју желите да делегирате",
         "validity": "How many days should the invite be valid before being automatically deleted?",
         "validity_label": "Ваљаност у данима",
         "usermail": "E-Mail address for status updates",
