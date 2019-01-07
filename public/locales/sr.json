@@ -67,8 +67,8 @@
         "linkamount": "Број линкова за креирање",
         "or": "ИЛИ",
         "multi": "Направите линк који важи за вишеструко прављење налога",
-        "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
-        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
+        "multi_label": "Број налога за који важи овај линк (пазите, можете остати без захтева уколико користите ову опцију!)",
+        "delegate": "Нови налог има само основну количину RC за трансакције на блокчејну. Уколико желите да нови корисник може да ради више, делегирајте одређену количину Steem Power-а. Наравно, ово можете урадити и касније.",
         "delegate_amount": "Количина Steem Power-а коју желите да делегирате",
         "validity": "Колико дана желите да позивница буде важећа док се не избрише аутоматски?",
         "validity_label": "Важење у данима",
@@ -99,12 +99,12 @@
     },
     "step1": {
         "lead": "Здраво! Остало је још само неколико корака да добијете ваш Steem налог!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "text": "Ваш налог ће укључивати ваш лични новчаник, стога је безбедност изузетн важна.<br />Генерисали смо мастер лозинку за ваш налог, коју треба да чувате на сигурној локацији. Запишите је негде!",
+        "submit": "Записао/ла сам лозинку и нећу је никад изгубити"
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
-        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
+        "lead": "У реду. Водите рачуна да не изгубите лозинку! Не постоји начин да је повратите!",
+        "text": "Ваше Steem корисничко има мора садржати најмање три карактера, и не може садржати ниједан други каратер осим малих слова, бројева и цртице. Мора бити јединствено и никад не може бити промењено. Изаберите га пажљиво.",
         "username": "Ваше корисничко име",
         "as": "као"
     },
