@@ -1,7 +1,7 @@
 {
     "loggedout": {
         "greeting": "Направи Стимићанина!",
-        "explainer": "Steeminvite is a service that allows you to invite your friends to steem.",
+        "explainer": "Steeminvite је услуга која вам омогућава да позовете своје пријатеље на steem.",
         "buttontext": "to get started.",
         "login_error": "Грешка приликом пријављивања",
         "usernamePlaceholder": "Ваше steem корисничко име",
