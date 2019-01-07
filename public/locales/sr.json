@@ -38,7 +38,7 @@
     },
     "freeclaimmodal": {
         "title": "Захтевајте дисконтоване steem налоге",
-        "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
+        "explainer": "Последња цена за захтев дисконтованог налога била је <span class='rccost'>0</span> RC<br />Имајте на уму да цена варира све време. Када се захтева више налога у кратком временском периоду, цена расте.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Са <span id='currentrc'>0</span> RC можете захтевати један налог.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Са<span id='currentrc'>0</span> RC можете захтевати <span class='possibleclaims'>0</span> налога.",
         "moreexplain": "Можете захтевати један налог, или користити бота за захтевање док не потрошите RC или га зауставите.",
@@ -46,7 +46,7 @@
         "bot": "Бот за захтеве"
     },
     "botclaimmodal": {
-        "title": "Automated claiming of discounted steem accounts",
+        "title": "Аутоматизовано захтевање дисконтованих steem налога",
         "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
         "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
         "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
