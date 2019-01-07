@@ -48,25 +48,25 @@
     "botclaimmodal": {
         "title": "Аутоматизовано захтевање дисконтованих steem налога",
         "explainer": "Здраво! Ја сам пријатељски робот за захтеве. Кликните на дугме испод како бих започео свој посао. Захтеваћу налоге све док не останете без RC, или ми не задате команду да се зауставим притиском на друго дугме.",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
+        "working": "На послу! До сада је захтевано <span id='botClaimStatusClaimed'>0</span> налога.",
+        "stopped": "Заустављено нако захтевања <span id='botClaimHasClaimed'>0</span> налога.<br />Порука о грешци: <span id='botClaimError'></span>",
         "start": "Започни",
         "close": "Заустави/Затвори"
     },
     "paidclaimmodal": {
         "title": "Платите захтев steem налога",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+        "explainer": "Цена захтева налога је <span class='steemcost'>0</span>STEEM-а<br />Ову цену одређују витнеси.<br />Нови налог ће примити основну количину RC као да има исту количину Steem Power-а."
     },
     "invitemodal": {
         "title": "Позовница на Steem!",
         "label": "Ознака",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
+        "by_email": "Искључите ово да добијете један или више линкова директно, уместо слања електронског писма",
         "email": "Адреса",
         "mailtext_label": "Текст електронског писма",
         "mailtext": "Здраво,\n\nПозвани сте од стране {} да се придружите Steem блокчејну.\n\nШта је то?\n\nSteem је backend који користи нове друштвене медије као steemit.com and busy.org. Користећи блокчејн технологију, постоје нови начини да би платили својим корисницима за њихове активности.\n\nПрихватите позивницу кликом на следећи линк:",
         "linkamount": "Број линкова за креирање",
         "or": "ИЛИ",
-        "multi": "Create a link that is valid for multiple account creations",
+        "multi": "Направите линк који важи за вишеструко прављење налога",
         "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
         "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
         "delegate_amount": "Количина Steem Power-а коју желите да делегирате",
