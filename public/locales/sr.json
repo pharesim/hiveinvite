@@ -42,8 +42,8 @@
         "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
         "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
-        "single": "Claim one account",
-        "bot": "Claim bot"
+        "single": "Захтевајте један налог",
+        "bot": "Бот за захтеве"
     },
     "botclaimmodal": {
         "title": "Automated claiming of discounted steem accounts",
@@ -61,9 +61,9 @@
         "title": "Позовница на Steem!",
         "label": "Ознака",
         "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
-        "email": "Address",
-        "mailtext_label": "E-Mail text",
-        "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
+        "email": "Адреса",
+        "mailtext_label": "Текст електронског писма",
+        "mailtext": "Здраво,\n\nПозвани сте од стране {} да се придружите Steem блокчејну.\n\nШта је то?\n\nSteem је backend који користи нове друштвене медије као steemit.com and busy.org. Користећи блокчејн технологију, постоје нови начини да би платили својим корисницима за њихове активности.\n\nПрихватите позивницу кликом на следећи линк:",
         "linkamount": "Number of links to create",
         "or": "OR",
         "multi": "Create a link that is valid for multiple account creations",
