@@ -27,7 +27,7 @@
         "cannotclaim": "што вам не дозвољава да захтевате налог. ",
         "canclaimnow": "тако да можете одмах да захтевате налог. <span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "тако да можете одмах да захтевате <span class='possibleclaims'>0</span> налога.",
-        "cannotclaimnow": "so you have to wait a bit until you can claim a discounted account.",
+        "cannotclaimnow": "тако да морате да сачекате док не будете у могућности да захтевате налог са попустом.",
         "abletobuy": "With your balance of <span id='steembalance'>0 STEEM</span> you can <span id='abletopayforclaim'></span>",
         "canbuy": "theoretically claim one more account.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "theoretically claim another <span id='possiblebuys'>0</span> accounts.",
