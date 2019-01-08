@@ -25,7 +25,7 @@
         "canclaim": "што вам омогућава да захтевате један налог са 100%<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "што вам омогућава да захтевате <span id='maxclaims'>0</span> налога када имате 100%",
         "cannotclaim": "што вам не дозвољава да захтевате налог. Додајте још Steem Power-a!",
-        "canclaimnow": "тако да можете одмах да захтевате налог. <span class='possibleclaims hidden'></span>",
+        "canclaimnow": "тако да можете одмах захтевати налог. <span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "тако да можете одмах захтевати <span class='possibleclaims'>0</span> налога.",
         "cannotclaimnow": "тако да морате сачекати док не будете у могућности да захтевате дисконтовани налог.",
         "abletobuy": "Са вашим салдом од <span id='steembalance'>0 STEEM</span> можете<span id='abletopayforclaim'></span>",
