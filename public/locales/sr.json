@@ -1,8 +1,8 @@
 {
     "loggedout": {
-        "greeting": "Направи Steem корисника!",
+        "greeting": "Направи Steemian-а!",
         "explainer": "Steeminvite је услуга која вам омогућава да позовете своје пријатеље на steem.",
-        "buttontext": "да почнете.",
+        "buttontext": "како бисте почели.",
         "login_error": "Грешка приликом пријављивања",
         "usernamePlaceholder": "Ваше steem корисничко име",
         "postingkeyPlaceholder": "Ваш приватни posting key"
@@ -22,7 +22,7 @@
         "invitemore": "тако да сада можете позвати пријатеља!<span id='remaininginvites' class='hidden'></span>",
         "invitemore_plural": "тако да можете позвати још <span id='remaininginvites'>0</span> пријатеља.",
         "abletoclaim": "Ваша максимална RC мана износи <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Тренутно имате <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
-        "canclaim": "што вам омогућава да захтевате један налог са 100%<span id='maxclaims' class='hidden'></span>",
+        "canclaim": "што вам омогућава да захтевате један налог када имате 100%<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "што вам омогућава да захтевате <span id='maxclaims'>0</span> налога када имате 100%",
         "cannotclaim": "што вам не дозвољава да захтевате налог. Додајте још Steem Power-a!",
         "canclaimnow": "тако да можете одмах захтевати налог. <span class='possibleclaims hidden'></span>",
