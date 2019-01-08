@@ -11,7 +11,7 @@
         "lastupdate": "Последње ажурирање",
         "refresh": "Освежи сада",
         "greeting": "Здраво, <span id='loggedInUser'>username</span>!",
-        "tokenexplain": "Да бисте направили steem налог, морате прво да захтевате токен. Они се могу добити уништавањем одређене количине STEEM-а, или трошењем велике количине RC мане. Заузврате, нови налог прима минималну количину RC мане потребну за обављање трансакције на блокчејну без поседовања Steem Power-а.",
+        "tokenexplain": "Да бисте направили steem налог, морате прво да захтевате токен. Они се могу добити уништавањем одређене количине STEEM-а, или трошењем велике количине RC мане. Заузврате, нови налог прима минималну количину RC мане потребну за обављање трансакцијa на блокчејну без поседовања Steem Power-а.",
         "tokencost": "Тренутна цена захтева износи <span class='steemcost'>0</span> STEEM или <span class='rccost'>0</span> RC мане",
         "pendingclaims": "Захтевали сте налог. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Захтевали сте <span id='pendingclaims'>0</span>налога. <span id='invitespending'></span>",
