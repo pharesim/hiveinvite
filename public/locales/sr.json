@@ -4,13 +4,13 @@
         "explainer": "Steeminvite je usluga koja vam omogućava da pozovete svoje prijatelje na steem.",
         "buttontext": "kako biste počeli.",
         "login_error": "Greška prilikom prijavljivanja",
-        "usernamePlaceholder": "Your steem username",
-        "postingkeyPlaceholder": "Your private posting key"
+        "usernamePlaceholder": "Vaše steem korisničko ime",
+        "postingkeyPlaceholder": "Vaš privatni posting key"
     },
     "index": {
-        "lastupdate": "Last update",
-        "refresh": "Refresh now",
-        "greeting": "Hello <span id='loggedInUser'>username</span>!",
+        "lastupdate": "Poslednje ažuriranje",
+        "refresh": "Osvеži sada",
+        "greeting": "Zdravo, <span id='loggedInUser'>username</span>!",
         "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
         "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
         "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
