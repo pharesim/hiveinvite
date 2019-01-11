@@ -1,9 +1,9 @@
 {
     "loggedout": {
-        "greeting": "Make a Steemian!",
-        "explainer": "Steeminvite is a service that allows you to invite your friends to steem.",
-        "buttontext": "to get started.",
-        "login_error": "Login error",
+        "greeting": "Napravi Steemian-a!",
+        "explainer": "Steeminvite je usluga koja vam omogućava da pozovete svoje prijatelje na steem.",
+        "buttontext": "kako biste počeli.",
+        "login_error": "Greška prilikom prijavljivanja",
         "usernamePlaceholder": "Your steem username",
         "postingkeyPlaceholder": "Your private posting key"
     },
