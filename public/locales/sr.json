@@ -70,7 +70,7 @@
         "multi_label": "Broj naloga za koji važi ovaj link (pazite, možete ostati bez zahteva ukoliko koristite ovu opciju!)",
         "delegate": "Novi nalog ima samo osnovnu količinu RC za transakcije na blokčejnu. Ukoliko želite da novi korisnik može da radi više, delegirajte određenu količinu Steem Power-a. Naravno, ovo možete uraditi i kasnije.",
         "delegate_amount": "Količina Steem Power-a koju želite da delegirate",
-        "validity": "Koliko dana želite da pozivnica bude važeća dok se ne izbrište automatski?",
+        "validity": "Koliko dana želite da pozivnica bude važeća dok se ne izbriše automatski?",
         "validity_label": "Važenje u danima",
         "usermail": "E-Mail adresa za ažuriranje stanja",
         "create": "Kreiraj pozivnicu"
@@ -99,7 +99,7 @@
     },
     "step1": {
         "lead": "Zdravo! Ostalo je još samo nekoliko koraka da dobijete Vaš Steem nalog!",
-        "text": "Vaš nalog će uključivati Vaš lični novčanik, stoga je bezbednost izuzetno važna.<br />Generisali smo master lozinku za vaš nalog, koju treba da čuvate na sigurnoj lokaciji. Zapišite je negde!",
+        "text": "Vaš nalog će uključivati Vaš lični novčanik, stoga je bezbednost izuzetno važna.<br />Generisali smo master lozinku za Vaš nalog, koju treba da čuvate na sigurnoj lokaciji. Zapišite je negde!",
         "submit": "Zapisao/la sam lozinku i neću je nikad izgubiti"
     },
     "step2": {
@@ -114,7 +114,7 @@
     "step4": {
         "text": "Postoje različiti nivoi pristupa vašem Steem nalogu.<br />Posting key se koristi za svakodnevne aktivnosti na društvenoj mreži, npr. dozvoljava vam da objavljujete i glasate.<br />Da pristupite vašem novčaniku i premeštate STEEM, potreban vam je active key.<br />Owner key možete koristiti da promenite ova dva ključa, i ne bi trebalo da se koristi za druge svrhe. Najbolje je čuvati ga pored master lozinke, ne koristite ih dok ste na mreži.<br />Poslednji na redu je memo key, koji nema funkciju, ali može imati u budućnosti, gde će se koristiti za dešifrovanje vaših privatnih podataka kao što su direktne poruke.",
         "warning": "Ovi ključevi su generisani iz vaše lozinke. Mogu se koristiti umesto lozinke, ali samo za svoje određene namene.<br />Sigurnije je koristiti posting key ukoliko želite da koristite uređaj samo za objavljivanje i glasanje, ili active key kada želite da izvršite neke druge radnje.<br />NAJSIGURNIJE JE LOZINKU I OWNER KEY ČUVATI VAN MREŽE!",
-        "confirm": "Klikom na sledeće dugme, korisnik koji je napravio vašu pozivnicu biće informisan, i nadamo se uskoro kreirati vaš nalog.",
+        "confirm": "Klikom na sledeće dugme, korisnik koji je napravio vašu pozivnicu biće informisan, i nadamo se uskoro kreirati Vaš nalog.",
         "finish": "Popunite zahtev za nalog i napustite sajt"
     },
     "accept": {
