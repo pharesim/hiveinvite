@@ -90,12 +90,12 @@
         "posting": "Posting key",
         "owner": "Owner key",
         "memo": "Memo key",
-        "storeKey": "Remember key for this session"
+        "storeKey": "Zapamti ključ za ovu sesiju"
     },
     "language": {
-        "switch": "Switch language...",
-        "en": "english",
-        "de": "german"
+        "switch": "Promeni jezik...",
+        "en": "engleski",
+        "de": "nemački"
     },
     "step1": {
         "lead": "Hi! You are only a few steps away from getting your own Steem account!",
