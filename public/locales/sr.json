@@ -40,14 +40,14 @@
         "title": "Zahtevajte diskontovane steem naloge",
         "explainer": "Poslednja cena za zahtev diskontovanog naloga bila je <span class='rccost'>0</span> RC<br />Imajte na umu da cena varira sve vreme. Kada se zahteva više naloga u kratkom vremenskom periodu, cena raste.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Sa <span id='currentrc'>0</span> RC možete zahtevati jedan nalog.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
-        "single": "Claim one account",
-        "bot": "Claim bot"
+        "explainamount_plural": "Sa <span id='currentrc'>0</span> RC možete zahtevati <span class='possibleclaims'>0</span> naloga.",
+        "moreexplain": "Možete zahtevati jedan nalog, ili koristiti bota za zahtevanje dok ne potrošite RC ili ga zaustavite.",
+        "single": "Zahtevajte jedan nalog",
+        "bot": "Bot za zahteve"
     },
     "botclaimmodal": {
-        "title": "Automated claiming of discounted steem accounts",
-        "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
+        "title": "Automatizovano zahtevanje diskontovanih steem naloga",
+        "explainer": "Zdravo! Ja sam prijateljski robot za zahteve. Kliknite na dugme ispod kako bih započeo svoj posao. Zahtevaću naloge sve dok ne ostanete bez RC, ili mi ne zadate komandu da se zaustavim pritiskom na drugo dugme.",
         "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
         "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
         "start": "Start",
