@@ -48,13 +48,13 @@
     "botclaimmodal": {
         "title": "Automatizovano zahtevanje diskontovanih steem naloga",
         "explainer": "Zdravo! Ja sam prijateljski robot za zahteve. Kliknite na dugme ispod kako bih započeo svoj posao. Zahtevaću naloge sve dok ne ostanete bez RC, ili mi ne zadate komandu da se zaustavim pritiskom na drugo dugme.",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
-        "start": "Start",
-        "close": "Stop/Close"
+        "working": "Radim! Do sada je zahtevano <span id='botClaimStatusClaimed'>0</span> naloga.",
+        "stopped": "Zaustavljeno nakon zahtevanja <span id='botClaimHasClaimed'>0</span> naloga.<br />Poruka o grešci: <span id='botClaimError'></span>",
+        "start": "Započni",
+        "close": "Zaustavi/Zatvori"
     },
     "paidclaimmodal": {
-        "title": "Pay to claim a steem account",
+        "title": "Platite zahtev steem naloga",
         "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
     },
     "invitemodal": {
