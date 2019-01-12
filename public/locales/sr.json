@@ -55,14 +55,14 @@
     },
     "paidclaimmodal": {
         "title": "Platite zahtev steem naloga",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+        "explainer": "Cena zahteva naloga je <span class='steemcost'>0</span> STEEM-a<br />Ovu cenu određuju vitnesi (witness).<br />Novi nalog će primiti osnovnu količinu RC kao da ima istu količinu Steem Power-a."
     },
     "invitemodal": {
-        "title": "Invite to Steem!",
-        "label": "Label",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
-        "email": "Address",
-        "mailtext_label": "E-Mail text",
+        "title": "Pozovite na Steem!",
+        "label": "Oznaka",
+        "by_email": "Isključite ovo da dobijete jedan ili više linkova direktno, umesto slanja email-a",
+        "email": "Adresa",
+        "mailtext_label": "Tekst e-poruke",
         "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
         "linkamount": "Number of links to create",
         "or": "OR",
