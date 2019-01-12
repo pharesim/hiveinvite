@@ -113,11 +113,11 @@
     },
     "step4": {
         "text": "Postoje različiti nivoi pristupa vašem Steem nalogu.<br />Posting key se koristi za svakodnevne aktivnosti na društvenoj mreži, npr. dozvoljava vam da objavljujete i glasate.<br />Da pristupite vašem novčaniku i premeštate STEEM, potreban vam je active key.<br />Owner key možete koristiti da promenite ova dva ključa, i ne bi trebalo da se koristi za druge svrhe. Najbolje je čuvati ga pored master lozinke, ne koristite ih dok ste na mreži.<br />Poslednji na redu je memo key, koji nema funkciju, ali može imati u budućnosti, gde će se koristiti za dešifrovanje vaših privatnih podataka kao što su direktne poruke.",
-        "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
-        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
-        "finish": "Finish account request and leave this site"
+        "warning": "Ovi ključevi su generisani iz vaše lozinke. Mogu se koristiti umesto lozinke, ali samo za svoje određene namene.<br />Sigurnije je koristiti posting key ukoliko želite da koristite uređaj samo za objavljivanje i glasanje, ili active key kada želite da izvršite neke druge radnje.<br />NAJSIGURNIJE JE LOZINKU I OWNER KEY ČUVATI VAN MREŽE!",
+        "confirm": "Klikom na sledeće dugme, korisnik koji je napravio vašu pozivnicu biće informisan, i nadamo se uskoro kreirati vaš nalog.",
+        "finish": "Popunite zahtev za nalog i napustite sajt"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "Nevažeća identifikacija pozivnice, žao nam je!"
     }
 }
