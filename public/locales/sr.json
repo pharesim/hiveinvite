@@ -98,18 +98,18 @@
         "de": "nemački"
     },
     "step1": {
-        "lead": "Hi! You are only a few steps away from getting your own Steem account!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "lead": "Zdravo! Ostalo je još samo nekoliko koraka da dobijete Vaš Steem nalog!",
+        "text": "Vaš nalog će uključivati Vaš lični novčanik, stoga je bezbednost izuzetno važna.<br />Generisali smo master lozinku za vaš nalog, koju treba da čuvate na sigurnoj lokaciji. Zapišite je negde!",
+        "submit": "Zapisao/la sam lozinku i neću je nikad izgubiti"
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
-        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
-        "username": "Your username",
-        "as": "as"
+        "lead": "U redu. Vodite računa da ne izgubite lozinku! Ne postoji način da je povratite!",
+        "text": "Vaše Steem korisničko ime mora da sadrži najmanje tri karaktera, i ne može sadržati nijedan drugi karakter osim malih slova, brojeva i crtice. Mora biti jedinstveno i nikad ne može biti promenjeno. Izaberite ga pažljivo.",
+        "username": "Vaše korisničko ime",
+        "as": "kao"
     },
     "step3": {
-        "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
+        "text": "Sve što smo do sada rekli u vezi sa vašom lozinkom nije šala.<br />Da proverite da niste napravili grešku prilikom zapisivanja vaše lozinke, molimo unesite je ovde.<br />Ako ne možete da nastavite dalje, osvežite stranicu u vašem pretraživaču i počnite iz početka."
     },
     "step4": {
         "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
