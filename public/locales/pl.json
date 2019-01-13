@@ -89,27 +89,27 @@
         "active": "Klucz aktywny",
         "posting": "Klucz do publikowania",
         "owner": "Klucz właściciela",
-        "memo": "Memo key",
-        "storeKey": "Remember key for this session"
+        "memo": "Klucz memo",
+        "storeKey": "Pamiętaj klucz dla tej sesji"
     },
     "language": {
-        "switch": "Switch language...",
-        "en": "english",
-        "de": "german"
+        "switch": "Zmień język...",
+        "en": "angielski",
+        "de": "niemiecki"
     },
     "step1": {
-        "lead": "Hi! You are only a few steps away from getting your own Steem account!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "lead": "Cześć! Jesteś już tylko kilka kroków od dostania własnego konta Steem!",
+        "text": "Twoje konto będzie zawierać Twój osobisty portfel, więc bardzo ważne jest bezpieczeństwo.<br />Mamy wygenerowane główne hasło dla konta, które należy zachować w bezpiecznym miejscu. Zapisz je gdzieś!",
+        "submit": "Zapisałem hasło i nigdy go nie zgubię"
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
-        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
-        "username": "Your username",
-        "as": "as"
+        "lead": "W porządku. Bądź pewny, że nie stracisz hasła. Nie ma możliwości aby je odzyskać!",
+        "text": "Twoja nazwa użytkownika Steem musi posiadać co najmniej 3 znaki. Nie może zawierać znaków innych niż małe litery, cyfry i kreska. Musi być unikalne i nie może być nigdy zmienione. Wybierz je starannie.",
+        "username": "Twoja nazwa użytkownika",
+        "as": "jako"
     },
     "step3": {
-        "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
+        "text": "To co pisaliśmy wcześniej o haśle to nie był żart.<br />Aby sprawdzić czy nie popełniłeś błędu podczas zapisywania hasła, proszę wpisz je tutaj.<br />Jeśli nie możesz kontynuować, odśwież stronę i zacznij od nowa."
     },
     "step4": {
         "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
