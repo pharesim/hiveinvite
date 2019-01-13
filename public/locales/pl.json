@@ -112,12 +112,12 @@
         "text": "To co pisaliśmy wcześniej o haśle to nie był żart.<br />Aby sprawdzić czy nie popełniłeś błędu podczas zapisywania hasła, proszę wpisz je tutaj.<br />Jeśli nie możesz kontynuować, odśwież stronę i zacznij od nowa."
     },
     "step4": {
-        "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
-        "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
-        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
-        "finish": "Finish account request and leave this site"
+        "text": "Istnieją różne poziomy dostępu do konta Steem.<br />Klucz publikacji używany jest do codziennych czynności takich jak polubienie czy tworzenie posta/komentarza.<br />Aby dostać się do swojego portfela i przelewać STEEM potrzebujesz klucza aktywnego.<br />Klucz właściciela może być użyty do zmiany poprzednich dwóch i nie powienien być nigdy używany w innym celu. Najlepiej nie przechowywać go razem z głównym hasłem i nie używać go online.<br />Ostatni i najmniej ważny jest klucz memo, który aktualnie nie posiada żadnej funkcji ale w przyszłości może być używany do odszyfrowywania prywatnych danych takich jak bezpośrednie wiadomości.",
+        "warning": "Klucze te wygenerowane są z Twojego hasła. Mogą być używane zamiast niego ale tylko do wyznaczonych zadań.<br />Najbezpieczniej jest używać klucza publikacji do tworzenia postów i głosowania lub klucza aktywnego jeśli chcesz wykonywać inne czynności.<br />HASŁO ORAZ KLUCZ WŁAŚCICIELA NAJLEPIEJ TRZYMAĆ OFFLINE!",
+        "confirm": "Klikając poniższy przycisk, użytkownik, który utworzył zaproszenie zostanie poinformowany i miejmy nadzieję, że wkrótce utworzy Twoje konto.",
+        "finish": "Zakończ tworzenie konta i opuść stronę"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "Nieprawidłowy identyfikator zaproszenia, przepraszmy!"
     }
 }
