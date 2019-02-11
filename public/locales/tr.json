@@ -103,9 +103,9 @@
         "submit": "Şifreyi yazdım ve asla kaybetmeyeceğim"
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
-        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
-        "username": "Your username",
+        "lead": "Tamam. Şifreyi kaybetmediğinizden emin olun! Kurtarmanın bir yolu yok!",
+        "text": "Steem kullanıcı adınız en az üç karakter uzunluğunda olmalı ve küçük harf, rakam ve kısa çizgi dışında başka karakterler içeremez. Eşsiz olması gerekir ve asla değiştirilemez. Dikkatlice seç.",
+        "username": "Kullanıcı adınız",
         "as": "as"
     },
     "step3": {
