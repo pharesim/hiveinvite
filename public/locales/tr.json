@@ -33,11 +33,11 @@
         "canbuy_plural": "teorik olarak başka <span id='possiblebuys'>0</span> hesap talep edin.",
         "cannotbuy": "başka hesap talep etmeyin. Biraz daha STEEM alın!",
         "claimfreemodal": "Ücretsiz talep",
-        "claimsteemmodal": "Paid claim",
-        "invitemodal": "Invite someone now"
+        "claimsteemmodal": "Ücretli talep",
+        "invitemodal": "Şimdi birini davet et"
     },
     "freeclaimmodal": {
-        "title": "Claim discounted steem accounts",
+        "title": "İndirimli steem hesabı talep et",
         "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
