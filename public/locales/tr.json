@@ -67,40 +67,40 @@
         "linkamount": "Oluşturulacak bağlantı sayısı",
         "or": "VEYA",
         "multi": "Birden fazla hesap oluşturma işlemi için geçerli bir bağlantı oluşturun",
-        "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
-        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
-        "delegate_amount": "Amount of Steem Power to delegate",
-        "validity": "How many days should the invite be valid before being automatically deleted?",
-        "validity_label": "Validity in days",
-        "usermail": "E-Mail address for status updates",
-        "create": "Create invitation"
+        "multi_label": "Bu bağlantının geçerli olduğu hesap sayısı (dikkatli olun, bu seçeneği kullanarak taleplerinizi tüketebilirsiniz!)",
+        "delegate": "Yeni bir hesap, blokzincirinde işlem yapmak için yalnızca temel miktarda RC'ye sahiptir. Yeni kullanıcının daha fazlasını yapabilmesini istiyorsanız, biraz Steem Power devredin. Bunu elbette daha sonra da yapabilirsiniz.",
+        "delegate_amount": "Devredilecek Steem Gücü miktarı",
+        "validity": "Davet otomatik olarak silinmeden önce kaç gün geçerli olmalı?",
+        "validity_label": "Gün içinde geçerliliği",
+        "usermail": "Durum güncellemeleri için E-Posta adresi",
+        "create": "Davetiye oluştur"
     },
     "button": {
-        "submit": "Submit",
-        "login": "Login",
-        "login_now": "Login now",
-        "logout": "Logout",
-        "close": "Close",
-        "proceed": "Proceed"
+        "submit": "Gönder",
+        "login": "Giriş",
+        "login_now": "Şimdi giriş yap",
+        "logout": "Oturumu kapat",
+        "close": "Kapat",
+        "proceed": "İlerle"
     },
     "keys": {
-        "wrong_key": "Invalid key",
-        "active_required": "This action requires your active key.",
-        "active": "Active key",
-        "posting": "Posting key",
-        "owner": "Owner key",
-        "memo": "Memo key",
-        "storeKey": "Remember key for this session"
+        "wrong_key": "Geçersiz anahtar",
+        "active_required": "Bu işlem aktif anahtarınızı gerektirir.",
+        "active": "Aktif anahtar",
+        "posting": "Gönderme anahtarı",
+        "owner": "Sahip anahtarı",
+        "memo": "Memo anahtarı",
+        "storeKey": "Bu oturum için anahtarı hatırla"
     },
     "language": {
-        "switch": "Switch language...",
-        "en": "english",
-        "de": "german"
+        "switch": "Dili değiştir...",
+        "en": "ingilizce",
+        "de": "almanca"
     },
     "step1": {
-        "lead": "Hi! You are only a few steps away from getting your own Steem account!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "lead": "Merhaba! Kendi Steem hesabınızı almaktan sadece birkaç adım uzaktasınız!",
+        "text": "Hesabınız kişisel cüzdanınızı içereceği için, güvenlik çok önemlidir.<br/>Hesabınız için güvenli bir yerde tutmanız gereken bir ana şifre oluşturduk. Bir yere yaz!",
+        "submit": "Şifreyi yazdım ve asla kaybetmeyeceğim"
     },
     "step2": {
         "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
