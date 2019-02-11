@@ -11,7 +11,7 @@
         "lastupdate": "Son güncelleme",
         "refresh": "Şimdi yenileyin",
         "greeting": "Merhaba <span id='loggedInUser'>kullanıcı adı</span>!",
-        "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
+        "tokenexplain": "Bir steem hesabı oluşturmak için öncelikle bir jeton talep etmeniz gerekir. Bunlar, belirli bir miktarda STEEM yakarak veya büyük miktarda RC mana harcayarak elde edilebilir. Bunun karşılığında, yeni hesap Steem Güç'e sahip olmadan blok zincirinde işlem yapmak için minimum miktarda RC manası alır.",
         "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
         "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "You have claimed <span id='pendingclaims'>0</span> accounts. <span id='invitespending'></span>",
