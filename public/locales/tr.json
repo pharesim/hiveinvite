@@ -38,16 +38,16 @@
     },
     "freeclaimmodal": {
         "title": "İndirimli steem hesabı talep et",
-        "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
-        "single": "Claim one account",
-        "bot": "Claim bot"
+        "explainer": "İndirimli bir hesap talebinde bulunmanın son maliyeti <span class='rccost'>0</span> RC<br />. Bunun her zaman değiştiğini unutmayın. Kısa sürede birden fazla hesap talep edildiğinde fiyat yükselir.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "<span id='currentrc'>0</span> RC ile bir hesap talep edebilirsiniz.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "<span id='currentrc'>0</span> RC ile <span class='possibleclaims'>0</span> hesap talep edebilirsiniz.",
+        "moreexplain": "Tek bir hesap talep edebilir, veya RC bitene veya durdurulana kadar talep botunu kullanabilirsiniz.",
+        "single": "Bir hesap talep et",
+        "bot": "Talep botu"
     },
     "botclaimmodal": {
-        "title": "Automated claiming of discounted steem accounts",
-        "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
+        "title": "İndirimli steem hesaplarının otomatik talep edilmesi",
+        "explainer": "Merhaba! Ben senin dost hesap talep robotunum. Çalışmaya başlamamı sağlamak için aşağıdaki düğmeye tıkla. RC değerin bitene kadar talep etmeye devam edeceğim, ya da diğer düğme ile durmamı söyle.",
         "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
         "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
         "start": "Start",
