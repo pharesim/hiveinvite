@@ -48,21 +48,21 @@
     "botclaimmodal": {
         "title": "İndirimli steem hesaplarının otomatik talep edilmesi",
         "explainer": "Merhaba! Ben senin dost hesap talep robotunum. Çalışmaya başlamamı sağlamak için aşağıdaki düğmeye tıkla. RC değerin bitene kadar talep etmeye devam edeceğim, ya da diğer düğme ile durmamı söyle.",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
-        "start": "Start",
-        "close": "Stop/Close"
+        "working": "İş başında! Şimdiye kadar <span id='botClaimStatusClaimed'>0</span> hesap talep edildi.",
+        "stopped": "<span id='botClaimHasClaimed'>0</span> Hesap talebinde bulunduktan sonra durduruldu.<br />Hata mesajı:<span id='botClaimError'></span>",
+        "start": "Başla",
+        "close": "Dur/Kapat"
     },
     "paidclaimmodal": {
-        "title": "Pay to claim a steem account",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+        "title": "Bir steem hesabı almak için öde",
+        "explainer": "Bir hesap talep etmenin bedeli <span class='steemcost'>0</span>STEEM'dir<br/>. Bu maliyet tanıklar tarafından belirlenir.<br/>Yeni bir hesaba, aynı miktardaki Steem Gücüne sahipmiş gibi temel miktarda RC gönderilir."
     },
     "invitemodal": {
-        "title": "Invite to Steem!",
-        "label": "Label",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
-        "email": "Address",
-        "mailtext_label": "E-Mail text",
+        "title": "Steem'e davet et!",
+        "label": "Etiket",
+        "by_email": "Bir e-posta göndermek yerine doğrudan bir veya daha fazla bağlantı almak için bu seçeneği kaldırın",
+        "email": "Adres",
+        "mailtext_label": "E-Posta metni",
         "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
         "linkamount": "Number of links to create",
         "or": "OR",
