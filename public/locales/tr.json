@@ -55,7 +55,7 @@
     },
     "paidclaimmodal": {
         "title": "Bir steem hesabı almak için öde",
-        "explainer": "Bir hesap talep etmenin bedeli <span class='steemcost'>0</span>STEEM'dir<br />. Bu maliyet tanıklar tarafından belirlenir.<br />Yeni bir hesaba, aynı miktardaki Steem Gücüne sahipmiş gibi temel miktarda RC gönderilir."
+        "explainer": "Bir hesap talep etmenin bedeli <span class='steemcost'>0</span>STEEM'dir<br />. Bu maliyet tanıklar tarafından belirlenir.<br />Yeni bir hesaba aynı miktardaki Steem Gücü'ne sahipmiş gibi temel miktarda RC gönderilir."
     },
     "invitemodal": {
         "title": "Steem'e davet et!",
@@ -69,7 +69,7 @@
         "multi": "Birden fazla hesap oluşturma işlemi için geçerli bir bağlantı oluşturun",
         "multi_label": "Bu bağlantının geçerli olduğu hesap sayısı (dikkatli olun, bu seçeneği kullanarak taleplerinizi tüketebilirsiniz!)",
         "delegate": "Yeni bir hesap, blokzincirinde işlem yapmak için yalnızca temel miktarda RC'ye sahiptir. Yeni kullanıcının daha fazlasını yapabilmesini istiyorsanız, biraz Steem Power devredin. Bunu elbette daha sonra da yapabilirsiniz.",
-        "delegate_amount": "Devredilecek Steem Gücü miktarı",
+        "delegate_amount": "Devredilecek Steem Güç miktarı",
         "validity": "Davet otomatik olarak silinmeden önce kaç gün geçerli olmalı?",
         "validity_label": "Gün içinde geçerliliği",
         "usermail": "Durum güncellemeleri için E-Posta adresi",
@@ -118,6 +118,6 @@
         "finish": "Hesap isteğini tamamla ve bu siteyi terk et"
     },
     "accept": {
-        "invalid": "Geçersiz davet kimliği, üzgünüm!"
+        "invalid": "Geçersiz davet KİMLİĞİ, üzgünüm!"
     }
 }
