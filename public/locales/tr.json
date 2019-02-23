@@ -41,20 +41,20 @@
         "explainer": "İndirimli bir hesap talebinde bulunmanın son maliyeti <span class='rccost'>0</span> RC<br />Bunun her zaman değiştiğini unutmayın. Kısa sürede birden fazla hesap talep edildiğinde, fiyat yükselir.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "<span id='currentrc'>0</span> RC ile bir hesap talep edebilirsiniz.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "<span id='currentrc'>0</span> RC ile <span class='possibleclaims'>0</span> hesap talep edebilirsiniz.",
-        "moreexplain": "Tek bir hesap talep edebilir, veya RC bitene veya durdurulana kadar talep botunu kullanabilirsiniz.",
+        "moreexplain": "Tek bir hesap talep edebilir veya RC bitene veya durdurulana kadar talep botunu kullanabilirsiniz.",
         "single": "Bir hesap talep et",
         "bot": "Talep botu"
     },
     "botclaimmodal": {
         "title": "İndirimli steem hesaplarının otomatik talep edilmesi",
-        "explainer": "Merhaba! Ben senin dost hesap talep robotunum. Çalışmaya başlamamı sağlamak için aşağıdaki düğmeye tıkla. RC değerin bitene kadar talep etmeye devam edeceğim, ya da diğer düğme ile durmamı söyle.",
+        "explainer": "Merhaba! Ben senin dost hesap talep robotunum. Çalışmaya başlamamı sağlamak için aşağıdaki düğmeye tıkla. RC değerin bitene kadar talep etmeye devam edeceğim ya da diğer düğme ile durmamı söyle.",
         "working": "İş başında! Şimdiye kadar <span id='botClaimStatusClaimed'>0</span> hesap talep edildi.",
         "stopped": "<span id='botClaimHasClaimed'>0</span> Hesap talebinde bulunduktan sonra durduruldu.<br />Hata mesajı:<span id='botClaimError'></span>",
         "start": "Başla",
         "close": "Dur/Kapat"
     },
     "paidclaimmodal": {
-        "title": "Bir steem hesabı almak için öde",
+        "title": "Bir steem hesabı talep etmek için öde",
         "explainer": "Bir hesap talep etmenin bedeli <span class='steemcost'>0</span>STEEM'dir<br />. Bu maliyet tanıklar tarafından belirlenir.<br />Yeni bir hesaba aynı miktardaki Steem Gücü'ne sahipmiş gibi temel miktarda RC gönderilir."
     },
     "invitemodal": {
