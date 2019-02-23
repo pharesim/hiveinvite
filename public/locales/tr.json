@@ -68,7 +68,7 @@
         "or": "VEYA",
         "multi": "Birden fazla hesap oluşturma işlemi için geçerli bir bağlantı oluşturun",
         "multi_label": "Bu bağlantının geçerli olduğu hesap sayısı (dikkatli olun, bu seçeneği kullanarak taleplerinizi tüketebilirsiniz!)",
-        "delegate": "Yeni bir hesap, blokzincirinde işlem yapmak için yalnızca temel miktarda RC'ye sahiptir. Yeni kullanıcının daha fazlasını yapabilmesini istiyorsanız, biraz Steem Power devredin. Bunu elbette daha sonra da yapabilirsiniz.",
+        "delegate": "Yeni bir hesap, blok zincirinde işlem yapmak için yalnızca temel miktarda RC'ye sahiptir. Yeni kullanıcının daha fazlasını yapabilmesini istiyorsanız, biraz Steem Power devredin. Bunu elbette daha sonra da yapabilirsiniz.",
         "delegate_amount": "Devredilecek Steem Güç miktarı",
         "validity": "Davet otomatik olarak silinmeden önce kaç gün geçerli olmalı?",
         "validity_label": "Gün içinde geçerliliği",
@@ -99,7 +99,7 @@
     },
     "step1": {
         "lead": "Merhaba! Kendi Steem hesabınızı almaktan sadece birkaç adım uzaktasınız!",
-        "text": "Hesabınız kişisel cüzdanınızı içereceği için, güvenlik çok önemlidir.<br />Hesabınız için güvenli bir yerde tutmanız gereken bir ana şifre oluşturduk. Bir yere yaz!",
+        "text": "Hesabınız kişisel cüzdanınızı içereceği için güvenlik çok önemlidir.<br />Hesabınız için güvenli bir yerde tutmanız gereken bir ana şifre oluşturduk. Bir yere yaz!",
         "submit": "Şifreyi yazdım ve asla kaybetmeyeceğim"
     },
     "step2": {
