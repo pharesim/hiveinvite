@@ -113,8 +113,8 @@
     },
     "step4": {
         "text": "Steem hesabı için farklı erişim seviyeleri vardır. <br />Gönderi anahtarı günlük sosyal medya etkinlikleri için kullanılır, yani gönderi paylaşmanıza ve oy kullanmanıza izin verir.<br />Cüzdanınıza erişmek ve STEEM'i harekete geçirmek için, aktif anahtara ihtiyacınız vardır.<br />Sahip anahtarı bu ikisini değiştirmek için kullanılabilir ve asla başka amaçlar için kullanılmamalıdır. Ana şifrenin yanında en iyi şekilde saklanır, çevrimiçi olarak kullanmayın.<br />Son olarak ve en azından henüz bir işlevi olmayan ancak gelecekte doğrudan mesajlar gibi özel verilerinizin şifresini çözmek için kullanılabilecek memo anahtarı var.",
-        "warning": "Bu anahtarlar şifrenizden üretilir. Bunun yerine kullanılabilirler, ancak yalnızca kendi özel amaçları için kullanılabilir.<br />Bir cihazı yalnızca gönderi yayınlama ve oy vermek için kullanmak istiyorsanız, veya başka işlemler yapmak istediğinizde etkin anahtarı kullanmak istiyorsanız, kayıt anahtarını kullanmak daha güvenlidir.<br />ŞİFRE VE SAHİP ANAHTARINI ÇEVRİMDIŞI TUTMAK EN İYİSİDİR!",
-        "confirm": "Aşağıdaki butonu tıkladığınızda, davetiyenizi oluşturan kullanıcı bilgilendirilir, ve umarız en yakın zamanda hesabınızı oluşturur.",
+        "warning": "Bu anahtarlar şifrenizden üretilir. Bunun yerine kullanılabilirler, ancak yalnızca kendi özel amaçları için kullanılabilir.<br />Bir cihazı yalnızca gönderi yayınlama ve oy vermek için kullanmak istiyorsanız veya başka işlemler yapmak istediğinizde etkin anahtarı kullanmak istiyorsanız, kayıt anahtarını kullanmak daha güvenlidir.<br />ŞİFRE VE SAHİP ANAHTARINI ÇEVRİMDIŞI TUTMAK EN İYİSİDİR!",
+        "confirm": "Aşağıdaki butonu tıkladığınızda, davetiyenizi oluşturan kullanıcı bilgilendirilir ve umarız en yakın zamanda hesabınızı oluşturur.",
         "finish": "Hesap isteğini tamamla ve bu siteyi terk et"
     },
     "accept": {
