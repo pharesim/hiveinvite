@@ -20,7 +20,7 @@
         "invitespending_plural": "<span id='pendinginvites'>0</span> davetiyeler beklemede, <span id='invitemore'></span>",
         "noinvitespending": "Hiçbir davetiye beklemede değil, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
         "invitemore": "böylece şimdi bir arkadaşını davet edebilirsin!<span id='remaininginvites' class='hidden'></span>",
-        "invitemore_plural": "böylece <span id='remaininginvites'>0</span> arkadaş daha davet edebilirsin.",
+        "invitemore_plural": "böylece <span id='remaininginvites'>0</span> daha fazla arkadaş davet edebilirsin.",
         "abletoclaim": "Maksimum RC manan <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'> Şu anda buradasın <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
         "canclaim": "%100'de bir hesap talep etmenizi sağlar<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "%100'de <span id='maxclaims'>0</span> hesap talep etmenize olanak sağlar",
