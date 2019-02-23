@@ -20,7 +20,7 @@
         "invitespending_plural": "<span id='pendinginvites'>0</span> davetiyeler beklemede, <span id='invitemore'></span>",
         "noinvitespending": "Hiçbir davetiye beklemede değil, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
         "invitemore": "böylece şimdi bir arkadaşını davet edebilirsin!<span id='remaininginvites' class='hidden'></span>",
-        "invitemore_plural": "böylece <span id='remaininginvites'>0</span> daha fazla arkadaş davet edebilirsin.",
+        "invitemore_plural": "böylece <span id='remaininginvites'>0</span> arkadaş daha davet edebilirsin.",
         "abletoclaim": "Maksimum RC manan <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'> Şu anda buradasın <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
         "canclaim": "%100'de bir hesap talep etmenizi sağlar<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "%100'de <span id='maxclaims'>0</span> hesap talep etmenize olanak sağlar",
@@ -41,20 +41,20 @@
         "explainer": "İndirimli bir hesap talebinde bulunmanın son maliyeti <span class='rccost'>0</span> RC<br />Bunun her zaman değiştiğini unutmayın. Kısa sürede birden fazla hesap talep edildiğinde, fiyat yükselir.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "<span id='currentrc'>0</span> RC ile bir hesap talep edebilirsiniz.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "<span id='currentrc'>0</span> RC ile <span class='possibleclaims'>0</span> hesap talep edebilirsiniz.",
-        "moreexplain": "Tek bir hesap talep edebilir veya RC bitene veya durdurulana kadar talep botunu kullanabilirsiniz.",
+        "moreexplain": "Tek bir hesap talep edebilir, veya RC bitene veya durdurulana kadar talep botunu kullanabilirsiniz.",
         "single": "Bir hesap talep et",
         "bot": "Talep botu"
     },
     "botclaimmodal": {
         "title": "İndirimli steem hesaplarının otomatik talep edilmesi",
-        "explainer": "Merhaba! Ben senin dost hesap talep robotunum. Çalışmaya başlamamı sağlamak için aşağıdaki düğmeye tıkla. RC değerin bitene kadar talep etmeye devam edeceğim ya da diğer düğme ile durmamı söyle.",
+        "explainer": "Merhaba! Ben senin dost hesap talep robotunum. Çalışmaya başlamamı sağlamak için aşağıdaki düğmeye tıkla. RC değerin bitene kadar talep etmeye devam edeceğim, ya da diğer düğme ile durmamı söyle.",
         "working": "İş başında! Şimdiye kadar <span id='botClaimStatusClaimed'>0</span> hesap talep edildi.",
         "stopped": "<span id='botClaimHasClaimed'>0</span> Hesap talebinde bulunduktan sonra durduruldu.<br />Hata mesajı:<span id='botClaimError'></span>",
         "start": "Başla",
         "close": "Dur/Kapat"
     },
     "paidclaimmodal": {
-        "title": "Bir steem hesabı talep etmek için öde",
+        "title": "Bir steem hesabı almak için öde",
         "explainer": "Bir hesap talep etmenin bedeli <span class='steemcost'>0</span>STEEM'dir<br />. Bu maliyet tanıklar tarafından belirlenir.<br />Yeni bir hesaba aynı miktardaki Steem Gücü'ne sahipmiş gibi temel miktarda RC gönderilir."
     },
     "invitemodal": {
@@ -68,7 +68,7 @@
         "or": "VEYA",
         "multi": "Birden fazla hesap oluşturma işlemi için geçerli bir bağlantı oluşturun",
         "multi_label": "Bu bağlantının geçerli olduğu hesap sayısı (dikkatli olun, bu seçeneği kullanarak taleplerinizi tüketebilirsiniz!)",
-        "delegate": "Yeni bir hesap, blok zincirinde işlem yapmak için yalnızca temel miktarda RC'ye sahiptir. Yeni kullanıcının daha fazlasını yapabilmesini istiyorsanız, biraz Steem Power devredin. Bunu elbette daha sonra da yapabilirsiniz.",
+        "delegate": "Yeni bir hesap, blokzincirinde işlem yapmak için yalnızca temel miktarda RC'ye sahiptir. Yeni kullanıcının daha fazlasını yapabilmesini istiyorsanız, biraz Steem Power devredin. Bunu elbette daha sonra da yapabilirsiniz.",
         "delegate_amount": "Devredilecek Steem Güç miktarı",
         "validity": "Davet otomatik olarak silinmeden önce kaç gün geçerli olmalı?",
         "validity_label": "Gün içinde geçerliliği",
@@ -99,7 +99,7 @@
     },
     "step1": {
         "lead": "Merhaba! Kendi Steem hesabınızı almaktan sadece birkaç adım uzaktasınız!",
-        "text": "Hesabınız kişisel cüzdanınızı içereceği için güvenlik çok önemlidir.<br />Hesabınız için güvenli bir yerde tutmanız gereken bir ana şifre oluşturduk. Bir yere yaz!",
+        "text": "Hesabınız kişisel cüzdanınızı içereceği için, güvenlik çok önemlidir.<br />Hesabınız için güvenli bir yerde tutmanız gereken bir ana şifre oluşturduk. Bir yere yaz!",
         "submit": "Şifreyi yazdım ve asla kaybetmeyeceğim"
     },
     "step2": {
@@ -113,8 +113,8 @@
     },
     "step4": {
         "text": "Steem hesabı için farklı erişim seviyeleri vardır. <br />Gönderi anahtarı günlük sosyal medya etkinlikleri için kullanılır, yani gönderi paylaşmanıza ve oy kullanmanıza izin verir.<br />Cüzdanınıza erişmek ve STEEM'i harekete geçirmek için, aktif anahtara ihtiyacınız vardır.<br />Sahip anahtarı bu ikisini değiştirmek için kullanılabilir ve asla başka amaçlar için kullanılmamalıdır. Ana şifrenin yanında en iyi şekilde saklanır, çevrimiçi olarak kullanmayın.<br />Son olarak ve en azından henüz bir işlevi olmayan ancak gelecekte doğrudan mesajlar gibi özel verilerinizin şifresini çözmek için kullanılabilecek memo anahtarı var.",
-        "warning": "Bu anahtarlar şifrenizden üretilir. Bunun yerine kullanılabilirler, ancak yalnızca kendi özel amaçları için kullanılabilir.<br />Bir cihazı yalnızca gönderi yayınlama ve oy vermek için kullanmak istiyorsanız veya başka işlemler yapmak istediğinizde etkin anahtarı kullanmak istiyorsanız, kayıt anahtarını kullanmak daha güvenlidir.<br />ŞİFRE VE SAHİP ANAHTARINI ÇEVRİMDIŞI TUTMAK EN İYİSİDİR!",
-        "confirm": "Aşağıdaki butonu tıkladığınızda, davetiyenizi oluşturan kullanıcı bilgilendirilir ve umarız en yakın zamanda hesabınızı oluşturur.",
+        "warning": "Bu anahtarlar şifrenizden üretilir. Bunun yerine kullanılabilirler, ancak yalnızca kendi özel amaçları için kullanılabilir.<br />Bir cihazı yalnızca gönderi yayınlama ve oy vermek için kullanmak istiyorsanız, veya başka işlemler yapmak istediğinizde etkin anahtarı kullanmak istiyorsanız, kayıt anahtarını kullanmak daha güvenlidir.<br />ŞİFRE VE SAHİP ANAHTARINI ÇEVRİMDIŞI TUTMAK EN İYİSİDİR!",
+        "confirm": "Aşağıdaki butonu tıkladığınızda, davetiyenizi oluşturan kullanıcı bilgilendirilir, ve umarız en yakın zamanda hesabınızı oluşturur.",
         "finish": "Hesap isteğini tamamla ve bu siteyi terk et"
     },
     "accept": {
