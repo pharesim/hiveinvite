@@ -1,19 +1,19 @@
 {
     "loggedout": {
-        "greeting": "Make a Steemian!",
-        "explainer": "Steeminvite is a service that allows you to invite your friends to steem.",
-        "buttontext": "to get started.",
-        "login_error": "Login error",
-        "usernamePlaceholder": "Your steem username",
-        "postingkeyPlaceholder": "Your private posting key"
+        "greeting": "תכין/י Steemian!",
+        "explainer": "Steeminvite הוא שירות שמאפשר לך להזמין את חבריך ומכריך לשרות הSteem.",
+        "buttontext": "על מנת להתחיל.",
+        "login_error": "תקלת התחברות",
+        "usernamePlaceholder": "השם המשתמש לsteem שלך",
+        "postingkeyPlaceholder": "הקוד פרסום האישי שלך"
     },
     "index": {
-        "lastupdate": "Last update",
-        "refresh": "Refresh now",
-        "greeting": "Hello <span id='loggedInUser'>username</span>!",
-        "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
-        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
-        "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "lastupdate": "עידכון אחרון",
+        "refresh": "רעננ/י עכשיו",
+        "greeting": "שלום<span id='loggedInUser'>שם המשתמש</span>!",
+        "tokenexplain": "בכדי ליצור חשבון סטים, עליך תחילה לדרוש אסימון. אסימונים, או בשמם האחר מטבעות, ניתן להשיג על ידי שימוש בכמות מסוימת של כח STEEM. כמו כן ניתן גם לבזבז כמות גדולה של מאנה RC ובתמורה, החשבון החדש מקבל כמות קטנה יחסית של מאנה RC כדי לנהל ולהעביר בblockchain ללא בעלות של כח סטים.",
+        "tokencost": "העלות הנוכחית לקבלת בקשה היא<span class='steemcost'>STEEM או<span class='rccost'>RC mana",
+        "pendingclaims": "את/ה קיבלת אישור לניהול חשבון נוסף.<span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "You have claimed <span id='pendingclaims'>0</span> accounts. <span id='invitespending'></span>",
         "nopendingclaims": "You have not claimed any accounts yet.",
         "invitespending": "One invitation is pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
