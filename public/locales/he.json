@@ -68,28 +68,28 @@
         "or": "או",
         "multi": "צור קישור שישאר תקף ליצירת מספר חשבונות",
         "multi_label": "כמות החשבונות שתקפות עבור הלינק הזה ( היזהר, \nאת/ה עלול/ה להיגמר מכספים כשאתה משתמש באופציה זו!)",
-        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
-        "delegate_amount": "Amount of Steem Power to delegate",
-        "validity": "How many days should the invite be valid before being automatically deleted?",
-        "validity_label": "Validity in days",
-        "usermail": "E-Mail address for status updates",
-        "create": "Create invitation"
+        "delegate": "לחשבון חדש יש תחילה רק כמות בסיסית של RC בכדי לנהל את ה blockchain. אם אתה רוצה שהמשתמש החדש יהיה מסוגל לעשות יותר, תפקיד בו יותר כח Steem. כמובן שפעולה זו ניתן לעשות זאת גם יותר מאוחר.                                                                  ",
+        "delegate_amount": "כמות כח ה Steem הנדרשת כדי לנהל",
+        "validity": "למשך כמה ימים ההזמנה צריכה להיות תקפה לפני שהיא נמחקת באופן אוטומטי?",
+        "validity_label": "תוקף בימים",
+        "usermail": "כתובת הדואר האלקטרוני עבור עדכוני סטטוס",
+        "create": "יצירת הזמנה"
     },
     "button": {
-        "submit": "Submit",
-        "login": "Login",
-        "login_now": "Login now",
-        "logout": "Logout",
-        "close": "Close",
-        "proceed": "Proceed"
+        "submit": "הגש",
+        "login": "כניסה למערכת",
+        "login_now": "התחבר עכשיו",
+        "logout": "יציאה",
+        "close": "סגירה",
+        "proceed": "המשך/י"
     },
     "keys": {
-        "wrong_key": "Invalid key",
-        "active_required": "This action requires your active key.",
-        "active": "Active key",
-        "posting": "Posting key",
-        "owner": "Owner key",
-        "memo": "Memo key",
+        "wrong_key": "קוד מפתח לא תקין",
+        "active_required": "פעולה זו מצריכה את active key שלך.",
+        "active": "מפתח Active",
+        "posting": "קוד הפרסום",
+        "owner": "קוד מנהלי",
+        "memo": "קוד תיזכורים",
         "storeKey": "Remember key for this session"
     },
     "language": {
