@@ -41,20 +41,20 @@
         "explainer": "העלות האחרונה איתה אפשר לרכוש חשבון מוזל הייתה<span class='rccost'>0</span> RC<br />היו מודעים כי עלות זו משתנה כל הזמן. כשמספר החשבונות שמנוהלות ונרכשות עולה, בתקופה קצרה של זמן, כך הגם המחיר עולה.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "עם<span id='currentrc'>0</span> RC תוכל/י לרכוש חשבון אחד.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "עם <span id='currentrc'>0</span> RC באפשרותך לנהל כמה<span class='possibleclaims'>0</span> חשבונות.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
-        "single": "Claim one account",
-        "bot": "Claim bot"
+        "moreexplain": "יש באפשרותך לנהל חשבון יחיד באופן עצמאי, או שאת/ה יכול לרכוש bot. את הbot תוכל לעצור מתי שכרצונך, או לעד שייגמר לך הRC.",
+        "single": "רכוש חשבון אחד",
+        "bot": "רכישת bot"
     },
     "botclaimmodal": {
-        "title": "Automated claiming of discounted steem accounts",
-        "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
-        "start": "Start",
-        "close": "Stop/Close"
+        "title": "רכישות אוטומטיות של חשבונות steem בערך מוזל יותר",
+        "explainer": "שלום!. אני רובוט ניהול הרכישות הידידותי שלך. לחץ על הכפתור למטה בכדי לתפעל אותי. אני אמשיך לגבות ממך תשלום עד שתיגמר לך כמות ה RC, או עד שתרצה להפסיק את פעולותיי בלחיצה על הכפתור האחר.",
+        "working": "בעבודה! נרכשו<span id='botClaimStatusClaimed'>0</span> חשבונות עד כה.",
+        "stopped": "נעצר לאחר רכישת ה<span id='botClaimHasClaimed'>0</span> חשבונות.<br /> הודעת תקלה: <span id='botClaimError'></span>",
+        "start": "התחל",
+        "close": "עצירה/סגור"
     },
     "paidclaimmodal": {
-        "title": "Pay to claim a steem account",
+        "title": "שלם/י בכדי לרכוש חשבון steem",
         "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
     },
     "invitemodal": {
