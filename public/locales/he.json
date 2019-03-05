@@ -31,16 +31,16 @@
         "abletobuy": "עם הכמות היציבה של ה<span id='steembalance'>0STEEMשלך</span>הינך יכול/ה<span id='abletopayforclaim'></span>",
         "canbuy": "מבחינה תיאורתית יכול לדרוש לניהול חשבון נוסף.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "באפשרותו לנהל אחד נוסף<span id='possiblebuys'>0</span> חשבונות.",
-        "cannotbuy": "not claim any more accounts. Get some more STEEM!",
-        "claimfreemodal": "Free claim",
-        "claimsteemmodal": "Paid claim",
-        "invitemodal": "Invite someone now"
+        "cannotbuy": "אינך יכול/ה לרכוש חשבונות נוספים. תשיג/י יותר מטבעות STEEM!",
+        "claimfreemodal": "רכישה חינמית",
+        "claimsteemmodal": "רכישה משולמת",
+        "invitemodal": "הזמנ/י אנשים עכשיו"
     },
     "freeclaimmodal": {
-        "title": "Claim discounted steem accounts",
-        "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
+        "title": "דרוש על רכישת חשבונות steem בפחות תשלום",
+        "explainer": "העלות האחרונה איתה אפשר לרכוש חשבון מוזל הייתה<span class='rccost'>0</span> RC<br />היו מודעים כי עלות זו משתנה כל הזמן. כשמספר החשבונות שמנוהלות ונרכשות עולה, בתקופה קצרה של זמן, כך הגם המחיר עולה.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "עם<span id='currentrc'>0</span> RC תוכל/י לרכוש חשבון אחד.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "עם <span id='currentrc'>0</span> RC באפשרותך לנהל כמה<span class='possibleclaims'>0</span> חשבונות.",
         "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
         "single": "Claim one account",
         "bot": "Claim bot"
