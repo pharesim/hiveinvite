@@ -109,7 +109,7 @@
         "as": "כמו"
     },
     "step3": {
-        "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
+        "text": "מה שאמרנו לפני כן בנוגע לסיסמה שלך, אינו היה בדיחה.<br />ובכדי לוודא שלא עשית טעות תוך כדי רישום הסיסמה שלך, נא להקלידו כאן.<br />אם אינך יכול להמשיך, טען מחדש את העמוד בדפדפן שלך ולחץ התחל מחדש."
     },
     "step4": {
         "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
