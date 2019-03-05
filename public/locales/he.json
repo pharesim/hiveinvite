@@ -55,13 +55,13 @@
     },
     "paidclaimmodal": {
         "title": "שלם/י בכדי לרכוש חשבון steem",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+        "explainer": "העלות לרכישת חשבון היא<span class='steemcost'>0</span>STEEM<br />תשלום זה נמדד על פי העדים.<br /> כל חשבון חדש יקבל כמות בסיסית של RC, לא משנה בכח הSteem ברשותו."
     },
     "invitemodal": {
-        "title": "Invite to Steem!",
-        "label": "Label",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
-        "email": "Address",
+        "title": "הזמן/י ל Steem!",
+        "label": "תווית",
+        "by_email": "בטל מהלך זה כדי להשיג קישור אחד או יותר ישירות, במקום לשלוח דרך האימייל",
+        "email": "כתובת",
         "mailtext_label": "E-Mail text",
         "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
         "linkamount": "Number of links to create",
