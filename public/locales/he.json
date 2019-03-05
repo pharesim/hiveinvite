@@ -112,12 +112,12 @@
         "text": "מה שאמרנו לפני כן בנוגע לסיסמה שלך, אינו היה בדיחה.<br />ובכדי לוודא שלא עשית טעות תוך כדי רישום הסיסמה שלך, נא להקלידו כאן.<br />אם אינך יכול להמשיך, טען מחדש את העמוד בדפדפן שלך ולחץ התחל מחדש."
     },
     "step4": {
-        "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
-        "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
-        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
-        "finish": "Finish account request and leave this site"
+        "text": "ישנן רמות גישה שונות עבור חשבון ה steem שלך.<br />קוד (מפתח) פרסום מיועד לפעילויות יומיומיות במדיה החברתית, כלומר זה מאפשר לך להעלות פוסטים ולהצביע.<br />על מנת לקבל גישה לארנק שלך והעברת STEEM, תצטרך את המפתח הפעיל.<br />המפתח המנהלי מיועד לשנות את שני אלה, ואינו צריך לשמש למטרות אחרות. עדיף שמפתח זה ישאר סיסמת מאסטר בלבד, ללא שימוש בו באינטרנט.<br /> לבסוף הוא מפתח התזכירים, אשר טרם יש לו תרומה מעשית, אך עשוי לשמש בעתיד כדי לפענח את המידע הפרטי שלך כמו בהודעות ישירות.",
+        "warning": "מפתחות אלה נוצרים מן הסיסמה שלך. ניתן להשתמש בהם במקום, אבל אך ורק למטרתם הספציפית.<br />\nזה בטוח יותר להשתמש במפתח הפרסום אם ברצונך להשתמש במכשיר רק למען העלאת פוסטים או הצבעה. או שימוש במפתח פעיל כאשר אתה רוצה לבצע פעולות אחרות גם כן.<br />\nאת הסיסמה ואת המפתח המנהלי מוטב להשאיר במצב לא מקוון, שלא ייעשה בו שימוש רב!",
+        "confirm": "על ידי לחיצה על הכפתור הנ''ל, המשתמש שיצר את הזמנתך יהיה מעודכן, ובתקווה ייצור בקרוב את החשבון שלך.",
+        "finish": "סיים את בקשת החשבון ועזוב את האתר הזה"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "פרטי הזמנה לא תקינים, מצטער!"
     }
 }
