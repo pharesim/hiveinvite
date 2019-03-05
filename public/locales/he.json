@@ -90,23 +90,23 @@
         "posting": "קוד הפרסום",
         "owner": "קוד מנהלי",
         "memo": "קוד תיזכורים",
-        "storeKey": "Remember key for this session"
+        "storeKey": "אנא זכור קוד/מפתח לפעולה זו"
     },
     "language": {
-        "switch": "Switch language...",
-        "en": "english",
-        "de": "german"
+        "switch": "שנה/י שפה...",
+        "en": "אנגלית",
+        "de": "גרמנית"
     },
     "step1": {
-        "lead": "Hi! You are only a few steps away from getting your own Steem account!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "lead": "שלום!. אתה רק במרחק כמה צעדים מקבלת חשבון Steem משלך!",
+        "text": "החשבון שלך יכלול בו את הארנק האישי שלך, כך שאבטחתו חשובה מאוד.<br />יצרנו עבורך סיסמת מאסטר שפותחת את החשבון שלך, כך שנחוץ לשמור אותו במיקום בטוח. כתוב אותו איפשהו!",
+        "submit": "רשמתי את הסיסמה איפשהו, ואיני בסיכון לאבד אותה אי פעם"
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
-        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
-        "username": "Your username",
-        "as": "as"
+        "lead": "בסדר. אנא ודא לא לאבד את הסיסמה! אין שום דרך לשחזרה!",
+        "text": "שם המשתמש שלך בSteem חייב להיות באורך של לפחות 3 אותיות, ואינו יכול להכיל סימנים שאינם מספרים, אותיות ודאש (_). זה מצריך ייחודיות לשם, כיוון שהוא לא יכול להשתנות לאחר שנקבע. בחר/י אותו בזהירות.",
+        "username": "שם המשתמש שלכם",
+        "as": "כמו"
     },
     "step3": {
         "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
