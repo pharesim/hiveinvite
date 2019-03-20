@@ -49,12 +49,12 @@
         "title": "רכישות אוטומטיות של חשבונות steem מוזלות",
         "explainer": "שלום!. אני רובוט ניהול הדרישות הידידותי שלך. לחץ על הכפתור למטה בכדי לתפעל אותי. אני אמשיך לבצע דרישות עד שתיגמר לך כמות ה RC, או כשתרצה להפסיק את פעולותיי בלחיצה על הכפתור האחר.",
         "working": "בעבודה! נדרשו <span id='botClaimStatusClaimed'>0</span> חשבונות עד כה.",
-        "stopped": "נעצר לאחר רכישת ה<span id='botClaimHasClaimed'>0</span> חשבונות.<br /> הודעת תקלה: <span id='botClaimError'></span>",
+        "stopped": "נעצר לאחר דרישת <span id='botClaimHasClaimed'>0</span> חשבונות.<br /> הודעת תקלה: <span id='botClaimError'></span>",
         "start": "התחל",
-        "close": "עצירה/סגור"
+        "close": "הפסק/סגור"
     },
     "paidclaimmodal": {
-        "title": "שלם/י בכדי לרכוש חשבון steem",
+        "title": "שלם/י בכדי לדרוש חשבון steem",
         "explainer": "העלות לרכישת חשבון היא<span class='steemcost'>0</span>STEEM<br />תשלום זה נמדד על פי העדים.<br /> כל חשבון חדש יקבל כמות בסיסית של RC, לא משנה בכח הSteem ברשותו."
     },
     "invitemodal": {
