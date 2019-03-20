@@ -1,18 +1,18 @@
 {
     "loggedout": {
-        "greeting": "תכין/י Steemian!",
-        "explainer": "Steeminvite הוא שירות המאפשר לך להזמין את קרוביך וחבריך ל Steem.",
+        "greeting": "הכן/י Steemian!",
+        "explainer": "Steeminvite הוא שירות המאפשר לך להזמין את חבריך ל Steem.",
         "buttontext": "על מנת להתחיל.",
         "login_error": "תקלת התחברות",
-        "usernamePlaceholder": "שם המשתמש לחשבון הsteem שלך",
-        "postingkeyPlaceholder": "הקוד הפרסום האישי שלך"
+        "usernamePlaceholder": "שם המשתמש לSteem שלך",
+        "postingkeyPlaceholder": "מפתח הפרסום האישי שלך"
     },
     "index": {
         "lastupdate": "עידכון אחרון",
         "refresh": "רעננ/י עכשיו",
-        "greeting": "שלום<span id='loggedInUser'>שם המשתמש</span>!",
+        "greeting": "שלום<span id='loggedInUser'>שם משתמש</span>!",
         "tokenexplain": "כדי ליצור חשבון Steem, עליך תחילה לדרוש אסימון. אסימונים, או בשמם האחר טוקנים, שאותם ניתן להשיג על ידי ניצול כמות מסוימת של כח STEEM. כמו כן ניתן גם לבזבז כמות גדולה של מאנה RC ובתמורה, החשבון החדש יזוכה בכמות קטנה יחסית של מאנה RC על מנת לנהל ולהעביר נתונים בblockchain ללא בעלות של כח סטים.",
-        "tokencost": "העלות הנוכחית לקבלת בקשה היא <span class='steemcost'>0</span> או STEEM\n</span>0<'span class='rccost> או RC mana",
+        "tokencost": "העלות הנוכחית לקבלת דרישה היא <span class='steemcost'>0</span> או STEEM\n</span>0<'span class='rccost> או RC mana",
         "pendingclaims": "רכשת חשבון נוסף.<span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "את\\ה רכשת<span id='pendingclaims'>0</span> חשבונות.<span id='invitespending'></span>",
         "nopendingclaims": "אינ\\ך קיבלת אישור לנהל שום חשבונות כעת.",
