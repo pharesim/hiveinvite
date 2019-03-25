@@ -1,10 +1,10 @@
 {
     "loggedout": {
-        "greeting": "הכן/י Steemian!",
+        "greeting": "צור/י Steemian!",
         "explainer": "Steeminvite הוא שירות המאפשר לך להזמין את חבריך ל Steem.",
         "buttontext": "על מנת להתחיל.",
-        "login_error": "תקלת התחברות",
-        "usernamePlaceholder": "שם המשתמש לSteem שלך",
+        "login_error": "תקלה בהתחברות",
+        "usernamePlaceholder": "שם משתמש הSteem שלך",
         "postingkeyPlaceholder": "מפתח הפרסום האישי שלך"
     },
     "index": {
