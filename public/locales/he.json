@@ -24,12 +24,12 @@
         "abletoclaim": "ה RC מאנה המקסימאלי שלך היא<span id='maxrc'>0</span>,<span id='canclaimever'></span><br /><span id='canclaimnow'> אתה כרגע נמצא ב<span id='rcpct'>0</span>%,<span id='canclaimnowamount'></span></span>",
         "canclaim": "מה שמאפשר לך לדרוש חשבון אחד ב-100%\n<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "מה שמאפשר לך לדרוש <span id='maxclaims'>0</span> חשבונות ב-100%",
-        "cannotclaim": "מה שלא נותן לך זכות לדרוש שום חשבונות בכלל. תתחילו ב STEEM פאוור אפ!",
-        "canclaimnow": "אז באפשרותך לדרוש חשבון אחד ברגע זה.<span class='possibleclaims hidden'></span>",
-        "canclaimnow_plural": "אז את/ה יכול/ה לדרוש <span class='possibleclaims'>0</span> חשבונות ממש עכשיו.",
-        "cannotclaimnow": "אז הינך מחויב/ת לחכות קצת עד שתהיה לך האפשרות לדרוש חשבון נוסף במחיר מוזל יותר.",
+        "cannotclaim": "מה שלא נותן לך אפשרות לדרוש שום חשבונות בכלל. תתחילו ב STEEM Power up!",
+        "canclaimnow": "באפשרותך לדרוש חשבון אחד ברגע זה.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "את/ה יכול/ה לדרוש <span class='possibleclaims'>0</span> חשבונות ממש עכשיו.",
+        "cannotclaimnow": "הינך מחויב/ת לחכות קצת עד שתהיה לך האפשרות לדרוש חשבון נוסף במחיר מוזל יותר.",
         "abletobuy": "עם היתרה שלך של<span id='steembalance'> 0 STEEM </span> הינך יכול/ה<span id='abletopayforclaim'></span>",
-        "canbuy": "תיאורטית לדרוש חשבון נוסף.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy": "דרוש/י חשבון נוסף באופן תאורטי.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "מבחינה תיאורטית לדרוש עוד<span id='possiblebuys'>0</span> חשבונות.",
         "cannotbuy": "אין אפשרות לדרוש חשבונות נוספים. השג/י יותר STEEM!",
         "claimfreemodal": "דרישה חינמית",
@@ -37,7 +37,7 @@
         "invitemodal": "הזמנ/י מישהו עכשיו"
     },
     "freeclaimmodal": {
-        "title": "דרוש חשבונות steem מוזלות",
+        "title": "דרוש חשבונות steem מוזלים",
         "explainer": "העלות האחרונה איתה היה ניתן לדרוש חשבון מוזל הייתה<span class='rccost'>0</span> RC<br />היו מודעים כי עלות זו משתנה כל הזמן. כשמספר החשבונות שנדרשות עולה, בתקופת זמן קצרה, כך גם המחיר עולה.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "עם<span id='currentrc'>0</span> RC תוכל/י לדרוש חשבון אחד.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "עם <span id='currentrc'>0</span> RC באפשרותך לדרוש <span class='possibleclaims'>0</span> חשבונות.",
@@ -46,8 +46,8 @@
         "bot": "Bot הדרישות"
     },
     "botclaimmodal": {
-        "title": "רכישות אוטומטיות של חשבונות steem מוזלות",
-        "explainer": "שלום!. אני רובוט ניהול הדרישות הידידותי שלך. לחץ על הכפתור למטה בכדי לתפעל אותי. אני אמשיך לבצע דרישות עד שתיגמר לך כמות ה RC, או כשתרצה להפסיק את פעולותיי בלחיצה על הכפתור האחר.",
+        "title": "רכישות אוטומטיות של חשבונות steem מוזלים",
+        "explainer": "שלום!. אני רובוט ניהול הדרישות הידידותי שלך. לחץ על הכפתור למטה בכדי לתפעל אותי. אני אמשיך לבצע דרישות עד שתיגמר לך כמות ה RC, או כשתרצה להפסיק את פעולותיי, תוכל ללחוץ על הכפתור האחר.",
         "working": "בעבודה! נדרשו <span id='botClaimStatusClaimed'>0</span> חשבונות עד כה.",
         "stopped": "נעצר לאחר דרישת <span id='botClaimHasClaimed'>0</span> חשבונות.<br /> הודעת תקלה: <span id='botClaimError'></span>",
         "start": "התחל",
