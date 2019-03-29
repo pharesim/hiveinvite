@@ -1,10 +1,10 @@
 {
     "loggedout": {
-        "greeting": "Make a Steemian!",
-        "explainer": "Steeminvite is a service that allows you to invite your friends to steem.",
-        "buttontext": "to get started.",
-        "login_error": "Login error",
-        "usernamePlaceholder": "Your steem username",
+        "greeting": "Ṣẹ̀dá Steemian kan!",
+        "explainer": "Steeminvite jẹ́ ìpèsè kan tí yíò fún ẹ láàyè láti pe àwọn ọ̀rẹ́ rẹ sí steem.",
+        "buttontext": "láti bẹ̀rẹ̀.",
+        "login_error": "Àṣìṣe ìwọlé",
+        "usernamePlaceholder": "Orúkọ aṣàmúlò steem rẹ",
         "postingkeyPlaceholder": "Your private posting key"
     },
     "index": {
