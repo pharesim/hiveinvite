@@ -32,8 +32,8 @@
         "canbuy": "theoretically claim one more account.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "theoretically claim another <span id='possiblebuys'>0</span> accounts.",
         "cannotbuy": "not claim any more accounts. Get some more STEEM!",
-        "claimfreemodal": "Free claim",
-        "claimsteemmodal": "Paid claim",
+        "claimfreemodal": "Gbígbà ọ̀fẹ́",
+        "claimsteemmodal": "Gbígbà tí o sanwó fún",
         "invitemodal": "Invite someone now"
     },
     "freeclaimmodal": {
@@ -43,7 +43,7 @@
         "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
         "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
         "single": "Gba account ẹyọkan",
-        "bot": "Claim bot"
+        "bot": "Bot gbígbà"
     },
     "botclaimmodal": {
         "title": "Automated claiming of discounted steem accounts",
