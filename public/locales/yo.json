@@ -73,19 +73,19 @@
         "validity": "How many days should the invite be valid before being automatically deleted?",
         "validity_label": "Validity in days",
         "usermail": "E-Mail address for status updates",
-        "create": "Create invitation"
+        "create": "Ṣẹ̀dá ìpè"
     },
     "button": {
-        "submit": "Submit",
-        "login": "Login",
-        "login_now": "Login now",
-        "logout": "Logout",
+        "submit": "Fi ṣọwọ́",
+        "login": "Wọlé",
+        "login_now": "Wọlé ní báyìí",
+        "logout": "Jáde síta",
         "close": "Pa dé",
         "proceed": "Tẹ̀síwájú"
     },
     "keys": {
         "wrong_key": "Kọ́kọ́rọ́ tí kò wúlò",
-        "active_required": "This action requires your active key.",
+        "active_required": "Iṣẹ́ yìí nílò kọ́kọ́rọ́ ìṣiṣẹ́ rẹ.",
         "active": "Active key",
         "posting": "Posting key",
         "owner": "Owner key",
