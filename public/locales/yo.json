@@ -104,7 +104,7 @@
     },
     "step2": {
         "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
-        "text": "Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
+        "text": "Orúkọ aṣàmúlò Steem rẹ ní láti jẹ́ ó kéré jù ẹyọ ọ̀rọ̀ mẹ́ta, àti pé kò lè ní àwọn ẹyọ ọ̀rọ̀ mìíràn tó yàtọ̀ sí àwọn lẹ́tà kékeré, àwọn nọ́mbà àti dáàsì kan. Ó ní láti jẹ́ àkànṣe kò sí ṣé yípadà. Fara balẹ̀ yan.",
         "username": "Orúkọ aṣàmúlò rẹ",
         "as": "as"
     },
@@ -118,6 +118,6 @@
         "finish": "Finish account request and leave this site"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "ID ìpè tí kò wúlò, má bínú!"
     }
 }
