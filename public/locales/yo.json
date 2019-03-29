@@ -67,7 +67,7 @@
         "linkamount": "Nọ́mbà àwọn ìtọ́kasí láti ṣẹ̀dá",
         "or": "OR",
         "multi": "Ṣẹ̀dá ìtọ́kasí kan tó wúlò fún ọ̀pọ̀lọpọ̀ àwọn ṣíṣẹ̀dá account",
-        "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
+        "multi_label": "Iye àwọn account tí ìtọ́kasí yìí wúlò fún (kíyè sára, o lè lo àwọn gbígbà tán pẹ̀lú lílo àṣàyàn yìí!)",
         "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
         "delegate_amount": "Amount of Steem Power to delegate",
         "validity": "How many days should the invite be valid before being automatically deleted?",
