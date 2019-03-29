@@ -5,11 +5,11 @@
         "buttontext": "láti bẹ̀rẹ̀.",
         "login_error": "Àṣìṣe ìwọlé",
         "usernamePlaceholder": "Orúkọ aṣàmúlò steem rẹ",
-        "postingkeyPlaceholder": "Your private posting key"
+        "postingkeyPlaceholder": "Kọ́kọ́rọ́ ìtẹ̀jáde ìkọ̀kọ̀ rẹ"
     },
     "index": {
-        "lastupdate": "Last update",
-        "refresh": "Refresh now",
+        "lastupdate": "Ìmúdójúìwọ̀n ìkẹhìn",
+        "refresh": "Sọdọ̀tun ní báyìí",
         "greeting": "Hello <span id='loggedInUser'>username</span>!",
         "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
         "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
