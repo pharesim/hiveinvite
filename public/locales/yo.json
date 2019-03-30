@@ -10,10 +10,10 @@
     "index": {
         "lastupdate": "Ìmúdójúìwọ̀n ìkẹhìn",
         "refresh": "Sọdọ̀tun ní báyìí",
-        "greeting": "Hello <span id='loggedInUser'>username</span>!",
-        "tokenexplain": "To create a steem account, you first need to claim a token. These can be obtained by burning a certain amount of STEEM, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Steem Power.",
-        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> STEEM or <span class='rccost'>0</span> RC mana",
-        "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "greeting": "Hello <span id='loggedInUser'>orúkọ aṣàmúlò</span>!",
+        "tokenexplain": "Láti ṣẹ̀dá account steem kan, o nílò láti kọ́kọ́ gba token kan. Èyí le jẹ́ gbígbà nípasẹ̀ lílo iye STEEM pàtó kan, tàbí níná iye mana RC nlá kan. Ní ìdápadà, account tuntun náà yíò gba ìwọnba iye mana RC láti ní ìbáṣepọ̀ lórí blockchain náà láì ní Steem Power tiẹ̀.",
+        "tokencost": "Iye lọ́wọ́lọ́wọ́ fún gbígbà kan jẹ́ <span class='steemcost'>0</span> STEEM tàbí <span class='rccost'>0</span> RC mana",
+        "pendingclaims": "O ti gba account kan. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "O ti gba àwọn account <span id='pendingclaims'>0</span>. <span id='invitespending'></span>",
         "nopendingclaims": "Ìwọ kò tíì gba account kankan báyìí.",
         "invitespending": "Ìpè ẹyọkan kò tíì yanjú, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
@@ -86,14 +86,14 @@
     "keys": {
         "wrong_key": "Kọ́kọ́rọ́ tí kò wúlò",
         "active_required": "Iṣẹ́ yìí nílò kọ́kọ́rọ́ ìṣiṣẹ́ rẹ.",
-        "active": "Active key",
-        "posting": "Posting key",
+        "active": "Kọ́kọ́rọ́ ìṣiṣẹ́",
+        "posting": "Kọ́kọ́rọ́ ìtẹ̀jáde",
         "owner": "Owner key",
         "memo": "Memo key",
-        "storeKey": "Remember key for this session"
+        "storeKey": "Rántí kọ́kọ́rọ́ fún àkókò yìí"
     },
     "language": {
-        "switch": "Switch language...",
+        "switch": "Pààrọ̀ èdè...",
         "en": "gẹ̀ẹ́sì",
         "de": "jẹ́mánì"
     },
