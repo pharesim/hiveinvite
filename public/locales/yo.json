@@ -49,7 +49,7 @@
         "title": "Gbígbà fúnra rẹ̀ ti àwọn account steem tí a ṣe ìdínkù owó rẹ̀",
         "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
         "working": "N ṣiṣẹ́ lọ́wọ́! Ti gba àwọn account <span id='botClaimStatusClaimed'>0</span>.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
+        "stopped": "Ó ti dúró lẹ́yìn tó gba àwọn account <span id='botClaimHasClaimed'>0</span>.<br />Ìfiránṣẹ́ àṣìṣe: <span id='botClaimError'></span>",
         "start": "Bẹ̀rẹ̀",
         "close": "Dáwọ́ dúró/Pa dé"
     },
@@ -109,7 +109,7 @@
         "as": "as"
     },
     "step3": {
-        "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
+        "text": "Nnkan tí a sọ nípa ọ̀rọ̀ aṣínà rẹ tẹ́lẹ̀ kìí ṣe àwàdà.<br />Láti ri dájú pé ìwọ kò ṣe àṣìṣe nígbà tí ò nkọ ọ̀rọ̀ aṣínà rẹ kalẹ̀, jọ̀wọ́ tẹ síbí.<br />Tí ìwọ kò bá lè tẹ̀síwájú, sọ ojú ewé náà dọ̀tun nínú aṣàwákiri rẹ kí o sì tún bẹ̀rẹ̀ padà."
     },
     "step4": {
         "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
