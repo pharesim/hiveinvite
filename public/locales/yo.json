@@ -88,8 +88,8 @@
         "active_required": "Iṣẹ́ yìí nílò kọ́kọ́rọ́ ìṣiṣẹ́ rẹ.",
         "active": "Kọ́kọ́rọ́ ìṣiṣẹ́",
         "posting": "Kọ́kọ́rọ́ ìtẹ̀jáde",
-        "owner": "Owner key",
-        "memo": "Memo key",
+        "owner": "Kọ́kọ́rọ́ olúwa",
+        "memo": "Kọ́kọ́rọ́ àkọsílẹ̀",
         "storeKey": "Rántí kọ́kọ́rọ́ fún àkókò yìí"
     },
     "language": {
@@ -100,7 +100,7 @@
     "step1": {
         "lead": "Hi! You are only a few steps away from getting your own Steem account!",
         "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "submit": "Mo ti kọ ọ̀rọ̀ aṣínà náà kalẹ̀ àti pé mi ò ní pàdánù rẹ̀ ní ìgbàkígbà"
     },
     "step2": {
         "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
