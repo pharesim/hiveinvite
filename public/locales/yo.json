@@ -55,12 +55,12 @@
     },
     "paidclaimmodal": {
         "title": "Sanwó láti gba account steem kan",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> STEEM<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Steem Power."
+        "explainer": "Iye láti gba account kan náà jẹ́ <span class='steemcost'>0</span> STEEM<br />Iye yìí ní ètò nípasẹ̀ àwọn ẹlẹrìí náà.<br />Account tuntun kan yíò gba ìwọ̀nba iye RC kan gẹ́gẹ́ bí pé ó ti ní iye Steem Power kànna."
     },
     "invitemodal": {
         "title": "Pe sí Steem!",
         "label": "Ààmì",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
+        "by_email": "Yọ yíyan èyí kúrò láti gba ìtọ́kasí kan tàbí ọ̀pọ̀lọpọ̀ ìtọ́kasí tààrà dípò fífi ímeèlì ránṣẹ́",
         "email": "Àdírẹ́ẹ̀sì",
         "mailtext_label": "Ọ̀rọ̀ ímeèlì",
         "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
