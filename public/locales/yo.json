@@ -103,10 +103,10 @@
         "submit": "Mo ti kọ ọ̀rọ̀ aṣínà náà kalẹ̀ àti pé mi ò ní pàdánù rẹ̀ ní ìgbàkígbà"
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
+        "lead": "Kò burú. Ri dájú láti má pàdánù ọ̀rọ̀ aṣínà náà! Kò sí ọ̀nà kankan láti ri padà!",
         "text": "Orúkọ aṣàmúlò Steem rẹ ní láti jẹ́ ó kéré jù ẹyọ ọ̀rọ̀ mẹ́ta, àti pé kò lè ní àwọn ẹyọ ọ̀rọ̀ mìíràn tó yàtọ̀ sí àwọn lẹ́tà kékeré, àwọn nọ́mbà àti dáàsì kan. Ó ní láti jẹ́ àkànṣe kò sí ṣé yípadà. Fara balẹ̀ yan.",
         "username": "Orúkọ aṣàmúlò rẹ",
-        "as": "as"
+        "as": "bíi"
     },
     "step3": {
         "text": "Nnkan tí a sọ nípa ọ̀rọ̀ aṣínà rẹ tẹ́lẹ̀ kìí ṣe àwàdà.<br />Láti ri dájú pé ìwọ kò ṣe àṣìṣe nígbà tí ò nkọ ọ̀rọ̀ aṣínà rẹ kalẹ̀, jọ̀wọ́ tẹ síbí.<br />Tí ìwọ kò bá lè tẹ̀síwájú, sọ ojú ewé náà dọ̀tun nínú aṣàwákiri rẹ kí o sì tún bẹ̀rẹ̀ padà."
@@ -114,7 +114,7 @@
     "step4": {
         "text": "There are different access levels for a Steem account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move STEEM, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
         "warning": "Àwọn kọ́kọ́rọ́ wọ̀nyí gba ṣíṣẹ̀dá láti ọ̀rọ̀ aṣínà rẹ. Wọ́n lè jẹ́ lílò dípò rẹ̀, ṣùgbọ́n fún ìdí pàtó wọn nìkan.<br />Ó dára láti lo kọ́kọ́rọ́ ìtẹ̀jáde náà tí o bá fẹ́ lo ẹ̀rọ kan láti ṣàtẹ̀jáde àti dìbò, tàbí kọ́kọ́rọ́ ìṣiṣẹ́ nígbà tí o bá fẹ́ ṣe àwọn iṣẹ́ mìíràn.<br />Ó DÁRA KÍ Ọ̀RỌ̀ AṢÍNÀ NÁÀ ÀTI KỌ́KỌ́RỌ́ OLÚWA NÁÀ WÀ NÍ ÌPAMỌ́!",
-        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
+        "confirm": "Nípasẹ̀ títẹ̀ bọ́tìnnì yìí, o ma pe àkíyèsí aṣàmúlò tó ṣẹ̀dá ìpè rẹ náà, nírètí pé yóò ṣẹ̀dá account rẹ láìpẹ́.",
         "finish": "Parí ìbéèrè account kí o sì kúrò ní ààyè yìí"
     },
     "accept": {
