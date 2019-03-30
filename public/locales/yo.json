@@ -70,8 +70,8 @@
         "multi_label": "Iye àwọn account tí ìtọ́kasí yìí wúlò fún (kíyè sára, o lè lo àwọn gbígbà tán pẹ̀lú lílo àṣàyàn yìí!)",
         "delegate": "Account tuntun kan ní ìwọ̀nba iye RC nìkan láti ní ìbáṣepọ̀ lórí blockchain náà. Tí o bá fẹ́ kí aṣàmúlò tuntun náà lè ṣiṣẹ́ láfikún si, fi àwọn Steem Power díẹ̀ ránṣẹ́. O lè tún ṣe ìyẹn nígbà mìíràn dájúdájú.",
         "delegate_amount": "Iye Steem Power láti fi ránṣẹ́",
-        "validity": "How many days should the invite be valid before being automatically deleted?",
-        "validity_label": "Validity in days",
+        "validity": "Ọjọ́ mélòó ni kí ìpè náà fi wúlò ṣáájú kí o tó jẹ́ yíyọ kúrò fúnra rẹ̀?",
+        "validity_label": "Ìwúlò ní àwọn ọjọ́",
         "usermail": "Àdírẹ́ẹ̀sì ímeèlì fún àwọn ìmúdójúìwọ̀n ipò",
         "create": "Ṣẹ̀dá ìpè"
     },
