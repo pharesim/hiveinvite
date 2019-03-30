@@ -30,7 +30,7 @@
         "cannotclaimnow": "nítorí náà o ní láti dúró díẹ̀ títí o fi lè gba account kan tí a ṣe ìdínkù owó rẹ̀.",
         "abletobuy": "Pẹ̀lú ìṣirò rẹ ti <span id='steembalance'>0 STEEM</span> o lè<span id='abletopayforclaim'></span>",
         "canbuy": "gba account ẹyọkan si gẹ́gẹ́ bí a ṣe fojú wò ó.<span id='possiblebuys' class='hidden'></span>",
-        "canbuy_plural": "theoretically claim another <span id='possiblebuys'>0</span> accounts.",
+        "canbuy_plural": "gba àwọn account <span id='possiblebuys'>0</span> òmíràn si gẹ́gẹ́ bí a ṣe fojú wò ó.",
         "cannotbuy": "kò lè gba account kankan láfikún si. Gba STEEM díẹ̀ si!",
         "claimfreemodal": "Gbígbà ọ̀fẹ́",
         "claimsteemmodal": "Gbígbà tí o sanwó fún",
@@ -38,7 +38,7 @@
     },
     "freeclaimmodal": {
         "title": "Gba àwọn account steem tí a ṣe ìdínkù owó rẹ̀",
-        "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
+        "explainer": "Iye ìkẹyìn náà láti gba account kan tí a ṣe ìdínkù owó rẹ̀ jẹ́ <span class='rccost'>0</span> RC<br />Mọ̀ pé èyí má n yípadà ní gbogbo ìgbà. Nígbà tí ọ̀pọ̀lọpọ̀ àwọn account bá jẹ́ gbígbà láàrín àkókò kúkúrú, iye náà ma wá sókè.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Pẹ̀lú <span id='currentrc'>0</span> RC o lè gba account ẹyọkan.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Pẹ̀lú <span id='currentrc'>0</span> RC o lè gba àwọn account <span class='possibleclaims'>0</span>.",
         "moreexplain": "O lè gba bóyá account ẹyọkan ṣoṣo, tàbí lo bot gbígbà náà títí dìgbà tí RC bá tán tàbí to dáwọ́ rẹ̀ dúró.",
