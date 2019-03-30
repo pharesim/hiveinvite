@@ -27,7 +27,7 @@
         "cannotclaim": "tí kò ní jẹ́ kí o gba àwọn account kankan. Power up STEEM díẹ̀!",
         "canclaimnow": "kí o lè gba account ẹyọkan ní báyìí.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "kí o lè gba àwọn account<span class='possibleclaims'>0</span> ní báyìí.",
-        "cannotclaimnow": "so you have to wait a bit until you can claim a discounted account.",
+        "cannotclaimnow": "nítorí náà o ní láti dúró díẹ̀ títí o fi lè gba account kan tí a ṣe ìdínkù owó rẹ̀.",
         "abletobuy": "With your balance of <span id='steembalance'>0 STEEM</span> you can <span id='abletopayforclaim'></span>",
         "canbuy": "theoretically claim one more account.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "theoretically claim another <span id='possiblebuys'>0</span> accounts.",
@@ -40,7 +40,7 @@
         "title": "Gba àwọn account steem tí a ṣe ìdínkù owó rẹ̀",
         "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Pẹ̀lú <span id='currentrc'>0</span> RC o lè gba account ẹyọkan.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
+        "explainamount_plural": "Pẹ̀lú <span id='currentrc'>0</span> RC o lè gba àwọn account <span class='possibleclaims'>0</span>.",
         "moreexplain": "O lè gba bóyá account ẹyọkan ṣoṣo, tàbí lo bot gbígbà náà títí dìgbà tí RC bá tán tàbí to dáwọ́ rẹ̀ dúró.",
         "single": "Gba account ẹyọkan",
         "bot": "Bot gbígbà"
@@ -48,7 +48,7 @@
     "botclaimmodal": {
         "title": "Gbígbà fúnra rẹ̀ ti àwọn account steem tí a ṣe ìdínkù owó rẹ̀",
         "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
+        "working": "N ṣiṣẹ́ lọ́wọ́! Ti gba àwọn account <span id='botClaimStatusClaimed'>0</span>.",
         "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
         "start": "Bẹ̀rẹ̀",
         "close": "Dáwọ́ dúró/Pa dé"
