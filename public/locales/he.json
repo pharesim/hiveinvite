@@ -1,0 +1,123 @@
+{
+    "loggedout": {
+        "greeting": "צור/י Steemian!",
+        "explainer": "Steeminvite הוא שירות המאפשר לך להזמין את חבריך ל Steem.",
+        "buttontext": "על מנת להתחיל.",
+        "login_error": "תקלה בהתחברות",
+        "usernamePlaceholder": "שם משתמש הSteem שלך",
+        "postingkeyPlaceholder": "מפתח הפרסום האישי שלך"
+    },
+    "index": {
+        "lastupdate": "עידכון אחרון",
+        "refresh": "רעננ/י עכשיו",
+        "greeting": "שלום<span id='loggedInUser'>שם משתמש</span>!",
+        "tokenexplain": "כדי ליצור חשבון Steem, עליך תחילה לדרוש אסימון. אסימונים, או בשמם האחר טוקנים, ניתן להשיג על ידי ניצול כמות מסוימת של STEEM, או שימוש בכמות גדולה של מאנה RC. בתמורה, החשבון החדש יזוכה בכמות מינימאלית של מאנה RC על מנת להתנהל ולהעביר נתונים בblockchain ללא בעלות של כח Steem.",
+        "tokencost": "העלות הנוכחית לדרישה היא <span class='steemcost'>0</span> או STEEM <span class='rccost'>0</span> או RC mana",
+        "pendingclaims": "את/ה קיבלת חשבון נוסף.<span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "את\\ה דרשת<span id='pendingclaims'>0</span> חשבונות.<span id='invitespending'></span>",
+        "nopendingclaims": "לא דרשת אף חשבון עדיין.",
+        "invitespending": "הזמנה אחת בהמתנה<span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_plural": "<span id='pendinginvites'>0</span> הזמנות ממתינות לאישור,<span id='invitemore'></span>",
+        "noinvitespending": "אין הזמנות הממתינות לאישור\n<span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore": "כעת ישנה האופציה להזמין את חברך!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_plural": "את/ה יכול/ה להזמין <span id='remaininginvites'>0</span> חברים נוספים.",
+        "abletoclaim": "ה RC מאנה המקסימאלי שלך היא<span id='maxrc'>0</span>,<span id='canclaimever'></span><br /><span id='canclaimnow'> אתה כרגע נמצא ב<span id='rcpct'>0</span>%,<span id='canclaimnowamount'></span></span>",
+        "canclaim": "מה שמאפשר לך לדרוש חשבון אחד ב-100%\n<span id='maxclaims' class='hidden'></span>",
+        "canclaim_plural": "מה שמאפשר לך לדרוש <span id='maxclaims'>0</span> חשבונות ב-100%",
+        "cannotclaim": "מה שלא נותן לך אפשרות לדרוש שום חשבונות בכלל. תתחילו ב STEEM Power up!",
+        "canclaimnow": "באפשרותך לדרוש חשבון אחד ברגע זה.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "את/ה יכול/ה לדרוש <span class='possibleclaims'>0</span> חשבונות ממש עכשיו.",
+        "cannotclaimnow": "הינך מחויב/ת לחכות קצת עד שתהיה לך האפשרות לדרוש חשבון נוסף במחיר מוזל יותר.",
+        "abletobuy": "עם היתרה שלך של<span id='steembalance'> 0 STEEM </span> הינך יכול/ה<span id='abletopayforclaim'></span>",
+        "canbuy": "דרוש/י חשבון נוסף באופן תאורטי.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "מבחינה תיאורטית לדרוש עוד<span id='possiblebuys'>0</span> חשבונות.",
+        "cannotbuy": "אין אפשרות לדרוש חשבונות נוספים. השג/י יותר STEEM!",
+        "claimfreemodal": "דרישה חינמית",
+        "claimsteemmodal": "דרישה משולמת",
+        "invitemodal": "הזמנ/י מישהו עכשיו"
+    },
+    "freeclaimmodal": {
+        "title": "דרוש/י חשבונות steem מוזלים",
+        "explainer": "העלות האחרונה איתה היה ניתן לדרוש חשבון מוזל הייתה<span class='rccost'>0</span> RC<br />היו מודעים כי עלות זו משתנה כל הזמן. כשמספר החשבונות שנדרשות עולה, בתקופת זמן קצרה, כך גם המחיר עולה.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "עם<span id='currentrc'>0</span> RC תוכל/י לדרוש חשבון אחד.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "עם <span id='currentrc'>0</span> RC באפשרותך לדרוש <span class='possibleclaims'>0</span> חשבונות.",
+        "moreexplain": "את/ה יכול/ה לדרוש חשבון אחד, או להשתמש ב ''Claim Bot'' עד שייגמר לך הRC mana או לכשתרצה/י לכבות אותו.",
+        "single": "דרוש/י חשבון אחד",
+        "bot": "Bot הדרישות"
+    },
+    "botclaimmodal": {
+        "title": "רכישות אוטומטיות של חשבונות steem מוזלים",
+        "explainer": "שלום!. אני רובוט ניהול הדרישות הידידותי שלך. לחץ על הכפתור למטה בכדי לתפעל אותי. אני אמשיך לבצע דרישות עד שתיגמר לך כמות ה RC, או כשתרצה להפסיק את פעולותיי בלחיצה על הכפתור האחר.",
+        "working": "בעבודה! נדרשו <span id='botClaimStatusClaimed'>0</span> חשבונות עד כה.",
+        "stopped": "נעצר לאחר דרישת <span id='botClaimHasClaimed'>0</span> חשבונות.<br /> הודעת תקלה: <span id='botClaimError'></span>",
+        "start": "התחל",
+        "close": "הפסק/סגור"
+    },
+    "paidclaimmodal": {
+        "title": "שלמ/י בכדי לדרוש חשבון Steem",
+        "explainer": "העלות לרכישת חשבון היא<span class='steemcost'>0</span>STEEM<br />תשלום זה נמדד על פי הWitnesess.<br /> כל חשבון חדש יקבל כמות בסיסית של RC מאנה, כאילו הייתה לו את אותה הכמות בSteem power."
+    },
+    "invitemodal": {
+        "title": "הזמן/י ל Steem!",
+        "label": "תווית",
+        "by_email": "בטל/י בחירה זו כדי להשיג ישירות קישור אחד או יותר, במקום לשלוח דואר אלקטרוני",
+        "email": "כתובת",
+        "mailtext_label": "מלל דואר אלקטוני",
+        "mailtext": ". שלום,\n\nהוזמנת מאת {} להצטרף לSteem blockchain.\n\nמה זה בדיוק?\nSteem הוא מקור אינטרנטי מגובה המשמש לאתרי מדיה חברתיים חדשים כמו steemit.com ו- busy.org. באמצעות טכנולוגיית ה blockchain, ישנם דרכים מתקדמות לתגמול המשתמשים על פעילויותיהם.\n\nאשר/י את ההזמנה על ידי לחיצה על הקישור הבא:",
+        "linkamount": "מספר הקישורים ליצירה",
+        "or": "או",
+        "multi": "צור קישור שתקף ליצירת מספר חשבונות",
+        "multi_label": "מספר החשבונות שתקפים עבור הלינק הזה ( שימ/י לב, \nעלולות להיגמר לך הדרישות כשאתה משתמש באופציה זו!)",
+        "delegate": "לחשבון חדש מתקבל כמות בסיסית של RC mana כדי לבצע פעולות ב blockchain. אם את/ה רוצה שהמשתמש החדש יהיה מסוגל לעשות יותר, האצל אליו כוח Steem. כמובן שפעולה זו ניתן לעשות מאוחר יותר.",
+        "delegate_amount": "כמות כוח Steem שברצונך להאציל",
+        "validity": "למשך כמה ימים ההזמנה צריכה להיות תקפה לפני שהיא נמחקת באופן אוטומטי?",
+        "validity_label": "תוקף בימים",
+        "usermail": "כתובת הדואר האלקטרוני עבור עדכוני הסטטוס",
+        "create": "צור/י הזמנה"
+    },
+    "button": {
+        "submit": "שלח/י",
+        "login": "התחבר/י",
+        "login_now": "התחבר/י עכשיו",
+        "logout": "התנתק/י",
+        "close": "סגור/י",
+        "proceed": "המשך/י"
+    },
+    "keys": {
+        "wrong_key": "מפתח לא תקין",
+        "active_required": "פעולה זו מצריכה את מפתח Active שלך.",
+        "active": "מפתח Active",
+        "posting": "מפתח Posting",
+        "owner": "מפתח Owner",
+        "memo": "מפתח Memo",
+        "storeKey": "זכור/י מפתח לפעולה זו"
+    },
+    "language": {
+        "switch": "שנה/י שפה...",
+        "en": "אנגלית",
+        "de": "גרמנית"
+    },
+    "step1": {
+        "lead": "שלום! אתה כמה צעדים מלקבל חשבון Steem משלך!",
+        "text": "החשבון שלך יכלול את הארנק האישי שלך, לכן אבטחתו חשובה מאוד.<br />יצרנו סיסמת מאסטר עבור החשבון שלך, שאותה צריך לשמור במקום בטוח. כתוב אותה איפשהו!",
+        "submit": "רשמתי את הסיסמה, ואיני בסיכון לאבדה לעולם"
+    },
+    "step2": {
+        "lead": "אנא ודא לא לאבד את הסיסמה! אין שום דרך לשחזרה!",
+        "text": "שם המשתמש שלך בSteem חייב להיות באורך של לפחות 3 אותיות, ואינו יכול להכיל סימנים אחרים פרט לאותיות קטנות, מספרים וקו תחתון (_). שם זה הינו ייחודי ואינו ניתן לשינו לאחר שנקבע.\nחשוב/י טוב טוב לפני שתחליט/י.",
+        "username": "שם המשתמש שלך",
+        "as": "כמו"
+    },
+    "step3": {
+        "text": "מה שאמרנו קודם בנוגע לסיסמה שלך לא היה בדיחה.<br />בכדי לוודא שלא עשית טעות תוך כדי רישום סיסמתך, אנא הכניס/י אותו כאן.<br />אם אינך מצליח/ה להמשיך, טען/י מחדש את העמוד בדפדפן שלך והתחל/י שוב."
+    },
+    "step4": {
+        "text": "ישנן רמות גישה שונות עבור חשבון Steem.\n <br />מפתח הPosting מיועד לביצוע פעילויות מדיה החברתיות יומיומיות, כלומר מאפשר לך להעלות פוסטים ולהצביע.<br />על מנת לבצע פעולות ארנק בחשבונך ולהעביר STEEM, תצטרך את המפתח הActive.\n<br />המפתח הOwner יכול לשמש כדי לשנות את שני המפתחות הקודמים, ואין להשתמש בו לעולם למטרות אחרות. עדיף שמפתח זה ישמר יחד עם סיסמת המאסטר, וללא שימוש במצב מקוון.<br /> אחרון הוא מפתח הMemo, אשר אין בו עדיין שימוש מעשי, אך עשוי לשמש בעתיד כדי לפענח את המידע הפרטי שלך כמו שליחה וקבלה של הודעות ישירות.",
+        "warning": "מפתחות אלה מיוצרים מן הסיסמה שלך. ניתן להשתמש בהם במקום סיסמת המאסטר, אבל אך ורק למטרתם הספציפית.\n<br />יותר בטיחותי במפתח הPosting אם ברצונך לעלות פוסטים או להצביע בלבד ממכשיר נתון, או שימוש במפתח ה Active כאשר את/ה רוצה לבצע פעולות אחרות.<br />\nאת הסיסמה הראשית ואת מפתח המאסטר מוטב להשאיר במצב לא מקוון!",
+        "confirm": "על ידי לחיצה על הכפתור הבא, המשתמש שיצר את הזמנתך יעודכן, ובקרוב ייצור את חשבונך.",
+        "finish": "סיים/י בקשת חשבון ועזב/י את האתר"
+    },
+    "accept": {
+        "invalid": "פרטי זיהוי ההזמנה לא תקינים, סליחה!"
+    }
+}

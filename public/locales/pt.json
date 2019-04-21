@@ -1,0 +1,123 @@
+{
+    "loggedout": {
+        "greeting": "Cria um Steemian!",
+        "explainer": "Steeminvite é um serviço que permite-te convidar os teus amigos para o steem.",
+        "buttontext": "para começar.",
+        "login_error": "Erro de Início de sessão",
+        "usernamePlaceholder": "O seu nome de utilizador steem",
+        "postingkeyPlaceholder": "A sua chave privada de publicação"
+    },
+    "index": {
+        "lastupdate": "Última atualização",
+        "refresh": "Atualizar agora",
+        "greeting": "Olá <span id='loggedInUser'>nome de utilizador</span>!",
+        "tokenexplain": "Para criar uma conta steem, precisa primeiro de reivindicar um token. Estes podem ser obtidos por queimar uma certa quantidade de STEEM, ou por gastar uma grande quantidade de mana RC. Em retorno, a nova conta recebe uma quantia mínima de mana RC para transicionar no blockchain, sem possuir Steem Power.",
+        "tokencost": "O custo atual de uma reclamação é <span class='steemcost'>0</span> STEEM ou <span class='rccost'>0</span> RC mana",
+        "pendingclaims": "Você reivindicou uma conta. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "Você reivindicou <span id='pendingclaims'>0</span> contas. <span id='invitespending'></span>",
+        "nopendingclaims": "Não reivindicas-te contas ainda.",
+        "invitespending": "Um convite está pendente, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_plural": "<span id='pendinginvites'>0</span> convites pendentes, <span id='invitemore'></span>",
+        "noinvitespending": "Sem convites pendentes, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore": "para que consigas convidar um amigo agora!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_plural": "para que consigas convidar <span id='remaininginvites'>0</span> mais amigos.",
+        "abletoclaim": "A tua mana RC máxima é <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Estás atualmente em <span id='rcpct'>0</span>%,<span id='canclaimnowamount'></span></span>",
+        "canclaim": "que te permite reivindicar uma conta a 100%<span id='maxclaims' class='hidden'></span>",
+        "canclaim_plural": "que te permite reivindicar <span id='maxclaims'>0</span> contas a 100%",
+        "cannotclaim": "que não te permite reivindicar contas. Faça Power up de algum STEEM!",
+        "canclaimnow": "para que consigas reivindicar uma conta agora.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "para que consigas reivindicar <span class='possibleclaims'>0</span> contas agora.",
+        "cannotclaimnow": "para que tenhas de esperar um pouco antes de reivindicares uma conta com desconto.",
+        "abletobuy": "Com o seu saldo de <span id='steembalance'>0 STEEM </span> podes <span id='abletopayforclaim'></span>",
+        "canbuy": "em teoria reivindicar mais uma conta.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "em teoria reivindicar outras <span id='possiblebuys'>0</span> contas.",
+        "cannotbuy": "não reivindicar mais contas. Obtenha mais algum STEEM!",
+        "claimfreemodal": "Reivindicações grátis",
+        "claimsteemmodal": "Reivindicação paga",
+        "invitemodal": "Convide alguém agora"
+    },
+    "freeclaimmodal": {
+        "title": "Reivindicar contas steem com descontos",
+        "explainer": "O último custo para reclamar uma conta com desconto foi <span class='rccost'>0</span> RC<br />Tenha em atenção de que isto está sempre a mudar. Quando se reivindica várias contas em um curto período de tempo, o preço aumenta.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Com <span id='currentrc'>0</span> RC podes reivindicar uma conta.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Com <span id='currentrc'>0</span> RC podes reivindicar <span class='possibleclaims'>0</span> contas.",
+        "moreexplain": "Podes reivindicar uma conta singular, ou usar o bot de reivindicação até que fiques sem RC ou o pares.",
+        "single": "Reivindicar uma conta",
+        "bot": "Reivindicar bot"
+    },
+    "botclaimmodal": {
+        "title": "Reivindicação automatizada de contas steem com desconto",
+        "explainer": "Olá! Sou o teu robô amigável de reivindicação de contas. Clique no botão abaixo para me fazeres começar a trabalhar. Vou continuar a reclamar até ficares sem RC, ou indicares-me para parar, com o outro botão.",
+        "working": "A trabalhar! Reivindicadas <span id='botClaimStatusClaimed'>0</span> contas até agora.",
+        "stopped": "Parou após reivindicar <span id='botClaimHasClaimed'>0</span> contas.<br />Mensagem de erro:<span id='botClaimError'></span>",
+        "start": "Começar",
+        "close": "Parar/Fechar"
+    },
+    "paidclaimmodal": {
+        "title": "Pague para reivindicar uma conta steem",
+        "explainer": "O custo de reivindicação de uma conta é <span class='steemcost'>0</span> STEEM<br /> Este preço é definido pelas testemunhas.<br />Uma conta nova receberá uma quantidade básica de RC como se tivesse a mesma quantidade de Steem Power."
+    },
+    "invitemodal": {
+        "title": "Convidar para o Steem!",
+        "label": "Etiqueta",
+        "by_email": "Desmarque isto para obter um ou vários links diretamente, em vez de enviar um e-mail",
+        "email": "Endereço",
+        "mailtext_label": "Texto do e-mail",
+        "mailtext": "Olá,\n\nfoi convidado por {} para se juntar ao Steem blockchain.\n\nO que é isso?\nSteem é o backend usado por novos sites de redes sociais como o steemit.com e o busy.org. Ao usar a tecnologia blockchain, ela oferece novas formas de pagamento aos utilizadores pela sua atividade.\n\nAceite o convite clicando no seguinte link:",
+        "linkamount": "Número de links para criar",
+        "or": "OU",
+        "multi": "Crie um link que seja válido para múltiplas criações de contas",
+        "multi_label": "Quantidade de contas a que este link é válido (tenha cuidado, podes ficar sem reclamações com esta opção!)",
+        "delegate": "Uma nova conta tem apenas uma quantidade básica de RC para realizar transações na blockchain. Se desejas que o novo utilizador possa fazer algo mais, delega-o algum Steem Power. Podes também fazer isso mais tarde, claro.",
+        "delegate_amount": "Quantidade de Steem Power para delegar",
+        "validity": "Por quantos dias deve o convite ser válido antes de ser eliminado automaticamente?",
+        "validity_label": "Validade em dias",
+        "usermail": "Endereço de e-mail para atualizações de status",
+        "create": "Criar convite"
+    },
+    "button": {
+        "submit": "Submeter",
+        "login": "Iniciar Sessão",
+        "login_now": "Iniciar Sessão agora",
+        "logout": "Encerrar Sessão",
+        "close": "Fechar",
+        "proceed": "Continuar"
+    },
+    "keys": {
+        "wrong_key": "Chave inválida",
+        "active_required": "Esta ação requer a sua chave ativa.",
+        "active": "Chave ativa",
+        "posting": "Chave de publicação",
+        "owner": "Chave de proprietário",
+        "memo": "Chave memo",
+        "storeKey": "Recordar a chave para esta sessão"
+    },
+    "language": {
+        "switch": "Mudar idioma...",
+        "en": "inglês",
+        "de": "alemão"
+    },
+    "step1": {
+        "lead": "Olá! Estás a poucos passos de distância de teres a tua própria conta Steem!",
+        "text": "A sua conta irá incluir a sua carteira pessoal, por isso, a segurança é de extrema importância.<br /> Gerámos uma palavra-passe mestre para a sua conta, a qual precisa manter num lugar seguro. Anote-a em algum sítio!",
+        "submit": "Eu anotei a palavra-passe e nunca a irei perder"
+    },
+    "step2": {
+        "lead": "Ok. Certifique-se que não perde a palavra-passe! Não há maneira de recuperá-la!",
+        "text": "O seu nome de utilizador do Steem tem de ter pelos menos três caracteres, e não pode conter outros tipos de caracteres para além de letras minúsculas, números e hífens. Tem de ser um nome único e nunca poderá ser alterado. Escolha cuidadosamente.",
+        "username": "O seu nome de utilizador",
+        "as": "como"
+    },
+    "step3": {
+        "text": "O que dissemos anteriormente acerca de sua palavra-passe não era uma brincadeira.<br /> Para verificar que não cometeu um erro ao anotar a sua palavra-passe, introduza-a aqui.<br />Se não conseguir proceder, recarregue a página no seu browser e comece novamente."
+    },
+    "step4": {
+        "text": "Existem diferentes níveis de acesso para uma conta Steem.<br />A chave de publicação é usada para atividades diárias nas redes sociais, por exemplo, deixa-te publicar e votar.<br />Para aceder à sua carteira e mover STEEM, irá precisar da chave ativa.<br />A chave de proprietário pode ser usada para mudar esses dois, e nunca deve ser usada para outros propósitos. É melhor mantida ao lado da palavra-passe mestre, não a utilizes online.<br />Por último está a chave memo, que não tem função ainda mas pode ser usada no futuro para desencriptar os seus dados privados como as mensagens privadas.",
+        "warning": "Estas chaves são geradas partindo da sua palavra-passe. Elas podem ser usadas no lugar desta, mas apenas para o seu específico propósito.<br />É mais seguro usar a chave de publicação se queres usar um dispositivo para apenas publicar e votar, ou a chave ativa quando queres realizar outras ações.<br />É MELHOR MANTER A PALAVRA-PASSE E A CHAVE DE PROPRIETÁRIO OFFLINE!",
+        "confirm": "Ao clicar no seguinte botão, o utilizador que criou o teu convite vai ser informado, e, seguramente, irá criar a sua conta brevemente.",
+        "finish": "Acabe a solicitação de conta e saia deste site"
+    },
+    "accept": {
+        "invalid": "ID de convite inválido, desculpe!"
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "loggedout": {
+        "greeting": "Stwórz Steemiana!",
+        "explainer": "Steeminvite to serwis, która pozwala zaprosić swoich znajomych do Steem.",
+        "buttontext": "aby zacząć.",
+        "login_error": "Błąd logowania",
+        "usernamePlaceholder": "Twoja nazwa użytkownika steem",
+        "postingkeyPlaceholder": "Twój prywatny klucz do publikacji"
+    },
+    "index": {
+        "lastupdate": "Ostatnia aktualizacja",
+        "refresh": "Odśwież teraz",
+        "greeting": "Witaj<span id='loggedInUser'>nazwa użytkownika</span>!",
+        "tokenexplain": "Aby utworzyć konto Steem, musisz najpierw zażądać tokenu. Te można uzyskać przez spalanie pewnej ilość STEEM lub użycie dużej ilości many (RC). W zamian nowe konto otrzymuje minimalną ilość many (RC) do zawierania transakcji na blockchainie bez posiadania STEEM POWER.",
+        "tokencost": "Bieżący koszt utworzenia konta to <span class='steemcost'>0</span> STEEM lub <span class='rccost'>0</span> RC many",
+        "pendingclaims": "Utworzyłeś konto. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "Uworzyłeś<span id='pendingclaims'>0</span>kont<span id='invitespending'></span>",
+        "nopendingclaims": "Nie utworzyłeś jeszcze żadnego konta.",
+        "invitespending": "Jest jedno zaproszenie oczekujące potwierdzenia, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_plural": "<span id='pendinginvites'>0</span> zaproszeń oczekujących potwierdzenia, <span id='invitemore'></span>",
+        "noinvitespending": "Nie ma zaproszeń oczekujących potwierdzenia,<span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore": "więc możesz zaprosić znajomego teraz!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_plural": "więc możesz zaprosić <span id='remaininginvites'>0</span> przyjaciół więcej.",
+        "abletoclaim": "Twoja maksymalna mana RC wynosi <span id='maxrc'>0</span><span id='canclaimever'></span><br /><span id='canclaimnow'>Jesteś aktualnie na <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
+        "canclaim": "które pozwala Ci utworzyć jedno konto na 100%<span id='maxclaims' class='hidden'></span>",
+        "canclaim_plural": "które pozwala Ci na utworzenie <span id='maxclaims'>0</span> kont na 100%",
+        "cannotclaim": "które nie pozwala Ci na utworzenie żadnego konta. Zdobądź więcej STEEM POWER!",
+        "canclaimnow": "więc możesz utworzyć jedno konto już teraz.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "więc możesz utworzyć <span class='possibleclaims'>0</span>kont już teraz.",
+        "cannotclaimnow": "więc musisz trochę poczekać nim będziesz mógł ubiegać się o konto ze zniżką.",
+        "abletobuy": "Z Twoim stanem konta <span id='steembalance'>0 STEEM</span> możesz<span id='abletopayforclaim'></span>",
+        "canbuy": "teoretycznie utworzyć jedno konto więcej.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "teoretycznie utworzyć kolejne <span id='possiblebuys'>0</span> kont.",
+        "cannotbuy": "nie możesz utworzyć żadnego konta. Zdobądź więcej STEEM!",
+        "claimfreemodal": "Darmowe tworzenie",
+        "claimsteemmodal": "Płatne tworzenie",
+        "invitemodal": "Zaproś kogoś teraz"
+    },
+    "freeclaimmodal": {
+        "title": "Utwórz konto steem z zniżką",
+        "explainer": "Ostatni koszt utworzenia konta z zniżką to <span class='rccost'>0</span>RC<br />Uważaj, bo cena ta ciągle się zmienia. Gdy tworzone jest wiele kont w krótkim okresie, cena wzrasta.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Z <span id='currentrc'>0</span> RC możesz utworzyć jedno konto.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Z <span id='currentrc'>0</span> RC możesz utworzyć <span class='possibleclaims'>0</span> kont.",
+        "moreexplain": "Możesz utworzyć jedno pojedyncze konto albo skorzystać z bota który będzie tworzył konta aż skończy Ci się RC lub go zatrzymasz.",
+        "single": "Utwórz jedno konto",
+        "bot": "Bot do tworzenia kont"
+    },
+    "botclaimmodal": {
+        "title": "Automatyczne tworzenie kont steem po obniżonej cenie",
+        "explainer": "Cześć! Jestem Twoim przyjaznym robotem do tworzenia kont. Kliknij na przycisk poniżej abym zaczął prace. Będę tworzyć konta aż skończy Ci się RC lub powiesz mi bym przestał przy pomocy innego przycisku.",
+        "working": "W trakcie pracy! Utworzyłem<span id='botClaimStatusClaimed'>0</span>kont do tej pory.",
+        "stopped": "Zatrzymany po utworzeniu<span id='botClaimHasClaimed'>0</span>kont.<br />Kod błędu:<span id='botClaimError'></span>",
+        "start": "Start",
+        "close": "Stop/Zamknij"
+    },
+    "paidclaimmodal": {
+        "title": "Zapłać aby utworzyć konto steem",
+        "explainer": "Koszt utworzenia konta to <span class='steemcost'>0</span>STEEM<br />Cena jest ustalana przez delegatów.<br />Nowe konto otrzyma podstawową ilość RC tak jakby posiadało taką samą ilość Steem Power."
+    },
+    "invitemodal": {
+        "title": "Zaproś na Steem!",
+        "label": "Etykieta",
+        "by_email": "Odznacz, aby uzyskać jeden lub wiele linków bezpośrednio, zamiast wysyłania wiadomości e-mail",
+        "email": "Adres",
+        "mailtext_label": "Treść maila",
+        "mailtext": "Cześć, \n\nzostałeś zaproszony przez {} aby dołączyć do blokchaina Steem.\n\nCo to jest? \nSteem to blokchain używany przez strony takie jak steemit.com lub busy.org. Dzięki technologi blokchain pozwala on zarabiać użytkownikom na ich aktywności. \n\nZaakceptuj zaproszenie klikając na poniższy link:",
+        "linkamount": "Liczba adresów URL do utworzenia",
+        "or": "LUB",
+        "multi": "Stwórz link, który pozwoli utworzyć kilka kont",
+        "multi_label": "Liczba kont dla których ten link będzie ważny (uważaj bo możesz chwilowo stracić możliwość tworzenia nowych kont przy pomocy tej opcji!)",
+        "delegate": "Nowe konto ma tylko podstawowe ilości RC na blockchainie. Jeśli chcesz, aby nowy użytkownik, mógł zrobić więcej, deleguj mu trochę Steem Power. Oczywiście możesz to zrobić również później.",
+        "delegate_amount": "Kwota Steem Power do oddelegowania",
+        "validity": "Ile dni zaproszenie ma być ważne, zanim zostanie automatycznie usunięte?",
+        "validity_label": "Ważność w dniach",
+        "usermail": "Adres e-mail do informacji o stanie zaproszenia",
+        "create": "Stwórz zaproszenie"
+    },
+    "button": {
+        "submit": "Zatwierdź",
+        "login": "Zaloguj",
+        "login_now": "Zaloguj się teraz",
+        "logout": "Wyloguj",
+        "close": "Zamknij",
+        "proceed": "Kontynuuj"
+    },
+    "keys": {
+        "wrong_key": "Nieprawidłowy klucz",
+        "active_required": "Ta akcja wymaga aktywnego klucza.",
+        "active": "Klucz aktywny",
+        "posting": "Klucz do publikowania",
+        "owner": "Klucz właściciela",
+        "memo": "Klucz memo",
+        "storeKey": "Pamiętaj klucz dla tej sesji"
+    },
+    "language": {
+        "switch": "Zmień język...",
+        "en": "angielski",
+        "de": "niemiecki"
+    },
+    "step1": {
+        "lead": "Cześć! Jesteś już tylko kilka kroków od dostania własnego konta Steem!",
+        "text": "Twoje konto będzie zawierać Twój osobisty portfel, więc bardzo ważne jest bezpieczeństwo.<br />Mamy wygenerowane główne hasło dla konta, które należy zachować w bezpiecznym miejscu. Zapisz je gdzieś!",
+        "submit": "Zapisałem hasło i nigdy go nie zgubię"
+    },
+    "step2": {
+        "lead": "W porządku. Bądź pewny, że nie stracisz hasła. Nie ma możliwości aby je odzyskać!",
+        "text": "Twoja nazwa użytkownika Steem musi posiadać co najmniej 3 znaki. Nie może zawierać znaków innych niż małe litery, cyfry i kreska. Musi być unikalne i nie może być nigdy zmienione. Wybierz je starannie.",
+        "username": "Twoja nazwa użytkownika",
+        "as": "jako"
+    },
+    "step3": {
+        "text": "To co pisaliśmy wcześniej o haśle to nie był żart.<br />Aby sprawdzić czy nie popełniłeś błędu podczas zapisywania hasła, proszę wpisz je tutaj.<br />Jeśli nie możesz kontynuować, odśwież stronę i zacznij od nowa."
+    },
+    "step4": {
+        "text": "Istnieją różne poziomy dostępu do konta Steem.<br />Klucz publikacji używany jest do codziennych czynności takich jak polubienie czy tworzenie posta/komentarza.<br />Aby dostać się do swojego portfela i przelewać STEEM potrzebujesz klucza aktywnego.<br />Klucz właściciela może być użyty do zmiany poprzednich dwóch i nie powienien być nigdy używany w innym celu. Najlepiej nie przechowywać go razem z głównym hasłem i nie używać go online.<br />Ostatni i najmniej ważny jest klucz memo, który aktualnie nie posiada żadnej funkcji ale w przyszłości może być używany do odszyfrowywania prywatnych danych takich jak bezpośrednie wiadomości.",
+        "warning": "Klucze te wygenerowane są z Twojego hasła. Mogą być używane zamiast niego ale tylko do wyznaczonych zadań.<br />Najbezpieczniej jest używać klucza publikacji do tworzenia postów i głosowania lub klucza aktywnego jeśli chcesz wykonywać inne czynności.<br />HASŁO ORAZ KLUCZ WŁAŚCICIELA NAJLEPIEJ TRZYMAĆ OFFLINE!",
+        "confirm": "Klikając poniższy przycisk, użytkownik, który utworzył zaproszenie zostanie poinformowany i miejmy nadzieję, że wkrótce utworzy Twoje konto.",
+        "finish": "Zakończ tworzenie konta i opuść stronę"
+    },
+    "accept": {
+        "invalid": "Nieprawidłowy identyfikator zaproszenia, przepraszmy!"
+    }
+}

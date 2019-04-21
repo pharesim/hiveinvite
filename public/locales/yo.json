@@ -1,0 +1,123 @@
+{
+    "loggedout": {
+        "greeting": "Ṣẹ̀dá Steemian kan!",
+        "explainer": "Steeminvite jẹ́ ìpèsè kan tí yíò fún ẹ láàyè láti pe àwọn ọ̀rẹ́ rẹ sí steem.",
+        "buttontext": "láti bẹ̀rẹ̀.",
+        "login_error": "Àṣìṣe ìwọlé",
+        "usernamePlaceholder": "Orúkọ aṣàmúlò steem rẹ",
+        "postingkeyPlaceholder": "Kọ́kọ́rọ́ ìtẹ̀jáde ìkọ̀kọ̀ rẹ"
+    },
+    "index": {
+        "lastupdate": "Ìmúdójúìwọ̀n ìkẹhìn",
+        "refresh": "Sọdọ̀tun ní báyìí",
+        "greeting": "Hello <span id='loggedInUser'>orúkọ aṣàmúlò</span>!",
+        "tokenexplain": "Láti ṣẹ̀dá account steem kan, o nílò láti kọ́kọ́ gba token kan. Èyí le jẹ́ gbígbà nípasẹ̀ lílo iye STEEM pàtó kan, tàbí níná iye mana RC nlá kan. Ní ìdápadà, account tuntun náà yíò gba ìwọnba iye mana RC láti ní ìbáṣepọ̀ lórí blockchain náà láì ní Steem Power tiẹ̀.",
+        "tokencost": "Iye lọ́wọ́lọ́wọ́ fún gbígbà kan jẹ́ <span class='steemcost'>0</span> STEEM tàbí <span class='rccost'>0</span> RC mana",
+        "pendingclaims": "O ti gba account kan. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "O ti gba àwọn account <span id='pendingclaims'>0</span>. <span id='invitespending'></span>",
+        "nopendingclaims": "Ìwọ kò tíì gba account kankan báyìí.",
+        "invitespending": "Ìpè ẹyọkan kò tíì yanjú, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_plural": "Àwọn ìpè <span id='pendinginvites'>0</span> kò tíì yanjú, <span id='invitemore'></span>",
+        "noinvitespending": "Kò sí àwọn ìpè tí kò tíì yanjú, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore": "nítorí náà o lè pe ọ̀rẹ́ kan ní báyìí!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_plural": "nítorí náà o lè pe àwọn ọ̀rẹ́ <span id='remaininginvites'>0</span> láfikún si.",
+        "abletoclaim": "Mana RC rẹ tó ga jù jẹ́ <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>O wà ní <span id='rcpct'>0</span>% lọ́wọ́lọ́wọ́, <span id='canclaimnowamount'></span></span>",
+        "canclaim": "tí yíò fún ọ láàyè láti gba account kan ní 100%<span id='maxclaims' class='hidden'></span>",
+        "canclaim_plural": "tí yíò fún ọ láàyè láti gba àwọn account <span id='maxclaims'>0</span> ní 100%",
+        "cannotclaim": "tí kò ní jẹ́ kí o gba àwọn account kankan. Power up STEEM díẹ̀!",
+        "canclaimnow": "nítorí náà o lè gba account ẹyọkan ní báyìí.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "nítorí náà o lè gba àwọn account<span class='possibleclaims'>0</span> ní báyìí.",
+        "cannotclaimnow": "nítorí náà o ní láti dúró díẹ̀ títí o fi lè gba account kan tí a ṣe ìdínkù owó rẹ̀.",
+        "abletobuy": "Pẹ̀lú ìṣirò rẹ ti <span id='steembalance'>0 STEEM</span> o lè<span id='abletopayforclaim'></span>",
+        "canbuy": "gba account ẹyọkan si gẹ́gẹ́ bí a ṣe fojú wò ó.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "gba àwọn account <span id='possiblebuys'>0</span> òmíràn si gẹ́gẹ́ bí a ṣe fojú wò ó.",
+        "cannotbuy": "kò lè gba account kankan láfikún si. Gba STEEM díẹ̀ si!",
+        "claimfreemodal": "Gbígbà ọ̀fẹ́",
+        "claimsteemmodal": "Gbígbà tí o sanwó fún",
+        "invitemodal": "Pe ẹnìkan ní báyìí"
+    },
+    "freeclaimmodal": {
+        "title": "Gba àwọn account steem tí a ṣe ìdínkù owó rẹ̀",
+        "explainer": "Iye ìkẹyìn náà láti gba account kan tí a ṣe ìdínkù owó rẹ̀ jẹ́ <span class='rccost'>0</span> RC<br />Mọ̀ pé èyí má n yípadà ní gbogbo ìgbà. Nígbà tí ọ̀pọ̀lọpọ̀ àwọn account bá jẹ́ gbígbà láàrín àkókò kúkúrú, iye náà ma wá sókè.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Pẹ̀lú <span id='currentrc'>0</span> RC o lè gba account ẹyọkan.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Pẹ̀lú <span id='currentrc'>0</span> RC o lè gba àwọn account <span class='possibleclaims'>0</span>.",
+        "moreexplain": "O lè gba bóyá account ẹyọkan ṣoṣo, tàbí lo bot gbígbà náà títí dìgbà tí RC bá tán tàbí to dáwọ́ rẹ̀ dúró.",
+        "single": "Gba account ẹyọkan",
+        "bot": "Bot gbígbà"
+    },
+    "botclaimmodal": {
+        "title": "Gbígbà fúnra rẹ̀ ti àwọn account steem tí a ṣe ìdínkù owó rẹ̀",
+        "explainer": "Káàbọ̀! Èmi ni robot account gbígbà rẹ tó rọrùn láti lò. Tẹ bọ́tìnnì ìsàlẹ̀ náà láti jẹ́ ki n bẹ̀rẹ̀ sí ní ṣiṣẹ́. Èmi yíò ma gba àwọn account títí RC rẹ yíò fi tán, tàbí tí o bá ní kí n dúró pẹ̀lú bọ́tìnnì kejì náà.",
+        "working": "N ṣiṣẹ́ lọ́wọ́! Ti gba àwọn account <span id='botClaimStatusClaimed'>0</span>.",
+        "stopped": "Ó ti dúró lẹ́yìn tó gba àwọn account <span id='botClaimHasClaimed'>0</span>.<br />Ìfiránṣẹ́ àṣìṣe: <span id='botClaimError'></span>",
+        "start": "Bẹ̀rẹ̀",
+        "close": "Dáwọ́ dúró/Pa dé"
+    },
+    "paidclaimmodal": {
+        "title": "Sanwó láti gba account steem kan",
+        "explainer": "Iye láti gba account kan náà jẹ́ <span class='steemcost'>0</span> STEEM<br />Iye yìí ní ètò nípasẹ̀ àwọn ẹlẹrìí náà.<br />Account tuntun kan yíò gba ìwọ̀nba iye RC kan gẹ́gẹ́ bí pé ó ti ní iye Steem Power kànna."
+    },
+    "invitemodal": {
+        "title": "Pe sí Steem!",
+        "label": "Ààmì",
+        "by_email": "Yọ yíyan èyí kúrò láti gba ìtọ́kasí kan tàbí ọ̀pọ̀lọpọ̀ ìtọ́kasí tààrà dípò fífi ímeèlì ránṣẹ́",
+        "email": "Àdírẹ́ẹ̀sì",
+        "mailtext_label": "Ọ̀rọ̀ ímeèlì",
+        "mailtext": "Bawo ni,\n\no ti gba ìpè nípasẹ̀ {} láti darapọ̀ mọ́ blockchain Steem.\n\nKí nìyẹn?\nSteem jẹ́ àgbétẹ́lẹ̀ náà tó jẹ́ lílò nípasẹ̀ àwọn ààyè ìkànnì àjọlò tuntun bíi steemit.com àti busy.org. Pẹlu lílo ìmọ̀ ẹ̀rọ blockchain, ó gba àwọn ọnà tuntun yọ nípasẹ̀ sísan owó fún àwọn aṣàmúlò náà fún iṣẹ́ wọn.\n\nGba ìpè náà nípasẹ̀ títẹ orí ìtọ́kasí yìí:",
+        "linkamount": "Nọ́mbà àwọn ìtọ́kasí láti ṣẹ̀dá",
+        "or": "TÀBÍ",
+        "multi": "Ṣẹ̀dá ìtọ́kasí kan tó wúlò fún ọ̀pọ̀lọpọ̀ àwọn ṣíṣẹ̀dá account",
+        "multi_label": "Iye àwọn account tí ìtọ́kasí yìí wúlò fún (kíyè sára, o lè lo àwọn gbígbà tán pẹ̀lú lílo àṣàyàn yìí!)",
+        "delegate": "Account tuntun kan ní ìwọ̀nba iye RC nìkan láti ní ìbáṣepọ̀ lórí blockchain náà. Tí o bá fẹ́ kí aṣàmúlò tuntun náà lè ṣiṣẹ́ láfikún si, fi àwọn Steem Power díẹ̀ ránṣẹ́. O lè tún ṣe ìyẹn nígbà mìíràn dájúdájú.",
+        "delegate_amount": "Iye Steem Power láti fi ránṣẹ́",
+        "validity": "Ọjọ́ mélòó ni kí ìpè náà fi wúlò ṣáájú kí o tó jẹ́ yíyọ kúrò fúnra rẹ̀?",
+        "validity_label": "Ìwúlò ní àwọn ọjọ́",
+        "usermail": "Àdírẹ́ẹ̀sì ímeèlì fún àwọn ìmúdójúìwọ̀n ipò",
+        "create": "Ṣẹ̀dá ìpè"
+    },
+    "button": {
+        "submit": "Fi ṣọwọ́",
+        "login": "Wọlé",
+        "login_now": "Wọlé ní báyìí",
+        "logout": "Jáde síta",
+        "close": "Pa dé",
+        "proceed": "Tẹ̀síwájú"
+    },
+    "keys": {
+        "wrong_key": "Kọ́kọ́rọ́ tí kò wúlò",
+        "active_required": "Iṣẹ́ yìí nílò kọ́kọ́rọ́ ìṣiṣẹ́ rẹ.",
+        "active": "Kọ́kọ́rọ́ ìṣiṣẹ́",
+        "posting": "Kọ́kọ́rọ́ ìtẹ̀jáde",
+        "owner": "Kọ́kọ́rọ́ olúwa",
+        "memo": "Kọ́kọ́rọ́ àkọsílẹ̀",
+        "storeKey": "Rántí kọ́kọ́rọ́ fún àkókò yìí"
+    },
+    "language": {
+        "switch": "Pààrọ̀ èdè...",
+        "en": "gẹ̀ẹ́sì",
+        "de": "jẹ́mánì"
+    },
+    "step1": {
+        "lead": "Káàbọ̀! Ó ku àwọn ìgbésẹ̀ díẹ̀ nìkan fún ẹ láti gba account Steem tìẹ!",
+        "text": "Account rẹ yíò ní àpamọ́wọ́ aládàáni tìẹ, nítorí náà ààbò ṣe kókó púpọ̀.<br />A ti ṣẹ̀dá ọ̀rọ̀ aṣínà ọ̀gá kan fún account rẹ, èyí tí o nílò láti tọ́jú sí ààyè ààbò kan. Kọ́ kalẹ̀ sí ibìkan!",
+        "submit": "Mo ti kọ ọ̀rọ̀ aṣínà náà kalẹ̀ àti pé mi ò ní pàdánù rẹ̀ ní ìgbàkígbà"
+    },
+    "step2": {
+        "lead": "Kò burú. Ri dájú láti má pàdánù ọ̀rọ̀ aṣínà náà! Kò sí ọ̀nà kankan láti ri padà!",
+        "text": "Orúkọ aṣàmúlò Steem rẹ ní láti jẹ́ ó kéré jù ẹyọ ọ̀rọ̀ mẹ́ta, àti pé kò lè ní àwọn ẹyọ ọ̀rọ̀ mìíràn tó yàtọ̀ sí àwọn lẹ́tà kékeré, àwọn nọ́mbà àti dáàsì kan. Ó ní láti jẹ́ àkànṣe kò sí ṣé yípadà. Fara balẹ̀ yan.",
+        "username": "Orúkọ aṣàmúlò rẹ",
+        "as": "bíi"
+    },
+    "step3": {
+        "text": "Nnkan tí a sọ nípa ọ̀rọ̀ aṣínà rẹ tẹ́lẹ̀ kìí ṣe àwàdà.<br />Láti ri dájú pé ìwọ kò ṣe àṣìṣe nígbà tí ò nkọ ọ̀rọ̀ aṣínà rẹ kalẹ̀, jọ̀wọ́ tẹ síbí.<br />Tí ìwọ kò bá lè tẹ̀síwájú, sọ ojú ewé náà dọ̀tun nínú aṣàwákiri rẹ kí o sì tún bẹ̀rẹ̀ padà."
+    },
+    "step4": {
+        "text": "Oríṣiríṣi àwọn ìpele ìgbaniwọlé ló wà fún account Steem kan.<br />Kọ́kọ́rọ́ ìtẹ̀jáde náà jẹ́ lílò fún iṣẹ́ ìkànnì àjọlò lójoojúmọ́, ìyẹn ni pé ó jẹ́ kí o ṣàtẹ̀jáde àti dìbò.<br />Láti ní ààyè sí àpamọ́wọ́ rẹ àti gbé STEEM, o nílò kọ́kọ́rọ́ ìṣiṣẹ́.<br />Kọ́kọ́rọ́ olúwa náà lè jẹ́ lílò láti ṣàyípadà àwọn méjì yẹn, kò sí gbọ́dọ̀ jẹ́ lílò fún àwọn ìdí mìíràn. Ó dára láti tọ́jú rẹ̀ pamọ́ lẹ́gbẹ̀ẹ́ ọ̀rọ̀ aṣínà ọ̀gá náà, má ṣe lò lórí ayélujára.<br />Níkẹyìn ni kọ́kọ́rọ́ àkọsílẹ̀ náà, èyí tí kò tíì ní iṣẹ́ kankan ní báyìí sùgbọ́n tó lè jẹ́ lílò ní ọjọ́ iwájú láti ṣàtúpalẹ̀ àrokò data ìkọ̀kọ̀ rẹ bíi àwọn ìfiránṣẹ́ tààrà.",
+        "warning": "Àwọn kọ́kọ́rọ́ wọ̀nyí gba ṣíṣẹ̀dá láti ọ̀rọ̀ aṣínà rẹ. Wọ́n lè jẹ́ lílò dípò rẹ̀, ṣùgbọ́n fún ìdí pàtó wọn nìkan.<br />Ó dára láti lo kọ́kọ́rọ́ ìtẹ̀jáde náà tí o bá fẹ́ lo ẹ̀rọ kan láti ṣàtẹ̀jáde àti dìbò, tàbí kọ́kọ́rọ́ ìṣiṣẹ́ nígbà tí o bá fẹ́ ṣe àwọn iṣẹ́ mìíràn.<br />Ó DÁRA KÍ Ọ̀RỌ̀ AṢÍNÀ NÁÀ ÀTI KỌ́KỌ́RỌ́ OLÚWA NÁÀ WÀ NÍ ÌPAMỌ́!",
+        "confirm": "Nípasẹ̀ títẹ̀ bọ́tìnnì yìí, o ma pe àkíyèsí aṣàmúlò tó ṣẹ̀dá ìpè rẹ náà, nírètí pé yóò ṣẹ̀dá account rẹ láìpẹ́.",
+        "finish": "Parí ìbéèrè account kí o sì kúrò ní ààyè yìí"
+    },
+    "accept": {
+        "invalid": "ID ìpè tí kò wúlò, má bínú!"
+    }
+}

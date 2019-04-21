@@ -1,0 +1,123 @@
+{
+    "loggedout": {
+        "greeting": "Bir Steemian olun!",
+        "explainer": "Steeminvite arkadaşlarınızı steem'e davet etmenizi sağlayan bir hizmettir.",
+        "buttontext": "başlamak için.",
+        "login_error": "Oturum açma hatası",
+        "usernamePlaceholder": "Steem kullanıcı adınız",
+        "postingkeyPlaceholder": "Özel gönderi anahtarınız"
+    },
+    "index": {
+        "lastupdate": "Son güncelleme",
+        "refresh": "Şimdi yenileyin",
+        "greeting": "Merhaba <span id='loggedInUser'>kullanıcı adı</span>!",
+        "tokenexplain": "Bir steem hesabı oluşturmak için, öncelikle bir jeton talep etmeniz gerekir. Bunlar, belirli bir miktarda STEEM yakarak veya büyük miktarda RC mana harcayarak elde edilebilir. Bunun karşılığında, yeni hesap Steem Güç'e sahip olmadan blok zincirinde işlem yapmak için minimum miktarda RC manası alır.",
+        "tokencost": "Bir talep için geçerli maliyet <span class='steemcost'>0</span> STEEM veya <span class='rccost'>0</span> RC mana'dır",
+        "pendingclaims": "Bir hesap talep ettiniz. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "<span id='pendingclaims'>0</span> hesap talep ettiniz. <span id='invitespending'></span>",
+        "nopendingclaims": "Henüz hiç hesap talep etmediniz.",
+        "invitespending": "Bir davetiye beklemede, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_plural": "<span id='pendinginvites'>0</span> davetiyeler beklemede, <span id='invitemore'></span>",
+        "noinvitespending": "Hiçbir davetiye beklemede değil, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore": "böylece şimdi bir arkadaşını davet edebilirsin!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_plural": "böylece <span id='remaininginvites'>0</span> arkadaş daha davet edebilirsin.",
+        "abletoclaim": "Maksimum RC manan <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'> Şu anda buradasın <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
+        "canclaim": "%100'de bir hesap talep etmenizi sağlar<span id='maxclaims' class='hidden'></span>",
+        "canclaim_plural": "%100'de <span id='maxclaims'>0</span> hesap talep etmenize olanak sağlar",
+        "cannotclaim": "bu herhangi bir hesap talebinde bulunmanıza izin vermez. STEEM gücünüzü biraz yükseltin!",
+        "canclaimnow": "böylece şu anda bir hesap talebinde bulunabilirsiniz.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "böylece şu anda <span class='possibleclaims'>0</span> hesap talep edebilirsiniz.",
+        "cannotclaimnow": "böylece indirimli bir hesap talep edene kadar biraz beklemelisiniz.",
+        "abletobuy": "<span id='steembalance'>0 STEEM</span> bakiyeniz ile <span id='abletopayforclaim'></span> yapabilirsiniz",
+        "canbuy": "teorik olarak bir hesap daha talep edin.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "teorik olarak başka <span id='possiblebuys'>0</span> hesap talep edin.",
+        "cannotbuy": "başka hesap talep etmeyin. Biraz daha STEEM alın!",
+        "claimfreemodal": "Ücretsiz talep",
+        "claimsteemmodal": "Ücretli talep",
+        "invitemodal": "Şimdi birini davet et"
+    },
+    "freeclaimmodal": {
+        "title": "İndirimli steem hesabı talep et",
+        "explainer": "İndirimli bir hesap talebinde bulunmanın son maliyeti <span class='rccost'>0</span> RC<br />Bunun her zaman değiştiğini unutmayın. Kısa sürede birden fazla hesap talep edildiğinde, fiyat yükselir.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "<span id='currentrc'>0</span> RC ile bir hesap talep edebilirsiniz.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "<span id='currentrc'>0</span> RC ile <span class='possibleclaims'>0</span> hesap talep edebilirsiniz.",
+        "moreexplain": "Tek bir hesap talep edebilir, veya RC bitene veya durdurulana kadar talep botunu kullanabilirsiniz.",
+        "single": "Bir hesap talep et",
+        "bot": "Talep botu"
+    },
+    "botclaimmodal": {
+        "title": "İndirimli steem hesaplarının otomatik talep edilmesi",
+        "explainer": "Merhaba! Ben senin dost hesap talep robotunum. Çalışmaya başlamamı sağlamak için aşağıdaki düğmeye tıkla. RC değerin bitene kadar talep etmeye devam edeceğim, ya da diğer düğme ile durmamı söyle.",
+        "working": "İş başında! Şimdiye kadar <span id='botClaimStatusClaimed'>0</span> hesap talep edildi.",
+        "stopped": "<span id='botClaimHasClaimed'>0</span> Hesap talebinde bulunduktan sonra durduruldu.<br />Hata mesajı:<span id='botClaimError'></span>",
+        "start": "Başla",
+        "close": "Dur/Kapat"
+    },
+    "paidclaimmodal": {
+        "title": "Bir steem hesabı almak için öde",
+        "explainer": "Bir hesap talep etmenin bedeli <span class='steemcost'>0</span>STEEM'dir<br />. Bu maliyet tanıklar tarafından belirlenir.<br />Yeni bir hesaba aynı miktardaki Steem Gücü'ne sahipmiş gibi temel miktarda RC gönderilir."
+    },
+    "invitemodal": {
+        "title": "Steem'e davet et!",
+        "label": "Etiket",
+        "by_email": "Bir e-posta göndermek yerine doğrudan bir veya daha fazla bağlantı almak için bu seçeneği kaldırın",
+        "email": "Adres",
+        "mailtext_label": "E-Posta metni",
+        "mailtext": "Merhaba,\n\nSteem blok zincirine katılmak için {} tarafından davet edildiniz.\n\nO nedir?\nSteem, steemit.com ve busy.org gibi yeni sosyal medya siteleri tarafından kullanılan arka uçtur. Blok zinciri teknolojisini kullanarak, kullanıcılara etkinlikleri için ödeme yaparak yeni yollar kullanmaktadır.\n\nAşağıdaki bağlantıya tıklayarak daveti kabul edin:",
+        "linkamount": "Oluşturulacak bağlantı sayısı",
+        "or": "VEYA",
+        "multi": "Birden fazla hesap oluşturma işlemi için geçerli bir bağlantı oluşturun",
+        "multi_label": "Bu bağlantının geçerli olduğu hesap sayısı (dikkatli olun, bu seçeneği kullanarak taleplerinizi tüketebilirsiniz!)",
+        "delegate": "Yeni bir hesap, blokzincirinde işlem yapmak için yalnızca temel miktarda RC'ye sahiptir. Yeni kullanıcının daha fazlasını yapabilmesini istiyorsanız, biraz Steem Power devredin. Bunu elbette daha sonra da yapabilirsiniz.",
+        "delegate_amount": "Devredilecek Steem Güç miktarı",
+        "validity": "Davet otomatik olarak silinmeden önce kaç gün geçerli olmalı?",
+        "validity_label": "Gün içinde geçerliliği",
+        "usermail": "Durum güncellemeleri için E-Posta adresi",
+        "create": "Davetiye oluştur"
+    },
+    "button": {
+        "submit": "Gönder",
+        "login": "Giriş",
+        "login_now": "Şimdi giriş yap",
+        "logout": "Oturumu kapat",
+        "close": "Kapat",
+        "proceed": "İlerle"
+    },
+    "keys": {
+        "wrong_key": "Geçersiz anahtar",
+        "active_required": "Bu işlem aktif anahtarınızı gerektirir.",
+        "active": "Aktif anahtar",
+        "posting": "Gönderme anahtarı",
+        "owner": "Sahip anahtarı",
+        "memo": "Memo anahtarı",
+        "storeKey": "Bu oturum için anahtarı hatırla"
+    },
+    "language": {
+        "switch": "Dili değiştir...",
+        "en": "ingilizce",
+        "de": "almanca"
+    },
+    "step1": {
+        "lead": "Merhaba! Kendi Steem hesabınızı almaktan sadece birkaç adım uzaktasınız!",
+        "text": "Hesabınız kişisel cüzdanınızı içereceği için, güvenlik çok önemlidir.<br />Hesabınız için güvenli bir yerde tutmanız gereken bir ana şifre oluşturduk. Bir yere yaz!",
+        "submit": "Şifreyi yazdım ve asla kaybetmeyeceğim"
+    },
+    "step2": {
+        "lead": "Tamam. Şifreyi kaybetmediğinizden emin olun! Kurtarmanın bir yolu yok!",
+        "text": "Steem kullanıcı adınız en az üç karakter uzunluğunda olmalı ve küçük harf, rakam ve kısa çizgi dışında başka karakterler içeremez. Eşsiz olması gerekir ve asla değiştirilemez. Dikkatlice seç.",
+        "username": "Kullanıcı adınız",
+        "as": "olarak"
+    },
+    "step3": {
+        "text": "Daha önce şifreniz hakkında söylediklerimiz şaka değildi.<br />Şifreniz bildirilirken hata yapmadığınızı doğrulamak için, lütfen buraya girin.<br />Devam edemezseniz, sayfayı tarayıcınızda yenileyin ve baştan başlayın."
+    },
+    "step4": {
+        "text": "Steem hesabı için farklı erişim seviyeleri vardır. <br />Gönderi anahtarı günlük sosyal medya etkinlikleri için kullanılır, yani gönderi paylaşmanıza ve oy kullanmanıza izin verir.<br />Cüzdanınıza erişmek ve STEEM'i harekete geçirmek için, aktif anahtara ihtiyacınız vardır.<br />Sahip anahtarı bu ikisini değiştirmek için kullanılabilir ve asla başka amaçlar için kullanılmamalıdır. Ana şifrenin yanında en iyi şekilde saklanır, çevrimiçi olarak kullanmayın.<br />Son olarak ve en azından henüz bir işlevi olmayan ancak gelecekte doğrudan mesajlar gibi özel verilerinizin şifresini çözmek için kullanılabilecek memo anahtarı var.",
+        "warning": "Bu anahtarlar şifrenizden üretilir. Bunun yerine kullanılabilirler, ancak yalnızca kendi özel amaçları için kullanılabilir.<br />Bir cihazı yalnızca gönderi yayınlama ve oy vermek için kullanmak istiyorsanız, veya başka işlemler yapmak istediğinizde etkin anahtarı kullanmak istiyorsanız, kayıt anahtarını kullanmak daha güvenlidir.<br />ŞİFRE VE SAHİP ANAHTARINI ÇEVRİMDIŞI TUTMAK EN İYİSİDİR!",
+        "confirm": "Aşağıdaki butonu tıkladığınızda, davetiyenizi oluşturan kullanıcı bilgilendirilir, ve umarız en yakın zamanda hesabınızı oluşturur.",
+        "finish": "Hesap isteğini tamamla ve bu siteyi terk et"
+    },
+    "accept": {
+        "invalid": "Geçersiz davet KİMLİĞİ, üzgünüm!"
+    }
+}
