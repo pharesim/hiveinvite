@@ -99,7 +99,7 @@ $("#newusername").keyup(
   function(){
     $("#finish_step2").prop('disabled',true);
     
-    newname = $(this).val().replace(/[^a-z0-9!\-]+/g, "");
+    newname = $(this).val().replace(/[^a-z0-9.-]+/g, "");
     if(newname.lenth > 15) {
       newname = newname.substr(0,15);
     }
