@@ -95,7 +95,25 @@
     "language": {
         "switch": "Cambiar idioma...",
         "en": "inglés",
-        "de": "alemán"
+        "de": "alemán",
+        "ar": "arabic",
+        "el": "greek",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
     },
     "step1": {
         "lead": "¡Hola! ¡Estás a sólo unos pasos de obtener tu propia cuenta de Steem!",
