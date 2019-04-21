@@ -16,21 +16,21 @@ function translateIndexContent() {
   setContentById('languageAR',i18next.t('language.ar'));
   setContentById('languageEL',i18next.t('language.el'));
   setContentById('languageES',i18next.t('language.es'));
-  setContentById('languageFR',i18next.t('language.fr'));
+  //setContentById('languageFR',i18next.t('language.fr'));
   setContentById('languageHE',i18next.t('language.he'));
-  setContentById('languageIT',i18next.t('language.it'));
-  setContentById('languageJA',i18next.t('language.ja'));
-  setContentById('languageKO',i18next.t('language.ko'));
+  //setContentById('languageIT',i18next.t('language.it'));
+  //setContentById('languageJA',i18next.t('language.ja'));
+  //setContentById('languageKO',i18next.t('language.ko'));
   setContentById('languageNL',i18next.t('language.nl'));
   setContentById('languagePL',i18next.t('language.pl'));
   setContentById('languagePT',i18next.t('language.pt'));
-  setContentById('languageRU',i18next.t('language.ru'));
-  setContentById('languageSL',i18next.t('language.sl'));
+  //setContentById('languageRU',i18next.t('language.ru'));
+  //setContentById('languageSL',i18next.t('language.sl'));
   setContentById('languageSR',i18next.t('language.sr'));
   setContentById('languageTR',i18next.t('language.tr'));
-  setContentById('languageVI',i18next.t('language.vi'));
+  //setContentById('languageVI',i18next.t('language.vi'));
   setContentById('languageYO',i18next.t('language.yo'));
-  setContentById('languageZH',i18next.t('language.zh'));
+  //setContentById('languageZH',i18next.t('language.zh'));
 
   // loggedout
   setContentById('loggedOutGreeting',i18next.t('loggedout.greeting'));
