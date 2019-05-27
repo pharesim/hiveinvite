@@ -124,7 +124,7 @@
         "lead": "Ok. Certifique-se de não perder a senha! Não há como recuperá-la!",
         "text": "Seu nome de usuário Steem deve ter pelo menos três caracteres e não pode conter outros caracteres além de letras minúsculas, números e traços. Tem que ser único e nunca pode ser alterado. Escolha com cuidado.",
         "username": "Seu nome de usuário",
-        "as": "as"
+        "as": "como"
     },
     "step3": {
         "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
