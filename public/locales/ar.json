@@ -95,7 +95,25 @@
     "language": {
         "switch": "تغيير اللغة...",
         "en": "الإنجليزية",
-        "de": "الألمانية"
+        "de": "الألمانية",
+        "ar": "arabic",
+        "el": "greek",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
     },
     "step1": {
         "lead": "مرحبا! أنت على بعد خطوات قليلة للحصول على حساب ستيم الخاص بك!",
