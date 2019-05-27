@@ -67,33 +67,33 @@
         "linkamount": "Número de links para criar",
         "or": "OU",
         "multi": "Crie um link que seja válido para múltiplas criações de contas",
-        "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
-        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
-        "delegate_amount": "Amount of Steem Power to delegate",
-        "validity": "How many days should the invite be valid before being automatically deleted?",
-        "validity_label": "Validity in days",
-        "usermail": "E-Mail address for status updates",
-        "create": "Create invitation"
+        "multi_label": "Quantidade de contas para as quais esse link é válido (cuidado, você pode ficar sem reivindicações usando essa opção!)",
+        "delegate": "Uma nova conta contêm apenas uma quantidade básica de RC para realizar transações na blockchain. Se você deseja que o novo usuário possa fazer algo a mais, delegue algum Steem Power. Você também pode fazer isso mais tarde, é claro.",
+        "delegate_amount": "Quantidade de Steem Power para delegar",
+        "validity": "Por quantos dias o convite deve ser válido antes de ser automaticamente excluído?",
+        "validity_label": "Validade em dias",
+        "usermail": "Endereço de e-mail para atualizações de status",
+        "create": "Criar convite"
     },
     "button": {
-        "submit": "Submit",
-        "login": "Login",
-        "login_now": "Login now",
-        "logout": "Logout",
-        "close": "Close",
-        "proceed": "Proceed"
+        "submit": "Submeter",
+        "login": "Entrar",
+        "login_now": "Entrar agora",
+        "logout": "Sair",
+        "close": "Fechar",
+        "proceed": "Continuar"
     },
     "keys": {
-        "wrong_key": "Invalid key",
-        "active_required": "This action requires your active key.",
+        "wrong_key": "Chave inválida",
+        "active_required": "Esta ação requer a sua chave ativa (active key).",
         "active": "Active key",
         "posting": "Posting key",
         "owner": "Owner key",
         "memo": "Memo key",
-        "storeKey": "Remember key for this session"
+        "storeKey": "Recordar a chave para esta sessão"
     },
     "language": {
-        "switch": "Switch language...",
+        "switch": "Mudar idioma...",
         "en": "english",
         "de": "german",
         "ar": "arabic",
