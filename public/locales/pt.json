@@ -33,11 +33,11 @@
         "canbuy_plural": "pode em teoria criar outras <span id='possiblebuys' class='hidden'></span> contas.",
         "cannotbuy": "não pode criar mais contas. Obtenha um pouco mais de STEEM!",
         "claimfreemodal": "Criação gratuita",
-        "claimsteemmodal": "Paid claim",
-        "invitemodal": "Invite someone now"
+        "claimsteemmodal": "Criação paga",
+        "invitemodal": "Convide alguém agora"
     },
     "freeclaimmodal": {
-        "title": "Claim discounted steem accounts",
+        "title": "Criar contas Steem com descontos",
         "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
