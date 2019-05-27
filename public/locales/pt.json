@@ -60,13 +60,13 @@
     "invitemodal": {
         "title": "Convidar para a Steem!",
         "label": "Etiqueta",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
-        "email": "Address",
-        "mailtext_label": "E-Mail text",
-        "mailtext": "Hello,\n\nyou have been invited by {} to join the Steem blockchain.\n\nWhat is that?\nSteem is the backend used by new social media sites like steemit.com and busy.org. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
-        "linkamount": "Number of links to create",
-        "or": "OR",
-        "multi": "Create a link that is valid for multiple account creations",
+        "by_email": "Desmarque esta opção para obter um ou vários links diretamente em vez de enviar um email",
+        "email": "Endereço",
+        "mailtext_label": "Texto do e-mail",
+        "mailtext": "Olá,\n\nvocê foi convidado por {} para se juntar a Steem blockchain.\n\nO que é isso?\nSteem é a plataforma usada por novos sites de redes sociais como o steemit.com e o busy.org. Ao usar a tecnologia blockchain, novas formas de pagamento são oferecidas aos utilizadores pela sua atividade.\n\nAceite o convite clicando no seguinte link:",
+        "linkamount": "Número de links para criar",
+        "or": "OU",
+        "multi": "Crie um link que seja válido para múltiplas criações de contas",
         "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
         "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Steem Power. You can also do that later of course.",
         "delegate_amount": "Amount of Steem Power to delegate",
@@ -131,11 +131,11 @@
     },
     "step4": {
         "text": "Existem diferentes níveis de acesso para uma conta Steem.<br />A chave de publicação (posting key) é usada para atividades diárias nas redes sociais, por exemplo, permite publicar e votar.<br />Para acessar a sua carteira e mover STEEM, você precisará da chave ativa (active key).<br />A chave de proprietário (owner key) pode ser usada para mudar as demais senhas e nunca deve ser usada para outros propósitos. É melhor mantida ao lado da chave mestre (master password), não a utilizes online.<br />Por último está a chave memo (memo key), que não tem função ainda, mas pode ser usada no futuro para desencriptar os seus dados privados como as mensagens privadas.",
-        "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
-        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
-        "finish": "Finish account request and leave this site"
+        "warning": "Estas chaves são geradas partindo do seu password. Elas podem ser usadas no lugar deste, mas apenas para o seu específico propósito.<br />É mais seguro usar a chave de publicação se o objetivo é usar um dispositivo apenas para publicar e votar, ou a chave ativa quando quiser realizar outras ações.<br />O PASSWORD E A CHAVE DE PROPRIETÁRIO SÃO MAIS SEGURAS SE MANTIDAS OFFLINE!",
+        "confirm": "Ao clicar no botão a seguir, o usuário que criou seu convite será informado e, esperamos, criará sua conta em breve.",
+        "finish": "Conclua a solicitação da conta e saia deste site"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "ID de convite inválido, desculpe!"
     }
 }
