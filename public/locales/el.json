@@ -95,7 +95,25 @@
     "language": {
         "switch": "Αλλαγή γλώσσας...",
         "en": "αγγλικά",
-        "de": "γερμανικά"
+        "de": "γερμανικά",
+        "ar": "arabic",
+        "el": "greek",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
     },
     "step1": {
         "lead": "Χαίρετε! Είστε μόνο λίγα βήματα μακριά από την απόκτηση του δικού σας λογαριασμού Steem!",
