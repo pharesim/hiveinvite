@@ -1,7 +1,7 @@
 {
     "loggedout": {
         "greeting": "Crie um Steemian!",
-        "explainer": "Steeminvite é um serviço que te permite convidar seus amigos para a Steem.",
+        "explainer": "Steeminvite é um serviço que permite convidar os seus amigos para a Steem.",
         "buttontext": "para começar.",
         "login_error": "Erro de login",
         "usernamePlaceholder": "Seu nome de usuário Steem",
