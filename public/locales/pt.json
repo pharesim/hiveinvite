@@ -49,7 +49,7 @@
         "title": "Criação automatizada de contas Steem com desconto",
         "explainer": "Olá! Sou o seu amigável robô de criação de contas. Clique no botão abaixo para me fazer começar a trabalhar. Vou continuar a criar contas até que seu RC esgote, ou me diga para parar com o outro botão.",
         "working": "Ao trabalho! Criadas <span id='botClaimStatusClaimed'>0</span> contas até agora.",
-        "stopped": "Parado depois de criar <span id='botClaimHasClaimed'>0</span> contas.<br />Menssagem de erro: <span id='botClaimError'></span>",
+        "stopped": "Parado depois de criar <span id='botClaimHasClaimed'>0</span> contas.<br />Mensagem de erro: <span id='botClaimError'></span>",
         "start": "Começar",
         "close": "Parar/Fechar"
     },
