@@ -5,4 +5,4 @@ file = ../../invites.sqlite3
 server = smtp.mailgun.org
 user = user@smtp.host
 password = smtppassword
-sender = noreply@steeminvite.com
+sender = noreply@hiveinvite.com

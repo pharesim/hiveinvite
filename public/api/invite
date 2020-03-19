@@ -14,8 +14,8 @@ import uuid
 import time
 import datetime
 
-def insert_invite(inviteid, label, email, address, mailtext, steempower, validity, username, usermail, remaining):
-  db.insert('invites',{'inviteid':inviteid,'label':label,'email':email,'address':address,'mailtext':mailtext,'steempower':steempower,'validity':validity,'username':username,'usermail':usermail,'remaining':remaining})
+def insert_invite(inviteid, label, email, address, mailtext, hivepower, validity, username, usermail, remaining):
+  db.insert('invites',{'inviteid':inviteid,'label':label,'email':email,'address':address,'mailtext':mailtext,'steempower':hivepower,'validity':validity,'username':username,'usermail':usermail,'remaining':remaining})
 
 # output variable
 invites = []
@@ -29,7 +29,7 @@ address    = form.getvalue('address')
 mailtext   = form.getvalue('mailtext')
 amount     = form.getvalue('amount')
 remaining  = form.getvalue('multi')
-steempower = form.getvalue('sp')
+hivepower  = form.getvalue('hp')
 validity   = form.getvalue('validity')
 username   = form.getvalue('username')
 usermail   = form.getvalue('usermail')
@@ -64,14 +64,14 @@ if username and usermail:
     for x in range(int(amount)):
       inviteid = uuid.uuid4().hex
       batchlabel = label+'.'+str(x+1)
-      insert_invite(inviteid, batchlabel, email, address, mailtext, steempower, validity, username, usermail, remaining)
+      insert_invite(inviteid, batchlabel, email, address, mailtext, hivepower, validity, username, usermail, remaining)
   else:
-    insert_invite(inviteid, label, email, address, mailtext, steempower, validity, username, usermail, remaining)
-  
+    insert_invite(inviteid, label, email, address, mailtext, hivepower, validity, username, usermail, remaining)
+
   # send invitation mail
   if email == 'true':
     try:
-      mailer.sendmail(address,'You have been invited to join the Steem blockchain',mailtext+"\n\nhttps://steeminvite.com/accept.html?inviteid="+inviteid)
+      mailer.sendmail(address,'You have been invited to join the Hive blockchain',mailtext+"\n\nhttps://hiveinvite.com/accept.html?inviteid="+inviteid)
     except Exception as e:
       db.delete('invites',{'inviteid':inviteid})
       errorHandler.throwError("Failed sending E-Mail. If this keeps happening, create the invitation without, and send the resulting link yourself. Also notice @pharesim."+str(e))
@@ -86,7 +86,7 @@ if username != None:
       'inviteid':result['inviteid'],
       'label':result['label'],
       'address':result['address'],
-      'steempower':result['steempower'],
+      'hivepower':result['steempower'],
       'validity': datetime.datetime.fromtimestamp(validtill).strftime('%Y-%m-%d %H:%M:%S'),
       'created':result['created'],
       'accepted':result['accepted'],
