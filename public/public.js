@@ -38,10 +38,10 @@ function fillPublicTable(data) {
 
     append = append+'<a href="https://hiveinvite.com/accept.html?inviteid='+i+'">Claim</a>';
     append = append+'</td></tr>';
-  }
 
-  let elem = document.getElementById('publicInvites');
-  elem.innerHTML = elem.innerHTML + append;
+    let elem = document.getElementById('publicInvites');
+    elem.innerHTML = elem.innerHTML + append;
+  }
 
   if(public_invites > 0) {
     $("#invites").show();
