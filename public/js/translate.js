@@ -100,7 +100,7 @@ function translateIndexContent() {
   setContentById('responseTimeLabel',i18next.t('invitemodal.response_time'));
   setContentById('requirePhoneExplainer',i18next.t('invitemodal.require_phone'));
   setContentById('requireEmailExplainer',i18next.t('invitemodal.require_email'));
-  setContentById('requireEmailExplainer',i18next.t('invitemodal.require_reddit'));
+  setContentById('requireRedditExplainer',i18next.t('invitemodal.require_reddit'));
   setContentById('requireFacebookExplainer',i18next.t('invitemodal.require_facebook'));
   setContentById('requireTwitterExplainer',i18next.t('invitemodal.require_twitter'));
   setContentById('requireInstagramExplainer',i18next.t('invitemodal.require_instagram'));
