@@ -26,7 +26,7 @@ function fillPublicTable(data) {
 
     checks = ['phone','mail','reddit','fb','twitt','insta'];
     checks.forEach(function(type){
-      if(data[i]['data']['ask_'+type] == true) {
+      if(data[i]['data']['ask_'+type] == 'true') {
         append = append+'<img src="/img/'+type+'.svg" width="64" height="64" />';
       }
     });
