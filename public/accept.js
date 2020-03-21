@@ -65,7 +65,10 @@ function getParameterByName(name, url) {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function startclaim() {
+function startclaim(public) {
+  if(public != false) {
+    prepareStep0(public);
+  }
   generatePassPhrase();
   $("#passphrase_orig").val(passPhrase).attr('size',passPhrase.length);
 }
@@ -81,13 +84,58 @@ $.ajax({
   } else {
     if(data['valid'] == true) {
       $("#claim").show();
-      startclaim();
+      startclaim(data['public']);
     } else {
       $("#invalid").show();
     }
     translateContent();
   }
 });
+
+function prepareStep0(public) {
+  $("#step1").hide();
+  $("#step0").show();
+  if(public['ask_phone'] == true) {
+    $("#phoneInput").show();
+  }
+  if(public['ask_mail'] == true) {
+    $("#mailInput").show();
+  }
+  if(public['ask_reddit'] == true) {
+    $("#redditInput").show();
+  }
+  if(public['ask_fb'] == true) {
+    $("#facebookInput").show();
+  }
+  if(public['ask_twitt'] == true) {
+    $("#twitterInput").show();
+  }
+  if(public['ask_insta'] == true) {
+    $("#instagramInput").show();
+  }
+}
+
+$("#finish_step0").click(
+  function(){
+    errors = 0
+    inputs = ["phone",'mail','reddit','facebook','twitter','instagram']
+    inputs.forEach(function(inp) {
+      if($("#"+inp+"Input").is(":visible")) {
+        value = $("#"+inp+"Input").val();
+        if(value == '') {
+          errors = 1
+        }
+      }
+    });
+    if(errors == 0) {
+      $("#step0Error").hide();
+      $("#step0").hide();
+      $("#step1").show();
+    } else {
+      $("#step0Error").show();
+    }
+  }
+);
 
 $("#finish_step1").click(
   function(){
@@ -186,7 +234,13 @@ $("#finish").click(function(){
       'active': pubKeys['active'],
       'posting': pubKeys['posting'],
       'owner': pubKeys['owner'],
-      'memo': pubKeys['memo']
+      'memo': pubKeys['memo'],
+      'phone': $("#phone_number").val(),
+      'mail': $("#email_address").val(),
+      'reddit': $("#reddit").val(),
+      'facebook': $("#facebook").val(),
+      'twitter': $("#twitter").val(),
+      'instagram': $("#instagram").val()
     }
   }).fail(function(){
     alert('something went wrong');
@@ -201,6 +255,17 @@ $("#finish").click(function(){
 
 function translateContent() {
   // languages
+  setContentById('step0Lead',i18next.t('step0.lead'));
+  setContentById('step0Text',i18next.t('step0.text'));
+  setContentById('phoneLabel',i18next.t('step0.phone'));
+  setContentById('mailLabel',i18next.t('step0.mail'));
+  setContentById('redditLabel',i18next.t('step0.reddit'));
+  setContentById('facebookLabel',i18next.t('step0.facebook'));
+  setContentById('twitterLabel',i18next.t('step0.twitter'));
+  setContentById('instagramLabel',i18next.t('step0.instagram'));
+  setContentById('step0Error',i18next.t('step0.error'));
+  setContentById('finish_step0',i18next.t('step0.submit'));
+
   setContentById('step1Lead',i18next.t('step1.lead'));
   setContentById('step1Text',i18next.t('step1.text'));
   setContentById('finish_step1',i18next.t('step1.submit'));

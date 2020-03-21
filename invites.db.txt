@@ -24,3 +24,18 @@ CREATE TABLE recoveries (
   created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
+CREATE TABLE publics (
+  inviteid TEXT PRIMARY KEY,
+  responset NUMERIC NOT NULL,
+  ask_phone BOOLEAN,
+  ask_mail BOOLEAN,
+  ask_reddit BOOLEAN,
+  ask_fb BOOLEAN,
+  ask_twitt BOOLEAN,
+  ask_insta BOOLEAN
+);
+
+CREATE TABLE hashes (
+  hash TEXT PRIMARY KEY,
+  type TEXT NOT NULL
+);

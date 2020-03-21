@@ -96,6 +96,14 @@ function translateIndexContent() {
   setContentById('orSeperator',i18next.t('invitemodal.or'));
   setContentById('multiInviteExplainer',i18next.t('invitemodal.multi'));
   setContentById('multiInvitesLabel',i18next.t('invitemodal.multi_label'));
+  setContentById('publicInviteExplainer',i18next.t('invitemodal.public'));
+  setContentById('responseTimeLabel',i18next.t('invitemodal.response_time'));
+  setContentById('requirePhoneExplainer',i18next.t('invitemodal.require_phone'));
+  setContentById('requireEmailExplainer',i18next.t('invitemodal.require_email'));
+  setContentById('requireEmailExplainer',i18next.t('invitemodal.require_reddit'));
+  setContentById('requireFacebookExplainer',i18next.t('invitemodal.require_facebook'));
+  setContentById('requireTwitterExplainer',i18next.t('invitemodal.require_twitter'));
+  setContentById('requireInstagramExplainer',i18next.t('invitemodal.require_instagram'));
   setContentById('inviteDelegateExplainer',i18next.t('invitemodal.delegate'));
   setContentById('inviteDelegateAmount',i18next.t('invitemodal.delegate_amount'));
   setContentById('inviteValidityExplainer',i18next.t('invitemodal.validity'));

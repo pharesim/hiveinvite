@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
+import sys
+sys.path.append('si')
+
+import db
+import api
+
+import time
+import datetime
+
+nowts = time.time()
+invites = {}
+
+results = db.select('publics',['inviteid','responset','ask_phone','ask_mail','ask_reddit','ask_fb','ask_twitt','ask_insta'],'1=1','responset')
+for result in results:
+  res = db.select('invites',['created','validity','username'],{'inviteid':result['inviteid'],'accepted':'is null'},'created DESC')
+  for inv in res:
+    createdts = time.mktime(datetime.datetime.strptime(inv['created'], "%Y-%m-%d %H:%M:%S").timetuple())
+    validtill = createdts + (inv['validity'] * 60 * 60 * 24)
+    if validtill < nowts:
+      db.delete('invites',{'inviteid':result['inviteid']})
+      db.delete('publics',{'inviteid':result['inviteid']})
+    else:
+      invites[result['inviteid']] = {'user':res['username'],'data':result}
+
+api.output(invites)
