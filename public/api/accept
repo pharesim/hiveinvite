@@ -29,7 +29,7 @@ for result in results:
       db.delete('publics',{'inviteid':result['inviteid']})
   else:
     validinvite = True
-    pub = db.select('publics',['ask_phone', 'ask_mail', 'ask_reddit', 'ask_fb', 'ask_twitt', 'ask_insta'],{'inviteid':inviteid},'created DESC')
+    pub = db.select('publics',['ask_phone', 'ask_mail', 'ask_reddit', 'ask_fb', 'ask_twitt', 'ask_insta'],{'inviteid':inviteid},'inviteid')
     for res in pub:
       publicInvite = res
 
