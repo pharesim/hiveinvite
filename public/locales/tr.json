@@ -68,6 +68,14 @@
         "or": "VEYA",
         "multi": "Birden fazla hesap oluşturma işlemi için geçerli bir bağlantı oluşturun",
         "multi_label": "Bu bağlantının geçerli olduğu hesap sayısı (dikkatli olun, bu seçeneği kullanarak taleplerinizi tüketebilirsiniz!)",
+        "public": "Create a public invite with optional verification methods",
+        "response_time": "Typical time until creation in hours",
+        "require_phone": "Require a phone number",
+        "require_email": "Require an email address",
+        "require_reddit": "Require a reddit account",
+        "require_facebook": "Require a facebook account",
+        "require_twitter": "Require a twitter account",
+        "require_instagram": "Require an instagram account",
         "delegate": "Yeni bir hesap, blokzincirinde işlem yapmak için yalnızca temel miktarda RC'ye sahiptir. Yeni kullanıcının daha fazlasını yapabilmesini istiyorsanız, biraz Hive Power devredin. Bunu elbette daha sonra da yapabilirsiniz.",
         "delegate_amount": "Devredilecek Hive Güç miktarı",
         "validity": "Davet otomatik olarak silinmeden önce kaç gün geçerli olmalı?",
@@ -96,6 +104,19 @@
         "switch": "Dili değiştir...",
         "en": "ingilizce",
         "de": "almanca"
+    },
+
+    "step0": {
+        "lead": "This registration requires personal data",
+        "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
+        "phone": "Phone number",
+        "mail": "E-Mail",
+        "reddit": "Reddit",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "error": "Please fill out all fields above",
+        "submit": "Continue to account creation"
     },
     "step1": {
         "lead": "Merhaba! Kendi Hive hesabınızı almaktan sadece birkaç adım uzaktasınız!",

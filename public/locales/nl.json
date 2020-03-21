@@ -68,6 +68,14 @@
         "or": "OF",
         "multi": "Maak een link aan die geldig is voor meerdere account-creaties",
         "multi_label": "Aantal accounts waarvoor deze link geldig is (let op, je kunt zonder claims komen te zitten door deze optie te gebruiken!)",
+        "public": "Create a public invite with optional verification methods",
+        "response_time": "Typical time until creation in hours",
+        "require_phone": "Require a phone number",
+        "require_email": "Require an email address",
+        "require_reddit": "Require a reddit account",
+        "require_facebook": "Require a facebook account",
+        "require_twitter": "Require a twitter account",
+        "require_instagram": "Require an instagram account",
         "delegate": "Een nieuw account heeft slechts een basishoeveelheid aan RC om op de blockchain transacties uit te kunnen voeren. Als je wilt dat de nieuwe gebruiker meer kan doen, delegeer dan wat Hive Power. Je kunt dat natuurlijk ook later doen.",
         "delegate_amount": "Hoeveelheid Hive Power om te delegeren",
         "validity": "Hoeveel dagen moet de uitnodiging geldig zijn voordat deze automatisch wordt verwijderd?",
@@ -96,6 +104,19 @@
         "switch": "Taal veranderen...",
         "en": "engels",
         "de": "duits"
+    },
+
+    "step0": {
+        "lead": "This registration requires personal data",
+        "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
+        "phone": "Phone number",
+        "mail": "E-Mail",
+        "reddit": "Reddit",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "error": "Please fill out all fields above",
+        "submit": "Continue to account creation"
     },
     "step1": {
         "lead": "Hallo! Je bent slechts een paar stappen verwijderd van het krijgen van je eigen Hive-account!",

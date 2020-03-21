@@ -68,6 +68,14 @@
         "or": "OU",
         "multi": "Crie um link que seja válido para múltiplas criações de contas",
         "multi_label": "Quantidade de contas a que este link é válido (tenha cuidado, podes ficar sem reclamações com esta opção!)",
+        "public": "Create a public invite with optional verification methods",
+        "response_time": "Typical time until creation in hours",
+        "require_phone": "Require a phone number",
+        "require_email": "Require an email address",
+        "require_reddit": "Require a reddit account",
+        "require_facebook": "Require a facebook account",
+        "require_twitter": "Require a twitter account",
+        "require_instagram": "Require an instagram account",
         "delegate": "Uma nova conta tem apenas uma quantidade básica de RC para realizar transações na blockchain. Se desejas que o novo utilizador possa fazer algo mais, delega-o algum Hive Power. Podes também fazer isso mais tarde, claro.",
         "delegate_amount": "Quantidade de Hive Power para delegar",
         "validity": "Por quantos dias deve o convite ser válido antes de ser eliminado automaticamente?",
@@ -96,6 +104,19 @@
         "switch": "Mudar idioma...",
         "en": "inglês",
         "de": "alemão"
+    },
+
+    "step0": {
+        "lead": "This registration requires personal data",
+        "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
+        "phone": "Phone number",
+        "mail": "E-Mail",
+        "reddit": "Reddit",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "error": "Please fill out all fields above",
+        "submit": "Continue to account creation"
     },
     "step1": {
         "lead": "Olá! Estás a poucos passos de distância de teres a tua própria conta Hive!",

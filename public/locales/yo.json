@@ -68,6 +68,14 @@
         "or": "TÀBÍ",
         "multi": "Ṣẹ̀dá ìtọ́kasí kan tó wúlò fún ọ̀pọ̀lọpọ̀ àwọn ṣíṣẹ̀dá account",
         "multi_label": "Iye àwọn account tí ìtọ́kasí yìí wúlò fún (kíyè sára, o lè lo àwọn gbígbà tán pẹ̀lú lílo àṣàyàn yìí!)",
+        "public": "Create a public invite with optional verification methods",
+        "response_time": "Typical time until creation in hours",
+        "require_phone": "Require a phone number",
+        "require_email": "Require an email address",
+        "require_reddit": "Require a reddit account",
+        "require_facebook": "Require a facebook account",
+        "require_twitter": "Require a twitter account",
+        "require_instagram": "Require an instagram account",
         "delegate": "Account tuntun kan ní ìwọ̀nba iye RC nìkan láti ní ìbáṣepọ̀ lórí blockchain náà. Tí o bá fẹ́ kí aṣàmúlò tuntun náà lè ṣiṣẹ́ láfikún si, fi àwọn Hive Power díẹ̀ ránṣẹ́. O lè tún ṣe ìyẹn nígbà mìíràn dájúdájú.",
         "delegate_amount": "Iye Hive Power láti fi ránṣẹ́",
         "validity": "Ọjọ́ mélòó ni kí ìpè náà fi wúlò ṣáájú kí o tó jẹ́ yíyọ kúrò fúnra rẹ̀?",
@@ -96,6 +104,19 @@
         "switch": "Pààrọ̀ èdè...",
         "en": "gẹ̀ẹ́sì",
         "de": "jẹ́mánì"
+    },
+
+    "step0": {
+        "lead": "This registration requires personal data",
+        "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
+        "phone": "Phone number",
+        "mail": "E-Mail",
+        "reddit": "Reddit",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "error": "Please fill out all fields above",
+        "submit": "Continue to account creation"
     },
     "step1": {
         "lead": "Káàbọ̀! Ó ku àwọn ìgbésẹ̀ díẹ̀ nìkan fún ẹ láti gba account Hive tìẹ!",

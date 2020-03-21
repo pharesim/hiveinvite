@@ -68,6 +68,14 @@
         "or": "أو",
         "multi": "إنشاء رابط يصلح لعمل حسابات متعددة",
         "multi_label": "كمية الحسابات المتاحة عبر هذا الرابط (إحذر، قد تستنفذ طلباتك عبر إستخدام هذا الخيار!)",
+        "public": "Create a public invite with optional verification methods",
+        "response_time": "Typical time until creation in hours",
+        "require_phone": "Require a phone number",
+        "require_email": "Require an email address",
+        "require_reddit": "Require a reddit account",
+        "require_facebook": "Require a facebook account",
+        "require_twitter": "Require a twitter account",
+        "require_instagram": "Require an instagram account",
         "delegate": "لدى الحساب الجديد مبلغ أساسي من الآر سي فقط لإجراء العمليات على البلوكتشين. إذا كنت تريد تمكين المستخدم الجديد من القيام بما هو أكثر من ذلك، قم بمنحه تفويضًا إضافيا من قوة ستيم. وبالطبع يمكنك القيام بذلك في وقت لاحق.",
         "delegate_amount": "مبلغ قوة ستيم المراد تفويضه",
         "validity": "كم يوم على الدعوة أن تكون صالحة قبل أن يتم حذفها تلقائياً؟",
@@ -96,6 +104,19 @@
         "switch": "تغيير اللغة...",
         "en": "الإنجليزية",
         "de": "الألمانية"
+    },
+
+    "step0": {
+        "lead": "This registration requires personal data",
+        "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
+        "phone": "Phone number",
+        "mail": "E-Mail",
+        "reddit": "Reddit",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "error": "Please fill out all fields above",
+        "submit": "Continue to account creation"
     },
     "step1": {
         "lead": "مرحبا! أنت على بعد خطوات قليلة للحصول على حساب ستيم الخاص بك!",
