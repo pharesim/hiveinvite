@@ -1,18 +1,18 @@
 {
     "loggedout": {
-        "greeting": "Maak een Steemian!",
-        "explainer": "Steeminvite is een dienst die het mogelijk maakt om je vrienden uit te nodigen op steem.",
+        "greeting": "Maak een Hiver!",
+        "explainer": "Hiveinvite is een dienst die het mogelijk maakt om je vrienden uit te nodigen op hive.",
         "buttontext": "om te beginnen.",
         "login_error": "Login fout",
-        "usernamePlaceholder": "Je Steem-gebruikersnaam",
+        "usernamePlaceholder": "Je Hive-gebruikersnaam",
         "postingkeyPlaceholder": "Je private posting key"
     },
     "index": {
         "lastupdate": "Laatste update",
         "refresh": "Ververs nu",
         "greeting": "Hallo <span id='loggedInUser'>username</span>!",
-        "tokenexplain": "Om een Steem-account aan te maken, moet je eerst een token claimen. Deze kunnen worden verkregen door een bepaalde hoeveelheid STEEM te verbranden, of door een grote hoeveelheid RC mana te spenderen. In ruil daarvoor ontvangt het nieuwe account een minimale hoeveelheid RC mana om transacties uit te voeren op de blockchain zonder Steem Power te bezitten.",
-        "tokencost": "De huidige kosten voor een claim zijn <span class='steemcost'>0</span> STEEM of <span class='rccost'>0</span> RC mana",
+        "tokenexplain": "Om een Hive-account aan te maken, moet je eerst een token claimen. Deze kunnen worden verkregen door een bepaalde hoeveelheid HIVE te verbranden, of door een grote hoeveelheid RC mana te spenderen. In ruil daarvoor ontvangt het nieuwe account een minimale hoeveelheid RC mana om transacties uit te voeren op de blockchain zonder Hive Power te bezitten.",
+        "tokencost": "De huidige kosten voor een claim zijn <span class='steemcost'>0</span> HIVE of <span class='rccost'>0</span> RC mana",
         "pendingclaims": "Je hebt een account geclaimed. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Je hebt <span id='pendingclaims'>0</span> accounts geclaimed. <span id='invitespending'></span>",
         "nopendingclaims": "Je hebt nog geen accounts geclaimed.",
@@ -24,20 +24,20 @@
         "abletoclaim": "Je maximale RC mana is <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Je zit momenteel op <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
         "canclaim": "waarmee je één account op 100% kunt claimen<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "waarmee je <span id='maxclaims'>0</span> accounts op 100% kunt claimen",
-        "cannotclaim": "waarmee je geen accounts kunt claimen. Power Up een beetje STEEM!",
+        "cannotclaim": "waarmee je geen accounts kunt claimen. Power Up een beetje HIVE!",
         "canclaimnow": "dus je kunt op dit moment één account claimen.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "dus je kunt nu al <span class='possibleclaims'>0</span> accounts claimen.",
         "cannotclaimnow": "dus je moet een tijdje wachten tot je een afgeprijsd account kunt claimen.",
-        "abletobuy": "Met je saldo van <span id='steembalance'>0 STEEM</span> kun je <span id='abletopayforclaim'></span>",
+        "abletobuy": "Met je saldo van <span id='steembalance'>0 HIVE</span> kun je <span id='abletopayforclaim'></span>",
         "canbuy": "in theorie nog één account claimen.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "theoretisch aanspraak maken op nog <span id='possiblebuys'>0</span> accounts.",
-        "cannotbuy": "geen accounts meer claimen. Bemachtig wat meer STEEM!",
+        "cannotbuy": "geen accounts meer claimen. Bemachtig wat meer HIVE!",
         "claimfreemodal": "Gratis claimen",
         "claimsteemmodal": "Betaalde claim",
         "invitemodal": "Nu iemand uitnodigen"
     },
     "freeclaimmodal": {
-        "title": "Claim afgeprijsde Steem-accounts",
+        "title": "Claim afgeprijsde Hive-accounts",
         "explainer": "De laatste prijs om een afgeprijsd account aan te vragen was <span class='rccost'>0</span> RC<br />Houd er rekening mee dat dit voortdurend verandert. Wanneer meerdere accounts in een korte periode worden geclaimd, stijgt de prijs.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Met <span id='currentrc'>0</span> RC kun je één account claimen.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Met <span id='currentrc'>0</span> RC kun je <span class='possibleclaims'>0</span> accounts claimen.",
@@ -46,7 +46,7 @@
         "bot": "Claim-bot"
     },
     "botclaimmodal": {
-        "title": "Geautomatiseerd claimen van afgeprijsde Steem-accounts",
+        "title": "Geautomatiseerd claimen van afgeprijsde Hive-accounts",
         "explainer": "Hallo! Ik ben je vriendelijke account-claim-robot. Klik op onderstaande knop om me aan het werk te zetten. Ik zal blijven claimen totdat je geen RC meer hebt, of je me vertelt dat ik moet stoppen met de andere knop.",
         "working": "Aan het werk! Tot nu toe <span id='botClaimStatusClaimed'>0</span> accounts geclaimed.",
         "stopped": "Gestopt na het claimen van <span id='botClaimHasClaimed'>0</span> accounts.<br />Foutbericht: <span id='botClaimError'></span>",
@@ -54,22 +54,22 @@
         "close": "Stop/Sluit"
     },
     "paidclaimmodal": {
-        "title": "Betaal om een Steem-account te claimen",
-        "explainer": "De kosten voor het claimen van een account is <span class='steemcost'>0</span> STEEM<br />Deze kosten worden ingesteld door de getuigen.<br />Een nieuw account ontvangt een basishoeveelheid aan RC alsof hij dezelfde hoeveelheid aan Steem Power heeft."
+        "title": "Betaal om een Hive-account te claimen",
+        "explainer": "De kosten voor het claimen van een account is <span class='steemcost'>0</span> HIVE<br />Deze kosten worden ingesteld door de getuigen.<br />Een nieuw account ontvangt een basishoeveelheid aan RC alsof hij dezelfde hoeveelheid aan Hive Power heeft."
     },
     "invitemodal": {
-        "title": "Uitnodigen op Steem!",
+        "title": "Uitnodigen op Hive!",
         "label": "Titel",
         "by_email": "Vink dit uit om één of meerdere links direct te krijgen in plaats van een e-mail te versturen",
         "email": "Adres",
         "mailtext_label": "E-mail tekst",
-        "mailtext": "Hallo,\n\nJe bent uitgenodigd door {} om deel te nemen aan de Steem-blockchain.\n\nWat is dat?\nSteem is de backend die gebruikt wordt door nieuwe social-media-sites zoals steemit.com en busy.org. Door gebruik te maken van blockchain-technologie, bewandelt het nieuwe wegen door gebruikers te betalen voor hun activiteit.\n\nAccepteer de uitnodiging door op de volgende link te klikken:",
+        "mailtext": "Hallo,\n\nJe bent uitgenodigd door {} om deel te nemen aan de Hive-blockchain.\n\nWat is dat?\Hive is de backend die gebruikt wordt door nieuwe social-media-sites zoals peakd.com en hive.blog. Door gebruik te maken van blockchain-technologie, bewandelt het nieuwe wegen door gebruikers te betalen voor hun activiteit.\n\nAccepteer de uitnodiging door op de volgende link te klikken:",
         "linkamount": "Aantal links te maken",
         "or": "OF",
         "multi": "Maak een link aan die geldig is voor meerdere account-creaties",
         "multi_label": "Aantal accounts waarvoor deze link geldig is (let op, je kunt zonder claims komen te zitten door deze optie te gebruiken!)",
-        "delegate": "Een nieuw account heeft slechts een basishoeveelheid aan RC om op de blockchain transacties uit te kunnen voeren. Als je wilt dat de nieuwe gebruiker meer kan doen, delegeer dan wat Steem Power. Je kunt dat natuurlijk ook later doen.",
-        "delegate_amount": "Hoeveelheid Steem Power om te delegeren",
+        "delegate": "Een nieuw account heeft slechts een basishoeveelheid aan RC om op de blockchain transacties uit te kunnen voeren. Als je wilt dat de nieuwe gebruiker meer kan doen, delegeer dan wat Hive Power. Je kunt dat natuurlijk ook later doen.",
+        "delegate_amount": "Hoeveelheid Hive Power om te delegeren",
         "validity": "Hoeveel dagen moet de uitnodiging geldig zijn voordat deze automatisch wordt verwijderd?",
         "validity_label": "Geldigheid in dagen",
         "usermail": "E-mailadres voor statusupdates",
@@ -98,13 +98,13 @@
         "de": "duits"
     },
     "step1": {
-        "lead": "Hallo! Je bent slechts een paar stappen verwijderd van het krijgen van je eigen Steem-account!",
+        "lead": "Hallo! Je bent slechts een paar stappen verwijderd van het krijgen van je eigen Hive-account!",
         "text": "Je account zal je persoonlijke portemonnee bevatten, dus veiligheid is uiterst belangrijk.<br />We hebben een hoofdwachtwoord voor je account gegenereerd, dat je op een veilige locatie moet bewaren. Schrijf het ergens op!",
         "submit": "Ik heb het wachtwoord opgeschreven en zal het nooit verliezen"
     },
     "step2": {
         "lead": "Oké. Zorg ervoor dat je het wachtwoord niet verliest! Er is geen enkele manier om het terug te halen!",
-        "text": "Je Steem-gebruikersnaam moet minstens drie tekens lang zijn en mag geen andere tekens bevatten dan kleine letters, cijfers en een streepje. Het moet uniek zijn en kan nooit worden gewijzigd. Kies het zorgvuldig.",
+        "text": "Je Hive-gebruikersnaam moet minstens drie tekens lang zijn en mag geen andere tekens bevatten dan kleine letters, cijfers en een streepje. Het moet uniek zijn en kan nooit worden gewijzigd. Kies het zorgvuldig.",
         "username": "Je gebruikersnaam",
         "as": "als"
     },
@@ -112,7 +112,7 @@
         "text": "Wat we eerder over je wachtwoord hebben gezegd was geen grapje.<br />Om te controleren of je geen fout hebt gemaakt bij het noteren van je wachtwoord, vul het alsjeblieft hier in.<br />Als je niet verder kunt gaan, laad de pagina opnieuw in je browser en begin opnieuw."
     },
     "step4": {
-        "text": "Er zijn verschillende toegangsniveaus voor een Steem-account.<br />De posting key wordt gebruikt voor alledaagse social-media-activiteiten, je kunt er bijvoorbeeld mee posten en stemmen.<br />Om toegang te krijgen tot je portemonnee en STEEM te verplaatsen, heb je de active key nodig.<br />De owner key kan worden gebruikt om deze twee te wijzigen en mag nooit voor andere doeleinden worden gebruikt. Het is het best deze te bewaren samen met het hoofdwachtwoord, gebruik hem niet online.<br />Als laatste is er de memo key, die nog geen functie heeft maar in de toekomst gebruikt kan worden om je privé-gegevens te ontsleutelen, zoals privé-berichten.",
+        "text": "Er zijn verschillende toegangsniveaus voor een Hive-account.<br />De posting key wordt gebruikt voor alledaagse social-media-activiteiten, je kunt er bijvoorbeeld mee posten en stemmen.<br />Om toegang te krijgen tot je portemonnee en HIVE te verplaatsen, heb je de active key nodig.<br />De owner key kan worden gebruikt om deze twee te wijzigen en mag nooit voor andere doeleinden worden gebruikt. Het is het best deze te bewaren samen met het hoofdwachtwoord, gebruik hem niet online.<br />Als laatste is er de memo key, die nog geen functie heeft maar in de toekomst gebruikt kan worden om je privé-gegevens te ontsleutelen, zoals privé-berichten.",
         "warning": "Deze sleutels worden gegenereerd vanuit je wachtwoord. Ze kunnen in plaats daarvan gebruikt worden, maar alleen voor hun specifieke doel.<br />Het is veiliger om de posting key te gebruiken als je een apparaat wilt gebruiken om alleen te posten en te stemmen, of de active key als je andere acties wilt uitvoeren.<br />HET WACHTWOORD EN DE OWNER KEY WORDEN HET BEST OFFLINE GEHOUDEN!",
         "confirm": "Door op de volgende knop te klikken, wordt de gebruiker die je uitnodiging heeft gemaakt op de hoogte gebracht en hopelijk maak je binnenkort je account aan.",
         "finish": "Account-aanvraag voltooien en verlaat deze site"

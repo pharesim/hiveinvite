@@ -19,7 +19,7 @@ seedLimit  = 512;
 privKeys   = "";
 pubKeys    = "";
 
-steem.api.setOptions({ url: 'https://api.steemit.com' });
+steem.api.setOptions({ url: 'https://api.hive.blog' });
 
 var generatePassPhrase = function() {
   var crypto = window.crypto || window.msCrypto;
@@ -98,7 +98,7 @@ $("#finish_step1").click(
 $("#newusername").keyup(
   function(){
     $("#finish_step2").prop('disabled',true);
-    
+
     newname = $(this).val().replace(/[^a-z0-9.-]+/g, "");
     if(newname.lenth > 15) {
       newname = newname.substr(0,15);
@@ -106,7 +106,7 @@ $("#newusername").keyup(
     $(this).val(newname);
 
     if(newname.length >= 3) {
-      steem.api.getAccounts([newname], function(err, result){     
+      steem.api.getAccounts([newname], function(err, result){
         if(typeof result[0] !== "undefined") {
           $("#finish_step2").prop('disabled',true);
           $("#fillusername").text("");
@@ -124,7 +124,7 @@ $("#newusername").keyup(
           }
         }
       });
-    } else {      
+    } else {
       $("#fillusername").text("");
     }
   }
@@ -191,7 +191,7 @@ $("#finish").click(function(){
     alert('something went wrong');
   }).done(function( data ) {
     if(data['saved'] == true) {
-      window.location.href = 'https://steemit.com/faq.html';
+      window.location.href = 'https://hive.blog/faq.html';
     } else {
       alert(data['error']);
     }

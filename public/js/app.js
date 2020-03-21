@@ -1,4 +1,4 @@
-steem.api.setOptions({ url: 'https://api.steemit.com' });
+steem.api.setOptions({ url: 'https://api.hive.blog' });
 
 var username  = null;
 var store_wif = 0;
@@ -121,9 +121,9 @@ function calculateClaimRC() {
         num = num * result.resource_params[key].resource_dynamics_params.resource_unit;
         denom = result.resource_params[key].price_curve_params.coeff_b + result2.resource_pool[key].pool;
         let num_denom = Math.round(num / denom);
-        total_cost = total_cost + num_denom;    
+        total_cost = total_cost + num_denom;
       });
-      
+
       setState('claim_cost_mana',total_cost);
     });
   });
@@ -145,8 +145,8 @@ function calculateUserRC() {
       }
 
       setState('current_mana',current_mana);
-    });  
-    
+    });
+
     setState('max_rc',max_rc);
   });
 }

@@ -1,18 +1,18 @@
 {
     "loggedout": {
-        "greeting": "Napravi Steemian-a!",
-        "explainer": "Steeminvite je usluga koja vam omogućava da pozovete svoje prijatelje na steem.",
+        "greeting": "Napravi Hiver-a!",
+        "explainer": "Hiveinvite je usluga koja vam omogućava da pozovete svoje prijatelje na hive.",
         "buttontext": "kako biste počeli.",
         "login_error": "Greška prilikom prijavljivanja",
-        "usernamePlaceholder": "Vaše steem korisničko ime",
+        "usernamePlaceholder": "Vaše hive korisničko ime",
         "postingkeyPlaceholder": "Vaš privatni posting key"
     },
     "index": {
         "lastupdate": "Poslednje ažuriranje",
         "refresh": "Osvеži sada",
         "greeting": "Zdravo, <span id='loggedInUser'>username</span>!",
-        "tokenexplain": "Da biste napravili steem nalog, morate prvo da zahtevate token. Oni se mogu dobiti uništavanjem određene količine STEEM-a, ili trošenjem velike količine RC mane. Zauzvrat, novi nalog prima minimalnu količinu RC mane potrebnu za obavljanje transakcija na blokčejnu bez posedovanja Steem Power-a.",
-        "tokencost": "Trenutna cena zahteva iznosi <span class='steemcost'>0</span>STEEM-a ili <span class='rccost'>0</span> RC mane",
+        "tokenexplain": "Da biste napravili hive nalog, morate prvo da zahtevate token. Oni se mogu dobiti uništavanjem određene količine HIVE-a, ili trošenjem velike količine RC mane. Zauzvrat, novi nalog prima minimalnu količinu RC mane potrebnu za obavljanje transakcija na blokčejnu bez posedovanja Hive Power-a.",
+        "tokencost": "Trenutna cena zahteva iznosi <span class='steemcost'>0</span>HIVE-a ili <span class='rccost'>0</span> RC mane",
         "pendingclaims": "Zahtevali ste nalog. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Zahtevali ste <span id='pendingclaims'>0</span> naloga.<span id='invitespending'></span>",
         "nopendingclaims": "Još uvek niste zahtevali nijedan nalog.",
@@ -24,20 +24,20 @@
         "abletoclaim": "Vaša maksimalna RC mana iznosi <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Trenutno imate <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
         "canclaim": "što vam omogućava da zahtevate jedan nalog kada imate 100%<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "što vam omogućava da zahtevate <span id='maxclaims'>0</span> naloga kada imate 100%",
-        "cannotclaim": "što Vam ne dozvoljava da zahtevate nalog. Dodajte još Steem Power-a!",
+        "cannotclaim": "što Vam ne dozvoljava da zahtevate nalog. Dodajte još Hive Power-a!",
         "canclaimnow": "tako da možete odmah zahtevati nalog.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "tako da možete odmah zahtevati <span class='possibleclaims'>0</span> naloga.",
         "cannotclaimnow": "tako da morate sačekati dok ne budete u mogućnosti da zahtevate diskontovani nalog.",
-        "abletobuy": "Sa vašim saldom od <span id='steembalance'>0 STEEM</span> možete <span id='abletopayforclaim'></span>",
+        "abletobuy": "Sa vašim saldom od <span id='steembalance'>0 HIVE</span> možete <span id='abletopayforclaim'></span>",
         "canbuy": "teoretski da zahtevate još jedan nalog.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "teoretski da zahtevate još <span id='possiblebuys'>0</span> naloga.",
-        "cannotbuy": "ne možete da zahtevate više naloga. Nabavite još STEEM-a!",
+        "cannotbuy": "ne možete da zahtevate više naloga. Nabavite još HIVE-a!",
         "claimfreemodal": "Besplatan zahtev",
         "claimsteemmodal": "Plaćeni zahtev",
         "invitemodal": "Pozovite nekoga odmah"
     },
     "freeclaimmodal": {
-        "title": "Zahtevajte diskontovane steem naloge",
+        "title": "Zahtevajte diskontovane hive naloge",
         "explainer": "Poslednja cena za zahtev diskontovanog naloga bila je <span class='rccost'>0</span> RC<br />Imajte na umu da cena varira sve vreme. Kada se zahteva više naloga u kratkom vremenskom periodu, cena raste.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Sa <span id='currentrc'>0</span> RC možete zahtevati jedan nalog.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Sa <span id='currentrc'>0</span> RC možete zahtevati <span class='possibleclaims'>0</span> naloga.",
@@ -46,7 +46,7 @@
         "bot": "Bot za zahteve"
     },
     "botclaimmodal": {
-        "title": "Automatizovano zahtevanje diskontovanih steem naloga",
+        "title": "Automatizovano zahtevanje diskontovanih hive naloga",
         "explainer": "Zdravo! Ja sam prijateljski robot za zahteve. Kliknite na dugme ispod kako bih započeo svoj posao. Zahtevaću naloge sve dok ne ostanete bez RC, ili mi ne zadate komandu da se zaustavim pritiskom na drugo dugme.",
         "working": "Radim! Do sada je zahtevano <span id='botClaimStatusClaimed'>0</span> naloga.",
         "stopped": "Zaustavljeno nakon zahtevanja <span id='botClaimHasClaimed'>0</span> naloga.<br />Poruka o grešci: <span id='botClaimError'></span>",
@@ -54,22 +54,22 @@
         "close": "Zaustavi/Zatvori"
     },
     "paidclaimmodal": {
-        "title": "Platite zahtev steem naloga",
-        "explainer": "Cena zahteva naloga je <span class='steemcost'>0</span> STEEM-a<br />Ovu cenu određuju vitnesi (witness).<br />Novi nalog će primiti osnovnu količinu RC kao da ima istu količinu Steem Power-a."
+        "title": "Platite zahtev hive naloga",
+        "explainer": "Cena zahteva naloga je <span class='steemcost'>0</span> HIVE-a<br />Ovu cenu određuju vitnesi (witness).<br />Novi nalog će primiti osnovnu količinu RC kao da ima istu količinu Hive Power-a."
     },
     "invitemodal": {
-        "title": "Pozovite na Steem!",
+        "title": "Pozovite na Hive!",
         "label": "Oznaka",
         "by_email": "Isključite ovo da dobijete jedan ili više linkova direktno, umesto slanja email-a",
         "email": "Adresa",
         "mailtext_label": "Tekst e-poruke",
-        "mailtext": "Zdravo,\n\nPozvani ste od strane {} da se pridružite Steem blokčejnu.\n\nŠta je to?\n\nSteem je backend koji koriste novi društveni mediji kao što su steemit.com i busy.org. Koristeći blokčejn tehnologiju, postoji novi način kako da plate svojim korisnicima za njihove aktivnosti.\n\nPrihvatite pozivnicu klikom na sledeći link:",
+        "mailtext": "Zdravo,\n\nPozvani ste od strane {} da se pridružite Hive blokčejnu.\n\nŠta je to?\n\Hive je backend koji koriste novi društveni mediji kao što su peakd.com i hive.blog. Koristeći blokčejn tehnologiju, postoji novi način kako da plate svojim korisnicima za njihove aktivnosti.\n\nPrihvatite pozivnicu klikom na sledeći link:",
         "linkamount": "Broj linkova za kreiranje",
         "or": "ILI",
         "multi": "Kreirajte link koji važi za višestruko pravljenje naloga",
         "multi_label": "Broj naloga za koji važi ovaj link (pazite, možete ostati bez zahteva ukoliko koristite ovu opciju!)",
-        "delegate": "Novi nalog ima samo osnovnu količinu RC za transakcije na blokčejnu. Ukoliko želite da novi korisnik može da radi više, delegirajte određenu količinu Steem Power-a. Naravno, ovo možete uraditi i kasnije.",
-        "delegate_amount": "Količina Steem Power-a koju želite da delegirate",
+        "delegate": "Novi nalog ima samo osnovnu količinu RC za transakcije na blokčejnu. Ukoliko želite da novi korisnik može da radi više, delegirajte određenu količinu Hive Power-a. Naravno, ovo možete uraditi i kasnije.",
+        "delegate_amount": "Količina Hive Power-a koju želite da delegirate",
         "validity": "Koliko dana želite da pozivnica bude važeća dok se ne izbriše automatski?",
         "validity_label": "Važenje u danima",
         "usermail": "E-Mail adresa za ažuriranje stanja",
@@ -98,13 +98,13 @@
         "de": "nemački"
     },
     "step1": {
-        "lead": "Zdravo! Ostalo je još samo nekoliko koraka da dobijete Vaš Steem nalog!",
+        "lead": "Zdravo! Ostalo je još samo nekoliko koraka da dobijete Vaš Hive nalog!",
         "text": "Vaš nalog će uključivati Vaš lični novčanik, stoga je bezbednost izuzetno važna.<br />Generisali smo master lozinku za Vaš nalog, koju treba da čuvate na sigurnoj lokaciji. Zapišite je negde!",
         "submit": "Zapisao/la sam lozinku i neću je nikad izgubiti"
     },
     "step2": {
         "lead": "U redu. Vodite računa da ne izgubite lozinku! Ne postoji način da je povratite!",
-        "text": "Vaše Steem korisničko ime mora da sadrži najmanje tri karaktera, i ne može sadržati nijedan drugi karakter osim malih slova, brojeva i crtice. Mora biti jedinstveno i nikad ne može biti promenjeno. Izaberite ga pažljivo.",
+        "text": "Vaše Hive korisničko ime mora da sadrži najmanje tri karaktera, i ne može sadržati nijedan drugi karakter osim malih slova, brojeva i crtice. Mora biti jedinstveno i nikad ne može biti promenjeno. Izaberite ga pažljivo.",
         "username": "Vaše korisničko ime",
         "as": "kao"
     },
@@ -112,7 +112,7 @@
         "text": "Sve što smo do sada rekli u vezi sa vašom lozinkom nije šala.<br />Da proverite da niste napravili grešku prilikom zapisivanja vaše lozinke, molimo unesite je ovde.<br />Ako ne možete da nastavite dalje, osvežite stranicu u vašem pretraživaču i počnite iz početka."
     },
     "step4": {
-        "text": "Postoje različiti nivoi pristupa vašem Steem nalogu.<br />Posting key se koristi za svakodnevne aktivnosti na društvenoj mreži, npr. dozvoljava vam da objavljujete i glasate.<br />Da pristupite vašem novčaniku i premeštate STEEM, potreban vam je active key.<br />Owner key možete koristiti da promenite ova dva ključa, i ne bi trebalo da se koristi za druge svrhe. Najbolje je čuvati ga pored master lozinke, ne koristite ih dok ste na mreži.<br />Poslednji na redu je memo key, koji nema funkciju, ali može imati u budućnosti, gde će se koristiti za dešifrovanje vaših privatnih podataka kao što su direktne poruke.",
+        "text": "Postoje različiti nivoi pristupa vašem Hive nalogu.<br />Posting key se koristi za svakodnevne aktivnosti na društvenoj mreži, npr. dozvoljava vam da objavljujete i glasate.<br />Da pristupite vašem novčaniku i premeštate HIVE, potreban vam je active key.<br />Owner key možete koristiti da promenite ova dva ključa, i ne bi trebalo da se koristi za druge svrhe. Najbolje je čuvati ga pored master lozinke, ne koristite ih dok ste na mreži.<br />Poslednji na redu je memo key, koji nema funkciju, ali može imati u budućnosti, gde će se koristiti za dešifrovanje vaših privatnih podataka kao što su direktne poruke.",
         "warning": "Ovi ključevi su generisani iz vaše lozinke. Mogu se koristiti umesto lozinke, ali samo za svoje određene namene.<br />Sigurnije je koristiti posting key ukoliko želite da koristite uređaj samo za objavljivanje i glasanje, ili active key kada želite da izvršite neke druge radnje.<br />NAJSIGURNIJE JE LOZINKU I OWNER KEY ČUVATI VAN MREŽE!",
         "confirm": "Klikom na sledeće dugme, korisnik koji je napravio vašu pozivnicu biće informisan, i nadamo se uskoro kreirati Vaš nalog.",
         "finish": "Popunite zahtev za nalog i napustite sajt"
