@@ -23,6 +23,6 @@ for result in results:
       db.delete('invites',{'inviteid':result['inviteid']})
       db.delete('publics',{'inviteid':result['inviteid']})
     else:
-      invites[result['inviteid']] = {'user':res['username'],'data':result}
+      invites[result['inviteid']] = {'user':inv['username'],'data':result}
 
 api.output(invites)
