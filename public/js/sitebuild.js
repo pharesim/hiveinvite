@@ -1,6 +1,6 @@
 function loadTemplate(template,container) {
   jQuery.ajaxSetup({ async: false });
-  $.get('templates/'+template+'.html', '', function (data) { 
+  $.get('templates/'+template+'.html', '', function (data) {
     let elem = document.getElementById(container);
     elem.innerHTML = data+elem.innerHTML;
   });
