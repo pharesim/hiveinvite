@@ -72,6 +72,7 @@
         "response_time": "Typical time until creation in hours",
         "require_phone": "Require a phone number",
         "require_email": "Require an email address",
+        "require_reddit": "Require a reddit account",
         "require_facebook": "Require a facebook account",
         "require_twitter": "Require a twitter account",
         "require_instagram": "Require an instagram account",
