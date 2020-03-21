@@ -1,14 +1,15 @@
 
 i18next
-.use(i18nextXHRBackend)
-.use(i18nextBrowserLanguageDetector)
-.init({
-  fallbackLng: 'en',
-  debug: false,
-  backend: {
-    loadPath: 'locales/{{lng}}.json'
-  }
-});
+  .use(i18nextXHRBackend)
+  .use(i18nextBrowserLanguageDetector)
+  .init({
+    fallbackLng: 'en',
+    load: 'language-only',
+    debug: false,
+    backend: {
+      loadPath: 'locales/{{lng}}.json'
+    }
+  });
 
 newname    = "";
 passPhrase = "";
