@@ -31,8 +31,7 @@ for result in results:
     validinvite = True
     pub = db.select('publics',['ask_phone', 'ask_mail', 'ask_reddit', 'ask_fb', 'ask_twitt', 'ask_insta'],{'inviteid':inviteid},'inviteid')
     for res in pub:
-      publicInvite = res
-
+      publicInvite = {'ask_phone':res['ask_phone'],'ask_mail':res['ask_mail'],'ask_reddit':res['ask_reddit'],'ask_fb':res['ask_fb'],'ask_twitt':res['ask_twitt'],'ask_insta':res['ask_insta']}
 
 data = {'id':inviteid,'valid':validinvite,'public':publicInvite}
 api.output(data)
