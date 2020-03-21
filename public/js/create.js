@@ -22,8 +22,9 @@ document.getElementById('createAccountNow').onclick = function() {
       if(auths[i][1] >= threshold && auths[i][0] == pub) {
         loggedIn = true;
         let wif = key;
-        let hivepervest = properties.global.total_vesting_fund_steem.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
+        let hivepervest = properties.global.total_vesting_fund_steem.slice(0,-5) / properties.global.total_vesting_shares.slice(0,-6);
         let delegation = (Math.floor(getValueById('createSP') / hivepervest * 1000000) / 1000000) +' VESTS';
+        console.log(delegation);
         let newAccountName = getValueById('createAccountName');
         let owner = {'key_auths':[[getValueById('createOwner'),1]],'account_auths':[],'weight_threshold':1};
         let active = {'key_auths':[[getValueById('createActive'),1]],'account_auths':[],'weight_threshold':1};
