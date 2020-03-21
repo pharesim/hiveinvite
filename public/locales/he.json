@@ -1,18 +1,18 @@
 {
     "loggedout": {
-        "greeting": "צור/י Steemian!",
-        "explainer": "Steeminvite הוא שירות המאפשר לך להזמין את חבריך ל Steem.",
+        "greeting": "Make a Hiver!",
+        "explainer": "Hiveinvite is a service that allows you to invite your friends to Hive.",
         "buttontext": "על מנת להתחיל.",
         "login_error": "תקלה בהתחברות",
-        "usernamePlaceholder": "שם משתמש הSteem שלך",
+        "usernamePlaceholder": "Your Hive username",
         "postingkeyPlaceholder": "מפתח הפרסום האישי שלך"
     },
     "index": {
         "lastupdate": "עידכון אחרון",
         "refresh": "רעננ/י עכשיו",
         "greeting": "שלום<span id='loggedInUser'>שם משתמש</span>!",
-        "tokenexplain": "כדי ליצור חשבון Steem, עליך תחילה לדרוש אסימון. אסימונים, או בשמם האחר טוקנים, ניתן להשיג על ידי ניצול כמות מסוימת של STEEM, או שימוש בכמות גדולה של מאנה RC. בתמורה, החשבון החדש יזוכה בכמות מינימאלית של מאנה RC על מנת להתנהל ולהעביר נתונים בblockchain ללא בעלות של כח Steem.",
-        "tokencost": "העלות הנוכחית לדרישה היא <span class='steemcost'>0</span> או STEEM <span class='rccost'>0</span> או RC mana",
+        "tokenexplain": "To create a Hive account, you first need to claim a token. These can be obtained by burning a certain amount of HIVE, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Hive Power.",
+        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> HIVE or <span class='rccost'>0</span> RC mana",
         "pendingclaims": "את/ה קיבלת חשבון נוסף.<span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "את\\ה דרשת<span id='pendingclaims'>0</span> חשבונות.<span id='invitespending'></span>",
         "nopendingclaims": "לא דרשת אף חשבון עדיין.",
@@ -24,20 +24,20 @@
         "abletoclaim": "ה RC מאנה המקסימאלי שלך היא<span id='maxrc'>0</span>,<span id='canclaimever'></span><br /><span id='canclaimnow'> אתה כרגע נמצא ב<span id='rcpct'>0</span>%,<span id='canclaimnowamount'></span></span>",
         "canclaim": "מה שמאפשר לך לדרוש חשבון אחד ב-100%\n<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "מה שמאפשר לך לדרוש <span id='maxclaims'>0</span> חשבונות ב-100%",
-        "cannotclaim": "מה שלא נותן לך אפשרות לדרוש שום חשבונות בכלל. תתחילו ב STEEM Power up!",
+        "cannotclaim": "which does not let you claim any accounts. Power up some HIVE!",
         "canclaimnow": "באפשרותך לדרוש חשבון אחד ברגע זה.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "את/ה יכול/ה לדרוש <span class='possibleclaims'>0</span> חשבונות ממש עכשיו.",
         "cannotclaimnow": "הינך מחויב/ת לחכות קצת עד שתהיה לך האפשרות לדרוש חשבון נוסף במחיר מוזל יותר.",
-        "abletobuy": "עם היתרה שלך של<span id='steembalance'> 0 STEEM </span> הינך יכול/ה<span id='abletopayforclaim'></span>",
+        "abletobuy": "With your balance of <span id='steembalance'>0 HIVE</span> you can <span id='abletopayforclaim'></span>",
         "canbuy": "דרוש/י חשבון נוסף באופן תאורטי.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "מבחינה תיאורטית לדרוש עוד<span id='possiblebuys'>0</span> חשבונות.",
-        "cannotbuy": "אין אפשרות לדרוש חשבונות נוספים. השג/י יותר STEEM!",
+        "cannotbuy": "not claim any more accounts. Get some more HIVE!",
         "claimfreemodal": "דרישה חינמית",
         "claimsteemmodal": "דרישה משולמת",
         "invitemodal": "הזמנ/י מישהו עכשיו"
     },
     "freeclaimmodal": {
-        "title": "דרוש/י חשבונות steem מוזלים",
+        "title": "Claim discounted Hive accounts",
         "explainer": "העלות האחרונה איתה היה ניתן לדרוש חשבון מוזל הייתה<span class='rccost'>0</span> RC<br />היו מודעים כי עלות זו משתנה כל הזמן. כשמספר החשבונות שנדרשות עולה, בתקופת זמן קצרה, כך גם המחיר עולה.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "עם<span id='currentrc'>0</span> RC תוכל/י לדרוש חשבון אחד.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "עם <span id='currentrc'>0</span> RC באפשרותך לדרוש <span class='possibleclaims'>0</span> חשבונות.",
@@ -46,7 +46,7 @@
         "bot": "Bot הדרישות"
     },
     "botclaimmodal": {
-        "title": "רכישות אוטומטיות של חשבונות steem מוזלים",
+        "title": "Automated claiming of discounted Hive accounts",
         "explainer": "שלום!. אני רובוט ניהול הדרישות הידידותי שלך. לחץ על הכפתור למטה בכדי לתפעל אותי. אני אמשיך לבצע דרישות עד שתיגמר לך כמות ה RC, או כשתרצה להפסיק את פעולותיי בלחיצה על הכפתור האחר.",
         "working": "בעבודה! נדרשו <span id='botClaimStatusClaimed'>0</span> חשבונות עד כה.",
         "stopped": "נעצר לאחר דרישת <span id='botClaimHasClaimed'>0</span> חשבונות.<br /> הודעת תקלה: <span id='botClaimError'></span>",
@@ -54,22 +54,22 @@
         "close": "הפסק/סגור"
     },
     "paidclaimmodal": {
-        "title": "שלמ/י בכדי לדרוש חשבון Steem",
-        "explainer": "העלות לרכישת חשבון היא<span class='steemcost'>0</span>STEEM<br />תשלום זה נמדד על פי הWitnesess.<br /> כל חשבון חדש יקבל כמות בסיסית של RC מאנה, כאילו הייתה לו את אותה הכמות בSteem power."
+        "title": "Pay to claim a Hive account",
+        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> HIVE<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Hive Power."
     },
     "invitemodal": {
-        "title": "הזמן/י ל Steem!",
+        "title": "Invite to Hive!",
         "label": "תווית",
         "by_email": "בטל/י בחירה זו כדי להשיג ישירות קישור אחד או יותר, במקום לשלוח דואר אלקטרוני",
         "email": "כתובת",
         "mailtext_label": "מלל דואר אלקטוני",
-        "mailtext": ". שלום,\n\nהוזמנת מאת {} להצטרף לSteem blockchain.\n\nמה זה בדיוק?\nSteem הוא מקור אינטרנטי מגובה המשמש לאתרי מדיה חברתיים חדשים כמו steemit.com ו- busy.org. באמצעות טכנולוגיית ה blockchain, ישנם דרכים מתקדמות לתגמול המשתמשים על פעילויותיהם.\n\nאשר/י את ההזמנה על ידי לחיצה על הקישור הבא:",
+        "mailtext": "Hello,\n\nyou have been invited by {} to join the Hive blockchain.\n\nWhat is that?\nHive is the backend used by new social media sites like peakd.com and hive.blog. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
         "linkamount": "מספר הקישורים ליצירה",
         "or": "או",
         "multi": "צור קישור שתקף ליצירת מספר חשבונות",
         "multi_label": "מספר החשבונות שתקפים עבור הלינק הזה ( שימ/י לב, \nעלולות להיגמר לך הדרישות כשאתה משתמש באופציה זו!)",
-        "delegate": "לחשבון חדש מתקבל כמות בסיסית של RC mana כדי לבצע פעולות ב blockchain. אם את/ה רוצה שהמשתמש החדש יהיה מסוגל לעשות יותר, האצל אליו כוח Steem. כמובן שפעולה זו ניתן לעשות מאוחר יותר.",
-        "delegate_amount": "כמות כוח Steem שברצונך להאציל",
+        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Hive Power. You can also do that later of course.",
+        "delegate_amount": "Amount of Hive Power to delegate",
         "validity": "למשך כמה ימים ההזמנה צריכה להיות תקפה לפני שהיא נמחקת באופן אוטומטי?",
         "validity_label": "תוקף בימים",
         "usermail": "כתובת הדואר האלקטרוני עבור עדכוני הסטטוס",
@@ -116,13 +116,13 @@
         "zh": "chinese (traditional)"
     },
     "step1": {
-        "lead": "שלום! אתה כמה צעדים מלקבל חשבון Steem משלך!",
+        "lead": "Hi! You are only a few steps away from getting your own Hive account!",
         "text": "החשבון שלך יכלול את הארנק האישי שלך, לכן אבטחתו חשובה מאוד.<br />יצרנו סיסמת מאסטר עבור החשבון שלך, שאותה צריך לשמור במקום בטוח. כתוב אותה איפשהו!",
         "submit": "רשמתי את הסיסמה, ואיני בסיכון לאבדה לעולם"
     },
     "step2": {
         "lead": "אנא ודא לא לאבד את הסיסמה! אין שום דרך לשחזרה!",
-        "text": "שם המשתמש שלך בSteem חייב להיות באורך של לפחות 3 אותיות, ואינו יכול להכיל סימנים אחרים פרט לאותיות קטנות, מספרים וקו תחתון (_). שם זה הינו ייחודי ואינו ניתן לשינו לאחר שנקבע.\nחשוב/י טוב טוב לפני שתחליט/י.",
+        "text": "Your Hive username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
         "username": "שם המשתמש שלך",
         "as": "כמו"
     },
@@ -130,7 +130,7 @@
         "text": "מה שאמרנו קודם בנוגע לסיסמה שלך לא היה בדיחה.<br />בכדי לוודא שלא עשית טעות תוך כדי רישום סיסמתך, אנא הכניס/י אותו כאן.<br />אם אינך מצליח/ה להמשיך, טען/י מחדש את העמוד בדפדפן שלך והתחל/י שוב."
     },
     "step4": {
-        "text": "ישנן רמות גישה שונות עבור חשבון Steem.\n <br />מפתח הPosting מיועד לביצוע פעילויות מדיה החברתיות יומיומיות, כלומר מאפשר לך להעלות פוסטים ולהצביע.<br />על מנת לבצע פעולות ארנק בחשבונך ולהעביר STEEM, תצטרך את המפתח הActive.\n<br />המפתח הOwner יכול לשמש כדי לשנות את שני המפתחות הקודמים, ואין להשתמש בו לעולם למטרות אחרות. עדיף שמפתח זה ישמר יחד עם סיסמת המאסטר, וללא שימוש במצב מקוון.<br /> אחרון הוא מפתח הMemo, אשר אין בו עדיין שימוש מעשי, אך עשוי לשמש בעתיד כדי לפענח את המידע הפרטי שלך כמו שליחה וקבלה של הודעות ישירות.",
+        "text": "There are different access levels for a Hive account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move HIVE, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
         "warning": "מפתחות אלה מיוצרים מן הסיסמה שלך. ניתן להשתמש בהם במקום סיסמת המאסטר, אבל אך ורק למטרתם הספציפית.\n<br />יותר בטיחותי במפתח הPosting אם ברצונך לעלות פוסטים או להצביע בלבד ממכשיר נתון, או שימוש במפתח ה Active כאשר את/ה רוצה לבצע פעולות אחרות.<br />\nאת הסיסמה הראשית ואת מפתח המאסטר מוטב להשאיר במצב לא מקוון!",
         "confirm": "על ידי לחיצה על הכפתור הבא, המשתמש שיצר את הזמנתך יעודכן, ובקרוב ייצור את חשבונך.",
         "finish": "סיים/י בקשת חשבון ועזב/י את האתר"
