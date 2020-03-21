@@ -40,9 +40,14 @@ function fillPublicTable(data) {
     append = append+'</td></tr>';
   }
 
+  let elem = document.getElementById('publicInvites');
+  elem.innerHTML = elem.innerHTML + append;
+
   if(public_invites > 0) {
     $("#invites").show();
   } else {
     $("#invites").hide();
   }
 }
+
+getInvites();
