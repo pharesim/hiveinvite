@@ -93,24 +93,25 @@ $.ajax({
 });
 
 function prepareStep0(public) {
+  console.log(public);
   $("#step1").hide();
   $("#step0").show();
-  if(public['ask_phone'] == true) {
+  if(public['ask_phone'] == 'true') {
     $("#phoneInput").show();
   }
-  if(public['ask_mail'] == true) {
+  if(public['ask_mail'] == 'true') {
     $("#mailInput").show();
   }
-  if(public['ask_reddit'] == true) {
+  if(public['ask_reddit'] == 'true') {
     $("#redditInput").show();
   }
-  if(public['ask_fb'] == true) {
+  if(public['ask_fb'] == 'true') {
     $("#facebookInput").show();
   }
-  if(public['ask_twitt'] == true) {
+  if(public['ask_twitt'] == 'true') {
     $("#twitterInput").show();
   }
-  if(public['ask_insta'] == true) {
+  if(public['ask_insta'] == 'true') {
     $("#instagramInput").show();
   }
 }
