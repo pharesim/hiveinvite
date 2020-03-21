@@ -63,7 +63,7 @@
         "by_email": "Quita la marca para obtener uno o varios enlaces directamente en lugar de enviar un correo electrónico",
         "email": "Dirección",
         "mailtext_label": "Texto del correo electrónico",
-        "mailtext": "Hola,\n\nhas sido invitado por {} para unirte a Hive blockchain.\n\n¿Que es eso?\Hive es el backend utilizado por los nuevos sitios de redes sociales como peakd.com y hive.blog. Usando la tecnología blockchain, así como nuevas formas para pagar a los usuarios por su actividad.\n\nAcepta la invitación haciendo clic en el siguiente enlace:",
+        "mailtext": "Hola,\n\nhas sido invitado por {} para unirte a Hive blockchain.\n\n¿Que es eso?\nHive es el backend utilizado por los nuevos sitios de redes sociales como peakd.com y hive.blog. Usando la tecnología blockchain, así como nuevas formas para pagar a los usuarios por su actividad.\n\nAcepta la invitación haciendo clic en el siguiente enlace:",
         "linkamount": "Número de enlaces para crear",
         "or": "O",
         "multi": "Crea un enlace que sea válido para múltiples creaciones de cuentas",

@@ -63,7 +63,7 @@
         "by_email": "Vink dit uit om één of meerdere links direct te krijgen in plaats van een e-mail te versturen",
         "email": "Adres",
         "mailtext_label": "E-mail tekst",
-        "mailtext": "Hallo,\n\nJe bent uitgenodigd door {} om deel te nemen aan de Hive-blockchain.\n\nWat is dat?\Hive is de backend die gebruikt wordt door nieuwe social-media-sites zoals peakd.com en hive.blog. Door gebruik te maken van blockchain-technologie, bewandelt het nieuwe wegen door gebruikers te betalen voor hun activiteit.\n\nAccepteer de uitnodiging door op de volgende link te klikken:",
+        "mailtext": "Hallo,\n\nJe bent uitgenodigd door {} om deel te nemen aan de Hive-blockchain.\n\nWat is dat?\nHive is de backend die gebruikt wordt door nieuwe social-media-sites zoals peakd.com en hive.blog. Door gebruik te maken van blockchain-technologie, bewandelt het nieuwe wegen door gebruikers te betalen voor hun activiteit.\n\nAccepteer de uitnodiging door op de volgende link te klikken:",
         "linkamount": "Aantal links te maken",
         "or": "OF",
         "multi": "Maak een link aan die geldig is voor meerdere account-creaties",

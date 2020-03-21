@@ -63,7 +63,7 @@
         "by_email": "Deaktiviere dieses Kontrollkästchen, um einen Link oder mehrere Links zu erhalten, anstatt ihn per E-Mail zu senden.",
         "email": "Adresse",
         "mailtext_label": "E-Mail Nachricht",
-        "mailtext": "Hallo,\n\ndu wurdest von {} dazu eingeladen, der Hive-Blockchain beizutreten.\n\nWas genau ist das?\Hive ist das Backend, das von neuen Social Media Seiten wie peakd.com und hive.blog verwendet wird. Mit der Blockchain-Technologie beschreitet sie neue Wege, indem sie die Benutzer für ihre Aktivitäten bezahlt.\n\nAkzeptiere die Einladung indem du auf den folgenden Link klickst:",
+        "mailtext": "Hallo,\n\ndu wurdest von {} dazu eingeladen, der Hive-Blockchain beizutreten.\n\nWas genau ist das?\nHive ist das Backend, das von neuen Social Media Seiten wie peakd.com und hive.blog verwendet wird. Mit der Blockchain-Technologie beschreitet sie neue Wege, indem sie die Benutzer für ihre Aktivitäten bezahlt.\n\nAkzeptiere die Einladung indem du auf den folgenden Link klickst:",
         "linkamount": "Anzahl der zu erstellenden Links",
         "or": "oder",
         "multi": "Erstelle einen Link, der für mehrere Konto-Erstellungen gültig ist",

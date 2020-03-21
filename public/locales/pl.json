@@ -63,7 +63,7 @@
         "by_email": "Odznacz, aby uzyskać jeden lub wiele linków bezpośrednio, zamiast wysyłania wiadomości e-mail",
         "email": "Adres",
         "mailtext_label": "Treść maila",
-        "mailtext": "Cześć, \n\nzostałeś zaproszony przez {} aby dołączyć do blokchaina Hive.\n\nCo to jest? \Hive to blokchain używany przez strony takie jak peakd.com lub hive.blog. Dzięki technologi blokchain pozwala on zarabiać użytkownikom na ich aktywności. \n\nZaakceptuj zaproszenie klikając na poniższy link:",
+        "mailtext": "Cześć, \n\nzostałeś zaproszony przez {} aby dołączyć do blokchaina Hive.\n\nCo to jest? \nHive to blokchain używany przez strony takie jak peakd.com lub hive.blog. Dzięki technologi blokchain pozwala on zarabiać użytkownikom na ich aktywności. \n\nZaakceptuj zaproszenie klikając na poniższy link:",
         "linkamount": "Liczba adresów URL do utworzenia",
         "or": "LUB",
         "multi": "Stwórz link, który pozwoli utworzyć kilka kont",

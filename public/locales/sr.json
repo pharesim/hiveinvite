@@ -63,7 +63,7 @@
         "by_email": "Isključite ovo da dobijete jedan ili više linkova direktno, umesto slanja email-a",
         "email": "Adresa",
         "mailtext_label": "Tekst e-poruke",
-        "mailtext": "Zdravo,\n\nPozvani ste od strane {} da se pridružite Hive blokčejnu.\n\nŠta je to?\n\Hive je backend koji koriste novi društveni mediji kao što su peakd.com i hive.blog. Koristeći blokčejn tehnologiju, postoji novi način kako da plate svojim korisnicima za njihove aktivnosti.\n\nPrihvatite pozivnicu klikom na sledeći link:",
+        "mailtext": "Zdravo,\n\nPozvani ste od strane {} da se pridružite Hive blokčejnu.\n\nŠta je to?\n\nHive je backend koji koriste novi društveni mediji kao što su peakd.com i hive.blog. Koristeći blokčejn tehnologiju, postoji novi način kako da plate svojim korisnicima za njihove aktivnosti.\n\nPrihvatite pozivnicu klikom na sledeći link:",
         "linkamount": "Broj linkova za kreiranje",
         "or": "ILI",
         "multi": "Kreirajte link koji važi za višestruko pravljenje naloga",

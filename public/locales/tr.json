@@ -63,7 +63,7 @@
         "by_email": "Bir e-posta göndermek yerine doğrudan bir veya daha fazla bağlantı almak için bu seçeneği kaldırın",
         "email": "Adres",
         "mailtext_label": "E-Posta metni",
-        "mailtext": "Merhaba,\n\Hive blok zincirine katılmak için {} tarafından davet edildiniz.\n\nO nedir?\Hive, peakd.com ve hive.blog gibi yeni sosyal medya siteleri tarafından kullanılan arka uçtur. Blok zinciri teknolojisini kullanarak, kullanıcılara etkinlikleri için ödeme yaparak yeni yollar kullanmaktadır.\n\nAşağıdaki bağlantıya tıklayarak daveti kabul edin:",
+        "mailtext": "Merhaba,\n\nHive blok zincirine katılmak için {} tarafından davet edildiniz.\n\nO nedir?\nHive, peakd.com ve hive.blog gibi yeni sosyal medya siteleri tarafından kullanılan arka uçtur. Blok zinciri teknolojisini kullanarak, kullanıcılara etkinlikleri için ödeme yaparak yeni yollar kullanmaktadır.\n\nAşağıdaki bağlantıya tıklayarak daveti kabul edin:",
         "linkamount": "Oluşturulacak bağlantı sayısı",
         "or": "VEYA",
         "multi": "Birden fazla hesap oluşturma işlemi için geçerli bir bağlantı oluşturun",
