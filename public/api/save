@@ -35,7 +35,7 @@ validinvite = False
 savedinvite = False
 nowts = time.time()
 
-URL = "http://check.getipintel.net/check.php")
+URL = "http://check.getipintel.net/check.php"
 ip = cgi.escape(os.environ["REMOTE_ADDR"])
 PARAMS = {'ip':ip}
 banscore = requests.get(url = URL, params = PARAMS)
@@ -123,6 +123,7 @@ for res in pub:
 
 mailtext += "\nIP: "+ip
 mailtext += "\nScore from https://getipintel.net/: "+banscore
+
 if remaining > 1:
   db.update('invites',{'remaining':remaining - 1},{'inviteid':inviteid})
   newinviteid = uuid.uuid4().hex
