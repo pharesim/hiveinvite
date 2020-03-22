@@ -93,7 +93,6 @@ $.ajax({
 });
 
 function prepareStep0(public) {
-  console.log(public);
   $("#step1").hide();
   $("#step0").show();
   if(public['ask_phone'] == 'true') {
@@ -122,6 +121,7 @@ $("#finish_step0").click(
     inputs = ["phone",'mail','reddit','facebook','twitter','instagram']
     inputs.forEach(function(inp) {
       if($("#"+inp+"Input").is(":visible")) {
+        console.log(inp);
         value = $("#"+inp+"Input").val();
         if(value == '') {
           errors = 1
@@ -255,6 +255,7 @@ $("#finish").click(function(){
 });
 
 function translateContent() {
+  setTimeout(function(){},1000);
   // languages
   setContentById('step0Lead',i18next.t('step0.lead'));
   setContentById('step0Text',i18next.t('step0.text'));
