@@ -121,9 +121,7 @@ $("#finish_step0").click(
     inputs = ["phone",'mail','reddit','facebook','twitter','instagram']
     inputs.forEach(function(inp) {
       if($("#"+inp+"Input").is(":visible")) {
-        console.log(inp);
-        value = $("#"+inp+"Input").val();
-        if(value == '') {
+        if($("#"+inp+"Input input").val() == '') {
           errors = 1
         }
       }
