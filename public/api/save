@@ -57,7 +57,7 @@ mailtext = "Visit https://hiveinvite.com/ to finish account creation or delete t
 
 pub = db.select('publics',['inviteid','ask_phone','ask_mail','ask_reddit','ask_fb','ask_twitt','ask_insta'],{'inviteid':inviteid},'inviteid')
 for res in pub:
-  if res['ask_phone'] == True:
+  if res['ask_phone'] == 'true':
     if phone == '':
       errorHandler.throwError('Phone number required')
     hashed = hashlib.sha256(phone).hexdigest()
@@ -66,7 +66,7 @@ for res in pub:
       errorHandler.throwError('Phone number already used')
     db.insert('hashes',{'hash':hashed,'type':'phone'})
     mailtext += "\nPhone number: "+phone
-  if res['ask_mail'] == True:
+  if res['ask_mail'] == 'true':
     if email == '':
       errorHandler.throwError('Email address required')
     hashed = hashlib.sha256(email).hexdigest()
@@ -75,7 +75,7 @@ for res in pub:
       errorHandler.throwError('Email address already used')
     db.insert('hashes',{'hash':hashed,'type':'email'})
     mailtext += "\nEmail address: "+email
-  if res['ask_reddit'] == True:
+  if res['ask_reddit'] == 'true':
     if reddit == '':
       errorHandler.throwError('Reddit account required')
     hashed = hashlib.sha256(reddit).hexdigest()
@@ -84,7 +84,7 @@ for res in pub:
       errorHandler.throwError('Reddit account already used')
     db.insert('hashes',{'hash':hashed,'type':'reddit'})
     mailtext += "\nReddit account: "+reddit
-  if res['ask_fb'] == True:
+  if res['ask_fb'] == 'true':
     if facebook == '':
       errorHandler.throwError('Facebook account required')
     hashed = hashlib.sha256(facebook).hexdigest()
@@ -93,7 +93,7 @@ for res in pub:
       errorHandler.throwError('Facebook account already used')
     db.insert('hashes',{'hash':hashed,'type':'facebook'})
     mailtext += "\nFacebook account: "+facebook
-  if res['ask_twitt'] == True:
+  if res['ask_twitt'] == 'true':
     if twitter == '':
       errorHandler.throwError('Twitter account required')
     hashed = hashlib.sha256(twitter).hexdigest()
@@ -102,7 +102,7 @@ for res in pub:
       errorHandler.throwError('Twitter account already used')
     db.insert('hashes',{'hash':hashed,'type':'twitter'})
     mailtext += "\nTwitter account: "+twitter
-  if res['ask_insta'] == True:
+  if res['ask_insta'] == 'true':
     if insta == '':
       errorHandler.throwError('Instagram account required')
     hashed = hashlib.sha256(insta).hexdigest()
