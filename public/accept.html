@@ -35,12 +35,44 @@
       <fieldset id="step0" class="hidden">
         <p class="lead" id="step0Lead"></p>
         <p id="step0Text"></p>
-        <div id="phoneInput" class="hidden"><label id="phoneLabel"></label><input type="text" placeholder="+1234567890" id="phone_number" size="100" /></div>
-        <div id="mailInput" class="hidden"><label id="mailLabel"></label><input type="text" placeholder="user@domain.tld" id="email_address" size="100" /></div>
-        <div id="redditInput" class="hidden"><label id="redditLabel"></label><input type="text" placeholder="https://reddit.com/u/username" id="reddit" size="100" /></div>
-        <div id="facebookInput" class="hidden"><label id="facebookLabel"></label><input type="text" placeholder="https://facebook.com/username" id="facebook" size="100" /></div>
-        <div id="twitterInput" class="hidden"><label id="twitterLabel"></label><input type="text" placeholder="https://twitter.com/username" id="twitter" size="100" /></div>
-        <div id="instagramInput" class="hidden"><label id="instagramLabel"></label><input type="text" placeholder="https://instagram.com/username" id="instagram" size="100" /></div>
+        <form>
+          <div class="form-group row hidden" id="phoneInput">
+              <label for="phone_number" class="col-2 col-form-label"><span id="phoneLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="+1234567890" id="phone_number" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="mailInput">
+              <label for="email_address" class="col-2 col-form-label"><span id="mailLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="user@domain.tld" id="email_address" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="redditInput">
+              <label for="reddit" class="col-2 col-form-label"><span id="redditLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="https://reddit.com/u/username" id="reddit" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="facebookInput">
+              <label for="facebook" class="col-2 col-form-label"><span id="facebookLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="https://facebook.com/username" id="facebook" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="twitterInput">
+              <label for="twitter" class="col-2 col-form-label"><span id="twitterLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="https://twitter.com/username" id="twitter" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="instagramInput">
+              <label for="instagram" class="col-2 col-form-label"><span id="instagramLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="https://instagram.com/username" id="instagram" autocomplete="off">
+              </div>
+          </div>
+        </form>
         <p id="step0Error" class="hidden"></p>
         <button id="finish_step0" type="button" class="btn btn-primary"></button>
       </fieldset>
