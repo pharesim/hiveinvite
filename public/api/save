@@ -60,7 +60,7 @@ for res in pub:
   if res['ask_phone'] == 'true':
     if phone == '':
       errorHandler.throwError('Phone number required')
-    hashed = hashlib.sha256(phone).hexdigest()
+    hashed = hashlib.sha256(phone.encode()).hexdigest()
     exists = db.select('hashes',['hash'],{'type':'phone','hash':hashed},'hash')
     for e in exists:
       errorHandler.throwError('Phone number already used')
@@ -69,7 +69,7 @@ for res in pub:
   if res['ask_mail'] == 'true':
     if email == '':
       errorHandler.throwError('Email address required')
-    hashed = hashlib.sha256(email).hexdigest()
+    hashed = hashlib.sha256(email.encode()).hexdigest()
     exists = db.select('hashes',['hash'],{'type':'email','hash':hashed},'hash')
     for e in exists:
       errorHandler.throwError('Email address already used')
@@ -78,7 +78,7 @@ for res in pub:
   if res['ask_reddit'] == 'true':
     if reddit == '':
       errorHandler.throwError('Reddit account required')
-    hashed = hashlib.sha256(reddit).hexdigest()
+    hashed = hashlib.sha256(reddit.encode()).hexdigest()
     exists = db.select('hashes',['hash'],{'type':'reddit','hash':hashed},'hash')
     for e in exists:
       errorHandler.throwError('Reddit account already used')
@@ -87,7 +87,7 @@ for res in pub:
   if res['ask_fb'] == 'true':
     if facebook == '':
       errorHandler.throwError('Facebook account required')
-    hashed = hashlib.sha256(facebook).hexdigest()
+    hashed = hashlib.sha256(facebook.encode()).hexdigest()
     exists = db.select('hashes',['hash'],{'type':'facebook','hash':hashed},'hash')
     for e in exists:
       errorHandler.throwError('Facebook account already used')
@@ -96,7 +96,7 @@ for res in pub:
   if res['ask_twitt'] == 'true':
     if twitter == '':
       errorHandler.throwError('Twitter account required')
-    hashed = hashlib.sha256(twitter).hexdigest()
+    hashed = hashlib.sha256(twitter.encode()).hexdigest()
     exists = db.select('hashes',['hash'],{'type':'twitter','hash':hashed},'hash')
     for e in exists:
       errorHandler.throwError('Twitter account already used')
@@ -105,7 +105,7 @@ for res in pub:
   if res['ask_insta'] == 'true':
     if insta == '':
       errorHandler.throwError('Instagram account required')
-    hashed = hashlib.sha256(insta).hexdigest()
+    hashed = hashlib.sha256(insta.encode()).hexdigest()
     exists = db.select('hashes',['hash'],{'type':'instagram','hash':hashed},'hash')
     for e in exists:
       errorHandler.throwError('Instagram account already used')
