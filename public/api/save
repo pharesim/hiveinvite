@@ -37,7 +37,7 @@ nowts = time.time()
 
 URL = "http://check.getipintel.net/check.php"
 ip = cgi.escape(os.environ["REMOTE_ADDR"])
-PARAMS = {'ip':ip}
+PARAMS = {'ip':ip,'contact':'pharesim@protonmail.com'}
 banscore = requests.get(url = URL, params = PARAMS).text
 if float(banscore) > 0.95:
     errorHandler.throwError('Nope')
