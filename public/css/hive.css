@@ -1,0 +1,42 @@
+.my-navbar {
+  background-color: rgb(33, 36, 41);
+  color: #fff;
+}
+.jumbotron{
+background-color: #f0f0f8;
+}
+.btn-primary{
+  color: #f0f0f8;
+  background-color: rgb(227, 19, 55);
+  border-color: rgb(227, 19, 55);
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgb(33, 36, 41);
+  border-color: rgb(33, 36, 41);
+}
+.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+color: #fff;
+  background-color: rgb(33, 36, 41);
+  border-color: rgb(33, 36, 41);
+}
+a {
+color: rgb(227, 19, 55);
+text-decoration: none;
+background-color: transparent;
+-webkit-text-decoration-skip: objects;
+}
+a:hover {
+color: rgb(33, 36, 41);
+text-decoration: underline;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+color: rgb(33, 36, 41);
+background-color: #e7e7f1;
+border-color: #e7e7f1;
+}
+.btn-secondary {
+color: #fff;
+background-color: rgb(33, 36, 41);
+border-color: rgb(33, 36, 41);
+}
