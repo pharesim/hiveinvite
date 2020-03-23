@@ -12,8 +12,8 @@
         "refresh": "Refreŝigi nun",
         "greeting": "Saluton <span id='loggedInUser'>uzantnomo</span>!",
 
-        "tokenexplain": "Por krei Hive-konton, vi unue devas pretigi ĵetonon. Eblas fari tion per bruligo de certa kvanto da HIVE aŭ uzante grandan kvanton da Rimedokredito. Interŝanĝe, la nova konto ricevas minimuman kvanton da Rimedokredito por partopreni en la blokĉeno sen havi HP (investita HIVE).",
-        "tokencost": "La nuna kosto por pretigo estas <span class='steemcost'>0</span> HIVE aŭ <span class='rccost'>0</span> Rimedokredito",
+        "tokenexplain": "Por krei Hive-konton, vi unue devas pretigi ĵetonon. Eblas fari tion per bruligo de certa kvanto da HIVE aŭ uzante grandan kvanton da RC (Rimedaj Kreditoj). Interŝanĝe, la nova konto ricevas minimuman kvanton da RC por partopreni en la blokĉeno sen havi HP (investita HIVE).",
+        "tokencost": "La nuna kosto por pretigo estas <span class='steemcost'>0</span> HIVE aŭ <span class='rccost'>0</span> RC",
 
         "pendingclaims": "Vi pretigis konton. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Vi pretigis <span id='pendingclaims'>0</span> kontojn. <span id='invitespending'></span>",
@@ -26,7 +26,7 @@
         "invitemore": "do vi nun povas inviti amikon!<span id='remaininginvites' class='hidden'></span>",
         "invitemore_plural": "do vi povas inviti <span id='remaininginvites'>0</span> pliajn amikojn.",
 
-        "abletoclaim": "Via maksimuma Rimedokredito estas <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Vi nun estas je <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
+        "abletoclaim": "Via maksimuma RC estas <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Vi nun estas je <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
         "canclaim": "kio permesas al vi pretigi unu konton je 100%<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "kio permesas al vi pretigi <span id='maxclaims'>0</span> kontojn je 100%",
         "cannotclaim": "kio ne permesas al vi pretigi ajnan konton. Potencigu iom da HIVE!",
@@ -45,67 +45,67 @@
     },
     "freeclaimmodal": {
         "title": "Pretigi rabatitajn Hive-kontojn",
-        "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
-        "single": "Claim one account",
-        "bot": "Claim bot"
+        "explainer": "La lasta kosto por pretigi rabatitan konton estis <span class='rccost'>0</span> RC<br />Atentu ke ĉi tio ŝanĝiĝas daŭre. Se multaj kontoj kreiĝas en mallonga tempo, la prezo altiĝas.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Per <span id='currentrc'>0</span> RC vi povas pretigi unu konton.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Per <span id='currentrc'>0</span> RC vi povas pretigi <span class='possibleclaims'>0</span> kontojn.",
+        "moreexplain": "Vi povas ĉu pretigi nur unu konton, aŭ uzi la pretigo-roboton ĝis kiam vi ne plu havas RC aŭ haltigas ĝin.",
+        "single": "Pretigi unu konton",
+        "bot": "Pretigoroboto"
     },
     "botclaimmodal": {
-        "title": "Automated claiming of discounted Hive accounts",
-        "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
-        "start": "Start",
-        "close": "Stop/Close"
+        "title": "Aŭtomate pretigi rabatitajn Hive-kontojn",
+        "explainer": "Sal! Mi estas la konto-pretiga roboto, je via dispono. Alklaku la butonon malsupre por komencigi mian laboradon. Mi plu pretigos ĝis kiam vi ne plu havas RC aŭ uzas la alian butonon por ĉesigi min.",
+        "working": "Laboranta! Mi ĝis nun pretigis <span id='botClaimStatusClaimed'>0</span> kontojn.",
+        "stopped": "Ĉesis post pretigado de <span id='botClaimHasClaimed'>0</span> kontoj.<br />Erarmesaĝo: <span id='botClaimError'></span>",
+        "start": "Komenci",
+        "close": "Ĉesi/Fermi"
     },
     "paidclaimmodal": {
-        "title": "Pay to claim a Hive account",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> HIVE<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Hive Power."
+        "title": "Pagi por pretigi Hivekonton",
+        "explainer": "La kosto por pretigi Hive-konton estas <span class='steemcost'>0</span> HIVE<br />Ĉi tiu kosto estas konfigurita de la atestantoj.<br />Nova konto ricevos bazan kvanton da RC kvazaŭ ĝi havus la saman kvanton da HP."
     },
     "invitemodal": {
-        "title": "Invite to Hive!",
-        "label": "Label",
-        "by_email": "Uncheck this to get one or multiple links directly instead of sending an email",
-        "email": "Address",
-        "mailtext_label": "E-Mail text",
-        "mailtext": "Hello,\n\nyou have been invited by {} to join the Hive blockchain.\n\nWhat is that?\nHive is the backend used by new social media sites like peakd.com and hive.blog. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
-        "linkamount": "Number of links to create",
-        "or": "OR",
-        "multi": "Create a link that is valid for multiple account creations",
-        "multi_label": "Amount of accounts this link is valid for (take care, you may run out of claims using this option!)",
-        "public": "Create a public invite with optional verification methods",
-        "response_time": "Typical time until creation in hours",
-        "require_phone": "Require a phone number",
-        "require_email": "Require an email address",
-        "require_reddit": "Require a reddit account",
-        "require_facebook": "Require a facebook account",
-        "require_twitter": "Require a twitter account",
-        "require_instagram": "Require an instagram account",
-        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Hive Power. You can also do that later of course.",
-        "delegate_amount": "Amount of Hive Power to delegate",
-        "validity": "How many days should the invite be valid before being automatically deleted?",
-        "validity_label": "Validity in days",
-        "usermail": "E-Mail address for status updates",
-        "create": "Create invitation"
+        "title": "Inviti al Hive!",
+        "label": "Etikedo",
+        "by_email": "Malelektu ĉi tiun por ricevi unu aŭ plurajn ligilojn rekte anstataŭ sendi retpoŝton",
+        "email": "Adreso",
+        "mailtext_label": "Retpoŝta teksto",
+        "mailtext": "Saluton,\n\n{} invitis vin por aliĝi al la Hive-blokĉeno.\n\nKio ĝi estas?\nHive estas la fona servo malantaŭ novaj sociaj retejoj kiel peakd.com kaj hive.blog. Per blokĉena teĥnologio ĝi eniras novajn vojojn pagante al uzantoj por ilia aktiveco.\n\nVi povas akcepti la inviton klakante la jenan ligilon:",
+        "linkamount": "Kvanto da kreendaj ligiloj",
+        "or": "AŬ",
+        "multi": "Krei ligilon kiu validas por la kreiĝo de pluraj kontoj",
+        "multi_label": "Kvanto da kontoj por kiu ĉi tiu ligilo estas valida (atentu, vi povas elĉerpi viajn pretigojn per ĉi tiu eblo!)",
+        "public": "Krei publikan invitilon eventuale kun ebloj kontroli",
+        "response_time": "Kutima tempo ĝis kreiĝo en horoj",
+        "require_phone": "Neprigi telefonnumeron",
+        "require_email": "Neprigi retpoŝtadreson",
+        "require_reddit": "Neprigi Reddit-konton",
+        "require_facebook": "Neprigi Facebook-konton",
+        "require_twitter": "Neprigi Twitter-konton",
+        "require_instagram": "Neprigi Instagram-konton",
+        "delegate": "Nova konto nur havas bazan kvanton da RC por interagi en la blokĉeno. Se vi volas ke la nova uzanto povu fari pli, redirektu iom da HP. Kompreneble vi ankaŭ povos fari tion poste.",
+        "delegate_amount": "Kvanto da HP por redirekti",
+        "validity": "Kiom da tagoj la invito estu valida ĝis aŭtomate forviŝiĝi?",
+        "validity_label": "Valideco en tagoj",
+        "usermail": "Retpoŝtadreso por ĝisdatigoj pri la stato",
+        "create": "Krei inviton"
     },
     "button": {
-        "submit": "Submit",
-        "login": "Login",
-        "login_now": "Login now",
-        "logout": "Logout",
-        "close": "Close",
-        "proceed": "Proceed"
+        "submit": "Ensendi",
+        "login": "Ensaluti",
+        "login_now": "Nun ensaluti",
+        "logout": "Elsaluti",
+        "close": "Fermi",
+        "proceed": "Antaŭeniri"
     },
     "keys": {
-        "wrong_key": "Invalid key",
-        "active_required": "This action requires your active key.",
-        "active": "Active key",
-        "posting": "Posting key",
-        "owner": "Owner key",
-        "memo": "Memo key",
-        "storeKey": "Remember key for this session"
+        "wrong_key": "Nevalida ŝlosilo",
+        "active_required": "Ĉi tiu ago bezonas vian aktivan ŝlosilon (active).",
+        "active": "Aktiva ŝlosilo (active)",
+        "posting": "Afiŝa ŝlosilo (posting)",
+        "owner": "Posedanta ŝlosilo (owner)",
+        "memo": "Noto-ŝlosilo (memo)",
+        "storeKey": "Memori ŝlosilon por ĉi tiu sesio"
     },
     "language": {
         "switch": "Ŝanĝi lingvon...",
@@ -133,38 +133,38 @@
     },
 
     "step0": {
-        "lead": "This registration requires personal data",
-        "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
-        "phone": "Phone number",
-        "mail": "E-Mail",
+        "lead": "Ĉi tiu aliĝo petas personajn datumojn",
+        "text": "Hive-kontoj estas kreataj de aliaj uzantoj. Por kontroli vian identecon kaj por havi komunikadon se viaj ŝlosiloj perdiĝas, bonvolu plenigi ĉiujn kampojn ĉi-malsupre. Ĉi tiuj datumoj nur estas kunhavigataj kun la kreanto de via konto.",
+        "phone": "Telefonnumero",
+        "mail": "Retpoŝtadreso",
         "reddit": "Reddit",
         "facebook": "Facebook",
         "twitter": "Twitter",
         "instagram": "Instagram",
-        "error": "Please fill out all fields above",
-        "submit": "Continue to account creation"
+        "error": "Bonvolu plenigi ĉiujn kampojn ĉi-supre",
+        "submit": "Pluiri al konto-kreado"
     },
     "step1": {
-        "lead": "Hi! You are only a few steps away from getting your own Hive account!",
-        "text": "Your account will include your personal wallet, so security is extremely important.<br />We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!",
-        "submit": "I have written down the password and will never ever lose it"
+        "lead": "Sal! Post nur kelkaj paŝoj vi havos vian propran Hive-konton!",
+        "text": "Via konto enhavos vian personan monujon, do sekureco ekstreme gravas.<br />Ni kreis superpasvorton por via konto, kiun vi devas konservi en sekura loko. Skribu ĝin ie!",
+        "submit": "Mi skribis la pasvorton ie kaj neniam ajn perdos ĝin"
     },
     "step2": {
-        "lead": "Okay. Make sure to not lose the password! There is no way to recover it!",
-        "text": "Your Hive username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
-        "username": "Your username",
-        "as": "as"
+        "lead": "Bone. Estu certa ne perdi la pasvorton! Ne ekzistas maniero rehavi ĝin!",
+        "text": "Via uzantnomo en Hive devas havi almenaŭ tri signojn kaj nur povas havi minusklojn, numerojn kaj streketon. Ĝi devas esti unika kaj neniam povas esti ŝanĝata. Zorge elektu ĝin.",
+        "username": "Via uzantnomo",
+        "as": "kiel"
     },
     "step3": {
-        "text": "What we said about your password before was not a joke.<br />To verify you have not made a mistake while noting your password, please enter it here.<br />If you cannot proceed, reload the page in your browser and start over."
+        "text": "Kion ni diris pri via pasvorto ne estis ŝerco.<br />Por certigi ke vi ne faris eraron dum la notado de via pasvorto, bonvonu enmeti ĝin ĉi tie.<br />Se vi ne sukcesas pluiri, reŝargu la paĝon kaj rekomencu."
     },
     "step4": {
-        "text": "There are different access levels for a Hive account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move HIVE, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
-        "warning": "These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!",
-        "confirm": "By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.",
-        "finish": "Finish account request and leave this site"
+        "text": "Estas diversaj alirniveloj al Hive-konto.<br />La afiŝa (posting) ŝlosilo estas uzata por ĉiutagaĵoj, ĝi permesas al vi afiŝi kaj voĉdoni.<br />Por aliri vian monujon kaj movi HIVE, vi bezonas la aktivan (active) ŝlosilon.<br />La posedanto-ŝlosilo (owner) povas esti uzata por ŝanĝi tiujn du, kaj neniam devas esti uzata por aliaj celoj. Prefere tenu ĝin ĉe la superpasvorto, ne uzu ĝin rete.<br />Laste kaj malplej grave, estas la nota (memo) ŝlosilo kiu ankoraŭ ne havas funkcion sed povus estontece esti uzata por deĉifri privatajn datumojn kiel rektaj mesaĝoj.",
+        "warning": "Ĉi tiuj ŝlosiloj estas generitaj el via pasvorto. Ili povas esti uzataj anstataŭ ĝi, sed nur por ilia specifa celo.<br />Pli sekuras uzi la afiŝan ŝlosilon se vi nur volas uzi aparaton por afiŝi kaj voĉdoni, aŭ la aktivan ŝlosilon se vi volas fari aliajn agojn.<br />PLI BONAS TENI LA PASVORTON KAJ LA POSEDANTO-ŜLOSILON EKSTERRETE!",
+        "confirm": "Klakante la jenan butonon, la uzanto kiu kreis vian inviton informiĝos, kaj espereble baldaŭ kreos vian konton.",
+        "finish": "Fini konto-krean peton kaj forlasi ĉi tiun retejon"
     },
     "accept": {
-        "invalid": "Invalid invitation ID, sorry!"
+        "invalid": "Nevalida invito-identigilo, mi bedaŭras!"
     }
 }
