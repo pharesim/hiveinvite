@@ -24,6 +24,9 @@ function fillPublicTable(data) {
     append = append+data[i]['user'];
     append = append+'</td><td>';
 
+    append = append+data[i]['data']['description'];
+    append = append+'</td><td>';
+
     checks = ['phone','mail','reddit','fb','twitt','insta'];
     checks.forEach(function(type){
       if(data[i]['data']['ask_'+type] == 'true') {
@@ -31,9 +34,6 @@ function fillPublicTable(data) {
       }
     });
 
-    append = append+'</td><td>';
-
-    append = append+data[i]['data']['description'];
     append = append+'</td><td>';
 
     append = append+'about '+data[i]['data']['responset']+' hours';
