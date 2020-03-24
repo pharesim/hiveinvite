@@ -9,6 +9,7 @@ import api
 
 import time
 import datetime
+import html
 
 nowts = time.time()
 invites = {}
