@@ -187,23 +187,23 @@ function insertIntoTable(data) {
     if(data[i]['account'] != null) {
       inviteData[data[i]['account']] = data[i];
       document.getElementById('createModalButton'+data[i]['account']).onclick = function() {
-        account = this.dataset.username;
-        setValueById('createAccountName',inviteData[account]['account']);
-        setValueById('createSP',inviteData[account]['hivepower']);
-        setValueById('createCreator',inviteData[account]['username']);
-        setValueById('createOwner',inviteData[account]['owner']);
-        setValueById('createActive',inviteData[account]['active']);
-        setValueById('createPosting',inviteData[account]['posting']);
-        setValueById('createMemo',inviteData[account]['memo']);
+        acco = this.dataset.username;
+        setValueById('createAccountName',inviteData[acco]['account']);
+        setValueById('createSP',inviteData[acco]['hivepower']);
+        setValueById('createCreator',inviteData[acco]['username']);
+        setValueById('createOwner',inviteData[acco]['owner']);
+        setValueById('createActive',inviteData[acco]['active']);
+        setValueById('createPosting',inviteData[acco]['posting']);
+        setValueById('createMemo',inviteData[acco]['memo']);
       };
       document.getElementById('deleteInviteButton'+data[i]['account']).onclick = function() {
         if(confirm('Really delete invitation? All data will be lost!')) {
-          account = this.dataset.username;
+          acco = this.dataset.username;
           $.ajax({
             url: "api/delete",
             data: {
-              account: inviteData[account]['account'],
-              creator: inviteData[account]['username']
+              account: inviteData[acco]['account'],
+              creator: inviteData[acco]['username']
             },
             type: "POST"
           }).fail(function(){
