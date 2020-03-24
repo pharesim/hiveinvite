@@ -171,6 +171,9 @@ function insertIntoTable(data) {
       link = '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal" id="createModalButton'+data[i]['account']+'" data-username="'+data[i]['account']+'">';
       link = link+'Create account @'+data[i]['account']+'</button>';
       append = append+link;
+      link = '<button type="button" class="btn btn-primary" id="deleteInviteButton'+data[i]['account']+'" data-username="'+data[i]['account']+'">';
+      link = 'Delete invite</button>';
+      append = append+link;
     }
 
     append = append+'</td></tr>';
@@ -193,6 +196,28 @@ function insertIntoTable(data) {
         setValueById('createPosting',inviteData[account]['posting']);
         setValueById('createMemo',inviteData[account]['memo']);
       };
+      document.getElementById('deleteInviteButton'+data[i]['account']).onclick = function() {
+        if(confirm('Really delete invitation? All data will be lost!')) {
+          account = this.dataset.username;
+          $.ajax({
+            url: "api/delete",
+            data: {
+              account: inviteData[account]['account'],
+              creator: inviteData[account]['username']
+            },
+            type: "POST"
+          }).fail(function(){
+            alert('something went wrong');
+          }).done(function( data ) {
+            if(data['error']) {
+              alert(data['error']);
+            } else {
+              alert('Invite deleted');
+              getInvites();
+            }
+          });
+        }
+      }
     }
   }
 
