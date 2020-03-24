@@ -70,6 +70,7 @@
         "multi_label": "Aantal accounts waarvoor deze link geldig is (let op, je kunt zonder claims komen te zitten door deze optie te gebruiken!)",
         "public": "Create a public invite with optional verification methods",
         "response_time": "Typical time until creation in hours",
+        "public_description": "Description (text only)",
         "require_phone": "Require a phone number",
         "require_email": "Require an email address",
         "require_reddit": "Require a reddit account",
