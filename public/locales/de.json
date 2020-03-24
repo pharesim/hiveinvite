@@ -70,6 +70,7 @@
         "multi_label": "Anzahl der Konten, für die dieser Link gilt. (Vorsicht, mit dieser Option kann es sein, das du alle Konto-Erstellungen vornimmst!)",
         "public": "Create a public invite with optional verification methods",
         "response_time": "Typical time until creation in hours",
+        "public_description": "Description (text only)",
         "require_phone": "Require a phone number",
         "require_email": "Require an email address",
         "require_reddit": "Require a reddit account",

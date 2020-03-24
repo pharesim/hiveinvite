@@ -98,6 +98,7 @@ function translateIndexContent() {
   setContentById('multiInvitesLabel',i18next.t('invitemodal.multi_label'));
   setContentById('publicInviteExplainer',i18next.t('invitemodal.public'));
   setContentById('responseTimeLabel',i18next.t('invitemodal.response_time'));
+  setContentById('pubDescriptionLabel',i18next.t('invitemodal.public_description'));
   setContentById('requirePhoneExplainer',i18next.t('invitemodal.require_phone'));
   setContentById('requireEmailExplainer',i18next.t('invitemodal.require_email'));
   setContentById('requireRedditExplainer',i18next.t('invitemodal.require_reddit'));

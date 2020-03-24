@@ -70,6 +70,7 @@
         "multi_label": "Αριθμός λογαριασμών για τους οποίους είναι έγκυρος αυτός ο σύνδεσμος (προσοχή, ίσως εξαντληθούν οι αξιώσεις σας χρησιμοποιώντας αυτήν την επιλογή!)",
         "public": "Create a public invite with optional verification methods",
         "response_time": "Typical time until creation in hours",
+        "public_description": "Description (text only)",
         "require_phone": "Require a phone number",
         "require_email": "Require an email address",
         "require_reddit": "Require a reddit account",
