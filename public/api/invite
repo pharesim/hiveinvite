@@ -17,8 +17,8 @@ import datetime
 def insert_invite(inviteid, label, email, address, mailtext, hivepower, validity, username, usermail, remaining):
   db.insert('invites',{'inviteid':inviteid,'label':label,'email':email,'address':address,'mailtext':mailtext,'steempower':hivepower,'validity':validity,'username':username,'usermail':usermail,'remaining':remaining})
 
-def public_invite(inviteid, responset, ask_phone, ask_mail, ask_reddit, ask_fb, ask_twitt, ask_insta):
-  db.insert('publics',{'inviteid':inviteid,'responset':responset,'ask_phone':ask_phone,'ask_mail':ask_mail,'ask_reddit':ask_reddit,'ask_fb':ask_fb,'ask_twitt':ask_twitt,'ask_insta':ask_insta})
+def public_invite(inviteid, responset, description, ask_phone, ask_mail, ask_reddit, ask_fb, ask_twitt, ask_insta):
+  db.insert('publics',{'inviteid':inviteid,'responset':responset,'description':description,'ask_phone':ask_phone,'ask_mail':ask_mail,'ask_reddit':ask_reddit,'ask_fb':ask_fb,'ask_twitt':ask_twitt,'ask_insta':ask_insta})
 
 # output variable
 invites = []
@@ -34,6 +34,7 @@ amount     = form.getvalue('amount')
 remaining  = form.getvalue('multi')
 public     = form.getvalue('public')
 responset  = form.getvalue('response_time')
+descript   = form.getvalue('pub_description')
 ask_phone  = form.getvalue('require_phone')
 ask_mail   = form.getvalue('require_email')
 ask_reddit = form.getvalue('require_reddit')
@@ -80,11 +81,11 @@ if username and usermail:
       batchlabel = label+'.'+str(x+1)
       insert_invite(inviteid, batchlabel, email, address, mailtext, hivepower, validity, username, usermail, remaining)
       if public == 'true':
-        public_invite(inviteid, responset, ask_phone, ask_mail, ask_reddit, ask_fb, ask_twitt, ask_insta)
+        public_invite(inviteid, responset, descript, ask_phone, ask_mail, ask_reddit, ask_fb, ask_twitt, ask_insta)
   else:
     insert_invite(inviteid, label, email, address, mailtext, hivepower, validity, username, usermail, remaining)
     if public == 'true':
-      public_invite(inviteid, responset, ask_phone, ask_mail, ask_reddit, ask_fb, ask_twitt, ask_insta)
+      public_invite(inviteid, responset, descript, ask_phone, ask_mail, ask_reddit, ask_fb, ask_twitt, ask_insta)
 
   # send invitation mail
   if email == 'true':

@@ -99,6 +99,7 @@ $("#createInvite").click(function(e){
         multi: document.getElementById("multiInviteAmount").value,
         public: $("#publicInvite").is(":checked"),
         response_time: document.getElementById("responseTime").value,
+        pub_description: document.getElementById("pubDescription").value,
         require_phone: $("#requirePhone").is(":checked"),
         require_email: $("#requireEmail").is(":checked"),
         require_reddit: $("#requireReddit").is(":checked"),

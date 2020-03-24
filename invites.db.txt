@@ -27,6 +27,7 @@ CREATE TABLE recoveries (
 CREATE TABLE publics (
   inviteid TEXT PRIMARY KEY,
   responset NUMERIC NOT NULL,
+  description TEXT,
   ask_phone BOOLEAN,
   ask_mail BOOLEAN,
   ask_reddit BOOLEAN,

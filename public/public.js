@@ -33,6 +33,9 @@ function fillPublicTable(data) {
 
     append = append+'</td><td>';
 
+    append = append+data[i]['data']['description'];
+    append = append+'</td><td>';
+
     append = append+'about '+data[i]['data']['responset']+' hours';
     append = append+'</td><td>';
 

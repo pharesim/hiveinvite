@@ -13,7 +13,7 @@ import datetime
 nowts = time.time()
 invites = {}
 
-results = db.select('publics',['inviteid','responset','ask_phone','ask_mail','ask_reddit','ask_fb','ask_twitt','ask_insta'],'1=1','responset')
+results = db.select('publics',['inviteid','responset','description','ask_phone','ask_mail','ask_reddit','ask_fb','ask_twitt','ask_insta'],'1=1','responset')
 for result in results:
   res = db.select('invites',['created','validity','username'],{'inviteid':result['inviteid'],'accepted':'is null'},'created DESC')
   for inv in res:
@@ -23,6 +23,7 @@ for result in results:
       db.delete('invites',{'inviteid':result['inviteid']})
       db.delete('publics',{'inviteid':result['inviteid']})
     else:
-      invites[result['inviteid']] = {'user':inv['username'],'data':{'responset':result['responset'],'ask_phone':result['ask_phone'],'ask_mail':result['ask_mail'],'ask_reddit':result['ask_reddit'],'ask_fb':result['ask_fb'],'ask_twitt':result['ask_twitt'],'ask_insta':result['ask_insta']}}
+      description = html.escape(result['description'])
+      invites[result['inviteid']] = {'user':inv['username'],'data':{'responset':result['responset'],'description':description,'ask_phone':result['ask_phone'],'ask_mail':result['ask_mail'],'ask_reddit':result['ask_reddit'],'ask_fb':result['ask_fb'],'ask_twitt':result['ask_twitt'],'ask_insta':result['ask_insta']}}
 
 api.output(invites)
