@@ -172,7 +172,7 @@ function insertIntoTable(data) {
       link = link+'Create account @'+data[i]['account']+'</button>';
       append = append+link;
       link = '<button type="button" class="btn btn-primary" id="deleteInviteButton'+data[i]['account']+'" data-username="'+data[i]['account']+'">';
-      link = 'Delete invite</button>';
+      link = link+'Delete invite</button>';
       append = append+link;
     }
 
@@ -214,6 +214,7 @@ function insertIntoTable(data) {
             } else {
               alert('Invite deleted');
               getInvites();
+              fillLoggedIn();
             }
           });
         }
