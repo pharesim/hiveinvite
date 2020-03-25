@@ -88,8 +88,9 @@ $.ajax({
     } else {
       $("#invalid").show();
     }
-    translateContent();
   }
+  await sleep(1000);
+  translateContent();
 });
 
 function prepareStep0(public) {
