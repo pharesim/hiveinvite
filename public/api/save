@@ -124,8 +124,8 @@ for res in pub:
     db.insert('hashes',{'hash':hashed,'type':'instagram'})
     mailtext += "\nInstagram account: "+insta
 
-mailtext += "\nIP: "+ip
-mailtext += "\nScore from https://getipintel.net/ (close to 1 is bad): "+banscore
+    mailtext += "\nIP: "+ip
+    mailtext += "\nScore from https://getipintel.net/ (close to 1 is bad): "+banscore
 
 if remaining > 1:
   db.update('invites',{'remaining':remaining - 1},{'inviteid':inviteid})
