@@ -42,6 +42,9 @@ function fillPublicTable(data) {
     append = append+'about '+data[i]['data']['responset']+' hours';
     append = append+'</td><td>';
 
+    append = append+data[i]['data']['remaining'];
+    append = append+'</td><td>';
+
     append = append+'<a href="https://hiveinvite.com/accept.html?inviteid='+i+'">Claim</a>';
     append = append+'</td></tr>';
 
