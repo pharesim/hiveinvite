@@ -24,6 +24,9 @@ function fillPublicTable(data) {
     append = append+data[i]['user'];
     append = append+'</td><td>';
 
+    append = append+data[i]['data']['delegation']+' HP';
+    append = append+'</td><td>';
+
     append = append+data[i]['data']['description'];
     append = append+'</td><td>';
 
