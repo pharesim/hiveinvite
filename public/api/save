@@ -42,7 +42,7 @@ banscore = requests.get(url = URL, params = PARAMS).text
 if float(banscore) > 0.95:
     errorHandler.throwError('Nope')
 
-results = db.select('invites',['label','steempower','created','validity','username','usermail','remaining'],{'inviteid':inviteid,'accepted': 'is null'},'created DESC')
+results = db.select('invites',['label','steempower','created','validity','username','usermail','remaining','account'],{'inviteid':inviteid,'accepted': 'is null'},'created DESC')
 for result in results:
   createdts = time.mktime(datetime.datetime.strptime(result['created'], "%Y-%m-%d %H:%M:%S").timetuple())
   validtill = createdts + (result['validity'] * 60 * 60 * 24)
@@ -59,10 +59,12 @@ for result in results:
     label      = result['label']
     hivepower  = result['steempower']
     validity   = result['validity']
+    acc        = result['account']
 if validinvite != True:
   errorHandler.throwError('No valid invite found')
 
-mailtext = "Visit https://hiveinvite.com/ to finish account creation or delete the invite."
+mailtext = "Visit https://hiveinvite.com/ to finish account creation or delete the invite.\n"
+mailtext += "Selected account name: "+acc
 
 pub = db.select('publics',['inviteid','ask_phone','ask_mail','ask_reddit','ask_fb','ask_twitt','ask_insta'],{'inviteid':inviteid},'inviteid')
 for res in pub:
