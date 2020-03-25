@@ -73,6 +73,7 @@ async function startclaim(public) {
   $("#passphrase_orig").val(passPhrase).attr('size',passPhrase.length);
   await sleep(1000);
   translateContent();
+  $("#claim").show();
 }
 
 $.ajax({
@@ -86,7 +87,6 @@ $.ajax({
   } else {
     if(data['valid'] == true) {
       startclaim(data['public']);
-      $("#claim").show();
     } else {
       $("#invalid").show();
     }
