@@ -85,8 +85,8 @@ $.ajax({
     alert(data['error']);
   } else {
     if(data['valid'] == true) {
-      $("#claim").show();
       startclaim(data['public']);
+      $("#claim").show();
     } else {
       $("#invalid").show();
     }
