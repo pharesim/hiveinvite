@@ -35,13 +35,6 @@ validinvite = False
 savedinvite = False
 nowts = time.time()
 
-URL = "http://check.getipintel.net/check.php"
-ip = cgi.escape(os.environ["REMOTE_ADDR"])
-PARAMS = {'ip':ip,'contact':'pharesim@protonmail.com'}
-banscore = requests.get(url = URL, params = PARAMS).text
-if float(banscore) > 0.95:
-    errorHandler.throwError('Nope')
-
 results = db.select('invites',['label','steempower','created','validity','username','usermail','remaining','account'],{'inviteid':inviteid,'accepted': 'is null'},'created DESC')
 for result in results:
   createdts = time.mktime(datetime.datetime.strptime(result['created'], "%Y-%m-%d %H:%M:%S").timetuple())
@@ -68,6 +61,15 @@ mailtext += "Selected account name: "+acc
 
 pub = db.select('publics',['inviteid','ask_phone','ask_mail','ask_reddit','ask_fb','ask_twitt','ask_insta'],{'inviteid':inviteid},'inviteid')
 for res in pub:
+
+  # block proxy/tor/vpn
+  URL = "http://check.getipintel.net/check.php"
+  ip = cgi.escape(os.environ["REMOTE_ADDR"])
+  PARAMS = {'ip':ip,'contact':'pharesim@protonmail.com'}
+  banscore = requests.get(url = URL, params = PARAMS).text
+  if float(banscore) > 0.95:
+    errorHandler.throwError('Nope'
+
   if res['ask_phone'] == 'true':
     if phone == '':
       errorHandler.throwError('Phone number required')
