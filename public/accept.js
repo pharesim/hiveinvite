@@ -65,12 +65,14 @@ function getParameterByName(name, url) {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function startclaim(public) {
+async function startclaim(public) {
   if(public != false) {
     prepareStep0(public);
   }
   generatePassPhrase();
   $("#passphrase_orig").val(passPhrase).attr('size',passPhrase.length);
+  await sleep(1000);
+  translateContent();
 }
 
 $.ajax({
@@ -89,8 +91,6 @@ $.ajax({
       $("#invalid").show();
     }
   }
-  await sleep(1000);
-  translateContent();
 });
 
 function prepareStep0(public) {
