@@ -25,6 +25,6 @@ for result in results:
       db.delete('publics',{'inviteid':result['inviteid']})
     else:
       description = html.escape(result['description'])
-      invites[result['inviteid']] = {'user':inv['username'],'data':{'delegation':inv['steempower'],'remaining':remaining,'responset':result['responset'],'description':description,'ask_phone':result['ask_phone'],'ask_mail':result['ask_mail'],'ask_reddit':result['ask_reddit'],'ask_fb':result['ask_fb'],'ask_twitt':result['ask_twitt'],'ask_insta':result['ask_insta']}}
+      invites[result['inviteid']] = {'user':inv['username'],'data':{'delegation':inv['steempower'],'remaining':result['remaining'],'responset':result['responset'],'description':description,'ask_phone':result['ask_phone'],'ask_mail':result['ask_mail'],'ask_reddit':result['ask_reddit'],'ask_fb':result['ask_fb'],'ask_twitt':result['ask_twitt'],'ask_insta':result['ask_insta']}}
 
 api.output(invites)
