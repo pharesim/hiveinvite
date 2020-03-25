@@ -70,7 +70,7 @@
         "multi_label": "كمية الحسابات المتاحة عبر هذا الرابط (إحذر، قد تستنفذ طلباتك عبر إستخدام هذا الخيار!)",
         "public": "Create a public invite with optional verification methods",
         "response_time": "Typical time until creation in hours",
-        "public_description": "Description (text only)",
+        "public_description": "Description of your requirements (text only)",
         "require_phone": "Require a phone number",
         "require_email": "Require an email address",
         "require_reddit": "Require a reddit account",
