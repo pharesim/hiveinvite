@@ -68,7 +68,7 @@ for res in pub:
   PARAMS = {'ip':ip,'contact':'pharesim@protonmail.com'}
   banscore = requests.get(url = URL, params = PARAMS).text
   if float(banscore) > 0.95:
-    errorHandler.throwError('Nope'
+    errorHandler.throwError('Nope')
 
   if res['ask_phone'] == 'true':
     if phone == '':
