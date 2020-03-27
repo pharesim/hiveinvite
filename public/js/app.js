@@ -173,6 +173,7 @@ async function appstart() {
       showById('loggedIn');
     });
   } else {
+    await sleep(500);
     translateIndexContent();
     hideById('loggedIn');
     showById('loginButtonContainer');
