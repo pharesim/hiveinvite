@@ -20,7 +20,7 @@ seedLimit  = 512;
 privKeys   = "";
 pubKeys    = "";
 
-steem.api.setOptions({ url: 'https://api.hive.blog' });
+steem.api.setOptions({ url: 'https://anyx.io' });
 
 var generatePassPhrase = function() {
   var crypto = window.crypto || window.msCrypto;
