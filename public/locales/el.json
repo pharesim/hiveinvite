@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "Automated claiming of discounted Hive accounts",
         "explainer": "Χαίρετε! Είμαι το φιλικό ρομπότ αξίωσης λογαριασμών. Κάντε κλικ στο παρακάτω πλήκτρο ώστε να αρχίσω να λειτουργώ. Θα εξακολουθήσω να αξιώνω λογαριασμούς μέχρι να εξαντληθεί το RC σας, ή μέχρι να μου δώσετε την εντολή να σταματήσω πιέζοντας το άλλο πλήκτρο.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "Σε λειτουργία! Αξιώθηκαν <span id='botClaimStatusClaimed'>0</span> λογαριασμοί μέχρι στιγμής.",
         "stopped": "Διεκόπη αφού αξίωσε <span id='botClaimHasClaimed'>0</span> λογαριασμούς.<br />Μήνυμα σφάλματος: <span id='botClaimError'></span>",
         "start": "Έναρξη",
