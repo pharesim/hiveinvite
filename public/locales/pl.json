@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "Automated claiming of discounted Hive accounts",
         "explainer": "Cześć! Jestem Twoim przyjaznym robotem do tworzenia kont. Kliknij na przycisk poniżej abym zaczął prace. Będę tworzyć konta aż skończy Ci się RC lub powiesz mi bym przestał przy pomocy innego przycisku.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "W trakcie pracy! Utworzyłem<span id='botClaimStatusClaimed'>0</span>kont do tej pory.",
         "stopped": "Zatrzymany po utworzeniu<span id='botClaimHasClaimed'>0</span>kont.<br />Kod błędu:<span id='botClaimError'></span>",
         "start": "Start",
