@@ -21,7 +21,7 @@ function fillPublicTable(data) {
     public_invites += 1;
     let append = '<tr><td>';
 
-    append = append+data[i]['user'];
+    append = append+'<a href="https://hive.blog/@'+data[i]['user']+'">'+data[i]['user']+'</a>';
     append = append+'</td><td>';
 
     append = append+data[i]['data']['delegation']+' HP';
