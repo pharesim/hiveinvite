@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "Automated claiming of discounted Hive accounts",
         "explainer": "Káàbọ̀! Èmi ni robot account gbígbà rẹ tó rọrùn láti lò. Tẹ bọ́tìnnì ìsàlẹ̀ náà láti jẹ́ ki n bẹ̀rẹ̀ sí ní ṣiṣẹ́. Èmi yíò ma gba àwọn account títí RC rẹ yíò fi tán, tàbí tí o bá ní kí n dúró pẹ̀lú bọ́tìnnì kejì náà.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "N ṣiṣẹ́ lọ́wọ́! Ti gba àwọn account <span id='botClaimStatusClaimed'>0</span>.",
         "stopped": "Ó ti dúró lẹ́yìn tó gba àwọn account <span id='botClaimHasClaimed'>0</span>.<br />Ìfiránṣẹ́ àṣìṣe: <span id='botClaimError'></span>",
         "start": "Bẹ̀rẹ̀",
