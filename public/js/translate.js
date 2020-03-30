@@ -71,6 +71,7 @@ function translateIndexContent() {
   //bot claim modal
   setContentById('botClaimModalLabel',i18next.t('botclaimmodal.title'));
   setContentById('botClaimExplainer',i18next.t('botclaimmodal.explainer'));
+  setContentById('botClaimCountLabel',i18next.t('botclaimmodal.amount'));
   setContentById('botIsWorking',i18next.t('botclaimmodal.working'));
   setContentById('botStoppedWithError',i18next.t('botclaimmodal.stopped'));
   setContentById('botClaimStart',i18next.t('botclaimmodal.start'));
