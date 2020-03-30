@@ -134,7 +134,6 @@ if remaining > 1:
   db.update('invites',{'remaining':remaining - 1},{'inviteid':inviteid})
   newinviteid = uuid.uuid4().hex
   db.insert('invites',{'inviteid':newinviteid,'label':label+'.'+newinviteid[:4],'steempower':hivepower,'validity':validity,'username':username,'usermail':usermail,'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP','remaining':1})
-  db.update('publics',{'inviteid':newinviteid},{'inviteid':inviteid})
 else:
   db.update('invites',{'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP'},{'inviteid':inviteid})
 savedinvite = True
