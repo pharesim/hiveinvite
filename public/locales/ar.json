@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "Automated claiming of discounted Hive accounts",
         "explainer": "مرحباً! أنا صديقك الروبوت الذي يقوم بحجزالحساب لك. إضغط على الزر أدناه لتفعيلي. سأستمر في الحجز حتى نفاذ اللآر سي، أو إيقافي عبر الضغط على الزر الآخر.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "في العمل! تم حجز <span id='botClaimStatusClaimed'>0</span> من الحسابات إلى حد الآن.",
         "stopped": "توقفت بعد طلب <span id='botClaimHasClaimed'>0</span> من الحسابات.<br />رسالة الخطأ: <span id='botClaimError'></span>",
         "start": "إبدأ",
