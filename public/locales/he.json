@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "Automated claiming of discounted Hive accounts",
         "explainer": "שלום!. אני רובוט ניהול הדרישות הידידותי שלך. לחץ על הכפתור למטה בכדי לתפעל אותי. אני אמשיך לבצע דרישות עד שתיגמר לך כמות ה RC, או כשתרצה להפסיק את פעולותיי בלחיצה על הכפתור האחר.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "בעבודה! נדרשו <span id='botClaimStatusClaimed'>0</span> חשבונות עד כה.",
         "stopped": "נעצר לאחר דרישת <span id='botClaimHasClaimed'>0</span> חשבונות.<br /> הודעת תקלה: <span id='botClaimError'></span>",
         "start": "התחל",
