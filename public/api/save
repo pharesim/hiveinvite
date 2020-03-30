@@ -24,6 +24,7 @@ owner    = params.getvalue('owner')
 active   = params.getvalue('active')
 posting  = params.getvalue('posting')
 memo     = params.getvalue('memo')
+message  = params.getvalue('message')
 phone    = params.getvalue('phone')
 email    = params.getvalue('mail')
 reddit   = params.getvalue('reddit')
@@ -68,6 +69,8 @@ for res in pub:
   banscore = requests.get(url = URL, params = PARAMS).text
   if float(banscore) > 0.95:
     errorHandler.throwError('Nope')
+
+  mailtext += "\nIntro message: "+message
 
   if res['ask_phone'] == 'true':
     if phone == '':

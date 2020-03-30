@@ -235,6 +235,7 @@ $("#finish").click(function(){
       'posting': pubKeys['posting'],
       'owner': pubKeys['owner'],
       'memo': pubKeys['memo'],
+      'message': $("#intro_message").val(),
       'phone': $("#phone_number").val(),
       'mail': $("#email_address").val(),
       'reddit': $("#reddit").val(),
