@@ -34,6 +34,10 @@ async function botclaims(callback) {
     if(amount > 0) {
       amount -= 1;
       setValueById("botClaimCount",amount);
+      if(amount == 0) {
+        hideById('botIsWorking');
+        botClose();
+      }
     }
     await sleep(5000);
   }
@@ -46,6 +50,7 @@ function botClose() {
   document.getElementById('botClaimError').innerHTML = '';
   document.getElementById('botClaimStatusClaimed').innerHTML = 0;
   document.getElementById('botClaimHasClaimed').innerHTML = 0;
+  setValueById("botClaimCount","-1");
   hideById('botStoppedWithError');
   setProperties();
 }
