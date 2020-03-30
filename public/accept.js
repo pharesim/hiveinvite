@@ -259,6 +259,7 @@ function translateContent() {
   // languages
   setContentById('step0Lead',i18next.t('step0.lead'));
   setContentById('step0Text',i18next.t('step0.text'));
+  setContentById('messageLabel',i18next.t('step0.intro_message'));
   setContentById('phoneLabel',i18next.t('step0.phone'));
   setContentById('mailLabel',i18next.t('step0.mail'));
   setContentById('redditLabel',i18next.t('step0.reddit'));
