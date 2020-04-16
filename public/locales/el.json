@@ -1,18 +1,18 @@
 {
     "loggedout": {
-        "greeting": "Δημιουργήστε έναν Hiver!",
-        "explainer": "Το Hiveinvite είναι μια υπηρεσία που σας επιτρέπει να προσκαλέσετε τους φίλους σας στο hive.",
+        "greeting": "Make a Hiver!",
+        "explainer": "Hiveinvite is a service that allows you to invite your friends to Hive.",
         "buttontext": "για να ξεκινήσετε.",
         "login_error": "Σφάλμα σύνδεσης",
-        "usernamePlaceholder": "Το hive όνομα χρήστη σας",
+        "usernamePlaceholder": "Your Hive username",
         "postingkeyPlaceholder": "Το ιδιωτικό κλειδί ανάρτησής σας"
     },
     "index": {
         "lastupdate": "Τελευταία ενημέρωση",
         "refresh": "Ανανέωση τώρα",
         "greeting": "Χαίρετε <span id='loggedInUser'>όνομα χρήστη</span>!",
-        "tokenexplain": "Για να δημιουργήσετε έναν λογαριασμό hive, θα πρέπει πρώτα να αξιώσετε ένα token. Αυτά μπορούν να αποκτηθούν δαπανώντας ένα συγκεκριμένο ποσό HIVE, ή ξοδεύοντας μια μεγάλη ποσότητα RC mana. Ως αντάλλαγμα, ο νέος λογαριασμός λαμβάνει μια ελάχιστη ποσότητα RC mana για να δύναται να εκτελεί συναλλαγές στο blockchain ενώ δεν του ανήκει καθόλου Hive Power.",
-        "tokencost": "Η τρέχουσα χρέωση για μια αξίωση είναι <span class='steemcost'>0</span> HIVE ή <span class='rccost'>0</span> RC mana",
+        "tokenexplain": "To create a Hive account, you first need to claim a token. These can be obtained by burning a certain amount of HIVE, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Hive Power.",
+        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> HIVE or <span class='rccost'>0</span> RC mana",
         "pendingclaims": "Έχετε αξιώσει έναν λογαριασμό. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Έχετε αξιώσει <span id='pendingclaims'>0</span> λογαριασμούς. <span id='invitespending'></span>",
         "nopendingclaims": "Δεν έχετε αξιώσει κανέναν λογαριασμό ακόμα.",
@@ -24,20 +24,20 @@
         "abletoclaim": "Το μέγιστο RC mana σας είναι <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Επί του παρόντος βρίσκεστε στο <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
         "canclaim": "που σας επιτρέπει να αξιώσετε έναν λογαριασμό στο 100%<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "που σας επιτρέπει να αξιώσετε <span id='maxclaims'>0</span> λογαριασμούς στο 100%",
-        "cannotclaim": "που δεν σας επιτρέπει να αξιώσετε κανέναν λογαριασμό. Κάντε power up μερικά HIVE!",
+        "cannotclaim": "which does not let you claim any accounts. Power up some HIVE!",
         "canclaimnow": "έτσι, μπορείτε να αξιώσετε έναν λογαριασμό αυτήν την στιγμή.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "έτσι, μπορείτε να αξιώσετε <span class='possibleclaims'>0</span> λογαριασμούς αυτήν την στιγμή.",
         "cannotclaimnow": "έτσι, θα πρέπει να περιμένετε λίγο μέχρι να μπορείτε να αξιώσετε έναν λογαριασμό σε έκπτωση.",
-        "abletobuy": "Με το υπόλοιπό σας των <span id='steembalance'>0 HIVE</span> μπορείτε <span id='abletopayforclaim'></span>",
+        "abletobuy": "With your balance of <span id='steembalance'>0 HIVE</span> you can <span id='abletopayforclaim'></span>",
         "canbuy": "θεωρητικά να αξιώσετε έναν ακόμα λογαριασμό.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "θεωρητικά να αξιώσετε άλλους <span id='possiblebuys'>0</span> λογαριασμούς.",
-        "cannotbuy": "αξιώσετε μηδέν επιπλέον λογαριασμούς. Προμηθευτείτε μερικά HIVE ακόμα!",
+        "cannotbuy": "not claim any more accounts. Get some more HIVE!",
         "claimfreemodal": "Δωρεάν αξίωση",
         "claimsteemmodal": "Αξίωση επί πληρωμή",
         "invitemodal": "Προσκαλέστε κάποιον αυτήν την στιγμή"
     },
     "freeclaimmodal": {
-        "title": "Αξιώστε λογαριασμούς hive σε έκπτωση",
+        "title": "Claim discounted Hive accounts",
         "explainer": "Η τελευταία χρέωση για την αξίωση λογαριασμού σε έκπτωση ήταν <span class='rccost'>0</span> RC <br />Έχετε υπόψη πως αυτό αλλάζει συνεχώς. Όταν γίνεται αξίωση πολλών λογαριασμών σε μικρό χρονικό διάστημα, η τιμή ανεβαίνει.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Με <span id='currentrc'>0</span> RC μπορείτε να αξιώσετε έναν λογαριασμό.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Με <span id='currentrc'>0</span> RC μπορείτε να αξιώσετε <span class='possibleclaims'>0</span> λογαριασμούς.",
@@ -46,7 +46,7 @@
         "bot": "Bot αξίωσης"
     },
     "botclaimmodal": {
-        "title": "Αυτοματοποιημένη αξίωση λογαριασμών hive σε έκπτωση",
+        "title": "Automated claiming of discounted Hive accounts",
         "explainer": "Χαίρετε! Είμαι το φιλικό ρομπότ αξίωσης λογαριασμών. Κάντε κλικ στο παρακάτω πλήκτρο ώστε να αρχίσω να λειτουργώ. Θα εξακολουθήσω να αξιώνω λογαριασμούς μέχρι να εξαντληθεί το RC σας, ή μέχρι να μου δώσετε την εντολή να σταματήσω πιέζοντας το άλλο πλήκτρο.",
         "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "Σε λειτουργία! Αξιώθηκαν <span id='botClaimStatusClaimed'>0</span> λογαριασμοί μέχρι στιγμής.",
@@ -55,16 +55,16 @@
         "close": "Διακοπή/Κλείσιμο"
     },
     "paidclaimmodal": {
-        "title": "Πληρώστε για να αξιώσετε έναν λογαριασμό hive",
-        "explainer": "Η χρέωση για την αξίωση ενός λογαριασμού είναι <span class='steemcost'>0</span> HIVE<br />Αυτή η χρέωση ορίζεται από τους witnesses.<br />Ένας νέος λογαριασμός θα λαμβάνει μια βασική ποσότητα RC, σαν να διέθετε την ίδια ποσότητα Hive Power."
+        "title": "Pay to claim a Hive account",
+        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> HIVE<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Hive Power."
     },
     "invitemodal": {
-        "title": "Προσκαλέστε στο Hive!",
+        "title": "Invite to Hive!",
         "label": "Ετικέτα",
         "by_email": "Αναίρεση της επιλογής αυτού προκειμένου να λάβετε έναν ή περισσότερους συνδέσμους κατευθείαν, αντί να στείλετε ένα μήνυμα ηλεκτρονικού ταχυδρομείου",
         "email": "Διεύθυνση",
         "mailtext_label": "Κείμενο ηλεκτρονικού ταχυδρομείου",
-        "mailtext": "Χαίρετε,\n\nέχετε προσκληθεί από τον χρήστη {} για να γίνετε μέλος του Hive blockchain.\n\nΤι είναι αυτό;\nΤο Hive είναι η βάση που χρησιμοποιείται από σελίδες κοινωνικής δικτύωσης νέου τύπου, όπως το peakd.com και το hive.blog. Με τη χρήση τεχνολογίας blockchain, το σύστημα προσφέρει νέες δυνατότητες πληρώνοντας τους χρήστες για την δραστηριότητά τους.\n\nΑποδεχτείτε την πρόσκληση κάνοντας κλικ στον ακόλουθο σύνδεσμο:",
+        "mailtext": "Hello,\n\nyou have been invited by {} to join the Hive blockchain.\n\nWhat is that?\nHive is the backend used by new social media sites like peakd.com and hive.blog. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
         "linkamount": "Αριθμός συνδέσμων προς δημιουργία",
         "or": "ΕΙΤΕ",
         "multi": "Δημιουργία ενός συνδέσμου που είναι έγκυρος για την δημιουργία πολλών λογαριασμών",
@@ -78,8 +78,8 @@
         "require_facebook": "Require a facebook account",
         "require_twitter": "Require a twitter account",
         "require_instagram": "Require an instagram account",
-        "delegate": "Ένας νέος λογαριασμός διαθέτει μόνο μια βασική ποσότητα RC για την εκτέλεση συναλλαγών στο blockchain. Αν επιθυμείτε να μπορεί να εκτελέσει περισσότερες ενέργειες ο νέος χρήστης, πραγματοποιήστε ανάθεση ενός ποσού Hive Power. Αυτό είναι κάτι που μπορείτε να κάνετε και αργότερα, φυσικά.",
-        "delegate_amount": "Ποσότητα Hive Power προς ανάθεση",
+        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Hive Power. You can also do that later of course.",
+        "delegate_amount": "Amount of Hive Power to delegate",
         "validity": "Για πόσες ημέρες θα πρέπει να είναι έγκυρη η πρόσκληση μέχρις ότου διαγραφεί αυτόματα;",
         "validity_label": "Εγκυρότητα σε ημέρες",
         "usermail": "Διεύθυνση ηλεκτρονικού ταχυδρομείου για ενημερώσεις κατάστασης",
@@ -141,13 +141,13 @@
         "submit": "Continue to account creation"
     },
     "step1": {
-        "lead": "Χαίρετε! Είστε μόνο λίγα βήματα μακριά από την απόκτηση του δικού σας λογαριασμού Hive!",
+        "lead": "Hi! You are only a few steps away from getting your own Hive account!",
         "text": "Ο λογαριασμός σας θα περιλαμβάνει το προσωπικό σας πορτοφόλι, οπότε η ασφάλεια είναι ιδιαίτερα σημαντική.<br />Έχουμε δημιουργήσει έναν κύριο κωδικό πρόσβασης για τον λογαριασμό σας, τον οποίο θα πρέπει να φυλάξετε σε ασφαλές μέρος. Καταγράψτε τον κάπου!",
         "submit": "Έχω καταγράψει τον κωδικό και δεν πρόκειται ποτέ να τον χάσω"
     },
     "step2": {
         "lead": "Εντάξει. Βεβαιωθείτε ότι δεν θα χάσετε τον κωδικό! Δεν υπάρχει τρόπος ανάκτησης!",
-        "text": "Το hive όνομα χρήστη σας θα πρέπει να αποτελείται από τουλάχιστον τρεις χαρακτήρες, και δεν δύναται να περιέχει άλλους χαρακτήρες εκτός από μικρά γράμματα, αριθμούς και μια παύλα. Θα πρέπει να είναι μοναδικό και δεν δύναται ποτέ να αλλαχθεί. Διαλέξτε το προσεκτικά.",
+        "text": "Your Hive username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
         "username": "Το όνομα χρήστη σας",
         "as": "ως"
     },
@@ -155,7 +155,7 @@
         "text": "Όσα είπαμε πριν σχετικά με τον λογαριασμό σας είναι πολύ σοβαρά.<br />Προκειμένου να επιβεβαιώσετε ότι δεν έχετε κάνει κάποιο λάθος ενώ σημειώνατε τον κωδικό πρόσβασης, παρακαλούμε εισάγετε τον εδώ.<br />Αν δεν μπορείτε να συνεχίσετε, πραγματοποιήστε επαναφόρτωση της σελίδας στον περιηγητή σας και ξεκινήστε από την αρχή."
     },
     "step4": {
-        "text": "Υπάρχουν διαφορετικά επίπεδα πρόσβασης για έναν λογαριασμό Hive.<br />Το κλειδί αναρτήσεων χρησιμοποιείται για καθημερινή δραστηριότητα μέσων κοινωνικής δικτύωσης, δηλαδή σας επιτρέπει να κάνετε αναρτήσεις και να ψηφίζετε.<br />Για να έχετε πρόσβαση στο πορτοφόλι σας και να μεταφέρετε Hive θα χρειαστείτε το ενεργό κλειδί.<br />Το κλειδί ιδιοκτήτη μπορεί να χρησιμοποιηθεί για την αλλαγή των δύο κλειδιών που αναφέρθηκαν ανωτέρω, και δεν θα πρέπει να χρησιμοποιείται ποτέ για άλλους σκοπούς. Είναι καλύτερο να φυλάσσεται μαζί με τον κύριο κωδικό πρόσβασης, οπότε μην το χρησιμοποιείτε στο διαδίκτυο.<br />Τέλος, υπάρχει το κλειδί σημειώσεων, το οποίο δεν χρησιμοποιείται ακόμα, αλλά ίσως να χρησιμοποιηθεί στο μέλλον για την αποκρυπτογράφηση των προσωπικών σας δεδομένων, όπως είναι τα άμεσα μηνύματα.",
+        "text": "There are different access levels for a Hive account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move HIVE, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
         "warning": "Αυτά τα κλειδιά δημιουργούνται από τον κωδικό σας. Μπορούν να χρησιμοποιηθούν αντί του κωδικού, αλλά μόνο για τον συγκεκριμένο σκοπό που εξυπηρετεί το καθένα.<br />Είναι πιο ασφαλής επιλογή να χρησιμοποιείτε το κλειδί αναρτήσεων αν θέλετε να χρησιμοποιήσετε μια συσκευή μόνο για να κάνετε αναρτήσεις και να ψηφίσετε, ή να χρησιμοποιείτε το ενεργό κλειδί όταν θέλετε να κάνετε άλλες ενέργειες.<br />Ο ΚΩΔΙΚΟΣ ΠΡΟΣΒΑΣΗΣ ΚΑΙ ΤΟ ΚΛΕΙΔΙ ΙΔΙΟΚΤΗΤΗ ΕΙΝΑΙ ΚΑΛΥΤΕΡΟ ΝΑ ΦΥΛΑΣΣΟΝΤΑΙ ΕΚΤΟΣ ΣΥΝΔΕΣΗΣ!",
         "confirm": "Κάνοντας κλικ στο ακόλουθο πλήκτρο θα ενημερωθεί ο χρήστης που δημιούργησε την πρόσκλησή σας, και καλώς εχόντων των πραγμάτων θα δημιουργήσει τον λογαριασμό σας σύντομα.",
         "finish": "Τέλος αίτησης λογαριασμού και απομάκρυνση από αυτήν την σελίδα"
