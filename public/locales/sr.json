@@ -2,57 +2,57 @@
     "loggedout": {
         "greeting": "Make a Hiver!",
         "explainer": "Hiveinvite is a service that allows you to invite your friends to Hive.",
-        "buttontext": "како бисте почели.",
-        "login_error": "Грешка приликом пријављивања",
+        "buttontext": "kako biste počeli.",
+        "login_error": "Greška prilikom prijavljivanja",
         "usernamePlaceholder": "Your Hive username",
-        "postingkeyPlaceholder": "Ваш приватни posting key"
+        "postingkeyPlaceholder": "Vaš privatni posting key"
     },
     "index": {
-        "lastupdate": "Последње ажурирање",
-        "refresh": "Освежи сада",
-        "greeting": "Здраво, <span id='loggedInUser'>username</span>!",
+        "lastupdate": "Poslednje ažuriranje",
+        "refresh": "Osvеži sada",
+        "greeting": "Zdravo, <span id='loggedInUser'>username</span>!",
         "tokenexplain": "To create a Hive account, you first need to claim a token. These can be obtained by burning a certain amount of HIVE, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Hive Power.",
         "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> HIVE or <span class='rccost'>0</span> RC mana",
-        "pendingclaims": "Захтевали сте налог. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
-        "pendingclaims_plural": "Захтевали сте <span id='pendingclaims'>0</span>налога. <span id='invitespending'></span>",
-        "nopendingclaims": "Још увек нисте захтевали ниједан налог.",
-        "invitespending": "Једна позивница је на чекању, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
-        "invitespending_plural": "<span id='pendinginvites'>0</span> позивнице су на чекању, <span id='invitemore'></span>",
-        "noinvitespending": "Немате позивница на чекању, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
-        "invitemore": "тако да сада можете позвати пријатеља!<span id='remaininginvites' class='hidden'></span>",
-        "invitemore_plural": "тако да можете позвати још <span id='remaininginvites'>0</span> пријатеља.",
-        "abletoclaim": "Ваша максимална RC мана износи <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Тренутно имате <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
-        "canclaim": "што вам омогућава да захтевате један налог када имате 100%<span id='maxclaims' class='hidden'></span>",
-        "canclaim_plural": "што вам омогућава да захтевате <span id='maxclaims'>0</span> налога када имате 100%",
+        "pendingclaims": "Zahtevali ste nalog. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "Zahtevali ste <span id='pendingclaims'>0</span> naloga.<span id='invitespending'></span>",
+        "nopendingclaims": "Još uvek niste zahtevali nijedan nalog.",
+        "invitespending": "Jedna pozivnica je na čekanju, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_plural": "<span id='pendinginvites'>0</span> pozivnice/a su/je na čekanju, <span id='invitemore'></span>",
+        "noinvitespending": "Nemate pozivnica na čekanju, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore": "tako da sada možete pozvati prijatelja!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_plural": "tako da možete pozvati još <span id='remaininginvites'>0</span> prijatelja.",
+        "abletoclaim": "Vaša maksimalna RC mana iznosi <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Trenutno imate <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
+        "canclaim": "što vam omogućava da zahtevate jedan nalog kada imate 100%<span id='maxclaims' class='hidden'></span>",
+        "canclaim_plural": "što vam omogućava da zahtevate <span id='maxclaims'>0</span> naloga kada imate 100%",
         "cannotclaim": "which does not let you claim any accounts. Power up some HIVE!",
-        "canclaimnow": "тако да можете одмах захтевати налог. <span class='possibleclaims hidden'></span>",
-        "canclaimnow_plural": "тако да можете одмах захтевати <span class='possibleclaims'>0</span> налога.",
-        "cannotclaimnow": "тако да морате сачекати док не будете у могућности да захтевате дисконтовани налог.",
+        "canclaimnow": "tako da možete odmah zahtevati nalog.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "tako da možete odmah zahtevati <span class='possibleclaims'>0</span> naloga.",
+        "cannotclaimnow": "tako da morate sačekati dok ne budete u mogućnosti da zahtevate diskontovani nalog.",
         "abletobuy": "With your balance of <span id='steembalance'>0 HIVE</span> you can <span id='abletopayforclaim'></span>",
-        "canbuy": "теоретски да захтевате још један налог.<span id='possiblebuys' class='hidden'></span>",
-        "canbuy_plural": "теоретски да захтевате још <span id='possiblebuys'>0</span> налога.",
+        "canbuy": "teoretski da zahtevate još jedan nalog.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "teoretski da zahtevate još <span id='possiblebuys'>0</span> naloga.",
         "cannotbuy": "not claim any more accounts. Get some more HIVE!",
-        "claimfreemodal": "Бесплатан захтев",
-        "claimsteemmodal": "Плаћени захтев",
-        "invitemodal": "Позовите некога одмах"
+        "claimfreemodal": "Besplatan zahtev",
+        "claimsteemmodal": "Plaćeni zahtev",
+        "invitemodal": "Pozovite nekoga odmah"
     },
     "freeclaimmodal": {
         "title": "Claim discounted Hive accounts",
-        "explainer": "Последња цена за захтев дисконтованог налога била је <span class='rccost'>0</span> RC<br />Имајте на уму да цена варира све време. Када се захтева више налога у кратком временском периоду, цена расте.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "Са <span id='currentrc'>0</span> RC можете захтевати један налог.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "Са<span id='currentrc'>0</span> RC можете захтевати <span class='possibleclaims'>0</span> налога.",
-        "moreexplain": "Можете захтевати један налог, или користити бота за захтевање док не потрошите RC или га зауставите.",
-        "single": "Захтевајте један налог",
-        "bot": "Бот за захтеве"
+        "explainer": "Poslednja cena za zahtev diskontovanog naloga bila je <span class='rccost'>0</span> RC<br />Imajte na umu da cena varira sve vreme. Kada se zahteva više naloga u kratkom vremenskom periodu, cena raste.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Sa <span id='currentrc'>0</span> RC možete zahtevati jedan nalog.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Sa <span id='currentrc'>0</span> RC možete zahtevati <span class='possibleclaims'>0</span> naloga.",
+        "moreexplain": "Možete zahtevati jedan nalog, ili koristiti bota za zahtevanje dok ne potrošite RC ili ga zaustavite.",
+        "single": "Zahtevajte jedan nalog",
+        "bot": "Bot za zahteve"
     },
     "botclaimmodal": {
         "title": "Automated claiming of discounted Hive accounts",
-        "explainer": "Здраво! Ја сам пријатељски робот за захтеве. Кликните на дугме испод како бих започео свој посао. Захтеваћу налоге све док не останете без RC, или ми не задате команду да се зауставим притиском на друго дугме.",
+        "explainer": "Zdravo! Ja sam prijateljski robot za zahteve. Kliknite na dugme ispod kako bih započeo svoj posao. Zahtevaću naloge sve dok ne ostanete bez RC, ili mi ne zadate komandu da se zaustavim pritiskom na drugo dugme.",
         "amount": "Amount of accounts to claim, -1 for unlimited",
-        "working": "Радим! До сада је захтевано <span id='botClaimStatusClaimed'>0</span> налога.",
-        "stopped": "Заустављено након захтевања <span id='botClaimHasClaimed'>0</span> налога.<br />Порука о грешци: <span id='botClaimError'></span>",
-        "start": "Започни",
-        "close": "Заустави/Затвори"
+        "working": "Radim! Do sada je zahtevano <span id='botClaimStatusClaimed'>0</span> naloga.",
+        "stopped": "Zaustavljeno nakon zahtevanja <span id='botClaimHasClaimed'>0</span> naloga.<br />Poruka o grešci: <span id='botClaimError'></span>",
+        "start": "Započni",
+        "close": "Zaustavi/Zatvori"
     },
     "paidclaimmodal": {
         "title": "Pay to claim a Hive account",
@@ -60,15 +60,15 @@
     },
     "invitemodal": {
         "title": "Invite to Hive!",
-        "label": "Ознака",
-        "by_email": "Искључите ово да добијете један или више линкова директно, уместо слања email-а",
-        "email": "Адреса",
-        "mailtext_label": "Текст е-поруке",
+        "label": "Oznaka",
+        "by_email": "Isključite ovo da dobijete jedan ili više linkova direktno, umesto slanja email-a",
+        "email": "Adresa",
+        "mailtext_label": "Tekst e-poruke",
         "mailtext": "Hello,\n\nyou have been invited by {} to join the Hive blockchain.\n\nWhat is that?\nHive is the backend used by new social media sites like peakd.com and hive.blog. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
-        "linkamount": "Број линкова за креирање",
-        "or": "ИЛИ",
-        "multi": "Направите линк који важи за вишеструко прављење налога",
-        "multi_label": "Број налога за који важи овај линк (пазите, можете остати без захтева уколико користите ову опцију!)",
+        "linkamount": "Broj linkova za kreiranje",
+        "or": "ILI",
+        "multi": "Kreirajte link koji važi za višestruko pravljenje naloga",
+        "multi_label": "Broj naloga za koji važi ovaj link (pazite, možete ostati bez zahteva ukoliko koristite ovu opciju!)",
         "public": "Create a public invite with optional verification methods",
         "response_time": "Typical time until creation in hours",
         "public_description": "Description of your requirements (text only)",
@@ -80,34 +80,35 @@
         "require_instagram": "Require an instagram account",
         "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Hive Power. You can also do that later of course.",
         "delegate_amount": "Amount of Hive Power to delegate",
-        "validity": "Колико дана желите да позивница буде важећа док се не избрише аутоматски?",
-        "validity_label": "Важење у данима",
-        "usermail": "Адреса е-поште за ажурирање стања",
-        "create": "Креирај позивницу"
+        "validity": "Koliko dana želite da pozivnica bude važeća dok se ne izbriše automatski?",
+        "validity_label": "Važenje u danima",
+        "usermail": "E-Mail adresa za ažuriranje stanja",
+        "create": "Kreiraj pozivnicu"
     },
     "button": {
-        "submit": "Пошаљи захтев",
-        "login": "Пријави се",
-        "login_now": "Пријави се сада",
-        "logout": "Одјави се",
-        "close": "Затвори",
-        "proceed": "Настави"
+        "submit": "Pošalji zahtev",
+        "login": "Prijavi se",
+        "login_now": "Prijavi sе sada",
+        "logout": "Odjavi se",
+        "close": "Zatvori",
+        "proceed": "Nastavi"
     },
     "keys": {
-        "wrong_key": "Неисправан кључ",
-        "active_required": "Ова акција захтева ваш active key.",
+        "wrong_key": "Neispravan ključ",
+        "active_required": "Ova radnja zahteva vaš active key.",
         "active": "Active key",
         "posting": "Posting key",
         "owner": "Owner key",
         "memo": "Memo key",
-        "storeKey": "Запамтите кључ за ову сесију"
+        "storeKey": "Zapamti ključ za ovu sesiju"
     },
     "language": {
-        "switch": "Промени језик...",
-        "en": "енглески",
-        "de": "немачки",
+        "switch": "Promeni jezik...",
+        "en": "engleski",
+        "de": "nemački",
         "ar": "arabic",
         "el": "greek",
+        "eo": "esperanto",
         "es": "spanish",
         "fr": "french",
         "he": "hebrew",
@@ -140,25 +141,25 @@
     },
     "step1": {
         "lead": "Hi! You are only a few steps away from getting your own Hive account!",
-        "text": "Ваш налог ће укључивати ваш лични новчаник, стога је безбедност изузетно важна.<br />Генерисали смо мастер лозинку за ваш налог, коју треба да чувате на сигурној локацији. Запишите је негде!",
-        "submit": "Записао/ла сам лозинку и нећу је никад изгубити"
+        "text": "Vaš nalog će uključivati Vaš lični novčanik, stoga je bezbednost izuzetno važna.<br />Generisali smo master lozinku za Vaš nalog, koju treba da čuvate na sigurnoj lokaciji. Zapišite je negde!",
+        "submit": "Zapisao/la sam lozinku i neću je nikad izgubiti"
     },
     "step2": {
-        "lead": "У реду. Водите рачуна да не изгубите лозинку! Не постоји начин да је повратите!",
+        "lead": "U redu. Vodite računa da ne izgubite lozinku! Ne postoji način da je povratite!",
         "text": "Your Hive username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
-        "username": "Ваше корисничко име",
-        "as": "као"
+        "username": "Vaše korisničko ime",
+        "as": "kao"
     },
     "step3": {
-        "text": "Све што смо до сада рекли у вези са вашом лозинком није шала.<br />Да проверите да нисте направили грешку приликом записивања ваше лозинке, молимо унесите је овде.<br />Ако не можете да наставите даље, освежите страницу у вашем претраживачу и почните из почетка."
+        "text": "Sve što smo do sada rekli u vezi sa vašom lozinkom nije šala.<br />Da proverite da niste napravili grešku prilikom zapisivanja vaše lozinke, molimo unesite je ovde.<br />Ako ne možete da nastavite dalje, osvežite stranicu u vašem pretraživaču i počnite iz početka."
     },
     "step4": {
         "text": "There are different access levels for a Hive account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move HIVE, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
-        "warning": "Ови кључеви су генерисани из ваше лозинке. Могу се користити уместо лозинке, али само за своје одређене намене. <br />Сигурније је користити posting key уколико желите да користите уређај само за објављивање и гласање, или active key када желите да извршите неке друге радње.<br />ЛОЗИНКА И OWNER KEY ЈЕ НАЈСИГУРНИЈЕ ДА СЕ ЧУВАЈУ ВАН МРЕЖЕ!",
-        "confirm": "Кликом на следеће дугме, корисник који је направио вашу позивницу биће информисан, и надамо се ускоро креирати и ваш налог.",
-        "finish": "Попуните захтев за налог и напустите сајт"
+        "warning": "Ovi ključevi su generisani iz vaše lozinke. Mogu se koristiti umesto lozinke, ali samo za svoje određene namene.<br />Sigurnije je koristiti posting key ukoliko želite da koristite uređaj samo za objavljivanje i glasanje, ili active key kada želite da izvršite neke druge radnje.<br />NAJSIGURNIJE JE LOZINKU I OWNER KEY ČUVATI VAN MREŽE!",
+        "confirm": "Klikom na sledeće dugme, korisnik koji je napravio vašu pozivnicu biće informisan, i nadamo se uskoro kreirati Vaš nalog.",
+        "finish": "Popunite zahtev za nalog i napustite sajt"
     },
     "accept": {
-        "invalid": "Неважећа идентификација позивнице, жао нам је!"
+        "invalid": "Nevažeća identifikacija pozivnice, žao nam je!"
     }
 }
