@@ -11,21 +11,16 @@
         "lastupdate": "Last update",
         "refresh": "Refresh now",
         "greeting": "Hello <span id='loggedInUser'>username</span>!",
-
         "tokenexplain": "To create a Hive account, you first need to claim a token. These can be obtained by burning a certain amount of HIVE, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Hive Power.",
         "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> HIVE or <span class='rccost'>0</span> RC mana",
-
         "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "You have claimed <span id='pendingclaims'>0</span> accounts. <span id='invitespending'></span>",
         "nopendingclaims": "You have not claimed any accounts yet.",
-
         "invitespending": "One invitation is pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
         "invitespending_plural": "<span id='pendinginvites'>0</span> invitations are pending, <span id='invitemore'></span>",
         "noinvitespending": "No invitations are pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
-
         "invitemore": "so you can invite a friend now!<span id='remaininginvites' class='hidden'></span>",
         "invitemore_plural": "so you can invite <span id='remaininginvites'>0</span> more friends.",
-
         "abletoclaim": "Your maximum RC mana is <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>You are currently at <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
         "canclaim": "which allows you to claim one account at 100%<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "which allows you to claim <span id='maxclaims'>0</span> accounts at 100%",
@@ -33,12 +28,10 @@
         "canclaimnow": "so you can claim one account right now.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "so you can claim <span class='possibleclaims'>0</span> accounts right now.",
         "cannotclaimnow": "so you have to wait a bit until you can claim a discounted account.",
-
         "abletobuy": "With your balance of <span id='steembalance'>0 HIVE</span> you can <span id='abletopayforclaim'></span>",
         "canbuy": "theoretically claim one more account.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "theoretically claim another <span id='possiblebuys'>0</span> accounts.",
         "cannotbuy": "not claim any more accounts. Get some more HIVE!",
-
         "claimfreemodal": "Free claim",
         "claimsteemmodal": "Paid claim",
         "invitemodal": "Invite someone now"
@@ -115,6 +108,7 @@
         "de": "german",
         "ar": "arabic",
         "el": "greek",
+        "eo": "esperanto",
         "es": "spanish",
         "fr": "french",
         "he": "hebrew",

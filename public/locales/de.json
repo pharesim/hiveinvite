@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "Automatisierte Beantragung von kostenfreien Hive-Konten",
         "explainer": "Hi! Ich bin dein freundlicher Konto Claim-Bot. Klicke auf den Button, damit ich mit der Arbeit beginnen kann. Ich werde solange Accounts erstellen bis du keine RC mehr hast, oder du mir mit dem anderen Button sagst, das ich aufhören soll.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "Beschäftigt! <span id='botClaimStatusClaimed'>0</span> Konten bisher erstellt.",
         "stopped": "Gestoppt nach <span id='botClaimHasClaimed'>0</span> erstellten Konten.<br />Fehlermeldung: <span id='botClaimError'></span>",
         "start": "Start",
@@ -104,7 +105,26 @@
     "language": {
         "switch": "Sprache ändern...",
         "en": "Englisch",
-        "de": "Deutsch"
+        "de": "Deutsch",
+        "ar": "arabic",
+        "el": "greek",
+        "eo": "esperanto",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
     },
 
     "step0": {

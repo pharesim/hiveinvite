@@ -11,21 +11,16 @@
         "lastupdate": "Lasta ĝisdatigo",
         "refresh": "Refreŝigi nun",
         "greeting": "Saluton <span id='loggedInUser'>uzantnomo</span>!",
-
         "tokenexplain": "Por krei Hive-konton, vi unue devas pretigi ĵetonon. Eblas fari tion per bruligo de certa kvanto da HIVE aŭ uzante grandan kvanton da RC (Rimedaj Kreditoj). Interŝanĝe, la nova konto ricevas minimuman kvanton da RC por partopreni en la blokĉeno sen havi HP (investita HIVE).",
         "tokencost": "La nuna kosto por pretigo estas <span class='steemcost'>0</span> HIVE aŭ <span class='rccost'>0</span> RC",
-
         "pendingclaims": "Vi pretigis konton. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
         "pendingclaims_plural": "Vi pretigis <span id='pendingclaims'>0</span> kontojn. <span id='invitespending'></span>",
         "nopendingclaims": "Vi ankoraŭ ne petis ajnan konton.",
-
         "invitespending": "Unu invito survojas, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
         "invitespending_plural": "<span id='pendinginvites'>0</span> invitoj survojas, <span id='invitemore'></span>",
         "noinvitespending": "Neniu invito survojas, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
-
         "invitemore": "do vi nun povas inviti amikon!<span id='remaininginvites' class='hidden'></span>",
         "invitemore_plural": "do vi povas inviti <span id='remaininginvites'>0</span> pliajn amikojn.",
-
         "abletoclaim": "Via maksimuma RC estas <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Vi nun estas je <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
         "canclaim": "kio permesas al vi pretigi unu konton je 100%<span id='maxclaims' class='hidden'></span>",
         "canclaim_plural": "kio permesas al vi pretigi <span id='maxclaims'>0</span> kontojn je 100%",
@@ -33,12 +28,10 @@
         "canclaimnow": "do vi nun povas pretigi unu konton tuj.<span class='possibleclaims hidden'></span>",
         "canclaimnow_plural": "do vi povas pretigi <span class='possibleclaims'>0</span> kontojn tuj.",
         "cannotclaimnow": "do vi devas atendi iom ĝis kiam vi povos pretigi rabatitan konton.",
-
         "abletobuy": "Kun via bilanco de <span id='steembalance'>0 HIVE</span> vi povas <span id='abletopayforclaim'></span>",
         "canbuy": "teorie pretigi unu plian konton.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_plural": "teorie pretigi <span id='possiblebuys'>0</span> pli da kontoj.",
         "cannotbuy": "ne plu pretigi ajnan konton. Ekhavu iom da HIVE!",
-
         "claimfreemodal": "Senpaga pretigo",
         "claimsteemmodal": "Pagita pretigo",
         "invitemodal": "Inviti iun nun"
@@ -55,6 +48,7 @@
     "botclaimmodal": {
         "title": "Aŭtomate pretigi rabatitajn Hive-kontojn",
         "explainer": "Sal! Mi estas la konto-pretiga roboto, je via dispono. Alklaku la butonon malsupre por komencigi mian laboradon. Mi plu pretigos ĝis kiam vi ne plu havas RC aŭ uzas la alian butonon por ĉesigi min.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "Laboranta! Mi ĝis nun pretigis <span id='botClaimStatusClaimed'>0</span> kontojn.",
         "stopped": "Ĉesis post pretigado de <span id='botClaimHasClaimed'>0</span> kontoj.<br />Erarmesaĝo: <span id='botClaimError'></span>",
         "start": "Komenci",
@@ -77,6 +71,7 @@
         "multi_label": "Kvanto da kontoj por kiu ĉi tiu ligilo estas valida (atentu, vi povas elĉerpi viajn pretigojn per ĉi tiu eblo!)",
         "public": "Krei publikan invitilon eventuale kun ebloj kontroli",
         "response_time": "Kutima tempo ĝis kreiĝo en horoj",
+        "public_description": "Description of your requirements (text only)",
         "require_phone": "Neprigi telefonnumeron",
         "require_email": "Neprigi retpoŝtadreson",
         "require_reddit": "Neprigi Reddit-konton",
@@ -135,6 +130,7 @@
     "step0": {
         "lead": "Ĉi tiu aliĝo petas personajn datumojn",
         "text": "Hive-kontoj estas kreataj de aliaj uzantoj. Por kontroli vian identecon kaj por havi komunikadon se viaj ŝlosiloj perdiĝas, bonvolu plenigi ĉiujn kampojn ĉi-malsupre. Ĉi tiuj datumoj nur estas kunhavigataj kun la kreanto de via konto.",
+        "intro_message": "Introduce yourself",
         "phone": "Telefonnumero",
         "mail": "Retpoŝtadreso",
         "reddit": "Reddit",

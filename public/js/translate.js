@@ -31,6 +31,7 @@ function translateIndexContent() {
   setContentById('languageTR',i18next.t('language.tr'));
   //setContentById('languageVI',i18next.t('language.vi'));
   setContentById('languageYO',i18next.t('language.yo'));
+  setContentById('languageEO',i18next.t('language.eo'));
   //setContentById('languageZH',i18next.t('language.zh'));
 
   // loggedout

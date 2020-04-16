@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "Αυτοματοποιημένη αξίωση λογαριασμών hive σε έκπτωση",
         "explainer": "Χαίρετε! Είμαι το φιλικό ρομπότ αξίωσης λογαριασμών. Κάντε κλικ στο παρακάτω πλήκτρο ώστε να αρχίσω να λειτουργώ. Θα εξακολουθήσω να αξιώνω λογαριασμούς μέχρι να εξαντληθεί το RC σας, ή μέχρι να μου δώσετε την εντολή να σταματήσω πιέζοντας το άλλο πλήκτρο.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "Σε λειτουργία! Αξιώθηκαν <span id='botClaimStatusClaimed'>0</span> λογαριασμοί μέχρι στιγμής.",
         "stopped": "Διεκόπη αφού αξίωσε <span id='botClaimHasClaimed'>0</span> λογαριασμούς.<br />Μήνυμα σφάλματος: <span id='botClaimError'></span>",
         "start": "Έναρξη",
@@ -104,7 +105,26 @@
     "language": {
         "switch": "Αλλαγή γλώσσας...",
         "en": "αγγλικά",
-        "de": "γερμανικά"
+        "de": "γερμανικά",
+        "ar": "arabic",
+        "el": "greek",
+        "eo": "esperanto",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
     },
 
     "step0": {

@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "רכישות אוטומטיות של חשבונות hive מוזלים",
         "explainer": "שלום!. אני רובוט ניהול הדרישות הידידותי שלך. לחץ על הכפתור למטה בכדי לתפעל אותי. אני אמשיך לבצע דרישות עד שתיגמר לך כמות ה RC, או כשתרצה להפסיק את פעולותיי בלחיצה על הכפתור האחר.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "בעבודה! נדרשו <span id='botClaimStatusClaimed'>0</span> חשבונות עד כה.",
         "stopped": "נעצר לאחר דרישת <span id='botClaimHasClaimed'>0</span> חשבונות.<br /> הודעת תקלה: <span id='botClaimError'></span>",
         "start": "התחל",
@@ -104,7 +105,26 @@
     "language": {
         "switch": "שנה/י שפה...",
         "en": "אנגלית",
-        "de": "גרמנית"
+        "de": "גרמנית",
+        "ar": "arabic",
+        "el": "greek",
+        "eo": "esperanto",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
     },
 
     "step0": {

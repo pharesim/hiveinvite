@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "İndirimli hive hesaplarının otomatik talep edilmesi",
         "explainer": "Merhaba! Ben senin dost hesap talep robotunum. Çalışmaya başlamamı sağlamak için aşağıdaki düğmeye tıkla. RC değerin bitene kadar talep etmeye devam edeceğim, ya da diğer düğme ile durmamı söyle.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "İş başında! Şimdiye kadar <span id='botClaimStatusClaimed'>0</span> hesap talep edildi.",
         "stopped": "<span id='botClaimHasClaimed'>0</span> Hesap talebinde bulunduktan sonra durduruldu.<br />Hata mesajı:<span id='botClaimError'></span>",
         "start": "Başla",
@@ -104,7 +105,26 @@
     "language": {
         "switch": "Dili değiştir...",
         "en": "ingilizce",
-        "de": "almanca"
+        "de": "almanca",
+        "ar": "arabic",
+        "el": "greek",
+        "eo": "esperanto",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
     },
 
     "step0": {

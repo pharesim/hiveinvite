@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "الطلب الآلي لحجز حسابات على ستيم",
         "explainer": "مرحباً! أنا صديقك الروبوت الذي يقوم بحجزالحساب لك. إضغط على الزر أدناه لتفعيلي. سأستمر في الحجز حتى نفاذ اللآر سي، أو إيقافي عبر الضغط على الزر الآخر.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "في العمل! تم حجز <span id='botClaimStatusClaimed'>0</span> من الحسابات إلى حد الآن.",
         "stopped": "توقفت بعد طلب <span id='botClaimHasClaimed'>0</span> من الحسابات.<br />رسالة الخطأ: <span id='botClaimError'></span>",
         "start": "إبدأ",
@@ -104,7 +105,26 @@
     "language": {
         "switch": "تغيير اللغة...",
         "en": "الإنجليزية",
-        "de": "الألمانية"
+        "de": "الألمانية",
+        "ar": "arabic",
+        "el": "greek",
+        "eo": "esperanto",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
     },
 
     "step0": {

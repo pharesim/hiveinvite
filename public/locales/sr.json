@@ -48,6 +48,7 @@
     "botclaimmodal": {
         "title": "Automatizovano zahtevanje diskontovanih hive naloga",
         "explainer": "Zdravo! Ja sam prijateljski robot za zahteve. Kliknite na dugme ispod kako bih započeo svoj posao. Zahtevaću naloge sve dok ne ostanete bez RC, ili mi ne zadate komandu da se zaustavim pritiskom na drugo dugme.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "Radim! Do sada je zahtevano <span id='botClaimStatusClaimed'>0</span> naloga.",
         "stopped": "Zaustavljeno nakon zahtevanja <span id='botClaimHasClaimed'>0</span> naloga.<br />Poruka o grešci: <span id='botClaimError'></span>",
         "start": "Započni",
@@ -104,7 +105,26 @@
     "language": {
         "switch": "Promeni jezik...",
         "en": "engleski",
-        "de": "nemački"
+        "de": "nemački",
+        "ar": "arabic",
+        "el": "greek",
+        "eo": "esperanto",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
     },
 
     "step0": {
