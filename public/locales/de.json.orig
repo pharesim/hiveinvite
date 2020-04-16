@@ -1,0 +1,230 @@
+{
+    "loggedout": {
+<<<<<<< HEAD
+        "greeting": "Make a Hiver!",
+        "explainer": "Hiveinvite is a service that allows you to invite your friends to Hive.",
+        "buttontext": "um direkt los zu legen.",
+        "login_error": "Login Fehler",
+        "usernamePlaceholder": "Your Hive username",
+=======
+        "greeting": "Erstelle einen Hiver!",
+        "explainer": "Hiveinvite ist ein Service, mit dem du deine Freunde zum Hive einladen kannst.",
+        "buttontext": "um direkt los zu legen.",
+        "login_error": "Login Fehler",
+        "usernamePlaceholder": "Dein Hive Username (ohne @)",
+>>>>>>> master
+        "postingkeyPlaceholder": "Dein Privat Posting-Key"
+    },
+    "index": {
+        "lastupdate": "Letzte Aktualisierung",
+        "refresh": "Jetzt aktualisieren",
+        "greeting": "Hey <span id='loggedInUser'>username</span>!",
+<<<<<<< HEAD
+        "tokenexplain": "To create a Hive account, you first need to claim a token. These can be obtained by burning a certain amount of HIVE, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Hive Power.",
+        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> HIVE or <span class='rccost'>0</span> RC mana",
+=======
+        "tokenexplain": "Um ein Hive-Konto zu erstellen, musst du zuerst einen Token beanspruchen. Diesen Token kannst du erhalten, indem du eine bestimmte Menge an HIVE verbrennst oder eine große Menge an RC-Mana ausgibst. Im Gegenzug erhält das neue Konto eine minimale Menge an RC-Mana, die benötigt wird um minimale Aktionen auf der Blockchain durchführen zu können ohne eigene HivePower zu besitzen.",
+        "tokencost": "Die aktuellen Kosten für eine Konto-Beanspruchung betragen momentan <span class='steemcost'>0</span> HIVE oder <span class='rccost'>0</span> RC-Mana",
+>>>>>>> master
+        "pendingclaims": "Du hast ein Konto erstellt. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "Du hast <span id='pendingclaims'>0</span> Konten beansprucht. <span id='invitespending'></span>",
+        "nopendingclaims": "Du hast noch keine Konten erstellt.",
+        "invitespending": "Eine Einladung ist noch ausstehend, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_plural": "<span id='pendinginvites'>0</span> Einladungen sind ausstehend, <span id='invitemore'></span>",
+        "noinvitespending": "Es sind keine Einladungen ausstehend, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore": "so dass du jetzt einen Freund einladen kannst!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_plural": "so dass du <span id='remaininginvites'>0</span> weitere Freunde einladen kannst.",
+        "abletoclaim": "Deine maximale RC-Mana beträgt <span id='maxrc'>0</span>. <span id='canclaimever'></span><br /><span id='canclaimnow'>Du verfügst momentan über <span id='rcpct'>0</span>% RC-Mana, <span id='canclaimnowamount'></span></span>",
+        "canclaim": "Somit kannst du bei 100% ein Konto erstellen. <span id='maxclaims' class='hidden'></span>",
+        "canclaim_plural": "was dir erlaubt <span id='maxclaims'>0</span> Konten bei 100%RC zu erstellen",
+<<<<<<< HEAD
+        "cannotclaim": "which does not let you claim any accounts. Power up some HIVE!",
+        "canclaimnow": "somit kannst du ein Konto erstellen.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "somit kannst du <span class='possibleclaims'>0</span> Konten sofort erstellen.",
+        "cannotclaimnow": "somit musst du noch ein wenig warten, bis du ein Konto erstellen kannst.",
+        "abletobuy": "With your balance of <span id='steembalance'>0 HIVE</span> you can <span id='abletopayforclaim'></span>",
+        "canbuy": "theoretisch ein weiteres Konto beanspruchen. <span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "theoretisch weitere <span id='possiblebuys'>0</span> Konten beanspruchen.",
+        "cannotbuy": "not claim any more accounts. Get some more HIVE!",
+=======
+        "cannotclaim": "was es dir nicht erlaubt, Konten zu erstellen. Lade mehr HIVE auf!",
+        "canclaimnow": "somit kannst du ein Konto erstellen.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "somit kannst du <span class='possibleclaims'>0</span> Konten sofort erstellen.",
+        "cannotclaimnow": "somit musst du noch ein wenig warten, bis du ein Konto erstellen kannst.",
+        "abletobuy": "Mit deinem Kontostand von <span id='steembalance'>0</span> HIVE kannst du <span id='abletopayforclaim'></span>",
+        "canbuy": "theoretisch ein weiteres Konto beanspruchen. <span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "theoretisch weitere <span id='possiblebuys'>0</span> Konten beanspruchen.",
+        "cannotbuy": "keine weiteren Konten mehr beanspruchen. Hol dir noch mehr HIVE!",
+>>>>>>> master
+        "claimfreemodal": "Kostenfreies Konto (RC-Mana)",
+        "claimsteemmodal": "Bezahltes Konto (HIVE)",
+        "invitemodal": "Jetzt eine Person einladen"
+    },
+    "freeclaimmodal": {
+<<<<<<< HEAD
+        "title": "Claim discounted Hive accounts",
+=======
+        "title": "Reduzierte Hive Konten erstellen",
+>>>>>>> master
+        "explainer": "Die Kosten für ein reduziertes Konto betrugen zuletzt <span class='rccost'>0</span> RC<br />Beachte, dass sich dies ständig ändert. Wenn mehrere Konten in kurzer Zeit beansprucht werden, steigen die Kosten.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Mit <span id='currentrc'>0</span> RC kannst du ein Konto erstellen.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Mit <span id='currentrc'>0</span> RC kannst du <span class='possibleclaims'>0</span> Konten erstellen.",
+        "moreexplain": "Du kannst entweder ein einzelnes Konto erstellen oder den Claim-Bot verwenden, bis dir die RC ausgeht oder Du ihn stoppst.",
+        "single": "Ein Konto beantragen",
+        "bot": "Claim-Bot"
+    },
+    "botclaimmodal": {
+<<<<<<< HEAD
+        "title": "Automated claiming of discounted Hive accounts",
+=======
+        "title": "Automatisierte Beantragung von kostenfreien Hive-Konten",
+>>>>>>> master
+        "explainer": "Hi! Ich bin dein freundlicher Konto Claim-Bot. Klicke auf den Button, damit ich mit der Arbeit beginnen kann. Ich werde solange Accounts erstellen bis du keine RC mehr hast, oder du mir mit dem anderen Button sagst, das ich aufhören soll.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
+        "working": "Beschäftigt! <span id='botClaimStatusClaimed'>0</span> Konten bisher erstellt.",
+        "stopped": "Gestoppt nach <span id='botClaimHasClaimed'>0</span> erstellten Konten.<br />Fehlermeldung: <span id='botClaimError'></span>",
+        "start": "Start",
+        "close": "Stop/Schließen"
+    },
+    "paidclaimmodal": {
+<<<<<<< HEAD
+        "title": "Pay to claim a Hive account",
+        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> HIVE<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Hive Power."
+    },
+    "invitemodal": {
+        "title": "Invite to Hive!",
+=======
+        "title": "Bezahle um ein Hive Konto zu erstellen",
+        "explainer": "Die Kosten um ein Konto zu erstellen betragen <span class='steemcost'>0</span> HIVE<br />Diese Kosten werden von den Witness festgelegt.<br />Ein neues Konto erhält einen Grundbetrag an RC, als ob er den gleichen Betrag an Hive Power hätte."
+    },
+    "invitemodal": {
+        "title": "Einladung zu Hive erstellen",
+>>>>>>> master
+        "label": "Titel",
+        "by_email": "Deaktiviere dieses Kontrollkästchen, um einen Link oder mehrere Links zu erhalten, anstatt ihn per E-Mail zu senden.",
+        "email": "Adresse",
+        "mailtext_label": "E-Mail Nachricht",
+<<<<<<< HEAD
+        "mailtext": "Hello,\n\nyou have been invited by {} to join the Hive blockchain.\n\nWhat is that?\nHive is the backend used by new social media sites like peakd.com and hive.blog. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
+=======
+        "mailtext": "Hallo,\n\ndu wurdest von {} dazu eingeladen, der Hive-Blockchain beizutreten.\n\nWas genau ist das?\nHive ist das Backend, das von neuen Social Media Seiten wie peakd.com und hive.blog verwendet wird. Mit der Blockchain-Technologie beschreitet sie neue Wege, indem sie die Benutzer für ihre Aktivitäten bezahlt.\n\nAkzeptiere die Einladung indem du auf den folgenden Link klickst:",
+>>>>>>> master
+        "linkamount": "Anzahl der zu erstellenden Links",
+        "or": "oder",
+        "multi": "Erstelle einen Link, der für mehrere Konto-Erstellungen gültig ist",
+        "multi_label": "Anzahl der Konten, für die dieser Link gilt. (Vorsicht, mit dieser Option kann es sein, das du alle Konto-Erstellungen vornimmst!)",
+        "public": "Create a public invite with optional verification methods",
+        "response_time": "Typical time until creation in hours",
+        "public_description": "Description of your requirements (text only)",
+        "require_phone": "Require a phone number",
+        "require_email": "Require an email address",
+        "require_reddit": "Require a reddit account",
+        "require_facebook": "Require a facebook account",
+        "require_twitter": "Require a twitter account",
+        "require_instagram": "Require an instagram account",
+<<<<<<< HEAD
+        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Hive Power. You can also do that later of course.",
+        "delegate_amount": "Amount of Hive Power to delegate",
+=======
+        "delegate": "Ein neues Konto hat nur einen Grundbetrag an RC, um minimale Aktionen auf der Blockchain zu tätigen. Wenn du möchtest, dass der neue Benutzer mehr tun kann, delegiere etwas Hive Power. Das kannst du natürlich auch später machen.",
+        "delegate_amount": "Menge der Hive-Power zur Delegierung",
+>>>>>>> master
+        "validity": "Wie viele Tage soll die Einladung gültig sein, bevor sie automatisch gelöscht wird?",
+        "validity_label": "Gültigkeit in Tagen",
+        "usermail": "E-Mail-Adresse für Status-Updates",
+        "create": "Einladung erstellen"
+    },
+    "button": {
+        "submit": "Absenden",
+        "login": "Login",
+        "login_now": "Jetzt einloggen",
+        "logout": "Logout",
+        "close": "Schließen",
+        "proceed": "Fortfahren"
+    },
+    "keys": {
+        "wrong_key": "Ungültiger Key",
+        "active_required": "Diese Aktion benötigt deinen Private Active-Key.",
+        "active": "Active Key",
+        "posting": "Posting Key",
+        "owner": "Owner Key",
+        "memo": "Memo Key",
+        "storeKey": "Key für diese Sitzung merken"
+    },
+    "language": {
+        "switch": "Sprache ändern...",
+        "en": "Englisch",
+        "de": "Deutsch",
+        "ar": "arabic",
+        "el": "greek",
+        "eo": "esperanto",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
+        "yo": "yoruba",
+        "zh": "chinese (traditional)"
+    },
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
+    "step0": {
+        "lead": "This registration requires personal data",
+        "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
+        "intro_message": "Introduce yourself",
+        "phone": "Phone number",
+        "mail": "E-Mail",
+        "reddit": "Reddit",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "error": "Please fill out all fields above",
+        "submit": "Continue to account creation"
+    },
+    "step1": {
+<<<<<<< HEAD
+        "lead": "Hi! You are only a few steps away from getting your own Hive account!",
+=======
+        "lead": "Hi! Du bist nur ein paar Schritte von dein eigenes Hive-Konto entfernt!",
+>>>>>>> master
+        "text": "Dein Konto enthält deine persönliche Wallet, daher ist Sicherheit extrem wichtig.<br />Wir haben ein Master-Passwort für dein Konto generiert, das du an einem sicheren Ort aufbewahren musst. Schreibe es irgendwo auf!",
+        "submit": "Ich habe das Passwort aufgeschrieben und werde es nie wieder verlieren."
+    },
+    "step2": {
+        "lead": "Okay. Achte darauf, dass du das Passwort nicht verlierst! Es gibt keine Möglichkeit, es wiederherzustellen!",
+<<<<<<< HEAD
+        "text": "Your Hive username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
+=======
+        "text": "Dein Hive-Benutzername muss mindestens drei Zeichen lang sein und darf keine anderen Zeichen als Kleinbuchstaben, Zahlen und einen Bindestrich enthalten. Sie muss eindeutig sein und kann nie geändert werden. Wähle es sorgfältig aus.",
+>>>>>>> master
+        "username": "Dein Benutzername",
+        "as": "als"
+    },
+    "step3": {
+        "text": "Was wir vorher über dein Passwort gesagt haben, war kein Scherz.<br />Um sicherzustellen, dass du keinen Fehler gemacht hast, während du dein Passwort notiert hast, gib es bitte hier ein.<br />Wenn du nicht fortfahren kannst, lade die Seite in deinem Browser neu und fange von vorne an."
+    },
+    "step4": {
+<<<<<<< HEAD
+        "text": "There are different access levels for a Hive account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move HIVE, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
+=======
+        "text": "Es gibt verschiedene Zugriffsebenen für ein Hive-Konto.<br />Der Posting-Key wird für die tägliche Social-Media-Aktivität verwendet, d.h. er ermöglicht es dir, zu posten und zu voten. \n<br />Um auf deine Wallet zuzugreifen und HIVE zu versetzen, brauchst du den aktiven Schlüssel (Active-Key).<br />Der Owner-Key kann verwendet werden, um diese beiden zu ändern, und sollte niemals für andere Zwecke verwendet werden. Am besten neben dem Master-Key aufbewahren, und nicht online verwenden.<br />Letzter und am wenigsten genutzt ist der Memo-Key, der noch keine Funktion hat, aber in Zukunft dazu verwendet werden kann, deine privaten Nachrichten zu entschlüsseln.",
+>>>>>>> master
+        "warning": "Diese Schlüssel werden aus deinem Passwort generiert. Sie können stattdessen verwendet werden, aber nur für ihren speziellen Zweck.<br />Es ist sicherer, den Posting-Key zu verwenden, wenn du ein Gerät nur zum Posten und Voten benutzen möchtest, oder den Aktiv-Key, wenn du andere Aktionen durchführen möchtest.<br />DAS PASSWORT UND DER OWNER-KEY SOLLTEN AM BESTEN OFFLINE GEHALTEN WERDEN!",
+        "confirm": "Durch Klicken auf die folgende Schaltfläche wird der Benutzer, der deine Einladung erstellt hat, informiert und hoffentlich bald dein Konto anlegen.",
+        "finish": "Kontoanfrage abschließen und diese Seite verlassen"
+    },
+    "accept": {
+        "invalid": "Ungültige Einladungs-ID, sorry!"
+    }
+}
