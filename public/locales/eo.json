@@ -1,0 +1,166 @@
+{
+    "loggedout": {
+        "greeting": "Kreu novan Hive-uzanton!",
+        "explainer": "Hiveinvite estas servo kiu ebligas al vi inviti viajn amikojn al Hive.",
+        "buttontext": "por komenci.",
+        "login_error": "Ensaluteraro",
+        "usernamePlaceholder": "Via Hive-uzantnomo",
+        "postingkeyPlaceholder": "Via privata ŝlosilo por afiŝado (posting)"
+    },
+    "index": {
+        "lastupdate": "Lasta ĝisdatigo",
+        "refresh": "Refreŝigi nun",
+        "greeting": "Saluton <span id='loggedInUser'>uzantnomo</span>!",
+        "tokenexplain": "Por krei Hive-konton, vi unue devas pretigi ĵetonon. Eblas fari tion per bruligo de certa kvanto da HIVE aŭ uzante grandan kvanton da RC (Rimedaj Kreditoj). Interŝanĝe, la nova konto ricevas minimuman kvanton da RC por partopreni en la blokĉeno sen havi HP (investita HIVE).",
+        "tokencost": "La nuna kosto por pretigo estas <span class='steemcost'>0</span> HIVE aŭ <span class='rccost'>0</span> RC",
+        "pendingclaims": "Vi pretigis konton. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "Vi pretigis <span id='pendingclaims'>0</span> kontojn. <span id='invitespending'></span>",
+        "nopendingclaims": "Vi ankoraŭ ne petis ajnan konton.",
+        "invitespending": "Unu invito survojas, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_plural": "<span id='pendinginvites'>0</span> invitoj survojas, <span id='invitemore'></span>",
+        "noinvitespending": "Neniu invito survojas, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore": "do vi nun povas inviti amikon!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_plural": "do vi povas inviti <span id='remaininginvites'>0</span> pliajn amikojn.",
+        "abletoclaim": "Via maksimuma RC estas <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>Vi nun estas je <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
+        "canclaim": "kio permesas al vi pretigi unu konton je 100%<span id='maxclaims' class='hidden'></span>",
+        "canclaim_plural": "kio permesas al vi pretigi <span id='maxclaims'>0</span> kontojn je 100%",
+        "cannotclaim": "kio ne permesas al vi pretigi ajnan konton. Potencigu iom da HIVE!",
+        "canclaimnow": "do vi nun povas pretigi unu konton tuj.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_plural": "do vi povas pretigi <span class='possibleclaims'>0</span> kontojn tuj.",
+        "cannotclaimnow": "do vi devas atendi iom ĝis kiam vi povos pretigi rabatitan konton.",
+        "abletobuy": "Kun via bilanco de <span id='steembalance'>0 HIVE</span> vi povas <span id='abletopayforclaim'></span>",
+        "canbuy": "teorie pretigi unu plian konton.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_plural": "teorie pretigi <span id='possiblebuys'>0</span> pli da kontoj.",
+        "cannotbuy": "ne plu pretigi ajnan konton. Ekhavu iom da HIVE!",
+        "claimfreemodal": "Senpaga pretigo",
+        "claimsteemmodal": "Pagita pretigo",
+        "invitemodal": "Inviti iun nun"
+    },
+    "freeclaimmodal": {
+        "title": "Pretigi rabatitajn Hive-kontojn",
+        "explainer": "La lasta kosto por pretigi rabatitan konton estis <span class='rccost'>0</span> RC<br />Atentu ke ĉi tio ŝanĝiĝas daŭre. Se multaj kontoj kreiĝas en mallonga tempo, la prezo altiĝas.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Per <span id='currentrc'>0</span> RC vi povas pretigi unu konton.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Per <span id='currentrc'>0</span> RC vi povas pretigi <span class='possibleclaims'>0</span> kontojn.",
+        "moreexplain": "Vi povas ĉu pretigi nur unu konton, aŭ uzi la pretigo-roboton ĝis kiam vi ne plu havas RC aŭ haltigas ĝin.",
+        "single": "Pretigi unu konton",
+        "bot": "Pretigoroboto"
+    },
+    "botclaimmodal": {
+        "title": "Aŭtomate pretigi rabatitajn Hive-kontojn",
+        "explainer": "Sal! Mi estas la konto-pretiga roboto, je via dispono. Alklaku la butonon malsupre por komencigi mian laboradon. Mi plu pretigos ĝis kiam vi ne plu havas RC aŭ uzas la alian butonon por ĉesigi min.",
+        "amount": "Amount of accounts to claim, -1 for unlimited",
+        "working": "Laboranta! Mi ĝis nun pretigis <span id='botClaimStatusClaimed'>0</span> kontojn.",
+        "stopped": "Ĉesis post pretigado de <span id='botClaimHasClaimed'>0</span> kontoj.<br />Erarmesaĝo: <span id='botClaimError'></span>",
+        "start": "Komenci",
+        "close": "Ĉesi/Fermi"
+    },
+    "paidclaimmodal": {
+        "title": "Pagi por pretigi Hivekonton",
+        "explainer": "La kosto por pretigi Hive-konton estas <span class='steemcost'>0</span> HIVE<br />Ĉi tiu kosto estas konfigurita de la atestantoj.<br />Nova konto ricevos bazan kvanton da RC kvazaŭ ĝi havus la saman kvanton da HP."
+    },
+    "invitemodal": {
+        "title": "Inviti al Hive!",
+        "label": "Etikedo",
+        "by_email": "Malelektu ĉi tiun por ricevi unu aŭ plurajn ligilojn rekte anstataŭ sendi retpoŝton",
+        "email": "Adreso",
+        "mailtext_label": "Retpoŝta teksto",
+        "mailtext": "Saluton,\n\n{} invitis vin por aliĝi al la Hive-blokĉeno.\n\nKio ĝi estas?\nHive estas la fona servo malantaŭ novaj sociaj retejoj kiel peakd.com kaj hive.blog. Per blokĉena teĥnologio ĝi eniras novajn vojojn pagante al uzantoj por ilia aktiveco.\n\nVi povas akcepti la inviton klakante la jenan ligilon:",
+        "linkamount": "Kvanto da kreendaj ligiloj",
+        "or": "AŬ",
+        "multi": "Krei ligilon kiu validas por la kreiĝo de pluraj kontoj",
+        "multi_label": "Kvanto da kontoj por kiu ĉi tiu ligilo estas valida (atentu, vi povas elĉerpi viajn pretigojn per ĉi tiu eblo!)",
+        "public": "Krei publikan invitilon eventuale kun ebloj kontroli",
+        "response_time": "Kutima tempo ĝis kreiĝo en horoj",
+        "public_description": "Description of your requirements (text only)",
+        "require_phone": "Neprigi telefonnumeron",
+        "require_email": "Neprigi retpoŝtadreson",
+        "require_reddit": "Neprigi Reddit-konton",
+        "require_facebook": "Neprigi Facebook-konton",
+        "require_twitter": "Neprigi Twitter-konton",
+        "require_instagram": "Neprigi Instagram-konton",
+        "delegate": "Nova konto nur havas bazan kvanton da RC por interagi en la blokĉeno. Se vi volas ke la nova uzanto povu fari pli, redirektu iom da HP. Kompreneble vi ankaŭ povos fari tion poste.",
+        "delegate_amount": "Kvanto da HP por redirekti",
+        "validity": "Kiom da tagoj la invito estu valida ĝis aŭtomate forviŝiĝi?",
+        "validity_label": "Valideco en tagoj",
+        "usermail": "Retpoŝtadreso por ĝisdatigoj pri la stato",
+        "create": "Krei inviton"
+    },
+    "button": {
+        "submit": "Ensendi",
+        "login": "Ensaluti",
+        "login_now": "Nun ensaluti",
+        "logout": "Elsaluti",
+        "close": "Fermi",
+        "proceed": "Antaŭeniri"
+    },
+    "keys": {
+        "wrong_key": "Nevalida ŝlosilo",
+        "active_required": "Ĉi tiu ago bezonas vian aktivan ŝlosilon (active).",
+        "active": "Aktiva ŝlosilo (active)",
+        "posting": "Afiŝa ŝlosilo (posting)",
+        "owner": "Posedanta ŝlosilo (owner)",
+        "memo": "Noto-ŝlosilo (memo)",
+        "storeKey": "Memori ŝlosilon por ĉi tiu sesio"
+    },
+    "language": {
+        "switch": "Ŝanĝi lingvon...",
+        "en": "angla",
+        "de": "germana",
+        "ar": "araba",
+        "el": "greka",
+        "eo": "Esperanto",
+        "es": "hispana",
+        "fr": "franca",
+        "he": "hebrea",
+        "it": "itala",
+        "ja": "japana",
+        "ko": "korea",
+        "nl": "nederlanda",
+        "pl": "pola",
+        "pt": "portugala",
+        "ru": "rusa",
+        "sl": "slovena",
+        "sr": "serba",
+        "tr": "turka",
+        "vi": "vietnama",
+        "yo": "joruba",
+        "zh": "ĉina (tradicia)"
+    },
+
+    "step0": {
+        "lead": "Ĉi tiu aliĝo petas personajn datumojn",
+        "text": "Hive-kontoj estas kreataj de aliaj uzantoj. Por kontroli vian identecon kaj por havi komunikadon se viaj ŝlosiloj perdiĝas, bonvolu plenigi ĉiujn kampojn ĉi-malsupre. Ĉi tiuj datumoj nur estas kunhavigataj kun la kreanto de via konto.",
+        "intro_message": "Introduce yourself",
+        "phone": "Telefonnumero",
+        "mail": "Retpoŝtadreso",
+        "reddit": "Reddit",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "error": "Bonvolu plenigi ĉiujn kampojn ĉi-supre",
+        "submit": "Pluiri al konto-kreado"
+    },
+    "step1": {
+        "lead": "Sal! Post nur kelkaj paŝoj vi havos vian propran Hive-konton!",
+        "text": "Via konto enhavos vian personan monujon, do sekureco ekstreme gravas.<br />Ni kreis superpasvorton por via konto, kiun vi devas konservi en sekura loko. Skribu ĝin ie!",
+        "submit": "Mi skribis la pasvorton ie kaj neniam ajn perdos ĝin"
+    },
+    "step2": {
+        "lead": "Bone. Estu certa ne perdi la pasvorton! Ne ekzistas maniero rehavi ĝin!",
+        "text": "Via uzantnomo en Hive devas havi almenaŭ tri signojn kaj nur povas havi minusklojn, numerojn kaj streketon. Ĝi devas esti unika kaj neniam povas esti ŝanĝata. Zorge elektu ĝin.",
+        "username": "Via uzantnomo",
+        "as": "kiel"
+    },
+    "step3": {
+        "text": "Kion ni diris pri via pasvorto ne estis ŝerco.<br />Por certigi ke vi ne faris eraron dum la notado de via pasvorto, bonvonu enmeti ĝin ĉi tie.<br />Se vi ne sukcesas pluiri, reŝargu la paĝon kaj rekomencu."
+    },
+    "step4": {
+        "text": "Estas diversaj alirniveloj al Hive-konto.<br />La afiŝa (posting) ŝlosilo estas uzata por ĉiutagaĵoj, ĝi permesas al vi afiŝi kaj voĉdoni.<br />Por aliri vian monujon kaj movi HIVE, vi bezonas la aktivan (active) ŝlosilon.<br />La posedanto-ŝlosilo (owner) povas esti uzata por ŝanĝi tiujn du, kaj neniam devas esti uzata por aliaj celoj. Prefere tenu ĝin ĉe la superpasvorto, ne uzu ĝin rete.<br />Laste kaj malplej grave, estas la nota (memo) ŝlosilo kiu ankoraŭ ne havas funkcion sed povus estontece esti uzata por deĉifri privatajn datumojn kiel rektaj mesaĝoj.",
+        "warning": "Ĉi tiuj ŝlosiloj estas generitaj el via pasvorto. Ili povas esti uzataj anstataŭ ĝi, sed nur por ilia specifa celo.<br />Pli sekuras uzi la afiŝan ŝlosilon se vi nur volas uzi aparaton por afiŝi kaj voĉdoni, aŭ la aktivan ŝlosilon se vi volas fari aliajn agojn.<br />PLI BONAS TENI LA PASVORTON KAJ LA POSEDANTO-ŜLOSILON EKSTERRETE!",
+        "confirm": "Klakante la jenan butonon, la uzanto kiu kreis vian inviton informiĝos, kaj espereble baldaŭ kreos vian konton.",
+        "finish": "Fini konto-krean peton kaj forlasi ĉi tiun retejon"
+    },
+    "accept": {
+        "invalid": "Nevalida invito-identigilo, mi bedaŭras!"
+    }
+}

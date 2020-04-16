@@ -1,4 +1,4 @@
-steem.api.setOptions({ url: 'https://api.steemit.com' });
+steem.api.setOptions({ url: 'https://anyx.io' });
 
 var username  = null;
 var store_wif = 0;
@@ -15,65 +15,6 @@ var state = {
   'max_rc': 0,
   'current_mana': 0,
   'balance': 0
-}
-
-//*** js helper functions ***/
-
-function hideById(id) {
-  document.getElementById(id).style.display = 'none';
-}
-
-function hideByClass(classname) {
-  let elems = document.getElementsByClassName(classname);
-  for (let i = 0; i < elems.length; i++) {
-    elems[i].style.display = 'none';
-  }
-}
-
-function showById(id) {
-  document.getElementById(id).style.display = 'block';
-}
-
-function showByClass(classname) {
-  let elems = document.getElementsByClassName(classname);
-  for (let i = 0; i < elems.length; i++) {
-    elems[i].style.display = 'block';
-  }
-}
-
-function getValueById(id) {
-  return document.getElementById(id).value;
-}
-
-function setContentById(id,content) {
-  document.getElementById(id).innerHTML = content;
-}
-
-function setContentByClass(classname,content) {
-  let elems = document.getElementsByClassName(classname);
-  for (let i = 0; i < elems.length; i++) {
-    elems[i].innerHTML = content;
-  }
-}
-
-function setValueById(id,value) {
-  document.getElementById(id).value = value;
-}
-
-function setValuesByClass(classname,value) {
-  let elems = document.getElementsByClassName(classname);
-  for (let i = 0; i < elems.length; i++) {
-    elems[i].value = value;
-  }
-}
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-function increment(elem) {
-  elem.innerHTML = parseInt(elem.innerHTML) + 1;
-  return true;
 }
 
 //*** state handling functions */
@@ -180,9 +121,9 @@ function calculateClaimRC() {
         num = num * result.resource_params[key].resource_dynamics_params.resource_unit;
         denom = result.resource_params[key].price_curve_params.coeff_b + result2.resource_pool[key].pool;
         let num_denom = Math.round(num / denom);
-        total_cost = total_cost + num_denom;    
+        total_cost = total_cost + num_denom;
       });
-      
+
       setState('claim_cost_mana',total_cost);
     });
   });
@@ -204,8 +145,8 @@ function calculateUserRC() {
       }
 
       setState('current_mana',current_mana);
-    });  
-    
+    });
+
     setState('max_rc',max_rc);
   });
 }
@@ -232,6 +173,7 @@ async function appstart() {
       showById('loggedIn');
     });
   } else {
+    await sleep(500);
     translateIndexContent();
     hideById('loggedIn');
     showById('loginButtonContainer');

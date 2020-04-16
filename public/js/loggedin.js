@@ -10,7 +10,7 @@ let elem = document.getElementById('languageSelector');
 elem.onchange = function() {
   if(elem.value != '') {
     hideById('loggedIn');
-    i18next.changeLanguage(elem.value);    
+    i18next.changeLanguage(elem.value);
     translateIndexContent();
     setProperties();
   }
@@ -85,26 +85,26 @@ function updateRCState() {
 
 function updateBalanceState() {
   steem.api.getChainProperties(function(err, result) {
-    let claim_cost_steem = result.account_creation_fee.slice(0,-6);
+    let claim_cost_hive = result.account_creation_fee.slice(0,-5);
     let balance = getState('balance');
-    let steem_accounts = Math.floor(balance / claim_cost_steem);
+    let hive_accounts = Math.floor(balance / claim_cost_hive);
 
-    if(steem_accounts > 0) {
-      setContentById('abletopayforclaim',i18next.t('index.canbuy',{'count': steem_accounts}));
-      setContentById('possiblebuys',steem_accounts);
+    if(hive_accounts > 0) {
+      setContentById('abletopayforclaim',i18next.t('index.canbuy',{'count': hive_accounts}));
+      setContentById('possiblebuys',hive_accounts);
       showById('claimsteembutton');
     } else {
       setContentById('abletopayforclaim',i18next.t('index.cannotbuy'));
       hideById('claimsteembutton');
     }
 
-    setContentByClass('steemcost',claim_cost_steem);
+    setContentByClass('steemcost',claim_cost_hive);
     setContentById('steembalance',balance);
   });
 }
 
 // fill in data
-function fillLoggedIn() { 
+function fillLoggedIn() {
   let emailText = document.getElementById('emailText').innerHTML;
 
   remaining_invites = account.pending_claimed_accounts - pending_invites;
@@ -115,14 +115,14 @@ function fillLoggedIn() {
       setContentById('invitespending',i18next.t('index.invitespending',{'count': pending_invites}));
     } else {
       setContentById('invitespending',i18next.t('index.noinvitespending'));
-    }   
+    }
     setContentById('pendinginvites',pending_invites);
     setContentById('invitemore',i18next.t('index.invitemore',{'count': remaining_invites}))
     setContentById('remaininginvites',remaining_invites);
   } else {
     setContentById('pendingclaimsandinvites',i18next.t('index.nopendingclaims'));
   }
-  
+
   setContentById('emailText',emailText.replace("{}",username));
 
   if(remaining_invites > 0) {
@@ -150,7 +150,7 @@ function insertIntoTable(data) {
     append = append+data[i]['address']
     append = append+'</td><td>';
 
-    append = append+data[i]['steempower']
+    append = append+data[i]['hivepower']
     append = append+'</td><td>';
 
     append = append+data[i]['created']
@@ -166,10 +166,13 @@ function insertIntoTable(data) {
     append = append+'</td><td>';
 
     if(data[i]['account'] != null) {
-      steempervest = properties.global.total_vesting_fund_steem.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
-      vests = Math.ceil(data[i]['steempower'] / steempervest);
+      hivepervest = properties.global.total_vesting_fund_steem.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
+      vests = Math.ceil(data[i]['hivepower'] / hivepervest);
       link = '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal" id="createModalButton'+data[i]['account']+'" data-username="'+data[i]['account']+'">';
-      link = link+'Create account @'+data[i]['account']+'</button>';      
+      link = link+'Create account @'+data[i]['account']+'</button>';
+      append = append+link;
+      link = '<button type="button" class="btn btn-primary" id="deleteInviteButton'+data[i]['account']+'" data-username="'+data[i]['account']+'">';
+      link = link+'Delete invite</button>';
       append = append+link;
     }
 
@@ -184,15 +187,38 @@ function insertIntoTable(data) {
     if(data[i]['account'] != null) {
       inviteData[data[i]['account']] = data[i];
       document.getElementById('createModalButton'+data[i]['account']).onclick = function() {
-        account = this.dataset.username;
-        setValueById('createAccountName',inviteData[account]['account']);
-        setValueById('createSP',inviteData[account]['steempower']);
-        setValueById('createCreator',inviteData[account]['username']);
-        setValueById('createOwner',inviteData[account]['owner']);
-        setValueById('createActive',inviteData[account]['active']);
-        setValueById('createPosting',inviteData[account]['posting']);
-        setValueById('createMemo',inviteData[account]['memo']);
+        acco = this.dataset.username;
+        setValueById('createAccountName',inviteData[acco]['account']);
+        setValueById('createSP',inviteData[acco]['hivepower']);
+        setValueById('createCreator',inviteData[acco]['username']);
+        setValueById('createOwner',inviteData[acco]['owner']);
+        setValueById('createActive',inviteData[acco]['active']);
+        setValueById('createPosting',inviteData[acco]['posting']);
+        setValueById('createMemo',inviteData[acco]['memo']);
       };
+      document.getElementById('deleteInviteButton'+data[i]['account']).onclick = function() {
+        if(confirm('Really delete invitation? All data will be lost!')) {
+          acco = this.dataset.username;
+          $.ajax({
+            url: "api/delete",
+            data: {
+              account: inviteData[acco]['account'],
+              creator: inviteData[acco]['username']
+            },
+            type: "POST"
+          }).fail(function(){
+            alert('something went wrong');
+          }).done(function( data ) {
+            if(data['error']) {
+              alert(data['error']);
+            } else {
+              alert('Invite deleted');
+              getInvites();
+              fillLoggedIn();
+            }
+          });
+        }
+      }
     }
   }
 

@@ -5,17 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Steeminvite registration</title>
-  <meta name="description" content="Accept an invitation to STEEM">
+  <title>Hiveinvite registration</title>
+  <meta name="description" content="Accept an invitation to Hive">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
+  <link rel = "stylesheet"  type = "text/css"  href= "/css/hive.css" />
   <style>
     .hidden {display: none;}
     .error {color: red;}
     .navbar{
-      background-image: url("header.png");
-      background-size: contain;
+      background-image: url("/img/hiveinvite-03.svg");
+      background-size: 128px;
       background-repeat: no-repeat;
       background-position: right 50%;
       margin-bottom: 1em;
@@ -26,87 +26,126 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse bg-primary">
-    <span class="navbar-brand">Steeminvite</span>
+  <nav class="navbar my-navbar">
+    <span class="navbar-brand"><a href="/"><img src="/img/hiveinvite-02.svg" height="64"/></a></span>
   </nav>
 
   <div class="container">
     <div id="claim" class="hidden">
+      <fieldset id="step0" class="hidden">
+        <p class="lead" id="step0Lead"></p>
+        <p id="step0Text"></p>
+        <form>
+          <div class="form-group row" id="messageInput">
+            <label for="intro_message" class="col-2 col-form-label"><span id="messageLabel"></span>*</label>
+            <div class="col-10">
+            <input class="form-control required" type="text" id="intro_message" />
+            </div>
+          </div>
+          <div class="form-group row hidden" id="phoneInput">
+              <label for="phone_number" class="col-2 col-form-label"><span id="phoneLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="+1234567890" id="phone_number" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="mailInput">
+              <label for="email_address" class="col-2 col-form-label"><span id="mailLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="user@domain.tld" id="email_address" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="redditInput">
+              <label for="reddit" class="col-2 col-form-label"><span id="redditLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="https://reddit.com/u/username" id="reddit" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="facebookInput">
+              <label for="facebook" class="col-2 col-form-label"><span id="facebookLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="https://facebook.com/username" id="facebook" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="twitterInput">
+              <label for="twitter" class="col-2 col-form-label"><span id="twitterLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="https://twitter.com/username" id="twitter" autocomplete="off">
+              </div>
+          </div>
+          <div class="form-group row hidden" id="instagramInput">
+              <label for="instagram" class="col-2 col-form-label"><span id="instagramLabel"></span>*</label>
+              <div class="col-10">
+              <input class="form-control required" type="text" placeholder="https://instagram.com/username" id="instagram" autocomplete="off">
+              </div>
+          </div>
+        </form>
+        <p id="step0Error" class="hidden"></p>
+        <button id="finish_step0" type="button" class="btn btn-primary"></button>
+      </fieldset>
+
       <fieldset id="step1">
-        <p class="lead">Hi! You are only a few steps away from getting your own Steem account!</p>
-        <p>Your account will include your personal wallet, so security is extremely important.<br />
-        We have generated a master password for your account, which you need to keep in a safe location. Write it down somewhere!</p>
+        <p class="lead" id="step1Lead"></p>
+        <p id="step1Text"></p>
         <div><input type="text" disabled="disabled" value="" id="passphrase_orig" size="100" /></div>
-        <button id="finish_step1" type="button" class="btn btn-primary">I have written down the password and will never ever lose it</button>
+        <button id="finish_step1" type="button" class="btn btn-primary"></button>
       </fieldset>
 
       <fieldset id="step2" class="hidden">
-        <p class="lead">Okay. Make sure to not lose the password! There is no way to recover it!</p>
+        <p class="lead" id="step2Lead"></p>
         <p>
-          Your Steem username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.<br />
+          <span id="step2Text"></span><br />
           <div class="form-group row">
-            <label for="newusername" class="col-2 col-form-label">Your username</label>
+            <label for="newusername" class="col-2 col-form-label" id="step2Username"></label>
             <div class="col-2">
               <input class="form-control required" type="text" value="" id="newusername" autocomplete="off" size="15">
             </div>
             <span class="error" id="usernameerror"></span>
-            <button id="finish_step2" type="button" class="btn btn-primary" disabled>Proceed <span id="fillusername"></span></button>
+            <button id="finish_step2" type="button" class="btn btn-primary" disabled><span id="step2Proceed"></span> <span id="fillusername"></span></button>
           </div>
       </fieldset>
 
       <fieldset id="step3" class="hidden">
-        What we said about your password before was not a joke.<br />
-        To verify you have not made a mistake while noting your password, please enter it here.<br />
-        If you cannot proceed, reload the page in your browser and start over.
+        <span id="step3Text"></span>
         <div class="form-group row">
           <input class="form-control required" type="password" value="" id="verifypassword" autocomplete="off" size="20">
-          <button id="finish_step3" type="button" class="btn btn-primary" disabled>Proceed</button>
+          <button id="finish_step3" type="button" class="btn btn-primary" disabled></button>
         </div>
       </fieldset>
 
       <fieldset id="step4" class="hidden">
-        <p>
-          There are different access levels for a Steem account.<br />
-          The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />
-          To access your wallet and move STEEM, you need the active key.<br />
-          The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />
-          Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.
-        </p>
+        <p id="step4Text"></p>
 
         <table class="table table-striped table-condensed">
-          <tr><td>Posting key</td><td><span id="postingWIF"></span></td></tr>
-          <tr><td>Active key</td><td><span id="activeWIF"></span></td></tr>
-          <tr><td>Owner key</td><td><span id="ownerWIF"></span></td></tr>
-          <tr><td>Memo key</td><td><span id="memoWIF"></span></td></tr>
+          <tr><td id="step4Posting"></td><td><span id="postingWIF"></span></td></tr>
+          <tr><td id="step4Active"></td><td><span id="activeWIF"></span></td></tr>
+          <tr><td id="step4Owner"></td><td><span id="ownerWIF"></span></td></tr>
+          <tr><td id="step4Memo"></td><td><span id="memoWIF"></span></td></tr>
         </table>
 
-        <p>
-          These keys are generated from your password. They can be used instead of it, but only for their specific purpose.<br />
-          It's safer to use the posting key if you want to use a device to only post and vote, or the active key when you want to perform other actions.<br />
-          THE PASSWORD AND THE OWNER KEY ARE BEST TO KEPT OFFLINE!
-        </p>
+        <p id="step4Warning"></p>
 
-        <p>
-          By clicking the following button, the user who created your invitation will be informed, and hopefully create your account soon.
-        <p>
+        <p id="step4Confirm"><p>
 
-        <button id="finish" type="button" class="btn btn-primary">Finish account request and leave this site</button>
+        <button id="finish" type="button" class="btn btn-primary"></button>
         <img src="gears.gif" id="gearsAccept" class="hidden" />
 
       </fieldset>
     </div>
 
-    <div id="invalid" class="hidden">
-      Invalid invitation ID, sorry!
-    </div>
+    <div id="invalid" class="hidden"></div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-  <script src="./js/steem.min.js"></script>
+  <script src="js/steem.min.js"></script>
 
-  <script src="./accept.js"></script>
+  <script src="https://unpkg.com/i18next/i18next.js"></script>
+  <script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+
+  <script src="js/helpers.js"></script>
+  <script src="accept.js"></script>
 </body>
 </html>

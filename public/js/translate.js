@@ -3,6 +3,7 @@ i18next
   .use(i18nextBrowserLanguageDetector)
   .init({
     fallbackLng: 'en',
+    load: 'language-only',
     debug: false,
     backend: {
       loadPath: 'locales/{{lng}}.json'
@@ -13,6 +14,25 @@ function translateIndexContent() {
   // languages
   setContentById('languageEN',i18next.t('language.en'));
   setContentById('languageDE',i18next.t('language.de'));
+  setContentById('languageAR',i18next.t('language.ar'));
+  setContentById('languageEL',i18next.t('language.el'));
+  setContentById('languageES',i18next.t('language.es'));
+  //setContentById('languageFR',i18next.t('language.fr'));
+  setContentById('languageHE',i18next.t('language.he'));
+  //setContentById('languageIT',i18next.t('language.it'));
+  //setContentById('languageJA',i18next.t('language.ja'));
+  //setContentById('languageKO',i18next.t('language.ko'));
+  setContentById('languageNL',i18next.t('language.nl'));
+  setContentById('languagePL',i18next.t('language.pl'));
+  setContentById('languagePT',i18next.t('language.pt'));
+  //setContentById('languageRU',i18next.t('language.ru'));
+  //setContentById('languageSL',i18next.t('language.sl'));
+  setContentById('languageSR',i18next.t('language.sr'));
+  setContentById('languageTR',i18next.t('language.tr'));
+  //setContentById('languageVI',i18next.t('language.vi'));
+  setContentById('languageYO',i18next.t('language.yo'));
+  setContentById('languageEO',i18next.t('language.eo'));
+  //setContentById('languageZH',i18next.t('language.zh'));
 
   // loggedout
   setContentById('loggedOutGreeting',i18next.t('loggedout.greeting'));
@@ -52,6 +72,7 @@ function translateIndexContent() {
   //bot claim modal
   setContentById('botClaimModalLabel',i18next.t('botclaimmodal.title'));
   setContentById('botClaimExplainer',i18next.t('botclaimmodal.explainer'));
+  setContentById('botClaimCountLabel',i18next.t('botclaimmodal.amount'));
   setContentById('botIsWorking',i18next.t('botclaimmodal.working'));
   setContentById('botStoppedWithError',i18next.t('botclaimmodal.stopped'));
   setContentById('botClaimStart',i18next.t('botclaimmodal.start'));
@@ -77,6 +98,15 @@ function translateIndexContent() {
   setContentById('orSeperator',i18next.t('invitemodal.or'));
   setContentById('multiInviteExplainer',i18next.t('invitemodal.multi'));
   setContentById('multiInvitesLabel',i18next.t('invitemodal.multi_label'));
+  setContentById('publicInviteExplainer',i18next.t('invitemodal.public'));
+  setContentById('responseTimeLabel',i18next.t('invitemodal.response_time'));
+  setContentById('pubDescriptionLabel',i18next.t('invitemodal.public_description'));
+  setContentById('requirePhoneExplainer',i18next.t('invitemodal.require_phone'));
+  setContentById('requireEmailExplainer',i18next.t('invitemodal.require_email'));
+  setContentById('requireRedditExplainer',i18next.t('invitemodal.require_reddit'));
+  setContentById('requireFacebookExplainer',i18next.t('invitemodal.require_facebook'));
+  setContentById('requireTwitterExplainer',i18next.t('invitemodal.require_twitter'));
+  setContentById('requireInstagramExplainer',i18next.t('invitemodal.require_instagram'));
   setContentById('inviteDelegateExplainer',i18next.t('invitemodal.delegate'));
   setContentById('inviteDelegateAmount',i18next.t('invitemodal.delegate_amount'));
   setContentById('inviteValidityExplainer',i18next.t('invitemodal.validity'));

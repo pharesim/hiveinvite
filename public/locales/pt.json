@@ -1,21 +1,21 @@
 {
     "loggedout": {
-        "greeting": "Make a Hiver!",
-        "explainer": "Hiveinvite is a service that allows you to invite your friends to Hive.",
+        "greeting": "Cria um Hiver!",
+        "explainer": "Hiveinvite é um serviço que permite-te convidar os teus amigos para o hive.",
         "buttontext": "para começar.",
-        "login_error": "Erro de login",
-        "usernamePlaceholder": "Your Hive username",
-        "postingkeyPlaceholder": "Sua chave privada de publicação"
+        "login_error": "Erro de Início de sessão",
+        "usernamePlaceholder": "O seu nome de utilizador hive",
+        "postingkeyPlaceholder": "A sua chave privada de publicação"
     },
     "index": {
         "lastupdate": "Última atualização",
         "refresh": "Atualizar agora",
-        "greeting": "Olá <span id='loggedInUser'>username</span>!",
-        "tokenexplain": "To create a Hive account, you first need to claim a token. These can be obtained by burning a certain amount of HIVE, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Hive Power.",
-        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> HIVE or <span class='rccost'>0</span> RC mana",
-        "pendingclaims": "Você criou uma conta. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
-        "pendingclaims_plural": "Você criou <span id='pendingclaims'>0</span> contas. <span id='invitespending'></span>",
-        "nopendingclaims": "Você ainda não criou nenhuma conta.",
+        "greeting": "Olá <span id='loggedInUser'>nome de utilizador</span>!",
+        "tokenexplain": "Para criar uma conta hive, precisa primeiro de reivindicar um token. Estes podem ser obtidos por queimar uma certa quantidade de HIVE, ou por gastar uma grande quantidade de mana RC. Em retorno, a nova conta recebe uma quantia mínima de mana RC para transicionar no blockchain, sem possuir Hive Power.",
+        "tokencost": "O custo atual de uma reclamação é <span class='steemcost'>0</span> HIVE ou <span class='rccost'>0</span> RC mana",
+        "pendingclaims": "Você reivindicou uma conta. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
+        "pendingclaims_plural": "Você reivindicou <span id='pendingclaims'>0</span> contas. <span id='invitespending'></span>",
+        "nopendingclaims": "Não reivindicas-te contas ainda.",
         "invitespending": "Um convite está pendente, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
         "invitespending_plural": "<span id='pendinginvites'>0</span> convites pendentes, <span id='invitemore'></span>",
         "noinvitespending": "Sem convites pendentes, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
@@ -37,38 +37,38 @@
         "invitemodal": "Convide alguém agora"
     },
     "freeclaimmodal": {
-        "title": "Claim discounted Hive accounts",
-        "explainer": "O último custo para criação de uma conta com desconto foi de <span class='rccost'>0</span> RC<br />Esteja ciente de que isto muda o tempo todo. Quando várias contas são reivindicadas em um curto período de tempo, o preço aumenta.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "Com <span id='currentrc'>0</span> RC você pode criar uma conta.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "Com <span id='currentrc'>0</span> RC você pode criar <span class='possibleclaims'>0</span> contas.",
-        "moreexplain": "Você pode criar uma única conta, ou usar o bot de criação até que seu RC esgote ou que você pare o processo.",
-        "single": "Criar uma conta",
-        "bot": "Bot de criação"
+        "title": "Reivindicar contas steem com descontos",
+        "explainer": "O último custo para reclamar uma conta com desconto foi <span class='rccost'>0</span> RC<br />Tenha em atenção de que isto está sempre a mudar. Quando se reivindica várias contas em um curto período de tempo, o preço aumenta.<br /><span id='freeExplainAmount'></span>",
+        "explainamount": "Com <span id='currentrc'>0</span> RC podes reivindicar uma conta.<span class='possibleclaims hidden'></span>",
+        "explainamount_plural": "Com <span id='currentrc'>0</span> RC podes reivindicar <span class='possibleclaims'>0</span> contas.",
+        "moreexplain": "Podes reivindicar uma conta singular, ou usar o bot de reivindicação até que fiques sem RC ou o pares.",
+        "single": "Reivindicar uma conta",
+        "bot": "Reivindicar bot"
     },
     "botclaimmodal": {
-        "title": "Automated claiming of discounted Hive accounts",
-        "explainer": "Olá! Sou o seu amigável robô de criação de contas. Clique no botão abaixo para me fazer começar a trabalhar. Vou continuar a criar contas até que seu RC esgote, ou me diga para parar com o outro botão.",
+        "title": "Reivindicação automatizada de contas hive com desconto",
+        "explainer": "Olá! Sou o teu robô amigável de reivindicação de contas. Clique no botão abaixo para me fazeres começar a trabalhar. Vou continuar a reclamar até ficares sem RC, ou indicares-me para parar, com o outro botão.",
         "amount": "Amount of accounts to claim, -1 for unlimited",
-        "working": "Ao trabalho! Criadas <span id='botClaimStatusClaimed'>0</span> contas até agora.",
-        "stopped": "Parado depois de criar <span id='botClaimHasClaimed'>0</span> contas.<br />Mensagem de erro: <span id='botClaimError'></span>",
+        "working": "A trabalhar! Reivindicadas <span id='botClaimStatusClaimed'>0</span> contas até agora.",
+        "stopped": "Parou após reivindicar <span id='botClaimHasClaimed'>0</span> contas.<br />Mensagem de erro:<span id='botClaimError'></span>",
         "start": "Começar",
         "close": "Parar/Fechar"
     },
     "paidclaimmodal": {
-        "title": "Pay to claim a Hive account",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> HIVE<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Hive Power."
+        "title": "Pague para reivindicar uma conta hive",
+        "explainer": "O custo de reivindicação de uma conta é <span class='steemcost'>0</span> HIVE<br /> Este preço é definido pelas testemunhas.<br />Uma conta nova receberá uma quantidade básica de RC como se tivesse a mesma quantidade de Hive Power."
     },
     "invitemodal": {
-        "title": "Invite to Hive!",
+        "title": "Convidar para o Hive!",
         "label": "Etiqueta",
-        "by_email": "Desmarque esta opção para obter um ou vários links diretamente em vez de enviar um email",
+        "by_email": "Desmarque isto para obter um ou vários links diretamente, em vez de enviar um e-mail",
         "email": "Endereço",
         "mailtext_label": "Texto do e-mail",
-        "mailtext": "Hello,\n\nyou have been invited by {} to join the Hive blockchain.\n\nWhat is that?\nHive is the backend used by new social media sites like peakd.com and hive.blog. Using blockchain technology, it goes new ways by paying the users for their activity.\n\nAccept the invitation by clicking on the following link:",
+        "mailtext": "Olá,\n\nfoi convidado por {} para se juntar ao Hive blockchain.\n\nO que é isso?\nHive é o backend usado por novos sites de redes sociais como o peakd.com e o hive.blog. Ao usar a tecnologia blockchain, ela oferece novas formas de pagamento aos utilizadores pela sua atividade.\n\nAceite o convite clicando no seguinte link:",
         "linkamount": "Número de links para criar",
         "or": "OU",
         "multi": "Crie um link que seja válido para múltiplas criações de contas",
-        "multi_label": "Quantidade de contas para as quais esse link é válido (cuidado, você pode ficar sem reivindicações usando essa opção!)",
+        "multi_label": "Quantidade de contas a que este link é válido (tenha cuidado, podes ficar sem reclamações com esta opção!)",
         "public": "Create a public invite with optional verification methods",
         "response_time": "Typical time until creation in hours",
         "public_description": "Description of your requirements (text only)",
@@ -78,54 +78,55 @@
         "require_facebook": "Require a facebook account",
         "require_twitter": "Require a twitter account",
         "require_instagram": "Require an instagram account",
-        "delegate": "A new account only has a basic amount of RC to transact on the blockchain. If you want the new user to be able to do more, delegate some Hive Power. You can also do that later of course.",
-        "delegate_amount": "Amount of Hive Power to delegate",
-        "validity": "Por quantos dias o convite deve ser válido antes de ser automaticamente excluído?",
+        "delegate": "Uma nova conta tem apenas uma quantidade básica de RC para realizar transações na blockchain. Se desejas que o novo utilizador possa fazer algo mais, delega-o algum Hive Power. Podes também fazer isso mais tarde, claro.",
+        "delegate_amount": "Quantidade de Hive Power para delegar",
+        "validity": "Por quantos dias deve o convite ser válido antes de ser eliminado automaticamente?",
         "validity_label": "Validade em dias",
         "usermail": "Endereço de e-mail para atualizações de status",
         "create": "Criar convite"
     },
     "button": {
         "submit": "Submeter",
-        "login": "Entrar",
-        "login_now": "Entrar agora",
-        "logout": "Sair",
+        "login": "Iniciar Sessão",
+        "login_now": "Iniciar Sessão agora",
+        "logout": "Encerrar Sessão",
         "close": "Fechar",
         "proceed": "Continuar"
     },
     "keys": {
         "wrong_key": "Chave inválida",
-        "active_required": "Esta ação requer a sua chave ativa (active key).",
-        "active": "Active key",
-        "posting": "Posting key",
-        "owner": "Owner key",
-        "memo": "Memo key",
+        "active_required": "Esta ação requer a sua chave ativa.",
+        "active": "Chave ativa",
+        "posting": "Chave de publicação",
+        "owner": "Chave de proprietário",
+        "memo": "Chave memo",
         "storeKey": "Recordar a chave para esta sessão"
     },
     "language": {
         "switch": "Mudar idioma...",
         "en": "inglês",
         "de": "alemão",
-        "ar": "árabe",
-        "el": "grego",
+        "ar": "arabic",
+        "el": "greek",
         "eo": "esperanto",
-        "es": "espanhol",
-        "fr": "francês",
-        "he": "hebraico",
-        "it": "italiano",
-        "ja": "japonês",
-        "ko": "coreano",
-        "nl": "holandês",
-        "pl": "polonês",
-        "pt": "português",
-        "ru": "russo",
-        "sl": "esloveno",
-        "sr": "sérvio",
-        "tr": "turco",
-        "vi": "vietnamita",
+        "es": "spanish",
+        "fr": "french",
+        "he": "hebrew",
+        "it": "italian",
+        "ja": "japanese",
+        "ko": "korean",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sl": "slovenian",
+        "sr": "serbian",
+        "tr": "turkish",
+        "vi": "vietnamese",
         "yo": "yoruba",
-        "zh": "chinês (tradicional)"
+        "zh": "chinese (traditional)"
     },
+
     "step0": {
         "lead": "This registration requires personal data",
         "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
@@ -140,24 +141,24 @@
         "submit": "Continue to account creation"
     },
     "step1": {
-        "lead": "Hi! You are only a few steps away from getting your own Hive account!",
-        "text": "A sua conta incluirá sua carteira pessoal, por isso a segurança é extremamente importante.<br />Nós geramos uma senha mestre (master password) para sua conta, que você precisa manter em um local seguro. Anote-a em algum lugar!",
-        "submit": "Eu anotei a senha e nunca vou perdê-la"
+        "lead": "Olá! Estás a poucos passos de distância de teres a tua própria conta Hive!",
+        "text": "A sua conta irá incluir a sua carteira pessoal, por isso, a segurança é de extrema importância.<br /> Gerámos uma palavra-passe mestre para a sua conta, a qual precisa manter num lugar seguro. Anote-a em algum sítio!",
+        "submit": "Eu anotei a palavra-passe e nunca a irei perder"
     },
     "step2": {
-        "lead": "Ok. Certifique-se de não perder a senha! Não há como recuperá-la!",
-        "text": "Your Hive username has to be at least three characters long, and can not contain other characters than lowercase letters, numbers and a dash. It has to be unique and can never be changed. Choose it carefully.",
-        "username": "Seu nome de usuário",
+        "lead": "Ok. Certifique-se que não perde a palavra-passe! Não há maneira de recuperá-la!",
+        "text": "O seu nome de utilizador do Hive tem de ter pelos menos três caracteres, e não pode conter outros tipos de caracteres para além de letras minúsculas, números e hífens. Tem de ser um nome único e nunca poderá ser alterado. Escolha cuidadosamente.",
+        "username": "O seu nome de utilizador",
         "as": "como"
     },
     "step3": {
-        "text": "O que dissemos antes sobre sua senha não foi uma piada.<br />Para verificar se você não cometeu um erro ao anotar sua senha, insira-a aqui.<br />Se você não puder continuar, recarregue a página em seu navegador e comece novamente."
+        "text": "O que dissemos anteriormente acerca de sua palavra-passe não era uma brincadeira.<br /> Para verificar que não cometeu um erro ao anotar a sua palavra-passe, introduza-a aqui.<br />Se não conseguir proceder, recarregue a página no seu browser e comece novamente."
     },
     "step4": {
-        "text": "There are different access levels for a Hive account.<br />The posting key is used for everyday social media activity, i.e. it lets you post and vote.<br />To access your wallet and move HIVE, you need the active key.<br />The owner key can be used to change those two, and should never be used for other purposes. It's best kept besides the master password, don't use it online.<br />Last and least there's the memo key, which has no function yet but may in the future be used to decrypt your private data like direct messages.",
-        "warning": "Estas chaves são geradas partindo do seu password. Elas podem ser usadas no lugar deste, mas apenas para o seu específico propósito.<br />É mais seguro usar a chave de publicação se o objetivo é usar um dispositivo apenas para publicar e votar, ou a chave ativa quando quiser realizar outras ações.<br />O PASSWORD E A CHAVE DE PROPRIETÁRIO SÃO MAIS SEGURAS SE MANTIDAS OFFLINE!",
-        "confirm": "Ao clicar no botão a seguir, o usuário que criou seu convite será informado e, esperamos, criará sua conta em breve.",
-        "finish": "Conclua a solicitação da conta e saia deste site"
+        "text": "Existem diferentes níveis de acesso para uma conta Hive.<br />A chave de publicação é usada para atividades diárias nas redes sociais, por exemplo, deixa-te publicar e votar.<br />Para aceder à sua carteira e mover HIVE, irá precisar da chave ativa.<br />A chave de proprietário pode ser usada para mudar esses dois, e nunca deve ser usada para outros propósitos. É melhor mantida ao lado da palavra-passe mestre, não a utilizes online.<br />Por último está a chave memo, que não tem função ainda mas pode ser usada no futuro para desencriptar os seus dados privados como as mensagens privadas.",
+        "warning": "Estas chaves são geradas partindo da sua palavra-passe. Elas podem ser usadas no lugar desta, mas apenas para o seu específico propósito.<br />É mais seguro usar a chave de publicação se queres usar um dispositivo para apenas publicar e votar, ou a chave ativa quando queres realizar outras ações.<br />É MELHOR MANTER A PALAVRA-PASSE E A CHAVE DE PROPRIETÁRIO OFFLINE!",
+        "confirm": "Ao clicar no seguinte botão, o utilizador que criou o teu convite vai ser informado, e, seguramente, irá criar a sua conta brevemente.",
+        "finish": "Acabe a solicitação de conta e saia deste site"
     },
     "accept": {
         "invalid": "ID de convite inválido, desculpe!"

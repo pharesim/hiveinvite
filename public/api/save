@@ -8,11 +8,14 @@ import mailer
 import db
 import api
 import errorHandler
+import hashlib
 
 import cgi
 import uuid
 import time
 import datetime
+import requests
+import os
 
 params = cgi.FieldStorage()
 inviteid = params.getvalue('id')
@@ -21,6 +24,13 @@ owner    = params.getvalue('owner')
 active   = params.getvalue('active')
 posting  = params.getvalue('posting')
 memo     = params.getvalue('memo')
+message  = params.getvalue('message')
+phone    = params.getvalue('phone')
+email    = params.getvalue('mail')
+reddit   = params.getvalue('reddit')
+facebook = params.getvalue('facebook')
+twitter  = params.getvalue('twitter')
+insta    = params.getvalue('instagram')
 
 validinvite = False
 savedinvite = False
@@ -32,26 +42,103 @@ for result in results:
   validtill = createdts + (result['validity'] * 60 * 60 * 24)
   if validtill < nowts:
     db.delete('invites',{'inviteid':result['inviteid']})
+    pub = db.select('publics',['inviteid'],{'inviteid':result['inviteid']},'inviteid')
+    for res in pub:
+      db.delete('publics',{'inviteid':result['inviteid']})
   else:
     validinvite = True
     username   = result['username']
     usermail   = result['usermail']
     remaining  = result['remaining']
     label      = result['label']
-    steempower = result['steempower']
+    hivepower  = result['steempower']
     validity   = result['validity']
 if validinvite != True:
   errorHandler.throwError('No valid invite found')
 
+mailtext = "Visit https://hiveinvite.com/ to finish account creation or delete the invite.\n"
+mailtext += "Selected account name: "+account
+
+pub = db.select('publics',['inviteid','ask_phone','ask_mail','ask_reddit','ask_fb','ask_twitt','ask_insta'],{'inviteid':inviteid},'inviteid')
+for res in pub:
+
+  # block proxy/tor/vpn
+  URL = "http://check.getipintel.net/check.php"
+  ip = cgi.escape(os.environ["REMOTE_ADDR"])
+  PARAMS = {'ip':ip,'contact':'pharesim@protonmail.com'}
+  banscore = requests.get(url = URL, params = PARAMS).text
+  if float(banscore) > 0.95:
+    errorHandler.throwError('Nope')
+
+  mailtext += "\nIntro message: "+message
+
+  if res['ask_phone'] == 'true':
+    if phone == '':
+      errorHandler.throwError('Phone number required')
+    hashed = hashlib.sha256(phone.encode()).hexdigest()
+    exists = db.select('hashes',['hash'],{'type':'phone','hash':hashed},'hash')
+    for e in exists:
+      errorHandler.throwError('Phone number already used')
+    db.insert('hashes',{'hash':hashed,'type':'phone'})
+    mailtext += "\nPhone number: "+phone
+  if res['ask_mail'] == 'true':
+    if email == '':
+      errorHandler.throwError('Email address required')
+    hashed = hashlib.sha256(email.encode()).hexdigest()
+    exists = db.select('hashes',['hash'],{'type':'email','hash':hashed},'hash')
+    for e in exists:
+      errorHandler.throwError('Email address already used')
+    db.insert('hashes',{'hash':hashed,'type':'email'})
+    mailtext += "\nEmail address: "+email
+  if res['ask_reddit'] == 'true':
+    if reddit == '':
+      errorHandler.throwError('Reddit account required')
+    hashed = hashlib.sha256(reddit.encode()).hexdigest()
+    exists = db.select('hashes',['hash'],{'type':'reddit','hash':hashed},'hash')
+    for e in exists:
+      errorHandler.throwError('Reddit account already used')
+    db.insert('hashes',{'hash':hashed,'type':'reddit'})
+    mailtext += "\nReddit account: "+reddit
+  if res['ask_fb'] == 'true':
+    if facebook == '':
+      errorHandler.throwError('Facebook account required')
+    hashed = hashlib.sha256(facebook.encode()).hexdigest()
+    exists = db.select('hashes',['hash'],{'type':'facebook','hash':hashed},'hash')
+    for e in exists:
+      errorHandler.throwError('Facebook account already used')
+    db.insert('hashes',{'hash':hashed,'type':'facebook'})
+    mailtext += "\nFacebook account: "+facebook
+  if res['ask_twitt'] == 'true':
+    if twitter == '':
+      errorHandler.throwError('Twitter account required')
+    hashed = hashlib.sha256(twitter.encode()).hexdigest()
+    exists = db.select('hashes',['hash'],{'type':'twitter','hash':hashed},'hash')
+    for e in exists:
+      errorHandler.throwError('Twitter account already used')
+    db.insert('hashes',{'hash':hashed,'type':'twitter'})
+    mailtext += "\nTwitter account: "+twitter
+  if res['ask_insta'] == 'true':
+    if insta == '':
+      errorHandler.throwError('Instagram account required')
+    hashed = hashlib.sha256(insta.encode()).hexdigest()
+    exists = db.select('hashes',['hash'],{'type':'instagram','hash':hashed},'hash')
+    for e in exists:
+      errorHandler.throwError('Instagram account already used')
+    db.insert('hashes',{'hash':hashed,'type':'instagram'})
+    mailtext += "\nInstagram account: "+insta
+
+  mailtext += "\nIP: "+ip
+  mailtext += "\nScore from https://getipintel.net/ (close to 1 is bad): "+banscore
+
 if remaining > 1:
   db.update('invites',{'remaining':remaining - 1},{'inviteid':inviteid})
   newinviteid = uuid.uuid4().hex
-  db.insert('invites',{'inviteid':newinviteid,'label':label+'.'+newinviteid[:4],'steempower':steempower,'validity':validity,'username':username,'usermail':usermail,'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP','remaining':1})
+  db.insert('invites',{'inviteid':newinviteid,'label':label+'.'+newinviteid[:4],'steempower':hivepower,'validity':validity,'username':username,'usermail':usermail,'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP','remaining':1})
 else:
   db.update('invites',{'account':account,'owner':owner,'active':active,'posting':posting,'memo':memo,'accepted':'CURRENT_TIMESTAMP'},{'inviteid':inviteid})
 savedinvite = True
-  
-mailer.sendmail(usermail,'One of your steem invitations was accepted',"Visit https://steeminvite.com/ to finish account creation.")
+
+mailer.sendmail(usermail,'One of your Hive invitations was accepted',mailtext)
 
 data = {'id':inviteid,'saved':savedinvite}
 api.output(data)

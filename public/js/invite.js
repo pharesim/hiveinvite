@@ -5,7 +5,7 @@ function validateModalForm() {
       fails++;
     }
   });
-  
+
   if($("#inviteByEmail").is(':checked') && !isEmail($("#inviteEmail").val())) {
     fails++;
   }
@@ -34,6 +34,7 @@ $("#inviteByEmail").click(function(){
     $(".sendEmail").show();
     hideByClass("noEmail");
     hideByClass("multiInvites");
+    hideByClass("publicInvites");
     document.getElementById("linksAmount").value = 1;
     document.getElementById("multiInviteAmount").value = 1;
     document.getElementById("multiInvite").checked = false;
@@ -56,6 +57,21 @@ $("#multiInvite").click(function(){
   }
 });
 
+hideByClass("publicInvites");
+$("#publicInvite").click(function(){
+  if($(this).is(':checked')){
+    showByClass("publicInvites");
+  } else {
+    hideByClass("publicInvites");
+    document.getElementById("requirePhone").checked = false;
+    document.getElementById("requireEmail").checked = false;
+    document.getElementById("requireReddit").checked = false;
+    document.getElementById("requireFacebook").checked = false;
+    document.getElementById("requireTwitter").checked = false;
+    document.getElementById("requireInstagram").checked = false;
+  }
+});
+
 document.getElementById("linksAmount").oninput = function() {
   if(this.value > remaining_invites) {
     this.value = remaining_invites;
@@ -75,15 +91,24 @@ $("#createInvite").click(function(e){
     $.ajax({
       url: "api/invite",
       data: {
-        label: $("#inviteLabel").val(),
+        label: document.getElementById("inviteLabel").value,
         email: $("#inviteByEmail").is(":checked"),
-        address: $("#inviteEmail").val(),
-        mailtext: $("#emailText").val(),
+        address: document.getElementById("inviteEmail").value,
+        mailtext: document.getElementById("emailText").value,
         amount: document.getElementById("linksAmount").value,
         multi: document.getElementById("multiInviteAmount").value,
-        sp: $("#inviteSP").val(),
-        validity: $("#inviteValidity").val(),
-        usermail: $("#inviteUsermail").val(),
+        public: $("#publicInvite").is(":checked"),
+        response_time: document.getElementById("responseTime").value,
+        pub_description: document.getElementById("pubDescription").value,
+        require_phone: $("#requirePhone").is(":checked"),
+        require_email: $("#requireEmail").is(":checked"),
+        require_reddit: $("#requireReddit").is(":checked"),
+        require_facebook: $("#requireFacebook").is(":checked"),
+        require_twitter: $("#requireTwitter").is(":checked"),
+        require_instagram: $("#requireInstagram").is(":checked"),
+        sp: document.getElementById("inviteSP").value,
+        validity: document.getElementById("inviteValidity").value,
+        usermail: document.getElementById("inviteUsermail").value,
         username: username
       },
       type: "POST"

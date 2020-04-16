@@ -1,3 +1,16 @@
+
+i18next
+  .use(i18nextXHRBackend)
+  .use(i18nextBrowserLanguageDetector)
+  .init({
+    fallbackLng: 'en',
+    load: 'language-only',
+    debug: false,
+    backend: {
+      loadPath: 'locales/{{lng}}.json'
+    }
+  });
+
 newname    = "";
 passPhrase = "";
 wordCount  = 1626;
@@ -7,7 +20,7 @@ seedLimit  = 512;
 privKeys   = "";
 pubKeys    = "";
 
-steem.api.setOptions({ url: 'https://api.steemit.com' });
+steem.api.setOptions({ url: 'https://anyx.io' });
 
 var generatePassPhrase = function() {
   var crypto = window.crypto || window.msCrypto;
@@ -52,9 +65,15 @@ function getParameterByName(name, url) {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function startclaim() {
+async function startclaim(public) {
+  if(public != false) {
+    prepareStep0(public);
+  }
   generatePassPhrase();
   $("#passphrase_orig").val(passPhrase).attr('size',passPhrase.length);
+  await sleep(1000);
+  translateContent();
+  $("#claim").show();
 }
 
 $.ajax({
@@ -67,13 +86,56 @@ $.ajax({
     alert(data['error']);
   } else {
     if(data['valid'] == true) {
-      $("#claim").show();
-      startclaim();
+      startclaim(data['public']);
     } else {
       $("#invalid").show();
     }
   }
 });
+
+function prepareStep0(public) {
+  $("#step1").hide();
+  $("#step0").show();
+  if(public['ask_phone'] == 'true') {
+    $("#phoneInput").show();
+  }
+  if(public['ask_mail'] == 'true') {
+    $("#mailInput").show();
+  }
+  if(public['ask_reddit'] == 'true') {
+    $("#redditInput").show();
+  }
+  if(public['ask_fb'] == 'true') {
+    $("#facebookInput").show();
+  }
+  if(public['ask_twitt'] == 'true') {
+    $("#twitterInput").show();
+  }
+  if(public['ask_insta'] == 'true') {
+    $("#instagramInput").show();
+  }
+}
+
+$("#finish_step0").click(
+  function(){
+    errors = 0
+    inputs = ["phone",'mail','reddit','facebook','twitter','instagram']
+    inputs.forEach(function(inp) {
+      if($("#"+inp+"Input").is(":visible")) {
+        if($("#"+inp+"Input input").val() == '') {
+          errors = 1
+        }
+      }
+    });
+    if(errors == 0) {
+      $("#step0Error").hide();
+      $("#step0").hide();
+      $("#step1").show();
+    } else {
+      $("#step0Error").show();
+    }
+  }
+);
 
 $("#finish_step1").click(
   function(){
@@ -85,15 +147,15 @@ $("#finish_step1").click(
 $("#newusername").keyup(
   function(){
     $("#finish_step2").prop('disabled',true);
-    
-    newname = $(this).val().replace(/[^a-z0-9!\-]+/g, "");
+
+    newname = $(this).val().replace(/[^a-z0-9.-]+/g, "");
     if(newname.lenth > 15) {
       newname = newname.substr(0,15);
     }
     $(this).val(newname);
 
     if(newname.length >= 3) {
-      steem.api.getAccounts([newname], function(err, result){     
+      steem.api.getAccounts([newname], function(err, result){
         if(typeof result[0] !== "undefined") {
           $("#finish_step2").prop('disabled',true);
           $("#fillusername").text("");
@@ -106,12 +168,12 @@ $("#newusername").keyup(
             $("#usernameerror").text(isValidUsername);
           } else {
             $("#finish_step2").removeAttr("disabled");
-            $("#fillusername").text("as @"+newname);
+            $("#fillusername").text(i18next.t('step2.as')+" @"+newname);
             $("#usernameerror").text("");
           }
         }
       });
-    } else {      
+    } else {
       $("#fillusername").text("");
     }
   }
@@ -172,15 +234,60 @@ $("#finish").click(function(){
       'active': pubKeys['active'],
       'posting': pubKeys['posting'],
       'owner': pubKeys['owner'],
-      'memo': pubKeys['memo']
+      'memo': pubKeys['memo'],
+      'message': $("#intro_message").val(),
+      'phone': $("#phone_number").val(),
+      'mail': $("#email_address").val(),
+      'reddit': $("#reddit").val(),
+      'facebook': $("#facebook").val(),
+      'twitter': $("#twitter").val(),
+      'instagram': $("#instagram").val()
     }
   }).fail(function(){
     alert('something went wrong');
   }).done(function( data ) {
     if(data['saved'] == true) {
-      window.location.href = 'https://steemit.com/faq.html';
+      window.location.href = 'https://hive.blog/faq.html';
     } else {
       alert(data['error']);
     }
   });
 });
+
+function translateContent() {
+  setTimeout(function(){},1000);
+  // languages
+  setContentById('step0Lead',i18next.t('step0.lead'));
+  setContentById('step0Text',i18next.t('step0.text'));
+  setContentById('messageLabel',i18next.t('step0.intro_message'));
+  setContentById('phoneLabel',i18next.t('step0.phone'));
+  setContentById('mailLabel',i18next.t('step0.mail'));
+  setContentById('redditLabel',i18next.t('step0.reddit'));
+  setContentById('facebookLabel',i18next.t('step0.facebook'));
+  setContentById('twitterLabel',i18next.t('step0.twitter'));
+  setContentById('instagramLabel',i18next.t('step0.instagram'));
+  setContentById('step0Error',i18next.t('step0.error'));
+  setContentById('finish_step0',i18next.t('step0.submit'));
+
+  setContentById('step1Lead',i18next.t('step1.lead'));
+  setContentById('step1Text',i18next.t('step1.text'));
+  setContentById('finish_step1',i18next.t('step1.submit'));
+
+  setContentById('step2Lead',i18next.t('step2.lead'));
+  setContentById('step2Text',i18next.t('step2.text'));
+  setContentById('step2Username',i18next.t('step2.username'));
+  setContentById('step2Proceed',i18next.t('button.proceed'));
+
+  setContentById('step3Text',i18next.t('step3.text'));
+  setContentById('finish_step3',i18next.t('button.proceed'));
+
+  setContentById('step4Text',i18next.t('step4.text'));
+  setContentById('step4Posting',i18next.t('keys.posting'));
+  setContentById('step4Active',i18next.t('keys.active'));
+  setContentById('step4Memo',i18next.t('keys.memo'));
+  setContentById('step4Owner',i18next.t('keys.owner'));
+  setContentById('step4Warning',i18next.t('step4.warning'));
+  setContentById('step4Confirm',i18next.t('step4.confirm'));
+  setContentById('finish',i18next.t('step4.finish'));
+  setContentById('invalid',i18next.t('accept.invalid'));
+}

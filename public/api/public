@@ -1,0 +1,32 @@
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
+import sys
+sys.path.append('si')
+
+import db
+import api
+
+import time
+import datetime
+import html
+
+nowts = time.time()
+invites = {}
+
+results = db.select('publics',['inviteid','responset','description','ask_phone','ask_mail','ask_reddit','ask_fb','ask_twitt','ask_insta'],'1=1','responset')
+for result in results:
+  res = db.select('invites',['created','validity','username','steempower','remaining'],{'inviteid':result['inviteid'],'accepted':'is null'},'created DESC')
+  for inv in res:
+    createdts = time.mktime(datetime.datetime.strptime(inv['created'], "%Y-%m-%d %H:%M:%S").timetuple())
+    validtill = createdts + (inv['validity'] * 60 * 60 * 24)
+    if validtill < nowts:
+      db.delete('invites',{'inviteid':result['inviteid']})
+      db.delete('publics',{'inviteid':result['inviteid']})
+    else:
+      description = ''
+      if result['description'] != None:
+        description = html.escape(result['description'])
+      invites[result['inviteid']] = {'user':inv['username'],'data':{'delegation':inv['steempower'],'remaining':inv['remaining'],'responset':result['responset'],'description':description,'ask_phone':result['ask_phone'],'ask_mail':result['ask_mail'],'ask_reddit':result['ask_reddit'],'ask_fb':result['ask_fb'],'ask_twitt':result['ask_twitt'],'ask_insta':result['ask_insta']}}
+
+api.output(invites)

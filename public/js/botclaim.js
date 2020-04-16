@@ -11,7 +11,7 @@ document.getElementById('botClaimStart').onclick = function() {
   showById('botIsWorking');
   bot_running = 1;
   wif = getValueById('freeClaimActiveKey');
-  setStoreWIF(document.getElementById('storeWIFfree').checked); 
+  setStoreWIF(document.getElementById('storeWIFfree').checked);
   let callback = function(err, success) {
     if(err !== null) {
       showById('botStoppedWithError');
@@ -23,13 +23,22 @@ document.getElementById('botClaimStart').onclick = function() {
       increment(document.getElementById('botClaimHasClaimed'));
     }
   }
-  
+
   botclaims(callback);
 }
 
 async function botclaims(callback) {
-  while (bot_running == 1) {
+  amount = getValueById("botClaimCount");
+  while (bot_running == 1 && (amount == -1 || amount > 0)) {
     claim_account(wif,callback);
+    if(amount > 0) {
+      amount -= 1;
+      setValueById("botClaimCount",amount);
+      if(amount == 0) {
+        hideById('botIsWorking');
+        botClose();
+      }
+    }
     await sleep(5000);
   }
 }
@@ -41,6 +50,7 @@ function botClose() {
   document.getElementById('botClaimError').innerHTML = '';
   document.getElementById('botClaimStatusClaimed').innerHTML = 0;
   document.getElementById('botClaimHasClaimed').innerHTML = 0;
+  setValueById("botClaimCount","-1");
   hideById('botStoppedWithError');
   setProperties();
 }

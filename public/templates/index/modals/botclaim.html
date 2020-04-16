@@ -4,9 +4,17 @@
       <div class="modal-header">
         <h5 class="modal-title" id="botClaimModalLabel"></h5>
       </div>
-      
+
       <div class="modal-body">
         <p id="botClaimExplainer"></p>
+        <form>
+          <div class="form-group row">
+            <label for="botClaimCount" class="col-10 col-form-label" id="botClaimCountLabel"></label>
+            <div class="col-2">
+              <input class="form-control" type="number" id="botClaimCount" value="-1" size="5">
+            </div>
+          </div>
+        </form>
         <p id="botClaimStatus" class="hidden borderBox">
           <span id="botIsWorking"></span>
           <span id="botStoppedWithError" class="hidden">

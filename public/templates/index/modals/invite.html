@@ -7,31 +7,31 @@
             <span aria-hidden="true">&times;</span>
             </button>
         </div>
-    
+
         <form>
             <div class="modal-body">
-            
+
             <div class="form-group row">
                 <label for="inviteLabel" class="col-2 col-form-label"><span id="inviteLabelLabel"></span>*</label>
                 <div class="col-10">
                 <input class="form-control required" type="text" value="" id="inviteLabel" autocomplete="off">
                 </div>
             </div>
-    
+
             <div class="form-check">
                 <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" id="inviteByEmail" checked="checked">
                 <span id="inviteByEmailExplainer"></span>
                 </label>
             </div>
-    
+
             <div class="form-group row sendEmail">
                 <label for="inviteEmail" class="col-2 col-form-label"><span id="inviteEmailLabel"></span>*</label>
                 <div class="col-10">
                 <input class="form-control" type="text" value="" id="inviteEmail" autocomplete="off">
                 </div>
             </div>
-    
+
             <div class="form-group sendEmail">
                 <label for="emailText" id="inviteMailTextLabel"></label>
                 <textarea class="form-control" id="emailText" rows="5"></textarea>
@@ -58,7 +58,66 @@
                 <input class="form-control" type="number" value="1" id="multiInviteAmount" autocomplete="off">
                 </div>
             </div>
-    
+
+            <hr />
+
+            <div class="form-check noEmail">
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="publicInvite">
+                <span id="publicInviteExplainer"></span>
+            </div>
+
+            <div class="publicInvites">
+              <div class="form-group row">
+                  <label for="pubDescription" class="col-8 col-form-label"><span id="pubDescriptionLabel"></span></label>
+                  <div class="col-8">
+                  <textarea class="form-control" id="pubDescription"></textarea>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="responseTime" class="col-8 col-form-label"><span id="responseTimeLabel"></span>*</label>
+                  <div class="col-4">
+                  <input class="form-control" type="number" value="36" id="responseTime" autocomplete="off" />
+                  </div>
+              </div>
+              <div class="form-check">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="requirePhone" />
+                  <span id="requirePhoneExplainer"></span>
+                  </label>
+              </div>
+              <div class="form-check">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="requireEmail" />
+                  <span id="requireEmailExplainer"></span>
+                  </label>
+              </div>
+              <div class="form-check">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="requireReddit" />
+                  <span id="requireRedditExplainer"></span>
+                  </label>
+              </div>
+              <div class="form-check">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="requireFacebook" />
+                  <span id="requireFacebookExplainer"></span>
+                  </label>
+              </div>
+              <div class="form-check">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="requireTwitter" />
+                  <span id="requireTwitterExplainer"></span>
+                  </label>
+              </div>
+              <div class="form-check">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="requireInstagram" />
+                  <span id="requireInstagramExplainer"></span>
+                  </label>
+              </div>
+            </div>
+
             <hr />
 
             <div class="form-text" id="inviteDelegateExplainer"></div>
@@ -66,30 +125,30 @@
             <div class="form-group row">
                 <label for="example-text-input" class="col-8 col-form-label"><span id="inviteDelegateAmount"></span>*</label>
                 <div class="col-4">
-                <input class="form-control required" type="text" value="0" id="inviteSP" autocomplete="off">
+                <input class="form-control required" type="text" value="0" id="inviteSP" autocomplete="off" />
                 </div>
             </div>
 
             <hr />
 
             <div class="form-text" id="inviteValidityExplainer"></div>
-    
+
             <div class="form-group row">
                 <label for="example-text-input" class="col-8 col-form-label"><span id="inviteValidityLabel"></span>*</label>
                 <div class="col-4">
-                <input class="form-control required" type="text" value="7" id="inviteValidity" autocomplete="off">
+                <input class="form-control required" type="text" value="7" id="inviteValidity" autocomplete="off" />
                 </div>
             </div>
 
             <hr />
-    
+
             <div class="form-group">
                 <label for="inviteUsermail"><span id="inviteUsermailLabel"></span>*</label>
-                <input class="form-conrtol" type="text" value="" id="inviteUsermail">
+                <input class="form-conrtol" type="text" value="" id="inviteUsermail" />
             </div>
-    
+
             </div>
-    
+
             <div class="modal-footer">
             <button type="submit" class="btn btn-primary" id="createInvite" disabled></button>
             <img src="gears.gif" id="gearsInvite" class="hidden" />

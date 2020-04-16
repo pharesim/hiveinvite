@@ -1,7 +1,7 @@
-# Steeminvite
+# Hiveinvite
 
-Website to claim and create steem accounts and create invitations by link or email
-https://steeminvite.com
+Website to claim and create Hive accounts and create invitations by link or email
+https://hiveinvite.com
 
 ## Getting Started
 
@@ -24,13 +24,13 @@ First, clone this repository into the webroot folder
 
 ```
 cd /var/www
-git clone https://github.com/pharesim/steeminvite
+git clone https://github.com/pharesim/hiveinvite
 ```
 
 Set up the database
 
 ```
-cd steeminvite
+cd hiveinvite
 sqlite3 invites.sqlite3 < invites.db.txt
 chown www-data:www-data invites.sqlite3
 ```
@@ -47,17 +47,17 @@ Configure the webserver (apache2 in this example)
 
 ```
 cd /etc/apache2/sites-available/
-cp 000-default.conf steeminvite.conf
-nano steeminvite.conf
+cp 000-default.conf hiveinvite.conf
+nano hiveinvite.conf
 ```
 
 Minimal config example
 ```
 <VirtualHost *:80>
-        ServerName steeminvite.localhost
-        DocumentRoot /var/www/steeminvite/public
+        ServerName hiveinvite.localhost
+        DocumentRoot /var/www/hiveinvite/public
 
-        <Directory /var/www/steeminvite/public/api>
+        <Directory /var/www/hiveinvite/public/api>
           Options +ExecCGI
           SetHandler cgi-script
         </Directory>
@@ -69,11 +69,11 @@ Finalize apache setup
 
 ```
 a2enmod cgi
-a2ensite steeminvite
+a2ensite hiveinvite
 service apache2 restart
 ```
 
-Load the site at http://steeminvite.localhost
+Load the site at http://hiveinvite.localhost
 
 ## Built With
 
