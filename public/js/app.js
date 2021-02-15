@@ -75,7 +75,7 @@ async function claim_account(w,callback,fee = '0') {
     'operations': [[
       'claim_account', {
         'creator': username,
-        'fee': fillThreeZeroes(fee)+' HIVE'
+        'fee': fillThreeZeroes(fee)+' STEEM'
       }
     ]]
   }
