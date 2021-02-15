@@ -1,6 +1,6 @@
 function validatePaidClaimModalForm() {
   let value = getValueById('paidClaimActiveKey');
-  if(steem.auth.isWif(value)) {
+  if(hive.auth.isWif(value)) {
     document.getElementById('paidClaimSubmit').disabled = false;
      return true;
   }
