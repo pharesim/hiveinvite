@@ -1,6 +1,6 @@
 function validatePaidClaimModalForm() {
   let value = getValueById('paidClaimActiveKey');
-  if(hive.auth.isWif(value)) {
+  if(hivejs.auth.isWif(value)) {
     document.getElementById('paidClaimSubmit').disabled = false;
      return true;
   }
