@@ -1,6 +1,6 @@
 function validateFreeClaimModalForm() {
   let value = getValueById('freeClaimActiveKey');
-  if(hive.auth.isWif(value)) {
+  if(hivejs.auth.isWif(value)) {
     document.getElementById('singleFreeClaim').disabled = false;
     document.getElementById('botFreeClaim').disabled = false;
     return true;
