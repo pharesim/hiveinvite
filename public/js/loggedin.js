@@ -84,7 +84,7 @@ function updateRCState() {
 }
 
 function updateBalanceState() {
-  steem.api.getChainProperties(function(err, result) {
+  hivejs.api.getChainProperties(function(err, result) {
     let claim_cost_hive = result.account_creation_fee.slice(0,-5);
     let balance = getState('balance');
     let hive_accounts = Math.floor(balance / claim_cost_hive);
