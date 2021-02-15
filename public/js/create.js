@@ -8,21 +8,21 @@ document.getElementById('createAccountNow').onclick = function() {
   showById('gearsCreate');
   let loggedIn = false;
   let pass = getValueById('createActiveKey');
-  if(steem.auth.isWif(pass)) {
+  if(hive.auth.isWif(pass)) {
     key = pass;
   } else {
-    key = steem.auth.toWif(username, pass, 'active');
+    key = hive.auth.toWif(username, pass, 'active');
   }
 
-  pub = steem.auth.wifToPublic(key);
-  steem.api.getAccounts([username],function(err,result){
+  pub = hive.auth.wifToPublic(key);
+  hive.api.getAccounts([username],function(err,result){
     var threshold = result[0]['active']['weight_threshold'];
     var auths = result[0]['active']['key_auths'];
     for(var i = 0; i < auths.length; i++) {
       if(auths[i][1] >= threshold && auths[i][0] == pub) {
         loggedIn = true;
         let wif = key;
-        let hivepervest = properties.global.total_vesting_fund_steem.slice(0,-5) / properties.global.total_vesting_shares.slice(0,-6);
+        let hivepervest = properties.global.total_vesting_fund_hive.slice(0,-5) / properties.global.total_vesting_shares.slice(0,-6);
         let delegation = Math.floor(getValueById('createSP') / hivepervest).toFixed(6) +' VESTS';
         console.log(delegation);
         let newAccountName = getValueById('createAccountName');
@@ -55,9 +55,9 @@ function createClaimedAccount(w, newAccountName, owner, active, posting, memoKey
       }
     ]]
   }
-  steem.broadcast._prepareTransaction(tx).then(function(tx){
+  hive.broadcast._prepareTransaction(tx).then(function(tx){
     console.log(tx);
-    tx = steem.auth.signTransaction(tx, [w]);
+    tx = hive.auth.signTransaction(tx, [w]);
     let callback = function(err, success) {
       if(!err) {
         alert('account successfully created');
@@ -76,7 +76,7 @@ function createClaimedAccount(w, newAccountName, owner, active, posting, memoKey
             alert(data['error']);
           } else {
             if(delegation != '0 VESTS') {
-              steem.broadcast.delegateVestingShares(w, username, newAccountName, delegation, function(err, result) {
+              hive.broadcast.delegateVestingShares(w, username, newAccountName, delegation, function(err, result) {
                 if(err !== null) {
                   alert(err);
                 } else {
@@ -97,6 +97,6 @@ function createClaimedAccount(w, newAccountName, owner, active, posting, memoKey
         console.log(err);
       }
     }
-    steem.api.broadcastTransactionSynchronous(tx, callback);
+    hive.api.broadcastTransactionSynchronous(tx, callback);
   });
 }
