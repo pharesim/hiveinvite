@@ -8,14 +8,14 @@ document.getElementById('createAccountNow').onclick = function() {
   showById('gearsCreate');
   let loggedIn = false;
   let pass = getValueById('createActiveKey');
-  if(hive.auth.isWif(pass)) {
+  if(hivejs.auth.isWif(pass)) {
     key = pass;
   } else {
-    key = hive.auth.toWif(username, pass, 'active');
+    key = hivejs.auth.toWif(username, pass, 'active');
   }
 
-  pub = hive.auth.wifToPublic(key);
-  hive.api.getAccounts([username],function(err,result){
+  pub = hivejs.auth.wifToPublic(key);
+  hivejs.api.getAccounts([username],function(err,result){
     var threshold = result[0]['active']['weight_threshold'];
     var auths = result[0]['active']['key_auths'];
     for(var i = 0; i < auths.length; i++) {
@@ -55,9 +55,9 @@ function createClaimedAccount(w, newAccountName, owner, active, posting, memoKey
       }
     ]]
   }
-  hive.broadcast._prepareTransaction(tx).then(function(tx){
+  hivejs.broadcast._prepareTransaction(tx).then(function(tx){
     console.log(tx);
-    tx = hive.auth.signTransaction(tx, [w]);
+    tx = hivejs.auth.signTransaction(tx, [w]);
     let callback = function(err, success) {
       if(!err) {
         alert('account successfully created');
@@ -76,7 +76,7 @@ function createClaimedAccount(w, newAccountName, owner, active, posting, memoKey
             alert(data['error']);
           } else {
             if(delegation != '0 VESTS') {
-              hive.broadcast.delegateVestingShares(w, username, newAccountName, delegation, function(err, result) {
+              hivejs.broadcast.delegateVestingShares(w, username, newAccountName, delegation, function(err, result) {
                 if(err !== null) {
                   alert(err);
                 } else {
@@ -97,6 +97,6 @@ function createClaimedAccount(w, newAccountName, owner, active, posting, memoKey
         console.log(err);
       }
     }
-    hive.api.broadcastTransactionSynchronous(tx, callback);
+    hivejs.api.broadcastTransactionSynchronous(tx, callback);
   });
 }
