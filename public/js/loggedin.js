@@ -166,7 +166,7 @@ function insertIntoTable(data) {
     append = append+'</td><td>';
 
     if(data[i]['account'] != null) {
-      hivepervest = properties.global.total_vesting_fund_steem.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
+      hivepervest = properties.global.total_vesting_fund_hive.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
       vests = Math.ceil(data[i]['hivepower'] / hivepervest);
       link = '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal" id="createModalButton'+data[i]['account']+'" data-username="'+data[i]['account']+'">';
       link = link+'Create account @'+data[i]['account']+'</button>';
