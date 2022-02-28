@@ -97,6 +97,6 @@ function createClaimedAccount(w, newAccountName, owner, active, posting, memoKey
         console.log(err);
       }
     }
-    hivejs.api.broadcastTransactionSynchronous(tx, callback);
+    hivejs.api.broadcastTransaction(tx, callback);
   });
 }
