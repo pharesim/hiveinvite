@@ -81,7 +81,7 @@ async function claim_account(w,callback,fee = '0') {
   }
   hivejs.broadcast._prepareTransaction(tx).then(function(tx){
     tx = hivejs.auth.signTransaction(tx, [w]);
-    hivejs.api.broadcastTransactionSynchronous(tx, callback);
+    hivejs.api.broadcastTransaction(tx, callback);
   });
 }
 
