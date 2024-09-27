@@ -88,7 +88,7 @@
     "button": {
         "submit": "Zatwierdź",
         "login": "Zaloguj",
-        "login_now": "Zaloguj się teraz",
+        "login_now": "Zaloguj się teraz (keychain)",
         "logout": "Wyloguj",
         "close": "Zamknij",
         "proceed": "Kontynuuj"

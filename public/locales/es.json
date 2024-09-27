@@ -88,7 +88,7 @@
     "button": {
         "submit": "Enviar",
         "login": "Iniciar sesión",
-        "login_now": "Iniciar sesión ahora",
+        "login_now": "Iniciar sesión con keychain",
         "logout": "Cerrar sesión",
         "close": "Cerrar",
         "proceed": "Continuar"

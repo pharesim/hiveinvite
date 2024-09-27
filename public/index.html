@@ -45,30 +45,402 @@
     <span class="navbar-brand"><a href="/"><img src="/img/hiveinvite-02.svg" height="64"/></a></span>
   </nav>
 
-  <div class="container" id="content"></div>
+  <div class="container" id="content">
+    <div id="loggedIn" class="hidden">
+      <div class="container col-lg-12 spacer">
+        <div class="row">
+          <div class="col-3 block">
+            <span id="lastupdate"></span> @<span id="lastupdated"></span><br />
+            <a href="/" id="refreshLink"></a>
+          </div>
+          <div class="col-9 block">
+            <div class="float-right">
+                <select id="languageSelector">
+                  <option value="" id="languageSwitcher"></option>
+                  <option value="ar" id="languageAR"></option>
+                  <option value="nl" id="languageNL"></option>
+                  <option value="en" id="languageEN"></option>
+                  <!-- <option value="fr" id="languageFR"></option> -->
+                  <option value="de" id="languageDE"></option>
+                  <option value="el" id="languageEL"></option>
+                  <option value="he" id="languageHE"></option>
+                  <!-- <option value="it" id="languageIT"></option> -->
+                  <!-- <option value="ja" id="languageJA"></option> -->
+                  <!-- <option value="ko" id="languageKO"></option> -->
+                  <option value="pl" id="languagePL"></option>
+                  <option value="pt" id="languagePT"></option>
+                  <!-- <option value="ru" id="languageRU"></option> -->
+                  <!-- <option value="sl" id="languageSL"></option> -->
+                  <option value="sr" id="languageSR"></option>
+                  <option value="es" id="languageES"></option>
+                  <option value="tr" id="languageTR"></option>
+                  <!-- <option value="vi" id="languageVI"></option> -->
+                  <option value="yo" id="languageYO"></option>
+                  <option value="eo" id="languageEO"></option>
+                  <!-- <option value="zh" id="languageZH"></option> -->
+                </select>
+              <button type="button" id="logoutButton" class="btn btn-primary"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <h2 id="greeting"></h2>
+    
+      <p id="tokenexplain"></p>
+    
+      <p id="tokencost" class="borderBox"></p>
+    
+      <p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paidClaimModal" id="paidClaimModalButton"></button>
+        <p id="abletoclaim"></p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#freeClaimModal" id="freeClaimModalButton"></button>
+      </p>
+    
+      <p class="borderBox" id="pendingclaimsandinvites"></p>
+    
+      <button type="button" class="btn btn-primary hidden" data-toggle="modal" data-target="#inviteModal" id="inviteModalButton"></button>
+    
+      <hr />
+    
+      <fieldset id="openInvites" class="hidden">
+        <legend>My open invites</legend>
+    
+        <table class="table table-sm table-hover table-responsive">
+          <thead class="thead-inverse">
+            <tr>
+              <th>Label</th>
+              <th>E-Mail/Link</th>
+              <th>HP</th>
+              <th>Created</th>
+              <th>Valid until</th>
+              <th>Remaining</th>
+              <th>Accepted</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="pendingInvites"></tbody>
+        </table>
+      </fieldset>
+    </div>
+    
+    <div class="modal fade" id="paidClaimModal" tabindex="-1" role="dialog" aria-labelledby="paidClaimModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="paidClaimModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-body">
+            <p id="paidClaimExplainer"></p>
+          </div>
+    
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="paidClaimSubmit"></button>
+            <img src="img/gears.gif" id="gearsPaidClaim" class="hidden" />
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="paidClaimClose"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="freeClaimModal" tabindex="-1" role="dialog" aria-labelledby="freeClaimModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="freeClaimModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-body">
+            <p id="freeClaimExplainer"></p>
+    
+            <p class="freeclaims_multiple" id="freeClaimMoreExplain"></p>
+    
+          </div>
+    
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="singleFreeClaim"></button>
+            <img src="img/gears.gif" id="gearsSingleFreeClaim" class="hidden" />
+            <button type="submit" class="btn btn-primary freeclaims_multiple" id="multiFreeClaim" data-dismiss="modal" data-toggle="modal" data-target="#multiClaimModal"></button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="freeClaimClose"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="multiClaimModal" tabindex="-1" role="dialog" aria-labelledby="multiClaimModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="multiClaimModalLabel"></h5>
+          </div>
+    
+          <div class="modal-body">
+            <p id="multiClaimExplainer"></p>
+            <form>
+              <div class="form-group row">
+                <label for="multiClaimCount" class="col-8 col-form-label" id="multiClaimCountLabel"></label>
+                <div class="col-4">
+                  <input class="form-control" type="number" id="multiClaimCount">
+                </div>
+              </div>
+            </form>
+          </div>
+    
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="multiClaimClaim"></button>
+            <img src="img/gears.gif" id="gearsMultiClaimClaim" class="hidden" />
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="multiClaimClose"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="inviteModal" tabindex="-1" role="dialog" aria-labelledby="inviteModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="inviteModalLabel"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+    
+          <form>
+              <div class="modal-body">
+    
+              <div class="form-group row">
+                  <label for="inviteLabel" class="col-2 col-form-label"><span id="inviteLabelLabel"></span>*</label>
+                  <div class="col-10">
+                  <input class="form-control required" type="text" value="" id="inviteLabel" autocomplete="off">
+                  </div>
+              </div>
+    
+              <div class="form-check">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="inviteByEmail" checked="checked">
+                  <span id="inviteByEmailExplainer"></span>
+                  </label>
+              </div>
+    
+              <div class="form-group row sendEmail">
+                  <label for="inviteEmail" class="col-2 col-form-label"><span id="inviteEmailLabel"></span>*</label>
+                  <div class="col-10">
+                  <input class="form-control" type="text" value="" id="inviteEmail" autocomplete="off">
+                  </div>
+              </div>
+    
+              <div class="form-group sendEmail">
+                  <label for="emailText" id="inviteMailTextLabel"></label>
+                  <textarea class="form-control" id="emailText" rows="5"></textarea>
+              </div>
+    
+              <div class="form-group row noEmail" id="linksAmountDiv">
+                  <label for="linksAmount" class="col-8 col-form-label"><span id="linksAmountLabel"></span>*</label>
+                  <div class="col-4">
+                  <input class="form-control" type="number" value="1" id="linksAmount" autocomplete="off">
+                  <span id="orSeperator"></span>
+                  </div>
+              </div>
+    
+              <div class="form-check noEmail">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="multiInvite">
+                  <span id="multiInviteExplainer"></span>
+                  </label>
+              </div>
+    
+              <div class="form-group row multiInvites">
+                  <label for="linksAmount" class="col-8 col-form-label"><span id="multiInvitesLabel"></span>*</label>
+                  <div class="col-4">
+                  <input class="form-control" type="number" value="1" id="multiInviteAmount" autocomplete="off">
+                  </div>
+              </div>
+    
+              <hr />
+    
+              <div class="form-check noEmail">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" id="publicInvite">
+                  <span id="publicInviteExplainer"></span>
+              </div>
+    
+              <div class="publicInvites">
+                <div class="form-group row">
+                    <label for="pubDescription" class="col-8 col-form-label"><span id="pubDescriptionLabel"></span></label>
+                    <div class="col-8">
+                    <textarea class="form-control" id="pubDescription"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="responseTime" class="col-8 col-form-label"><span id="responseTimeLabel"></span>*</label>
+                    <div class="col-4">
+                    <input class="form-control" type="number" value="36" id="responseTime" autocomplete="off" />
+                    </div>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="requirePhone" />
+                    <span id="requirePhoneExplainer"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="requireEmail" />
+                    <span id="requireEmailExplainer"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="requireReddit" />
+                    <span id="requireRedditExplainer"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="requireFacebook" />
+                    <span id="requireFacebookExplainer"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="requireTwitter" />
+                    <span id="requireTwitterExplainer"></span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="requireInstagram" />
+                    <span id="requireInstagramExplainer"></span>
+                    </label>
+                </div>
+              </div>
+    
+              <hr />
+    
+              <div class="form-text" id="inviteDelegateExplainer"></div>
+    
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-8 col-form-label"><span id="inviteDelegateAmount"></span>*</label>
+                  <div class="col-4">
+                  <input class="form-control required" type="text" value="0" id="inviteSP" autocomplete="off" />
+                  </div>
+              </div>
+    
+              <hr />
+    
+              <div class="form-text" id="inviteValidityExplainer"></div>
+    
+              <div class="form-group row">
+                  <label for="example-text-input" class="col-8 col-form-label"><span id="inviteValidityLabel"></span>*</label>
+                  <div class="col-4">
+                  <input class="form-control required" type="text" value="7" id="inviteValidity" autocomplete="off" />
+                  </div>
+              </div>
+    
+              <hr />
+    
+              <div class="form-group">
+                  <label for="inviteUsermail"><span id="inviteUsermailLabel"></span>*</label>
+                  <input class="form-conrtol" type="text" value="" id="inviteUsermail" />
+              </div>
+    
+              </div>
+    
+              <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" id="createInvite" disabled></button>
+              <img src="img/gears.gif" id="gearsInvite" class="hidden" />
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelInvite"></button>
+              </div>
+          </form>
+          </div>
+      </div>
+    </div>
+    
+    
+    <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="SteemInviteCreateModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="SteemInviteCreateModalLabel">Create Hive account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+    
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label for="inviteLabel" class="col-2 col-form-label">Username</label>
+                <div class="col-10">
+                  <input class="form-control" type="text" id="createAccountName" readonly>
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <label for="example-text-input" class="col-8 col-form-label">Amount of HivePower to delegate</label>
+                <div class="col-4">
+                  <input class="form-control" type="text" id="createSP" autocomplete="off">
+                </div>
+              </div>
+    
+              <input type="hidden" id="createCreator" />
+              <input type="hidden" id="createOwner" />
+              <input type="hidden" id="createActive" />
+              <input type="hidden" id="createPosting" />
+              <input type="hidden" id="createMemo" />
+            </form>
+          </div>
+    
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="createAccountNow">Create account</button>
+            <img src="img/gears.gif" id="gearsCreate" class="hidden" />
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loggedOut" class="hidden jumbotron">
+      <h1 id="loggedOutGreeting"></h1>
+      <p class="lead" id="loggedOutExplainer"></p>
+      <p class="lead">
+      <div id="loginButtonContainer">
+          <a id="loginButton" class="btn btn-primary btn-lg" href="#"></a> <span id="loginButtonText"></span>
+      </div>
+      <div class="lead hidden" id="loginFormContainer">
+          <div class="form-group row col-4">
+              <input class="form-control" type="text" id="loginUsername" placeholder="Your Hive username" />
+          </div>
+          <div id="loginError" class="hidden"></div>
+          <a id="loginNow" class="btn btn-primary btn-lg" href="#"></a>
+      </div>
+      </p>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!--
-  steem-js from cdn does not yet support HF20 account creation.
-  <script src="//cdn.steemjs.com/lib/latest/steem.min.js"></script>
-  -->
-  <script src="https://cdn.jsdelivr.net/npm/@hivechain/hivejs/dist/hivejs.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@hiveio/hive-js/dist/hive.min.js"></script>
 
   <script src="https://unpkg.com/i18next/i18next.js"></script>
   <script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
   <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
   <script src="js/translate.js"></script>
 
-  <script src="js/sitebuild.js"></script>
   <script src="js/helpers.js"></script>
   <script src="js/app.js"></script>
   <script src="js/loggedout.js"></script>
   <script src="js/loggedin.js"></script>
-  <script src="js/freeclaim.js"></script>
-  <script src="js/botclaim.js"></script>
-  <script src="js/paidclaim.js"></script>
   <script src="js/invite.js"></script>
   <script src="js/create.js"></script>
 

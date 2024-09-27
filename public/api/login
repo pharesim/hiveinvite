@@ -1,0 +1,50 @@
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
+import sys
+sys.path.append('si')
+
+import api
+import errorHandler
+
+from beem.account import Account
+from beemgraphenebase.account import PublicKey
+from beemgraphenebase.ecdsasig import verify_message
+
+import json
+import requests
+import os
+
+ans = json.loads(request.data.decode("utf-8"))
+if ans["success"] and validate_hivekeychain_ans(ans):
+  username = ans["data"]["username"]
+  success = 1
+else:
+  success = 0
+  errorHandler.throwError('login failed')
+
+def validate_hivekeychain_ans(ans):
+  acc_name = ans["data"]["username"]
+  pubkey = PublicKey(ans["publicKey"])
+  enc_msg = ans["data"]["message"]
+  signature = ans["result"]
+
+  msgkey = verify_message(enc_msg, unhexlify(signature))
+  pk = PublicKey(hexlify(msgkey).decode("ascii"))
+  if str(pk) == str(pubkey):
+    #app.logger.info(f"{acc_name} SUCCESS: signature matches given pubkey")
+    acc = Account(acc_name, lazy=True)
+    match = False, 0
+    for key in acc["posting"]["key_auths"]:
+      match = match or ans["publicKey"] in key
+    if match:
+      #app.logger.info(f"{acc_name} Matches public key from Hive")
+      mtime = json.loads(enc_msg)["timestamp"]
+      time_since = time.time() - mtime
+      if time_since < 30:
+        #app.logger.info(f"{acc_name} SUCCESS: in {time_since} seconds")
+        return True, time_since
+    return False, 0
+
+data = {'username':username,'success':success}
+api.output(data)

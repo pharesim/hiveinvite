@@ -50,68 +50,6 @@ function translateIndexContent() {
   setContentById('greeting',i18next.t('index.greeting'));
   setContentById('tokenexplain',i18next.t('index.tokenexplain'));
   setContentById('tokencost',i18next.t('index.tokencost'));
-  setContentById('abletoclaim',i18next.t('index.abletoclaim'));
-  setContentById('freeClaimModalButton',i18next.t('index.claimfreemodal'));
-  setContentById('abletobuy',i18next.t('index.abletobuy'));
-  setContentById('paidClaimModalButton',i18next.t('index.claimsteemmodal'));
   setContentById('inviteModalButton',i18next.t('index.invitemodal'));
   document.getElementById('loginUsername').placeholder=i18next.t('loggedout.usernamePlaceholder');
-  document.getElementById('loginPostingKey').placeholder=i18next.t('loggedout.postingkeyPlaceholder');
-
-  // free claim modal
-  setContentById('freeClaimModalLabel',i18next.t('freeclaimmodal.title'));
-  setContentById('freeClaimExplainer',i18next.t('freeclaimmodal.explainer'));
-  setContentById('freeClaimMoreExplain',i18next.t('freeclaimmodal.moreexplain'));
-  setContentById('freeClaimKey',i18next.t('keys.active_required'));
-  setContentById('freeClaimActiveLabel',i18next.t('keys.active'));
-  setContentById('storeWIFfreeLabel',i18next.t('keys.storeKey'));
-  setContentById('singleFreeClaim',i18next.t('freeclaimmodal.single'));
-  setContentById('botFreeClaim',i18next.t('freeclaimmodal.bot'));
-  setContentById('freeClaimClose',i18next.t('button.close'));
-
-  //bot claim modal
-  setContentById('botClaimModalLabel',i18next.t('botclaimmodal.title'));
-  setContentById('botClaimExplainer',i18next.t('botclaimmodal.explainer'));
-  setContentById('botClaimCountLabel',i18next.t('botclaimmodal.amount'));
-  setContentById('botIsWorking',i18next.t('botclaimmodal.working'));
-  setContentById('botStoppedWithError',i18next.t('botclaimmodal.stopped'));
-  setContentById('botClaimStart',i18next.t('botclaimmodal.start'));
-  setContentById('botClaimClose',i18next.t('botclaimmodal.close'));
-
-  // paid claim modal
-  setContentById('paidClaimModalLabel',i18next.t('paidclaimmodal.title'));
-  setContentById('paidClaimExplainer',i18next.t('paidclaimmodal.explainer'));
-  setContentById('paidClaimKey',i18next.t('keys.active_required'));
-  setContentById('paidClaimActiveLabel',i18next.t('keys.active'));
-  setContentById('storeWIFpaidLabel',i18next.t('keys.storeKey'));
-  setContentById('paidClaimSubmit',i18next.t('button.submit'));
-  setContentById('paidClaimClose',i18next.t('button.close'));
-
-  // invite modal
-  setContentById('inviteModalLabel',i18next.t('invitemodal.title'));
-  setContentById('inviteLabelLabel',i18next.t('invitemodal.label'));
-  setContentById('inviteByEmailExplainer',i18next.t('invitemodal.by_email'));
-  setContentById('inviteEmailLabel',i18next.t('invitemodal.email'));
-  setContentById('inviteMailTextLabel',i18next.t('invitemodal.mailtext_label'));
-  setContentById('emailText',i18next.t('invitemodal.mailtext'));
-  setContentById('linksAmountLabel',i18next.t('invitemodal.linkamount'));
-  setContentById('orSeperator',i18next.t('invitemodal.or'));
-  setContentById('multiInviteExplainer',i18next.t('invitemodal.multi'));
-  setContentById('multiInvitesLabel',i18next.t('invitemodal.multi_label'));
-  setContentById('publicInviteExplainer',i18next.t('invitemodal.public'));
-  setContentById('responseTimeLabel',i18next.t('invitemodal.response_time'));
-  setContentById('pubDescriptionLabel',i18next.t('invitemodal.public_description'));
-  setContentById('requirePhoneExplainer',i18next.t('invitemodal.require_phone'));
-  setContentById('requireEmailExplainer',i18next.t('invitemodal.require_email'));
-  setContentById('requireRedditExplainer',i18next.t('invitemodal.require_reddit'));
-  setContentById('requireFacebookExplainer',i18next.t('invitemodal.require_facebook'));
-  setContentById('requireTwitterExplainer',i18next.t('invitemodal.require_twitter'));
-  setContentById('requireInstagramExplainer',i18next.t('invitemodal.require_instagram'));
-  setContentById('inviteDelegateExplainer',i18next.t('invitemodal.delegate'));
-  setContentById('inviteDelegateAmount',i18next.t('invitemodal.delegate_amount'));
-  setContentById('inviteValidityExplainer',i18next.t('invitemodal.validity'));
-  setContentById('inviteValidityLabel',i18next.t('invitemodal.validity_label'));
-  setContentById('inviteUsermailLabel',i18next.t('invitemodal.usermail'));
-  setContentById('createInvite',i18next.t('invitemodal.create'));
-  setContentById('cancelInvite',i18next.t('button.close'));
 }

@@ -4,28 +4,28 @@ document.getElementById('loginButton').onclick = function() {
 }
 
 document.getElementById('loginNow').onclick = function() {
-  let loginUser = getValueById('loginUsername');
-  let loginKey  = getValueById('loginPostingKey');
-  if(hivejs.auth.isWif(loginKey)) {
-    loginKey = loginKey;
-  } else {
-    loginKey = hive.auth.toWif(loginUser, loginKey, 'posting');
-  }
+  let name = getValueById('loginUsername');
+  const keychain = window.hive_keychain;
+  const signedMessageObj = { type: 'login', address: name, page: window.location.href };
+  const messageObj = { signed_message: signedMessageObj, timestamp: parseInt(new Date().getTime() / 1000, 10) };
+  keychain.requestSignBuffer(name, JSON.stringify(messageObj), 'Posting', (response) => {
+    if (!response.success) { return; }
+    $.ajax({
+      url: "api/invite",
+      data: response,
+      type: "POST"
+    }).fail(function(){
+      alert('something went wrong');
+      reenableInvite();
+    }).done(function( data ) {
+      localStorage.setItem("username", name);
+      hideById('loginError');
+      appstart();
 
-  let pub = hive.auth.wifToPublic(loginKey);
-  hivejs.api.getAccounts([loginUser], function(err, result) {
-    let keys = result[0]['posting']['key_auths'];
-    for (var i = 0; i < keys.length; i++) {
-      if(keys[i][0] == pub) {
-        localStorage.setItem("username", result[0]['name']);
-        hideById('loginError');
-        appstart();
+      if(username == '') {
+        setContentById('loginError',i18next.t('keys.wrong_key'));
+        showById('loginError');
       }
-    }
-
-    if(username == '') {
-      setContentById('loginError',i18next.t('keys.wrong_key'));
-      showById('loginError');
-    }
+    });
   });
 }

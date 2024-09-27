@@ -88,7 +88,7 @@
     "button": {
         "submit": "Υποβολή",
         "login": "Σύνδεση",
-        "login_now": "Σύνδεση τώρα",
+        "login_now": "Σύνδεση τώρα (keychain)",
         "logout": "Αποσύνδεση",
         "close": "Κλείσιμο",
         "proceed": "Συνέχεια"

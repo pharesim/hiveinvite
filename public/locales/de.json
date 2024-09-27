@@ -33,7 +33,7 @@
         "canbuy_plural": "theoretisch weitere <span id='possiblebuys'>0</span> Konten beanspruchen.",
         "cannotbuy": "not claim any more accounts. Get some more HIVE!",
         "claimfreemodal": "Kostenfreies Konto (RC-Mana)",
-        "claimsteemmodal": "Bezahltes Konto (STEEM)",
+        "claimsteemmodal": "Bezahltes Konto (HIVE)",
         "invitemodal": "Jetzt eine Person einladen"
     },
     "freeclaimmodal": {
@@ -88,7 +88,7 @@
     "button": {
         "submit": "Absenden",
         "login": "Login",
-        "login_now": "Jetzt einloggen",
+        "login_now": "Mit keychain einloggen",
         "logout": "Logout",
         "close": "Schließen",
         "proceed": "Fortfahren"

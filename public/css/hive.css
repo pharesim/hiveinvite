@@ -40,3 +40,9 @@ color: #fff;
 background-color: rgb(33, 36, 41);
 border-color: rgb(33, 36, 41);
 }
+
+#loggedIn {
+  border: 3px #000 solid;
+  border-top: 0;
+  padding: 15px;
+}

@@ -12,51 +12,48 @@
         "refresh": "Refresh now",
         "greeting": "Hello <span id='loggedInUser'>username</span>!",
         "tokenexplain": "To create a Hive account, you first need to claim a token. These can be obtained by burning a certain amount of HIVE, or spending a big amount of RC mana. In return, the new account receives a minimal amount of RC mana to transact on the blockchain without owning Hive Power.",
-        "tokencost": "The current cost for a claim is <span class='steemcost'>0</span> HIVE or <span class='rccost'>0</span> RC mana",
-        "pendingclaims": "You have claimed an account. <span id='invitespending'></span><span id='pendingclaims' class='hidden'></span>",
-        "pendingclaims_plural": "You have claimed <span id='pendingclaims'>0</span> accounts. <span id='invitespending'></span>",
-        "nopendingclaims": "You have not claimed any accounts yet.",
-        "invitespending": "One invitation is pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
-        "invitespending_plural": "<span id='pendinginvites'>0</span> invitations are pending, <span id='invitemore'></span>",
-        "noinvitespending": "No invitations are pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
-        "invitemore": "so you can invite a friend now!<span id='remaininginvites' class='hidden'></span>",
-        "invitemore_plural": "so you can invite <span id='remaininginvites'>0</span> more friends.",
+        "tokencost": "The current cost for a claim is <span class='hivecost'>0 HIVE</span>, or <span class='rccost'>0</span> RC mana",
+        "pendingclaims_one": "You have claimed an account. <span id='invitespending'></span>(<span id='pendingclaims'></span>)",
+        "pendingclaims_other": "You have claimed <span id='pendingclaims'>0</span> accounts. <span id='invitespending'></span>",
+        "pendingclaims_zero": "You have not claimed any accounts yet.<span id='pendingclaims' class='hidden'>0</span>",
+        "invitespending_one": "One invitation is pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitespending_other": "<span id='pendinginvites'>0</span> invitations are pending, <span id='invitemore'></span>",
+        "invitespending_zero": "No invitations are pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
+        "invitemore_one": "so you can invite a friend now!<span id='remaininginvites' class='hidden'></span>",
+        "invitemore_other": "so you can invite <span id='remaininginvites'>0</span> more friends.",
         "abletoclaim": "Your maximum RC mana is <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>You are currently at <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
-        "canclaim": "which allows you to claim one account at 100%<span id='maxclaims' class='hidden'></span>",
-        "canclaim_plural": "which allows you to claim <span id='maxclaims'>0</span> accounts at 100%",
-        "cannotclaim": "which does not let you claim any accounts. Power up some HIVE!",
-        "canclaimnow": "so you can claim one account right now.<span class='possibleclaims hidden'></span>",
-        "canclaimnow_plural": "so you can claim <span class='possibleclaims'>0</span> accounts right now.",
-        "cannotclaimnow": "so you have to wait a bit until you can claim a discounted account.",
+        "canclaim_one": "which allows you to claim one account at 100%<span id='maxclaims' class='hidden'></span>",
+        "canclaim_other": "which allows you to claim <span id='maxclaims'>0</span> accounts at 100%",
+        "canclaim_zero": "which does not let you claim any accounts. Power up some HIVE!",
+        "canclaimnow_one": "so you can claim one account right now.<span class='possibleclaims hidden'></span>",
+        "canclaimnow_other": "so you can claim <span class='possibleclaims'>0</span> accounts right now.",
+        "canclaimnow_zero": "so you have to wait a bit until you can claim a discounted account.<span class='possibleclaims hidden'></span>",
         "abletobuy": "With your balance of <span id='steembalance'>0 HIVE</span> you can <span id='abletopayforclaim'></span>",
-        "canbuy": "theoretically claim one more account.<span id='possiblebuys' class='hidden'></span>",
-        "canbuy_plural": "theoretically claim another <span id='possiblebuys'>0</span> accounts.",
+        "canbuy_one": "theoretically claim one more account.<span id='possiblebuys' class='hidden'></span>",
+        "canbuy_other": "theoretically claim another <span id='possiblebuys'>0</span> accounts.",
         "cannotbuy": "not claim any more accounts. Get some more HIVE!",
         "claimfreemodal": "Free claim",
-        "claimsteemmodal": "Paid claim",
+        "claimhivemodal": "Paid claim",
         "invitemodal": "Invite someone now"
     },
     "freeclaimmodal": {
         "title": "Claim discounted Hive accounts",
         "explainer": "The last cost to claim a discounted account was <span class='rccost'>0</span> RC<br />Be aware that this changes all the time. When multiple accounts are claimed in a short period of time, the price rises.<br /><span id='freeExplainAmount'></span>",
-        "explainamount": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
-        "explainamount_plural": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
-        "moreexplain": "You can claim either one single account, or use the claim bot until you run out of RC or stop it.",
+        "explainamount_one": "With <span id='currentrc'>0</span> RC you can claim one account.<span class='possibleclaims hidden'></span>",
+        "explainamount_other": "With <span id='currentrc'>0</span> RC you can claim <span class='possibleclaims'>0</span> accounts.",
+        "moreexplain": "You can claim either one single account, or multiple at once.",
         "single": "Claim one account",
-        "bot": "Claim bot"
+        "multi": "Claim multiple"
     },
-    "botclaimmodal": {
-        "title": "Automated claiming of discounted Hive accounts",
-        "explainer": "Hi! I'm your friendly account claim robot. Click the button below to make me start working. I will keep claiming until you are out of RC, or tell me to stop with the other button.",
-        "amount": "Amount of accounts to claim, -1 for unlimited",
-        "working": "At work! Claimed <span id='botClaimStatusClaimed'>0</span> accounts so far.",
-        "stopped": "Stopped after claiming <span id='botClaimHasClaimed'>0</span> accounts.<br />Error message: <span id='botClaimError'></span>",
-        "start": "Start",
-        "close": "Stop/Close"
+    "multiclaimmodal": {
+        "title": "Claiming of multiple discounted Hive accounts",
+        "explainer": "If you have enough RC, it's possible to claim multiple account creation tokens at once. This form allows you to claim up to 100, depending on your RC.",
+        "amount": "Number of account creation tokens",
+        "close": "Close"
     },
     "paidclaimmodal": {
         "title": "Pay to claim a Hive account",
-        "explainer": "The cost to claim an account is <span class='steemcost'>0</span> HIVE<br />This cost is set by the witnesses.<br />A new account will receive a basic amount of RC as if he had the same amount of Hive Power."
+        "explainer": "The cost to claim an account is <span class='hivecost'>0 HIVE</span><br />This cost is set by the witnesse, and the HIVE is burnt.<br />A new account will receive a basic amount of RC as if he had the same amount of Hive Power."
     },
     "invitemodal": {
         "title": "Invite to Hive!",
@@ -88,10 +85,11 @@
     "button": {
         "submit": "Submit",
         "login": "Login",
-        "login_now": "Login now",
+        "login_now": "Login with keychain",
         "logout": "Logout",
         "close": "Close",
-        "proceed": "Proceed"
+        "proceed": "Proceed",
+        "claim": "Claim"
     },
     "keys": {
         "wrong_key": "Invalid key",

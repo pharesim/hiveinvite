@@ -88,7 +88,7 @@
     "button": {
         "submit": "Ensendi",
         "login": "Ensaluti",
-        "login_now": "Nun ensaluti",
+        "login_now": "Nun ensaluti (keychain)",
         "logout": "Elsaluti",
         "close": "Fermi",
         "proceed": "Antaŭeniri"
