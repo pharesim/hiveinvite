@@ -35,7 +35,7 @@ function getInvites() {
     if(data['error']) {
       alert(data['error']);
     } else {
-      //insertIntoTable(data);
+      insertIntoTable(data);
     }
   });
 }
