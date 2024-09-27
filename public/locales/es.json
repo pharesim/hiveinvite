@@ -37,7 +37,7 @@
         "invitemodal": "Invita a alguien ahora"
     },
     "freeclaimmodal": {
-        "title": "Reclamar cuentas con descuento de steem",
+        "title": "Claim discounted Hive accounts",
         "explainer": "El último coste para reclamar una cuenta con descuento fue <span class='rccost'>0</span> RC<br />Ten en cuenta que esto cambia todo el tiempo. Cuando se reclaman varias cuentas en un corto período de tiempo, el precio aumenta.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "Con <span id='currentrc'>0</span> RC puedes reclamar una cuenta.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "Con <span id='currentrc'>0</span> RC puedes reclamar <span class='possibleclaims'>0</span> cuentas.",
@@ -126,7 +126,6 @@
         "yo": "yoruba",
         "zh": "chinese (traditional)"
     },
-
     "step0": {
         "lead": "This registration requires personal data",
         "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
