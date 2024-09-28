@@ -4,8 +4,7 @@
         "explainer": "Hiveinvite is a service that allows you to invite your friends to Hive.",
         "buttontext": "to get started.",
         "login_error": "Login error",
-        "usernamePlaceholder": "Your Hive username",
-        "postingkeyPlaceholder": "Your private posting key"
+        "usernamePlaceholder": "Your Hive username"
     },
     "index": {
         "lastupdate": "Last update",
@@ -21,17 +20,17 @@
         "invitespending_zero": "No invitations are pending, <span id='invitemore'></span><span id='pendinginvites' class='hidden'></span>",
         "invitemore_one": "so you can invite a friend now!<span id='remaininginvites' class='hidden'></span>",
         "invitemore_other": "so you can invite <span id='remaininginvites'>0</span> more friends.",
-        "abletoclaim": "Your maximum RC mana is <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>You are currently at <span id='rcpct'>0</span>%, <span id='canclaimnowamount'></span></span>",
+        "abletoclaim": "Your maximum RC mana is <span id='maxrc'>0</span>, <span id='canclaimever'></span><br /><span id='canclaimnow'>You are currently at <span id='rcpct'>0</span>% RC mana, <span id='canclaimnowamount'></span></span>",
         "canclaim_one": "which allows you to claim one account at 100%<span id='maxclaims' class='hidden'></span>",
         "canclaim_other": "which allows you to claim <span id='maxclaims'>0</span> accounts at 100%",
         "canclaim_zero": "which does not let you claim any accounts. Power up some HIVE!",
         "canclaimnow_one": "so you can claim one account right now.<span class='possibleclaims hidden'></span>",
         "canclaimnow_other": "so you can claim <span class='possibleclaims'>0</span> accounts right now.",
         "canclaimnow_zero": "so you have to wait a bit until you can claim a discounted account.<span class='possibleclaims hidden'></span>",
-        "abletobuy": "With your balance of <span id='steembalance'>0 HIVE</span> you can <span id='abletopayforclaim'></span>",
+        "abletobuy": "With your balance of <span id='hivebalance'>0 HIVE</span> you can <span id='abletopayforclaim'></span>",
         "canbuy_one": "theoretically claim one more account.<span id='possiblebuys' class='hidden'></span>",
         "canbuy_other": "theoretically claim another <span id='possiblebuys'>0</span> accounts.",
-        "cannotbuy": "not claim any more accounts. Get some more HIVE!",
+        "canbuy_zero": "not claim any more accounts. Get some more HIVE!",
         "claimfreemodal": "Free claim",
         "claimhivemodal": "Paid claim",
         "invitemodal": "Invite someone now"
@@ -92,8 +91,6 @@
         "claim": "Claim"
     },
     "keys": {
-        "wrong_key": "Invalid key",
-        "active_required": "This action requires your active key.",
         "active": "Active key",
         "posting": "Posting key",
         "owner": "Owner key",
