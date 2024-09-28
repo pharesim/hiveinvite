@@ -101,8 +101,6 @@ function fillLoggedIn() {
   balance = account.balance.slice(0,-6);
   let hivepervest = properties.global.total_vesting_fund_hive.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
   power = Math.round(account.vesting_shares.slice(0,-6) * hivepervest * 1000)/1000;
-  //$("#steembalance").html(response[0].balance);
-  //setContentById('abletoclaim',i18next.t('index.abletoclaim',{'count': max_accounts}));
   
   setContentById('freeClaimModalButton',i18next.t('index.claimfreemodal'));
   setContentById('freeClaimModalLabel',i18next.t('freeclaimmodal.title'));
@@ -129,7 +127,7 @@ function fillLoggedIn() {
   setContentById('inviteByEmailExplainer',i18next.t('invitemodal.by_email'));
   setContentById('inviteEmailLabel',i18next.t('invitemodal.email'));
   setContentById('inviteMailTextLabel',i18next.t('invitemodal.mailtext_label'));
-  setContentById('emailText',i18next.t('invitemodal.mailtext'));
+  setContentById('emailText',i18next.t('invitemodal.mailtext').replace('{}','@'+username));
   setContentById('linksAmountLabel',i18next.t('invitemodal.linkamount'));
   setContentById('orSeperator',i18next.t('invitemodal.or'));
   setContentById('multiInviteExplainer',i18next.t('invitemodal.multi'));
@@ -156,7 +154,7 @@ function fillLoggedIn() {
   setContentByClass('hivecost', properties.chain.account_creation_fee);
   setContentByClass('rccost', formatRC(state['claim_cost_mana']));
   setContentById('maxrc', formatRC(state['max_rc']));
-  let rcpct = state['current_mana']*100/state['max_rc'];
+  let rcpct = Math.round(state['current_mana']*100/state['max_rc'] * 100) / 100;
   setContentById('rcpct',rcpct);
   let maxclaims = Math.floor(state['max_rc'] / state['claim_cost_mana']);
   setContentById('canclaimever',i18next.t('index.canclaim',{'count': maxclaims}));
@@ -202,16 +200,20 @@ function insertIntoTable(data) {
     append = append+data[i]['accepted']
     append = append+'</td><td>';
 
+    let id = data[i]['inviteid'];
     if(data[i]['account'] != null) {
       hivepervest = properties.global.total_vesting_fund_hive.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
       vests = Math.ceil(data[i]['hivepower'] / hivepervest);
-      link = '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal" id="createModalButton'+data[i]['account']+'" data-username="'+data[i]['account']+'">';
+      link = '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal" id="createModalButton'+data[i]['account']+'" data-inviteid="'+data[i]['inviteid']+'">';
       link = link+'Create account @'+data[i]['account']+'</button>';
-      append = append+link;
-      link = '<button type="button" class="btn btn-primary" id="deleteInviteButton'+data[i]['account']+'" data-username="'+data[i]['account']+'">';
-      link = link+'Delete invite</button>';
-      append = append+link;
+      id = data[i]['account']
+    } else {
+      link = '<button type="button" class="hidden" id="createModalButton'+id+'" data-inviteid="'+id+'"></>';
     }
+    append = append+link;
+    link = '<button type="button" class="btn btn-primary" id="deleteInviteButton'+id+'" data-inviteid="'+id+'">';
+    link = link+'Delete invite</button>';
+    append = append+link;
 
     append = append+'</td></tr>';
 
@@ -221,39 +223,45 @@ function insertIntoTable(data) {
 
   // add onclick handlers after appending everything, as a new append will destroy them
   for(var i = 0, len = data.length; i < len; i++) {
+    let id = data[i]['inviteid'];
     if(data[i]['account'] != null) {
-      inviteData[data[i]['account']] = data[i];
-      document.getElementById('createModalButton'+data[i]['account']).onclick = function() {
-        acco = this.dataset.username;
-        setValueById('createAccountName',inviteData[acco]['account']);
-        setValueById('createSP',inviteData[acco]['hivepower']);
-        setValueById('createCreator',inviteData[acco]['username']);
-        setValueById('createOwner',inviteData[acco]['owner']);
-        setValueById('createActive',inviteData[acco]['active']);
-        setValueById('createPosting',inviteData[acco]['posting']);
-        setValueById('createMemo',inviteData[acco]['memo']);
+      id = data[i]['account'];
+    }
+      
+    inviteData[data[i]['inviteid']] = data[i];
+    if(id != data[i]['inviteid']) {
+      document.getElementById('createModalButton'+id).onclick = function() {
+        let id = this.dataset.inviteid;
+        setValueById('createAccountName',inviteData[id]['account']);
+        setValueById('createSP',inviteData[id]['hivepower']);
+        setValueById('createCreator',inviteData[id]['username']);
+        setValueById('createOwner',inviteData[id]['owner']);
+        setValueById('createActive',inviteData[id]['active']);
+        setValueById('createPosting',inviteData[id]['posting']);
+        setValueById('createMemo',inviteData[id]['memo']);
       };
-      document.getElementById('deleteInviteButton'+data[i]['account']).onclick = function() {
-        if(confirm('Really delete invitation? All data will be lost!')) {
-          acco = this.dataset.username;
-          $.ajax({
-            url: "api/delete",
-            data: {
-              account: inviteData[acco]['account'],
-              creator: inviteData[acco]['username']
-            },
-            type: "POST"
-          }).fail(function(){
-            alert('something went wrong');
-          }).done(function( data ) {
-            if(data['error']) {
-              alert(data['error']);
-            } else {
-              alert('Invite deleted');
-              getInvites();
-            }
-          });
-        }
+    }
+    document.getElementById('deleteInviteButton'+id).onclick = function() {
+      if(confirm('Really delete invitation? All data will be lost!')) {
+        let id = this.dataset.inviteid;
+        $.ajax({
+          url: "api/delete",
+          data: {
+            account: ' ',
+            delid: inviteData[id]['inviteid'],
+            creator: inviteData[id]['username']
+          },
+          type: "POST"
+        }).fail(function(){
+          alert('something went wrong');
+        }).done(function( data ) {
+          if(data['error']) {
+            alert(data['error']);
+          } else {
+            alert('Invite deleted');
+            getInvites();
+          }
+        });
       }
     }
   }

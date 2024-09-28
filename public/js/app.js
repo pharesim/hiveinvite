@@ -170,7 +170,7 @@ function setProperties() {
   hive.api.getDynamicGlobalProperties(async function(err, result) {
     properties.global = result;
     translateIndexContent();
-    setTimeout(appstart(), 3000);
+    appstart();
     setUpdated();
   });
 }
