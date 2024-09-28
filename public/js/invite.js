@@ -119,13 +119,13 @@ $("#createInvite").click(function(e){
       if(data['error']) {
         alert(data['error']);
       } else {
-        insertIntoTable(data);
-        calculateRC();
-        fillLoggedIn();
         $("#inviteModal").modal('hide');
         $("#inviteEmail, #inviteLabel").val("");
         document.getElementById("linksAmount").value = 1;
         document.getElementById("multiInviteAmount").value = 1;
+        insertIntoTable(data);
+        calculateRC();
+        fillLoggedIn();
       }
 
       reenableInvite();

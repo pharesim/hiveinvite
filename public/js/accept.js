@@ -155,13 +155,13 @@ $("#newusername").keyup(
     $(this).val(newname);
 
     if(newname.length >= 3) {
-      steem.api.getAccounts([newname], function(err, result){
+      hive.api.getAccounts([newname], function(err, result){
         if(typeof result[0] !== "undefined") {
           $("#finish_step2").prop('disabled',true);
           $("#fillusername").text("");
           $("#usernameerror").text("Username exists");
         } else {
-          let isValidUsername = steem.utils.validateAccountName(newname);
+          let isValidUsername = hive.utils.validateAccountName(newname);
           if (isValidUsername != null) {
             $("#finish_step2").prop('disabled',true);
             $("#fillusername").text("");
@@ -181,12 +181,12 @@ $("#newusername").keyup(
 
 var getPubKeys = function() {
   let roles = ['active','owner','posting','memo'];
-  return steem.auth.generateKeys(newname, passPhrase, roles);
+  return hive.auth.generateKeys(newname, passPhrase, roles);
 }
 
 var getPrivKeys = function() {
   let roles = ['active','owner','posting','memo'];
-  return steem.auth.getPrivateKeys(newname, passPhrase, roles);
+  return hive.auth.getPrivateKeys(newname, passPhrase, roles);
 }
 
 var getAllKeys = function() {
