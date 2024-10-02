@@ -32,7 +32,7 @@
         "canbuy_other": "theoretisch weitere <span id='possiblebuys'>0</span> Konten beanspruchen.",
         "canbuy_zero": "keine weiteren Accounts beanspruchen. Du brauchst mehr HIVE!",
         "claimfreemodal": "Kostenfreies Konto (RC-Mana)",
-        "claimhivemmodal": "Bezahltes Konto (HIVE)",
+        "claimhivemodal": "Bezahltes Konto (HIVE)",
         "invitemodal": "Jetzt eine Person einladen"
     },
     "freeclaimmodal": {
