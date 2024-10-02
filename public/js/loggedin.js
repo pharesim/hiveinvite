@@ -169,6 +169,16 @@ function fillLoggedIn() {
 
 inviteData = {}
 function insertIntoTable(data) {
+  setContentById('openInvitesTitle',i18next.t('openinvitestable.title'));
+  setContentById('openInvitesLabel',i18next.t('openinvitestable.label'));
+  setContentById('openInvitesLink',i18next.t('openinvitestable.link'));
+  setContentById('openInvitesDelegation',i18next.t('openinvitestable.delegation'));
+  setContentById('openInvitesCreated',i18next.t('openinvitestable.created'));
+  setContentById('openInvitesValid',i18next.t('openinvitestable.valid'));
+  setContentById('openInvitesRemaining',i18next.t('openinvitestable.remaining'));
+  setContentById('openInvitesAccepted',i18next.t('openinvitestable.accepted'));
+  setContentById('openInvitesActions',i18next.t('openinvitestable.actions'));
+
   // @todo refactor in own function to get rid of jquery
   $("#pendingInvites").empty();
   pending_invites = 0
@@ -205,20 +215,21 @@ function insertIntoTable(data) {
       hivepervest = properties.global.total_vesting_fund_hive.slice(0,-6) / properties.global.total_vesting_shares.slice(0,-6);
       vests = Math.ceil(data[i]['hivepower'] / hivepervest);
       link = '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal" id="createModalButton'+data[i]['account']+'" data-inviteid="'+data[i]['inviteid']+'">';
-      link = link+'Create account @'+data[i]['account']+'</button>';
+      link = link+'</button>';
       id = data[i]['account']
     } else {
       link = '<button type="button" class="hidden" id="createModalButton'+id+'" data-inviteid="'+id+'"></>';
     }
-    append = append+link;
-    link = '<button type="button" class="btn btn-primary" id="deleteInviteButton'+id+'" data-inviteid="'+id+'">';
-    link = link+'Delete invite</button>';
-    append = append+link;
-
-    append = append+'</td></tr>';
+    append = append+link+'<button type="button" class="btn btn-primary" id="deleteInviteButton'+id+'" data-inviteid="'+id+'"></button></td></tr>';
 
     let elem = document.getElementById('pendingInvites');
     elem.innerHTML = elem.innerHTML + append;
+
+    if(id != data[i]['inviteid']) {
+      setContentById('createModalButton'+data[i]['account'],i18next.t('openinvitestable.create'));
+      document.getElementById('createModalButton'+data[i]['account']).innerHTML = document.getElementById('createModalButton'+data[i]['account']).innerHTML + data[i]['account'];
+    }
+    setContentById('deleteInviteButton'+id,i18next.t('openinvitestable.delete'));
   }
 
   // add onclick handlers after appending everything, as a new append will destroy them

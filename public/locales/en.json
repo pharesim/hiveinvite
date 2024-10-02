@@ -81,6 +81,19 @@
         "usermail": "E-Mail address for status updates",
         "create": "Create invitation"
     },
+    "openinvitestable": {
+        "title": "My open invites",
+        "label": "Label",
+        "link": "E-Mail/Link",
+        "delegation": "HP",
+        "created": "Created",
+        "valid": "Valid until",
+        "remaining": "Remaining",
+        "accepted": "Accepted",
+        "actions": "Actions",
+        "create": "Create account @",
+        "delete": "Delete invite"
+    },
     "button": {
         "submit": "Submit",
         "login": "Login",

@@ -32,7 +32,7 @@
         "canbuy_other": "theoretisch weitere <span id='possiblebuys'>0</span> Konten beanspruchen.",
         "canbuy_zero": "keine weiteren Accounts beanspruchen. Du brauchst mehr HIVE!",
         "claimfreemodal": "Kostenfreies Konto (RC-Mana)",
-        "claimsteemmodal": "Bezahltes Konto (HIVE)",
+        "claimhivemmodal": "Bezahltes Konto (HIVE)",
         "invitemodal": "Jetzt eine Person einladen"
     },
     "freeclaimmodal": {
@@ -41,8 +41,8 @@
         "explainamount_one": "Mit <span id='currentrc'>0</span> RC kannst du ein Konto erstellen.<span class='possibleclaims hidden'></span>",
         "explainamount_other": "Mit <span id='currentrc'>0</span> RC kannst du <span class='possibleclaims'>0</span> Konten erstellen.",
         "moreexplain": "Du kannst entweder ein einzelnes Konto erstellen oder mehrere auf einmal.",
-        "single": "Ein Konto beanspruchen",
-        "multi": "Mehrere Konten beanspruchen"
+        "single": "Ein Konto",
+        "multi": "Mehrere Konten"
     },
     "multiclaimmodal": {
         "title": "Mehrere reduzierte Hive Konten beanspruchen",
@@ -80,6 +80,19 @@
         "validity_label": "Gültigkeit in Tagen",
         "usermail": "E-Mail-Adresse für Status-Updates",
         "create": "Einladung erstellen"
+    },
+    "openinvitestable": {
+        "title": "Meine offenen Einladungen",
+        "label": "Titel",
+        "link": "E-Mail/Link",
+        "delegation": "HP",
+        "created": "Erstellt",
+        "valid": "Gueltig bis",
+        "remaining": "Verbleibend",
+        "accepted": "Angenommen",
+        "actions": "Aktionen",
+        "create": "Erstelle account @",
+        "delete": "Einladung loeschen"
     },
     "button": {
         "submit": "Absenden",
