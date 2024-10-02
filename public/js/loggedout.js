@@ -1,3 +1,5 @@
+translateIndexContent();
+
 document.getElementById('loginButton').onclick = function() {
   hideById('loginButtonContainer');
   showById('loginFormContainer');

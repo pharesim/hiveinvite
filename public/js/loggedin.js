@@ -220,7 +220,7 @@ function insertIntoTable(data) {
     } else {
       link = '<button type="button" class="hidden" id="createModalButton'+id+'" data-inviteid="'+id+'"></>';
     }
-    append = append+link+'<button type="button" class="btn btn-primary" id="deleteInviteButton'+id+'" data-inviteid="'+id+'"></button></td></tr>';
+    append = append+link+'<button type="button" class="btn btn-primary" id="deleteInviteButton'+id+'" data-inviteid="'+data[i]['inviteid']+'"></button></td></tr>';
 
     let elem = document.getElementById('pendingInvites');
     elem.innerHTML = elem.innerHTML + append;
@@ -259,8 +259,7 @@ function insertIntoTable(data) {
           url: "api/delete",
           data: {
             account: ' ',
-            delid: inviteData[id]['inviteid'],
-            creator: inviteData[id]['username']
+            delid: id
           },
           type: "POST"
         }).fail(function(){
