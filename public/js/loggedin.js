@@ -87,7 +87,7 @@ function fillLoggedIn() {
     setContentById('invitemore',i18next.t('index.invitemore',{'count': remaining_invites}))
     setContentById('remaininginvites',remaining_invites);
   } else {
-    setContentById('pendingclaimsandinvites',i18next.t('index.nopendingclaims'));
+    setContentById('pendingclaimsandinvites',i18next.t('index.pendingclaims_zero'));
   }
   let emailText = document.getElementById('emailText').innerHTML;
   setContentById('emailText',emailText.replace("{}",username));

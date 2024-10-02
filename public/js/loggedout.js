@@ -29,3 +29,13 @@ document.getElementById('loginNow').onclick = function() {
     });
   });
 }
+
+$("#loginUsername").keyup(
+  function(){
+    newname = $(this).val().toLowerCase().replace(/[^a-z0-9.-]+/g, "");
+    if(newname.lenth > 15) {
+      newname = newname.substr(0,15);
+    }
+    $(this).val(newname);
+  }
+);

@@ -16,7 +16,7 @@ document.getElementById('createAccountNow').onclick = async function() {
   let active = JSON.stringify({'key_auths':[[getValueById('createActive'),1]],'account_auths':[],'weight_threshold':1});
   let posting = JSON.stringify({'key_auths':[[getValueById('createPosting'),1]],'account_auths':[],'weight_threshold':1});
   let memoKey = getValueById('createMemo');
-  //createClaimedAccount(wif,newAccountName,owner,active,posting,memoKey,delegation);
+  
   const keychain = window.hive_keychain;
   console.log(owner);
   console.log(active);
