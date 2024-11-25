@@ -37,7 +37,7 @@
         "invitemodal": "הזמנ/י מישהו עכשיו"
     },
     "freeclaimmodal": {
-        "title": "דרוש/י חשבונות steem מוזלים",
+        "title": "Claim discounted Hive accounts",
         "explainer": "העלות האחרונה איתה היה ניתן לדרוש חשבון מוזל הייתה<span class='rccost'>0</span> RC<br />היו מודעים כי עלות זו משתנה כל הזמן. כשמספר החשבונות שנדרשות עולה, בתקופת זמן קצרה, כך גם המחיר עולה.<br /><span id='freeExplainAmount'></span>",
         "explainamount": "עם<span id='currentrc'>0</span> RC תוכל/י לדרוש חשבון אחד.<span class='possibleclaims hidden'></span>",
         "explainamount_plural": "עם <span id='currentrc'>0</span> RC באפשרותך לדרוש <span class='possibleclaims'>0</span> חשבונות.",
@@ -46,7 +46,7 @@
         "bot": "Bot הדרישות"
     },
     "botclaimmodal": {
-        "title": "רכישות אוטומטיות של חשבונות steem מוזלים",
+        "title": "Automated claiming of discounted Hive accounts",
         "explainer": "שלום!. אני רובוט ניהול הדרישות הידידותי שלך. לחץ על הכפתור למטה בכדי לתפעל אותי. אני אמשיך לבצע דרישות עד שתיגמר לך כמות ה RC, או כשתרצה להפסיק את פעולותיי בלחיצה על הכפתור האחר.",
         "amount": "Amount of accounts to claim, -1 for unlimited",
         "working": "בעבודה! נדרשו <span id='botClaimStatusClaimed'>0</span> חשבונות עד כה.",
@@ -126,7 +126,6 @@
         "yo": "yoruba",
         "zh": "chinese (traditional)"
     },
-
     "step0": {
         "lead": "This registration requires personal data",
         "text": "Hive accounts are created by other users. To verify your identity and to have a line of communication if your keys get stolen, please fill out all fields below. This data will only be shared with the creator of your account.",
