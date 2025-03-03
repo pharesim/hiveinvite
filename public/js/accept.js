@@ -206,7 +206,7 @@ $("#finish_step2").click(
   }
 );
 
-$("#verifypassword").keyup(function(){
+$("#verifypassword").on('keyup paste change', function(){
   if($(this).val() == passPhrase) {
     $("#finish_step3").removeAttr("disabled");
   } else {
